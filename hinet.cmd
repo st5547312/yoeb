@@ -1,1 +1,1 @@
-rasdial Å¼Ã­Â´Å™ÃÅ¹ËÃ“ 85118356@hinet.net 2aoijoxi
+rasdial ¿í´øÁ¬½Ó 85118356@hinet.net 2aoijoxi
