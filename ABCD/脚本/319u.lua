@@ -139,7 +139,6 @@ SetZhengTiColorVarData(10,0,1,0,nil,100)
 
 
 AddShengJiZhuangBeiGoodsData("点金石","Metadata/Items/Currency/CurrencyUpgradeToRare",0,50,0)--主线生效 超过50级就用点金点白色装备
-AddShengJiZhuangBeiGoodsData("束縛石","Metadata/Items/Currency/CurrencyUpgradeToRareAndSetSockets",0,50,0)
 AddShengJiZhuangBeiGoodsData("富豪石","Metadata/Items/Currency/CurrencyUpgradeMagicToRare",1,50,0)--主线生效 超过50级就用富豪点蓝色装备
 
 --掉落率+稀有率 异界时才有效
@@ -152,7 +151,6 @@ SetGaoJiHuanZhuangData("游侠","简易之袍","Metadata/Items/Armours/BodyArmours/Bod
 --SetTaskShengJiData(taskClassName,taskIndex,shengjiMapClassName,needLv)--设置跑图时升级 taskClassName=任务类名 taskIndex=任务索引 nil为忽略，只匹配任务类名 shengjiMapClassName=要刷的地图类名 needLv=升级到多少级为止
 SetTaskShengJiData("a5q7",nil,"1_5_5",46,true)--做 到奇塔弗的受难 的时候刷纯净圣地到50级再进行下一任务
 SetTaskShengJiData("a9q3",nil,"2_9_1",68,true)--做 到風暴飛刃 的时候刷滲血水道到68级再进行下一任务
-SetTaskShengJiData("a10q3",nil,"2_9_1",78,true)--做 到風暴飛刃 的时候刷滲血水道到68级再进行下一任务
 
 SetTaskMiGongData("a8q7",nil,1)--大于等于a9q1级 做迷宫1
 SetTaskMiGongData("a10q1",nil,2)--大于等于a10q1 做迷宫2
