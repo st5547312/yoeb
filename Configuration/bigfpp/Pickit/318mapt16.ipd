@@ -13,6 +13,14 @@
  
  
  //編輯時間：2022/7/5 ex比水餃便宜的季末
+[Type]  == "Exceptional Eldritch Ember" # 	[StashItem]	 == "true" // 		宏偉異能灰燼	拾取且存倉
+[Type]  == "Grand Eldritch Ember" # 	[StashItem]	 == "true" // 		卓越	拾取且存倉
+[Type]  == "Greater Eldritch Ember" # 	[StashItem]	 == "true" // 		高階	拾取且存倉
+[Type]  == "Lesser Eldritch Ember" # 	[StashItem]	 == "true" // 		低階	拾取且存倉
+[Type]  == "Exceptional Eldritch Ichor" # 	[StashItem]	 == "true" // 		宏偉異能靈液	拾取且存倉
+[Type]  == "Grand Eldritch Ichor" # 	[StashItem]	 == "true" // 		卓越	拾取且存倉
+[Type]  == "Greater Eldritch Ichor" # 	[StashItem]	 == "true" // 		高階	拾取且存倉
+[Type]  == "Lesser Eldritch Ichor" # 	[StashItem]	 == "true" // 		低階	拾取且存倉
 [Type] == "Orb of Alteration" # [StashItem] == "true"////改造石拾取且存倉
 [Type] == "Chaos Orb" # [StashItem] == "true"////混沌石拾取且存倉
 [Type] == "Divine Orb" # [StashItem] == "true"////神聖石拾取且存倉
@@ -369,3 +377,21 @@
 [Type]=="Oubliette Reliquary Key" # [StashItem]  == "true" // 
 [Type]=="Cosmic Reliquary Key" # [StashItem]  == "true" // 
 [Type]=="Decaying Reliquary Key" # [StashItem]  == "true" //
+
+[Type] =="Maven's Invitation: The Elderslayers" #	[StashItem]	 == "true" 		//殺手	拾取且存倉
+[Type] =="Maven's Invitation: The Forgotten" #	[StashItem]	 == "true" 		//釋界之邀：遺忘	拾取且存倉
+[Type] =="Maven's Invitation: The Formed" #	[StashItem]	 == "true" 		//釋界之邀：塑型	拾取且存倉
+[Type] =="Maven's Invitation: The Twisted" #	[StashItem]	 == "true" 		//釋界之邀：扭曲	拾取且存倉
+[Type] == "Mortal Grief"             # 	[StashItem]	 == "true" 	//	//凡人的哀傷	拾取且存倉
+[Type] == "Mortal Rage"              # 	[StashItem]	 == "true" 	//	//凡人的憤怒	拾取且存倉
+[Type] == "Mortal Ignorance"         # 	[StashItem]	 == "true" 	//	//凡人的無知	拾取且存倉
+[Type] == "Mortal Hope"              # 	[StashItem]	 == "true" 	//	//凡人的希望	拾取且存倉
+[Type] == "Sacrifice at Dawn"        # 	[StashItem]	 == "true" 	//	//黎明的奉獻	拾取且存倉
+[Type] == "Sacrifice at Noon"        # 	[StashItem]	 == "true" 	//	//正午的奉獻	拾取且存倉
+[Type] == "Sacrifice at Dusk"        # 	[StashItem]	 == "true" 	//	//黃昏的奉獻	拾取且存倉
+[Type] == "Sacrifice at Midnight"    # 	[StashItem]	 == "true" 	//	//午夜的奉獻	拾取且存倉
+[Type] == "Lingering Remnants" # 	[StashItem]	 == "true" // 1.0 C	//	殘墟(瓦爾密殿-物品等級:83-已汙染)	拾取且存倉
+[Type] == "Last Hope" # 	[StashItem]	 == "true" // 1.0 C	//	最後希望(凡人的希望)	拾取且存倉
+[Type] == "Sambodhi's Vow" # 	[StashItem]	 == "true" // 1.0 C	//	菩提誓約(凡人碎片)	拾取且存倉
+[Type]=="Something Dark" #	[StashItem]	 == "true"	//	//黑暗的東西(藍圖)	拾取且存倉
+[Type]=="Gemcutter's Mercy" #	[StashItem]	 == "true"	//	//寶石切割者的憐憫(卓越寶石)	拾取且存倉
