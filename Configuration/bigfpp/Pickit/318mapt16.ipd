@@ -364,19 +364,7 @@
 //	[Type] == "Agate Amulet" && [Rarity] == "Unique" # [local_display_aura_mana_regeneration_rate_+%] >= "1" &&	[ForceSellItem]	 == "true" // 		//塑界者之籽 瑪瑙護身符																							
 //	[Type] == "Agate Amulet" && [Rarity] == "Unique" # [max_power_charges] >= "1" && 	[ForceSellItem]	 == "true" // 		//艾拉黛絲 瑪瑙護身符																							
 																		
-[Type]=="Niko's Memory" # [StashItem]  == "true" // 
-[Type]=="Alva's Memory" # [StashItem]  == "true" // 
-[Type]=="Kirac's Memory" # [StashItem]  == "true" // 
-[Type]=="Einhar's Memory" # [StashItem]  == "true" // 
-[Type]=="Engraved Ultimatum" # [StashItem]  == "true" // 
-[Type]=="Mirrored Tablet" # [StashItem]  == "true" // 
-[Type]=="Forgotten Reliquary Key" # [StashItem]  == "true" // 
-[Type]=="Visceral Reliquary Key" # [StashItem]  == "true" // 
-[Type]=="Shiny Reliquary Key" # [StashItem]  == "true" // 
-[Type]=="Archive Reliquary Key" # [StashItem]  == "true" // 
-[Type]=="Oubliette Reliquary Key" # [StashItem]  == "true" // 
-[Type]=="Cosmic Reliquary Key" # [StashItem]  == "true" // 
-[Type]=="Decaying Reliquary Key" # [StashItem]  == "true" //
+[Type]=="Einhar's Memory" #	[StashItem]	 == "true" // 		//恩哈爾的記憶	拾取且存倉
 
 [Type] =="Maven's Invitation: The Elderslayers" #	[StashItem]	 == "true" 		//殺手	拾取且存倉
 [Type] =="Maven's Invitation: The Forgotten" #	[StashItem]	 == "true" 		//釋界之邀：遺忘	拾取且存倉
