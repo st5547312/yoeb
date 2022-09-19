@@ -384,3 +384,6 @@
 [Type]=="Something Dark" #	[StashItem]	 == "true"	//	//黑暗的東西(藍圖)	拾取且存倉
 [Type]=="Gemcutter's Mercy" #	[StashItem]	 == "true"	//	//寶石切割者的憐憫(卓越寶石)	拾取且存倉
 [Type] == "Awakened Sextant" # 	[StashItem]	 == "true"	//	//製圖六分儀．覺醒	拾取且存倉
+
+
+[Type] == "Vaal Mask" && [Rarity] == "Unique" # [StashItem] == "true"
