@@ -9,7 +9,7 @@
 [Type]=="Tainted Blacksmith's Whetstone" # [StashItem]  == "true"
 [Type]=="Tainted Divine Teardrop" # [StashItem]  == "true"
  
- 
+// [Category] == "Map" && [MapTier] >= "1"  && [Rarity] == "Rare"  #[ForceSellItem]== "true" // 黃地圖售出
  
  
  //編輯時間：2022/7/5 ex比水餃便宜的季末
