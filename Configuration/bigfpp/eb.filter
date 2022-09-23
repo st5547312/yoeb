@@ -44,7 +44,7 @@ Hide
     SetBorderColor 255 0 0
     SetFontSize 44
 
-Show # 特殊語法 - 六連裝備
+Hide # 特殊語法 - 六連裝備
     LinkedSockets = 6
     SetTextColor 175 96 37
     SetBackgroundColor 255 255 255
@@ -56,7 +56,7 @@ Show # 特殊語法 - 六連裝備
 
 # 【特殊語法-六洞裝備】0002
 
-Show # 特殊語法 - 六洞裝備
+hide # 特殊語法 - 六洞裝備
     Sockets = 6
     SetTextColor 0 0 0
     SetBackgroundColor 224 224 224
@@ -572,7 +572,7 @@ Show # 通貨 - 初始 - 混沌石碎片
     SetFontSize 40
     PlayAlertSound 9 300
 
-Show # 通貨 - 初始 - 富豪石碎片
+Hide # 通貨 - 初始 - 富豪石碎片
     Class "Currency"
     BaseType "Regal Shard"
     SetTextColor 0 0 0
@@ -590,7 +590,7 @@ Show # 通貨 - 初始 - 改造石
     SetFontSize 45
     PlayAlertSound 9 300
 
-Show # 通貨 - 初始 - 機會石
+Hide # 通貨 - 初始 - 機會石
     Class "Currency"
     BaseType "Orb of Chance"
     SetTextColor 0 0 0
@@ -599,7 +599,7 @@ Show # 通貨 - 初始 - 機會石
     SetFontSize 40
     PlayAlertSound 9 300
 
-Show # 通貨 - 初始 - 工匠石
+Hide # 通貨 - 初始 - 工匠石
     Class "Currency"
     BaseType "Jeweller's Orb"
     SetTextColor 0 0 0
@@ -608,7 +608,7 @@ Show # 通貨 - 初始 - 工匠石
     SetFontSize 45
     PlayAlertSound 9 300
 
-Show # 通貨 - 初始 - 幻色石
+Hide # 通貨 - 初始 - 幻色石
     Class "Currency"
     BaseType "Chromatic Orb"
     SetTextColor 0 0 0
@@ -625,7 +625,7 @@ Show # 通貨 - 初始 - 玻璃彈珠
     SetBorderColor 250 250 250
     SetFontSize 40
 
-Show # 通貨 - 初始 - 點燃石
+Hide # 通貨 - 初始 - 點燃石
     Class "Currency"
     BaseType "Enkindling Orb"
     SetTextColor 0 0 0
@@ -634,7 +634,7 @@ Show # 通貨 - 初始 - 點燃石
     SetFontSize 40
     PlayEffect Brown
 
-Show # 通貨 - 初始 - 滴注石
+Hide # 通貨 - 初始 - 滴注石
     Class "Currency"
     BaseType "Instilling Orb"
     SetTextColor 0 0 0
@@ -645,25 +645,25 @@ Show # 通貨 - 初始 - 滴注石
 
 #【通貨-垃圾】1005
 
-Show # 通貨 - 垃圾 - 磨刀石
+Hide # 通貨 - 垃圾 - 磨刀石
     Class "Currency"
     BaseType "Blacksmith's Whetstone"
     SetTextColor 210 150 255
     SetFontSize 45
 
-Show # 通貨 - 垃圾 - 護甲片
+Hide # 通貨 - 垃圾 - 護甲片
     Class "Currency"
     BaseType "Armourer's Scrap"
     SetTextColor 210 150 255
     SetFontSize 45
 
-Show # 通貨 - 垃圾 - 蛻變石
+Hide # 通貨 - 垃圾 - 蛻變石
     Class "Currency"
     BaseType "Orb of Transmutation"
     SetTextColor 210 150 255
     SetFontSize 45
 
-Show # 通貨 - 垃圾 - 增幅石
+Hide # 通貨 - 垃圾 - 增幅石
     Class "Currency"
     BaseType "Orb of Augmentation"
     SetTextColor 210 150 255
@@ -685,7 +685,7 @@ Show # 通貨 - 垃圾 - 地平石碎片
     SetBorderColor 0 0 0
     SetFontSize 45
 
-Show # 通貨 - 垃圾 - 工程石碎片
+Hide # 通貨 - 垃圾 - 工程石碎片
     Class "Currency"
     BaseType "Engineer's Shard"
     SetTextColor 0 0 0
@@ -709,12 +709,12 @@ Hide # 通貨 - 垃圾 - 改造石碎片
     BaseType "Alteration Shard"
     SetTextColor 215 190 160
 
-Show # 通貨 - 垃圾 - 點金石碎片
+Hide # 通貨 - 垃圾 - 點金石碎片
     Class "Currency"
     BaseType "Alchemy Shard"
     SetTextColor 215 190 160
 
-Show # 通貨 - 垃圾 - 束縛石碎片
+Hide # 通貨 - 垃圾 - 束縛石碎片
     Class "Currency"
     BaseType "Binding Shard"
     SetTextColor 0 0 0
@@ -765,7 +765,7 @@ Show # 通貨 - 特殊 - 充能的羅盤
     MinimapIcon 2 Red Diamond
     PlayEffect Red
 
-Show # 通貨 - 特殊 - 偵查報告
+Hide # 通貨 - 特殊 - 偵查報告
     Class "Currency"
     BaseType "Scouting Report"
     SetTextColor 100 50 0
@@ -785,7 +785,7 @@ Show # 通貨 - 特殊 - 挖油機
 
 #【通貨-異能】1008
 
-Show # 通貨 - 異能 - 異能灰燼
+Hide # 通貨 - 異能 - 異能灰燼
     Class "Currency"
     BaseType "Eldritch Ember"
     SetTextColor 219 48 14
@@ -795,7 +795,7 @@ Show # 通貨 - 異能 - 異能灰燼
     MinimapIcon 2 Red Diamond
     PlayEffect Red
 
-Show # 通貨 - 異能 - 異能靈液
+Hide # 通貨 - 異能 - 異能靈液
     Class "Currency"
     BaseType "Eldritch Ichor"
     SetTextColor 0 255 255
