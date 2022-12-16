@@ -65,6 +65,43 @@ Show # 特殊語法 - 六洞裝備
     PlayAlertSound 3 100
     MinimapIcon 1 White UpsideDownHouse
     PlayEffect White
+    Show # 装备类 - 普通装备类 - 换幻色装备 - 幻色石底材 1X3格
+    SocketGroup "RGB"
+    Height = 3
+    Width = 1
+    Rarity <= Rare
+    SetBackgroundColor 31 71 27 200 #幻色底材色
+    SetBorderColor 74 230 58 #幻色底材色
+    SetFontSize 40 #幻色底材色
+    DisableDropSound True
+
+Show # 装备类 - 普通装备类 - 换幻色装备 - 幻色石底材 1X4格
+    SocketGroup "RGB"
+    Height = 4
+    Width = 1
+    Rarity <= Rare
+    SetBackgroundColor 31 71 27 200 #幻色底材色
+    SetBorderColor 74 230 58 #幻色底材色
+    SetFontSize 40 #幻色底材色
+    DisableDropSound True
+
+Show # 装备类 - 普通装备类 - 换幻色装备 - 幻色石底材 2X2格
+    SocketGroup "RGB"
+    Height = 2
+    Width = 2
+    Rarity <= Rare
+    SetBackgroundColor 31 71 27 200 #幻色底材色
+    SetBorderColor 74 230 58 #幻色底材色
+    SetFontSize 40 #幻色底材色
+    DisableDropSound True
+	
+Show # 装备类 - 普通装备类 - 换幻色装备 - 幻色石底材 全部
+    SocketGroup "RGB"
+    Rarity <= Rare
+    SetBackgroundColor 31 71 27 200 #幻色底材色
+    SetBorderColor 74 230 58 #幻色底材色
+    SetFontSize 40 #幻色底材色
+    DisableDropSound True
 
 #============
 # 【通貨-說明欄】1000
