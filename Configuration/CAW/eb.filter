@@ -582,14 +582,26 @@ Show # 通貨 - 普通 - 古變石碎片
 
 #【通貨-初始】1004
 
-Show # 通貨 - 初始 - 知識卷軸
-    Class "Currency"
+Show # 通货 - 低价通货 - 堆叠的鉴定大于2
+    Class "Stackable Currency"
     BaseType "Scroll of Wisdom"
-    SetTextColor 248 172 184 255
-    SetBackgroundColor 0 0 0 255
-    SetBorderColor 248 172 184 255
-    SetFontSize 40
-    MinimapIcon 2 Red Diamond
+    StackSize >= 2
+    SetFontSize 38
+    DisableDropSound True
+   
+Show # 通货 - 低价通货 - 堆叠的鉴定小于2
+    Class "Stackable Currency"
+    BaseType "Scroll of Wisdom"
+    StackSize < 2
+    SetFontSize 38
+    DisableDropSound True
+    
+Show # 通货 - 低价通货 - 鉴定
+    Class "Stackable Currency"
+    BaseType "Scroll of Wisdom"
+    SetFontSize 38
+    DisableDropSound True
+
 
 Show # 通貨 - 初始 - 傳送卷軸
     Class "Currency"
