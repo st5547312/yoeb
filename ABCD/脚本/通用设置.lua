@@ -15,7 +15,7 @@
 2、函数型：函数名(参数1,参数2) 这样的就是函数型 由函数名与若干个参数组成 参数被半角括号()套起来
 ]]
 ------------------基本设置       
-g_needMinimizeGame=true			--最小化遊戲窗口 true为最小化 false或nil为不最小化
+g_needMinimizeGame=nil			--最小化遊戲窗口 true为最小化 false或nil为不最小化
 g_imBoss=false					--如果是仓库号要为true 挂机号为false
 g_yiJieTimeOut=10*60			--异界地图内的超时时间 单位为秒 如果未设置就会用g_timeOut *是乘号 这里为15乘以60=15分钟
 g_timeOut=15*60				--在一个地图呆的时间超过设置的 就重新开图重新 单位为秒
