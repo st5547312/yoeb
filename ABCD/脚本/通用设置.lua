@@ -965,7 +965,7 @@ SetSaveIndex("DelveStackableSocketableCurrency","14|7|8|9|10|11",nil,nil,nil,nil
 
 SetSaveIndex(nil,"14|7|8|9|10|11",nil,"Metadata/Items/Metamorphosis/CurrencyItemisedProphecy",nil,nil,nil,true)--îAÑÔ
 SetSaveIndex(nil,"14|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyItemisedCapturedMonster",nil,nil,nil,true)--ÍØÓ¡«F»êÓñ enName:
-SetSaveIndex(nil,"14|7|8|9|10|11",nil,"Metadata/Items/Heist/HeistCoin",nil,nil,nil,true)--±IÙ\Ö®Ó¡ enName:rogues-marker
+--SetSaveIndex(nil,"14|7|8|9|10|11",nil,"Metadata/Items/Heist/HeistCoin",nil,nil,nil,true)--±IÙ\Ö®Ó¡ enName:rogues-marker
 --SetSaveIndex(nil,"14|14|14|14|14|2|2|1|5|6",nil,"Metadata/Items/Currency/CurrencyRitualStone",nil,nil,nil,true)--¼Àìë±®Æ÷
 
 SetSaveIndex(nil,"14|7|8|9|10|11",nil,"Metadata/Items/Belts/Belt3",nil,nil,nil,true)--Æ¤¸ïÑü§
