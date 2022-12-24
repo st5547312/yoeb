@@ -657,7 +657,7 @@ SetGoodsCaoZuo(nil,"3","幻色石","Metadata/Items/Currency/CurrencyRerollSocketCol
 
 SetGoodsCaoZuo("契约","0|2",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,function(r)return r.lv>68 end)
 SetGoodsCaoZuo(nil,"0","赏金猎人印记","Metadata/Items/Heist/HeistCoin")--只捡不存夺宝币
--- SetGoodsCaoZuo(nil,nil,"赏金猎人印记","Metadata/Items/Heist/HeistCoin",nil,nil,nil,10000)--够了就不捡了
+SetGoodsCaoZuo(nil,nil,"赏金猎人印记","Metadata/Items/Heist/HeistCoin",nil,nil,nil,10000)--够了就不捡了
 
 
 SetGoodsCaoZuo(nil,"3",nil,"Metadata/Items/Heist/HeistBlueprintDungeon")--藍圖：實驗室
