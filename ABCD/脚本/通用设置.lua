@@ -915,7 +915,7 @@ SetGoodsCaoZuo(nil,"1|3","附魔化石","Metadata/Items/Currency/CurrencyDelveCrafti
 --endHour 数字型 结束交易的小时
 AddJiaoYiTime(0,24)--晚上11点到8点前会检测交易
 
-AddJiaoYiBossName("餐點貳零貳",nil,nil,nil,true)
+AddJiaoYiBossName("你是不是暗戀我",nil,nil,nil,true)
 
 
 --AddJiaoYiTime(startHour,endHour)--添加交易时间段大于等于startHour 并且小于等于endHour 时会检测交易
