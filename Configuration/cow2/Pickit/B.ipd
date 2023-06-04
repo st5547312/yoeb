@@ -5,7 +5,7 @@
 //[Type]=="Praetor Crown" && [Rarity] == "Unique" #[UniqueName]=="Voll's Vision"	#[StashItem] == "true"
 
 //©£©i¤â
-[Type]=="Titan Gauntlets" && [Rarity] == "Unique" # [UniqueName] == "Kaom's Spirit" && [StashItem] == "true"
+//[Type]=="Titan Gauntlets" && [Rarity] == "Unique" # [UniqueName] == "Kaom's Spirit" && [StashItem] == "true"
 
 //·ù»}
 //[Type]=="Rawhide Boots" && [Rarity] == "Unique" #[UniqueName]=="Seven-League Step"	#[StashItem] == "true"
