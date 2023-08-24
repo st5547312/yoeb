@@ -88,7 +88,7 @@ AddNeedBuySkillTime(1,"a5q3")
 AddNeedBuySkillTime(4,"a5q5")
 
 AddNeedBuySkillTime(6,"a6q1")	--在第6章的惊海之王时 检测购买一遍
-AddNeedBuySkillTime(6,"a6q2")f
+AddNeedBuySkillTime(6,"a6q2")
 AddNeedBuySkillTime(6,"a6q3")
 AddNeedBuySkillTime(6,"a6q5")
 AddNeedBuySkillTime(6,"a7q2")
@@ -120,7 +120,7 @@ AddNotMakeTaskData("a10q5")--深海之路
 
 
 --AddUseGoodsData(name,className)--添加要使用的物品必须填一个，忽略填nil --name=物品名字 className=物品类名 
-
+AddUseGoodsData("天賦之書")--添加天赋之书
 
 
 --SetZhongShenData(className1,className2)--设置要加的众神殿数据 className1=高阶数据类名 字符串型 className2=低阶数据类名 字符串型 
@@ -2343,5 +2343,3 @@ SetJiaoYiGoods(nil,"賦予輔助","Metadata/Items/Gems/SupportGemAdditionalLevel",ni
 -- SetJiaoYiGoods(nil,"锐利之凝珠宝","Metadata/Items/Jewels/JewelAbyssRanged",nil,nil,nil,nil)--深渊珠宝
 -- SetJiaoYiGoods(nil,"安睡之凝珠宝","Metadata/Items/Jewels/JewelAbyssCaster",nil,nil,nil,nil)--深渊珠宝
 -- SetJiaoYiGoods(nil,"苍白之凝珠宝","Metadata/Items/Jewels/JewelAbyssSummoner",nil,nil,nil,nil)--深渊珠宝
-
-AddUseGoodsData("天賦之書")--添加天赋之书
