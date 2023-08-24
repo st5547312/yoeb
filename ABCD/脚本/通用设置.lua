@@ -1,3 +1,4 @@
+
 --ËùÓĞÍ¨ÓÃÉèÖÃ ¶¼ÔÚÕâÀï
 --[[
 ---------------------------------------------²»¶®µÄÒ»¶¨ÒªºÃºÃ¿´ÕâÀïµÄËµÃ÷
@@ -14,220 +15,27 @@
 1¡¢±äÁ¿ĞÍ£ºÉèÖÃÏî=Êı¾İ ÕâÖÖ¼òµ¥´Ö±©µÄ¶¼ÊÇ±äÁ¿ĞÍÉèÖÃ Ö±½Ó¸ÄÄÇ¸öµÈÓÚºÅºóÃæµÄÊı¾İ¾ÍÊÇÁË
 2¡¢º¯ÊıĞÍ£ºº¯ÊıÃû(²ÎÊı1,²ÎÊı2) ÕâÑùµÄ¾ÍÊÇº¯ÊıĞÍ ÓÉº¯ÊıÃûÓëÈô¸É¸ö²ÎÊı×é³É ²ÎÊı±»°ë½ÇÀ¨ºÅ()Ì×ÆğÀ´
 ]]
-------------------»ù±¾ÉèÖÃ       
-g_needMinimizeGame=nil			--×îĞ¡»¯ß[‘ò´°¿Ú trueÎª×îĞ¡»¯ false»ònilÎª²»×îĞ¡»¯
+------------------»ù±¾ÉèÖÃ
+g_needMinimizeGame=false			--×îĞ¡»¯ß[‘ò´°¿Ú trueÎª×îĞ¡»¯ false»ònilÎª²»×îĞ¡»¯
 g_imBoss=false					--Èç¹ûÊÇ²Ö¿âºÅÒªÎªtrue ¹Ò»úºÅÎªfalse
-g_yiJieTimeOut=10*60			--Òì½çµØÍ¼ÄÚµÄ³¬Ê±Ê±¼ä µ¥Î»ÎªÃë Èç¹ûÎ´ÉèÖÃ¾Í»áÓÃg_timeOut *ÊÇ³ËºÅ ÕâÀïÎª15³ËÒÔ60=15·ÖÖÓ
-g_timeOut=15*60				--ÔÚÒ»¸öµØÍ¼´ôµÄÊ±¼ä³¬¹ıÉèÖÃµÄ ¾ÍÖØĞÂ¿ªÍ¼ÖØĞÂ µ¥Î»ÎªÃë
-g_addTianFu=true			--×Ô¶¯°´Éè¶¨ºÃµÄÅäÖÃ¼ÓÌì¸³ trueÎª¼Ó nil»òfalseÎª²»¼Ó
+g_attackDis=50					--¹¥»÷¾àÀë
+g_yiJieTimeOut=15*60			--Òì½çµØÍ¼ÄÚµÄ³¬Ê±Ê±¼ä µ¥Î»ÎªÃë Èç¹ûÎ´ÉèÖÃ¾Í»áÓÃg_timeOut *ÊÇ³ËºÅ ÕâÀïÎª15³ËÒÔ60=15·ÖÖÓ
+g_timeOut=25*60					--ÔÚÒ»¸öµØÍ¼´ôµÄÊ±¼ä³¬¹ıÉèÖÃµÄ ¾ÍÖØĞÂ¿ªÍ¼ÖØĞÂ µ¥Î»ÎªÃë
+g_addTianFu=true				--×Ô¶¯°´Éè¶¨ºÃµÄÅäÖÃ¼ÓÌì¸³ trueÎª¼Ó nil»òfalseÎª²»¼Ó
 g_shengJiBaoShi=true			--×Ô¶¯Éı¼¶±¦Ê¯ trueÎªÉı¼¶ nil»òfalseÎª²»Éı¼¶
-g_sellSkillGem=true			--×Ô¶¯Âô³¬¹ı40Æ·ÖÊµÄ¼¼ÄÜ±¦Ê¯
-g_notHuanYaoLv=82			--´óÓÚµÈÓÚ¶àÉÙ¼¶Ö»¼ñÀ¶É«ÒÔÉÏÒ©
+g_sellSkillGem=true				--×Ô¶¯Âô³¬¹ı40Æ·ÖÊµÄ¼¼ÄÜ±¦Ê¯
+g_notHuanYaoLv=82				--´óÓÚµÈÓÚ¶àÉÙ¼¶Ö»¼ñÀ¶É«ÒÔÉÏÒ© 
 g_needAutoChangeEquip=true		--¿ªÆô×Ô¶¯»»×° trueÎª»» nil»òfalseÎª²»»»
 g_needAutoSetBaoShi=true		--¿ªÆô×Ô¶¯»»±¦Ê¯ trueÎª»» nil»òfalseÎª²»»»
-g_bossGiveZhuangBei=true	                --½»Ò×Ê±²Ö¿âºÅ¸øÓèÈ±ÉÙµÄ¸ß¼¶»»×°ÖĞµÄ×°±¸
-g_xiaoHaoGetZhuangBei=true		--¹Ò»úºÅÏò²Ö¿âºÅÉêÇëÁì¸ß¼¶»»×°ÖĞµÄ×°±¸
-g_youXianMapLv=84                             --È¡Í¼Ê±ÈËÎïÂú¶àÉÙ¼¶¾Í´Ó¸ß½×¿ªÊ¼È¡
+g_bossGiveZhuangBei=true		--½»Ò×Ê±²Ö¿âºÅ¸øÓèÈ±ÉÙµÄ¸ß¼¶»»×°ÖĞµÄ×°±¸ trueÎª¸ø falseÎª²»¸ø ÊÇ¶Ô²Ö¿âºÅÉèÖÃµÄ
+g_xiaoHaoGetZhuangBei=false		--¹Ò»úºÅÏò·¢×°²Ö¿âºÅÉêÇëÁì¸ß¼¶»»×°ÖĞµÄ×°±¸ trueÎªÉêÇë falseÎª²»ÉêÇë 
 
-------------------¹Ò»úÏà¹Ø
-g_needZhuangYuanLv=75                        --Êı×ÖĞÍ Âú¶àÉÙ¼¶´ò¹ÅÁé×¯Ô° nilÎªÒ»Ö±²»´ò
-g_yijieNoWhiteMonster=true		--Òì½çÊ±ÊÇ·ñ²»´ò°×¹Ö trueÎª²»´ò nil»òfalseÎª´ò
-g_yijieNoWhiteBox=true			--Òì½çÊ±ÊÇ·ñ²»¿ª°×Ïä×Ó trueÎª²»¿ª nil»òfalseÎª¿ª
-g_useYiJieWanChengDuLv=78     	--Ê¹ÓÃÏÂÃæÒì½çÍê³É¶ÈÄÇ¸öÉèÖÃµÄµÈ¼¶£¬Èç¹ûÎ´µ½µÈÔòË¢È«Í¼
-g_yiJieWanChengDu=0.8		--Òì½çÍê³É¶È Íê³É¶àÉÙ¾Í»ØÈ¥ Îª1»ò1ÒÔÏÂµÄĞ¡Êı
-g_yongHengShiBeiLv=95		--´óÓÚµÈÓÚ¶àÉÙ¼¶´òÓÀºãÊ¯±® 
-g_needTaFangLv=95			--´óÓÚµÈÓÚ¶àÉÙ¼¶´òËş·À
-g_needLianMoLv=95			--´óÓÚµÈÓÚ¶àÉÙ¼¶´òÁ¶Ä§
-g_attackFreezeMonsterLv=78	--´óÓÚµÈÓÚ¶àÉÙ¼¶´ò±ù¶³¹Ö
-g_needChuanYueLv=95      	--´óÓÚµÈÓÚ¶àÉÙ¼¶´ò´©Ô½¹Ö
-g_needLieXiLv=95			--´óì¶µÈÓÚ¶àÉÙ¼¶´òÊ±¿ÕÁÑ·ì¹Ö
-g_needMiWuLv=78				--´óÓÚµÈÓÚ¶àÉÙ¼¶´òÃÔÎí
-g_usePuTongWanChengDuLv=78	--Ê¹ÓÃÆÕÍ¨µØÍ¼Íê³É¶ÈÄÇ¸öÉèÖÃµÄµÈ¼¶£¬Èç¹ûÎ´µ½µÈÔòË¢È«Í¼ Ä¬ÈÏÎªnil²»Ê¹ÓÃ
-g_yiJieLv=68				--¹»ÁË¶àÉÙ¼¶²ÅÈ¥Ë¢Òì½ç
-g_checkSellMapCnt=60		--µØÍ¼³¬¹ıÕâ¸öÊıÁ¿²Å»á¼ì²â³öÊÛµØÍ¼
-g_destroyNoUseMap=true		--Ïú»ÙÉÏÃæÉèÖÃ²»Ê¹ÓÃµÄµØÍ¼ nil»òfalseÎª²»Ïú»Ù
-g_mapUseFuHaoLv=80			--´óÓÚµÈÓÚ¶àÉÙ¼¶¶ÔÀ¶Í¼Ê¹ÓÃ¸»ºÀÊ¯ nilÎªÓÀÔ¶²»Ê¹ÓÃ
-g_mapUseZengFuLv=78			--´óÓÚµÈÓÚ¶àÉÙ¼¶¶ÔÀ¶Í¼Ê¹ÓÃÔö·ùÊ¯ nilÎªÓÀÔ¶²»Ê¹ÓÃ
-g_mapUseDianJingLv=80		--´óÓÚµÈÓÚ¶àÉÙ¼¶¶Ô°×Í¼Ê¹ÓÃµã½ğÊ¯ nilÎªÓÀÔ¶²»Ê¹ÓÃ
-g_mapUseTuiBianLv=nil		--´óÓÚµÈÓÚ¶àÉÙ¼¶¶Ô°×Í¼Ê¹ÓÃÍÉ±äÊ¯ nilÎªÓÀÔ¶²»Ê¹ÓÃ
-g_mapUseJiHuiLv=75			--´óÓÚµÈÓÚ¶àÉÙ¼¶¶Ô°×Í¼Ê¹ÓÃ»ú»áÊ¯ nilÎªÓÀÔ¶²»Ê¹ÓÃ
-g_mapUseWaErLv=95			--´óÓÚµÈÓÚ¶àÉÙ¼¶¶Ô°×¡¢À¶µØÍ¼Ê¹ÓÃÍß¶û±¦Öé nilÎªÓÀÔ¶²»Ê¹ÓÃ
-g_mapUseDingZiLv=75			--´óÓÚµÈÓÚ¶àÉÙ¼¶Ê¹ÓÃÖÆÍ¼¶¤ nilÎªÓÀÔ¶²»Ê¹ÓÃ
-g_noUseMapLv=6				--²»Ê¹ÓÃ¡¢²»¼ñ¶àÉÙ½×¼°ÒÔÉÏµÄµØÍ¼ nil»ò0ÎªºöÂÔ ÉèÖÃÓÅÏÈµÄµØÍ¼³ıÍâ
-g_needZaFenLv=80                                         --ÉèÖÃ¶àÉÙ¼¶¿ªÊ¼×öĞÂÈü¼¾Õ¨·ØÍæ·¨
-g_needMengYanLv=95                                  --70¼¶ÒÔºó¾ÍµãÃÎ÷Ê
-g_needSuDiLv=80                                       --Âú75¼¶´òÇ¿Ï®ËŞµĞÄÚÈİ
-g_notShuaBaiPao=true                    --ÊÇ·ñ²»ĞèÒªË¢°×ÅÛ trueÎª²»ĞèÒª false»ònilÎªĞèÒª
---SetHaveLingTiBossName(bossName,minLv)--ÉèÖÃÁéÌå²Ö¿âºÅ Èç¹ûÁéÌåºÅµÄÁéÌå±ÈÉíÉÏµÄ¸üºÃ£¬Ëû¾Í»áÈ¥ÁéÌåºÅËùÔÚÎ»ÖÃÕÙ»½ÁéÌå
---bossName ×Ö·û´®ĞÍ ÁéÌå²Ö¿âºÅµÄÃû×Ö
---minLv Êı×ÖĞÍ Âú¶àÉÙ¼¶²Å»áÈ¥²Ö¿âºÅ¼ÒÕÙ»½ nilÎªºöÂÔµÈ¼¶×ÜÊÇÈ¥
---SetHaveLingTiBossName("55555",nil)
-
-SetYiJieShuaTuModeByMapCnt(20,nil,2)--²Ö¿âÖĞµØÍ¼ÊıÁ¿Âú20 ÆôÓÃËÙË¢ Ö±Í¨boss
-SetYiJieShuaTuModeByMapCnt(10,0.6,0)--²Ö¿âÖĞµØÍ¼ÊıÁ¿Âú10 Ë¢6³É ÇÒÒª´òÍêBOSS
-SetYiJieShuaTuModeByMapCnt(0,1,0)--²Ö¿âÖĞµØÍ¼ÊıÁ¿Âú0 Ë¢È«Í¼
+--SetZhuangBeiBoss(bossName,srvName)--ÉèÖÃ·¢×°²Ö¿âºÅ bossName=·¢×°ºÅÃû×Ö ×Ö·û´®ĞÍ srvName=·şÎñÆ÷Ãû×Ö£¬Èç¹û¶à¸öÇøÓÃÍ¬Ò»·İÅäÖÃµÄ»°ÌîÉÏ·şÎñÆ÷Ãû×Ö¿Éµ¥¶ÀÇø·Ö Èç¹û²»ÊÇ¿ÉºöÂÔ »òÌînil 
+--SetZhuangBeiBoss("ÕâÀïÌîÉÏÄã×Ô¼ºµÄ·¢×°²Ö¿âºÅÃû×Ö","ÇøÃû×Ö")--·¢×°±¸µÄ²Ö¿âºÅ Èç¹û²»ĞèÒª ¾Í×¢ÊÍµô Ö»ÓĞ¹Ò»úºÅ¸ú²Ö¿âºÅ¶¼ÊÇ Íâ¹ÒÕËºÅ ²ÅÓĞĞ§
 
 
-SetNeedAddTianFu("Òì½çµØÍ¼Ìì¸³=atlas_boss_adjacent_maps_2-ÏààµØˆDµôÂä™CÂÊ|atlas_essence_1_1-¾«ËèÏ¡ÓĞ™CÂÊ|atlas_essence_1_5-¾«ËèÏ¡ÓĞ™CÂÊ|atlas_essence_1_3-º£Á¿¾«ÈA|atlas_path_11-ÏààµØˆDµôÂä™CÂÊ|atlas_path_23_-ÏààµØˆDµôÂä™CÂÊ|atlas_boss_adjacent_maps_1-ÏààµØˆDµôÂä™CÂÊ|atlas_domination_1_2-Ö§ÅäÉñµî³ÖÀm•rég|atlas_domination_1_1-Ö§ÅäÉñµî³ÖÀm•rég|atlas_path_21-ÏààµØˆDµôÂä™CÂÊ|atlas_harbinger_1_2_-î~ÍâÉñÖIËéÆ¬|atlas_harbinger_1_4-î~ÍâÉñÖIËéÆ¬|atlas_harbinger_1_3-²»Ïéµ½í|atlas_harvest_4_1-ØSÊÕî~ÍâÉúì`Ö®Á¦|atlas_harvest_2_3-ØSÊÕî~ÍâÉúì`Ö®Á¦|atlas_harvest_2_4-ØSÊÕî~ÍâÉúì`Ö®Á¦|atlas_harvest_3_4__-ØSÊÕ|atlas_harvest_3_5-ØSÊÕ™CÂÊ|atlas_harvest_3_2-ØSÊÕ™CÂÊ|atlas_harvest_2_1-ØSÊÕ™CÂÊ|atlas_harvest_4_2-ØSÊÕî~ÍâÉúì`Ö®Á¦|atlas_harvest_2_5_-´óØSÊÕ|atlas_map_drops_20-µôÂäÑ}ÑuµØˆD|atlas_map_drops_3-µôÂäÑ}ÑuµØˆD|atlas_keystone_nofragments_1-Òâ×RÁ÷|atlas_heist_1_5-½Ù±I˜ËÓ›¶Ñ¯B”µÁ¿|atlas_heist_1_2-½Ù±I˜ËÓ›¶Ñ¯B”µÁ¿|atlas_path_30-ÏààµØˆDµôÂä™CÂÊ|atlas_essence_4_1-½ûåd¹ÖÎïî~Íâ¾«Ëè™CÂÊ|atlas_essence_4_2-½ûåd¹ÖÎïî~Íâ¾«Ëè™CÂÊ|atlas_essence_4_4-Ë®¾§¸ñ|atlas_essence_4_3-½ûåd¹ÖÎïî~Íâ¾«Ëè™CÂÊ|atlas_path_17-ÏààµØˆDµôÂä™CÂÊ|atlas_map_drops_1-µôÂäÑ}ÑuµØˆD|atlas_map_drops_16-µôÂäÑ}ÑuµØˆD|atlas_map_drops_15-µôÂäÑ}ÑuµØˆD|atlas_alva_2_2-´©Ô½¹ÖÎïÈº´óĞ¡|atlas_alva_2_7-´©Ô½¹ÖÎïÈº´óĞ¡|atlas_alva_2_1-´©Ô½¹ÖÎïÈº´óĞ¡|atlas_path_32-ÎïÆ·”µÁ¿|atlas_essence_2_3-¾«Ëè™CÂÊ|atlas_essence_2_5-¾«Ëè™CÂÊ|atlas_essence_2_2-¾«Ëè™CÂÊ|atlas_essence_2_4-Š»¯ÄÜÁ¿|atlas_boss_adjacent_maps_11-ÎïÆ·”µÁ¿ºÍÏ¡ÓĞ¶È|atlas_boss_adjacent_maps_12-ÎïÆ·”µÁ¿ºÍÏ¡ÓĞ¶È|atlas_harvest_3_1-ØSÊÕ™CÂÊ|atlas_harvest_2_6-ÃÜˆ@Ö®ĞÄ|atlas_boss_adjacent_maps_10-ÎïÆ·”µÁ¿ºÍÏ¡ÓĞ¶È|atlas_harbinger_2_2-î~ÍâÉñÖI™CÂÊ|atlas_harbinger_2_4-³õ³±|atlas_harvest_2_7-ØSÊÕ™CÂÊ|atlas_harvest_3_3-ØSÊÕ™CÂÊ|atlas_path_36-ÎïÆ·”µÁ¿|atlas_path_42-ÎïÆ·”µÁ¿|atlas_path_34-ÎïÆ·”µÁ¿|atlas_path_39-ÎïÆ·”µÁ¿|atlas_path_35-ÎïÆ·”µÁ¿|atlas_harbinger_2_3-î~ÍâÉñÖI™CÂÊ|atlas_harbinger_2_5-î~ÍâÉñÖI™CÂÊ|atlas_path_44-ÎïÆ·”µÁ¿|atlas_path_61-ÎïÆ·”µÁ¿|atlas_path_43-ÎïÆ·”µÁ¿|atlas_path_40-ÎïÆ·”µÁ¿|atlas_path_33-ÎïÆ·”µÁ¿|atlas_path_41-ÎïÆ·”µÁ¿|atlas_essence_3_1-¾«Ëè™CÂÊ|atlas_essence_3_2-½ûåd¹ÖÎïî~Íâ¾«Ëè™CÂÊ|atlas_essence_3_3-½ûåd¹ÖÎïî~Íâ¾«Ëè™CÂÊ|atlas_essence_3_5-Ë®¾§¹²Õñ|atlas_path_27-ÏààµØˆDµôÂä™CÂÊ|atlas_path_14-ÏààµØˆDµôÂä™CÂÊ|atlas_path_26-ÏààµØˆDµôÂä™CÂÊ|atlas_harvest_1_2-ØSÊÕî~ÍâÉúì`Ö®Á¦|atlas_harvest_1_3-ØSÊÕî~ÍâÉúì`Ö®Á¦|atlas_harvest_1_1-ØSÊÕî~ÍâÉúì`Ö®Á¦|atlas_harvest_1_4-ÃÜˆ@ºô†¾|")
-
----½»Ò×ËÙ¶È
-g_jiaoYiAddSellGoodsTime=1--Êı×ÖĞÍ ½»Ò×Ê±°Ñ¶«Î÷·Åµ½½»Ò×À¸µÄµÈ´ıÊ±¼ä µ¥Î»ÎªºÁÃë Ä¬ÈÏÎª250
-
-SetQuLingData(nil,80,true,true)
-AddYouXianGongPingBuyGoods("È¨¹óÔ²¶Ü","Metadata/Items/Armours/Shields/ShieldStrDex13","´óµØÖ÷","The Squire",true)
-AddYouXianGongPingBuyGoods("ÖØ¸ïÑü´ø","Metadata/Items/Belts/Belt4","Ä§Ñª","Mageblood",true)
-AddYouXianGongPingBuyGoods("¿¨À¼µÂµÄÄ§¾µ","Metadata/Items/Currency/CurrencyDuplicate",true)
-AddYouXianGongPingBuyGoods("Æ¤¸ïÑü´ø","Metadata/Items/Belts/Belt3","ÁÔÊ×","Headhunter",true)
-AddYouXianGongPingBuyGoods("Ã÷¾µ","Metadata/Items/DivinationCards/DivinationCardHouseOfMirrors",true)
-AddYouXianGongPingBuyGoods("¯‚át","Metadata/Items/DivinationCards/DivinationCardTheDoctor",true)
-AddYouXianGongPingBuyGoods("ºÄ§","Metadata/Items/DivinationCards/DivinationCardTheDemon",true)
-AddYouXianGongPingBuyGoods("Ä§çRËéÆ¬","Metadata/Items/Currency/CurrencyDuplicateShard",true)
-AddYouXianGongPingBuyGoods("²®ÖÙØ”ì","Metadata/Items/DivinationCards/DivinationCardBrothersStash",true)
-AddYouXianGongPingBuyGoods("Ä§¹í","Metadata/Items/DivinationCards/DivinationCardTheFiend",true)
-AddYouXianGongPingBuyGoods(nil,nil,"Éñ¸Ğ","Unnatural Instinct",true)
-AddYouXianGongPingBuyGoods("³ç¸ßÊ¯","Metadata/Items/Currency/CurrencyAddModToRare",nil,nil,true)
-AddYouXianGongPingBuyGoods("ÇàÓñ×oÉí·û","Metadata/Items/Amulets/Amulet8","¼¤ÇéÖ®ÕÂ","Badge of the Brotherhood",true)
-AddYouXianGongPingBuyGoods("±ùÀäÛ‘Ù","Metadata/Items/DivinationCards/DivinationCardLoveThroughIce",nil,nil,true)
-AddYouXianGongPingBuyGoods("†ÎÏàË¼","Metadata/Items/DivinationCards/DivinationCardUnrequitedLove",nil,nil,true)
-AddYouXianGongPingBuyGoods("ÔpÆÛŸ","Metadata/Items/DivinationCards/DivinationCardTheCheater",nil,nil,true)
-AddYouXianGongPingBuyGoods("ÒC^µÄÃÀµÂ","Metadata/Items/DivinationCards/DivinationCardDesecratedVirtue",nil,nil,true)
-AddYouXianGongPingBuyGoods("ÎäÊ¿Ö®ÑÛ","Metadata/Items/DivinationCards/DivinationCardTheSamuraisEye",nil,nil,true)
-AddYouXianGongPingBuyGoods("ÌìÎÄÎ×Ÿ","Metadata/Items/DivinationCards/DivinationCardTheAstromancer",nil,nil,true)
-AddYouXianGongPingBuyGoods("Ÿo×ï¾ÈÚH","Metadata/Items/DivinationCards/DivinationCardSuccorOfTheSinless",nil,nil,true)
-AddYouXianGongPingBuyGoods("ÎÒ‘ÑÄîµÄ","Metadata/Items/DivinationCards/DivinationCardRemembrance",nil,nil,true)
-AddYouXianGongPingBuyGoods("Ù‡ÒÔéÉú","Metadata/Items/DivinationCards/DivinationCardTheSustenance",true)
-AddYouXianGongPingBuyGoods("³õÊ¼ÕßµÄòœ°Á","Metadata/Items/DivinationCards/DivinationCardPrideOfTheFirstOnes",true)
-AddYouXianGongPingBuyGoods("éLÆÚÔpò_","Metadata/Items/DivinationCards/DivinationCardTheLongCon",true)
-AddYouXianGongPingBuyGoods("Ï¦ê–¼tî","Metadata/Items/DivinationCards/DivinationCardBeautyThroughDeath",true)
-AddYouXianGongPingBuyGoods("ÀÏÈËÅcº£","Metadata/Items/DivinationCards/DivinationCardTheOldMan",true)
-AddYouXianGongPingBuyGoods("ĞÛ‚¥„Ó™C","Metadata/Items/DivinationCards/DivinationCardTheGreatestIntentions",nil,nil,true)
-AddYouXianGongPingBuyGoods("°²ÙÄÈ½zÙ›¶Y","Metadata/Items/DivinationCards/DivinationCardGiftOfAsenath",nil,nil,true)
-
-AddYouXianGongPingBuyGoods("×oÀíŸ","Metadata/Items/DivinationCards/DivinationCardTheNurse",true)
-AddYouXianGongPingBuyGoods(nil,nil,"ÊÄ¼s","Pledge of Hands",true)
-AddYouXianGongPingBuyGoods(nil,nil,"ÔªËØµÄ±Ó×o","Prism Guardian",true)
-AddYouXianGongPingBuyGoods(nil,nil,"¿¨Ë¹ÆÕÀïµÄÔ¹ºŞ","Cospri's Malice",true)
-AddYouXianGongPingBuyGoods(nil,nil,"ïL±©Ö®ÃÜ","Storm Secret",true)
-AddYouXianGongPingBuyGoods(nil,nil,"ØÀ×¿ËµÄ»ğÅcÀ×Ö®˜·","Berek's Respite",true)
-AddYouXianGongPingBuyGoods(nil,nil,"Ì«Æ½","The Halcyon",true)
--- AddYouXianGongPingBuyGoods(nil,nil,"ÏÈ×æÁb½O","The Primordial Chain",true)
-AddYouXianGongPingBuyGoods(nil,nil,"¸£ –Ö®·û","Voll's Devotion",true)
-AddYouXianGongPingBuyGoods(nil,nil,"Ë÷·üÖ®ĞÄ","Xoph's Heart",true)
-AddYouXianGongPingBuyGoods(nil,nil,"¶ÌÆÚ‚ùÈ¯","The Ephemeral Bond",true)
-AddYouXianGongPingBuyGoods(nil,nil,"‘ğÊ¿ßzÎï","Warrior's Legacy",true)
-AddYouXianGongPingBuyGoods(nil,nil,"±¯‘K»ÃÒ•","Calamitous Visions",true)
-AddYouXianGongPingBuyGoods(nil,nil,"³àÓ°‰ôô|","The Red Nightmare",true)
-AddYouXianGongPingBuyGoods(nil,nil,"ÇóÖªµÄŸáÇé","Inspired Learning",true)
-AddYouXianGongPingBuyGoods(nil,nil,"ÏÈ×æÁ¦Á¿","Primordial Might",true)
-AddYouXianGongPingBuyGoods(nil,nil,"Ëé»êÕß","Soul Ripper",true)
-AddYouXianGongPingBuyGoods(nil,nil,"œçÈÕ","Dying Sun",true)
-AddYouXianGongPingBuyGoods(nil,nil,"Æ¿ÖĞĞÅÑö","Bottled Faith",true)
-AddYouXianGongPingBuyGoods(nil,nil,"ÊÉ a®Y","Cinderswallow Urn",true)
--- AddYouXianGongPingBuyGoods(nil,nil,"ºŞÒâ","Taste of Hate",true)
-AddYouXianGongPingBuyGoods(nil,nil,"ô”Ã×µÄì`Ë","Rumi's Concoction",true)
-AddYouXianGongPingBuyGoods(nil,nil,"ÉñÂ}°§µ¿","The Sorrow of the Divine",true)
--- AddYouXianGongPingBuyGoods(nil,nil,"ÑªÜ|•NÈA","Ascent From Flesh",true)
-AddYouXianGongPingBuyGoods(nil,nil,"Ô¹ºŞå‘Ôì","Hateforge",true)
-AddYouXianGongPingBuyGoods(nil,nil,"¼ƒ²Å","Pure Talent",true)
--- AddYouXianGongPingBuyGoods(nil,nil,"°¢ÆÀïÂ}»Õ","Atziri's Foible",true)
-AddYouXianGongPingBuyGoods(nil,nil,"ÒâÖ¾ºô†¾","Call of the Brotherhood",true)
-AddYouXianGongPingBuyGoods(nil,nil,nil,"AsenathsMarkFated",true)
-AddYouXianGongPingBuyGoods(nil,nil,nil,"RareAncientConstructDropsAtzirisFoible",true)
-AddYouXianGongPingBuyGoods(nil,nil,nil,"UnbearableWhispers5",true)
-AddYouXianGongPingBuyGoods(nil,nil,nil,"AtzirisMirrorFated",true)
-AddYouXianGongPingBuyGoods(nil,nil,nil,"ItemAbleToBecomesUniqueWhenChanceOrbApplied",true)
-AddYouXianGongPingBuyGoods(nil,nil,nil,"TheFeralLord5",true)
-AddYouXianGongPingBuyGoods(nil,nil,nil,"ThePlaguemaw5",true)
-AddYouXianGongPingBuyGoods(nil,nil,nil,"RollingSixSocketBodyArmourLinksAllSockets",true)
-AddYouXianGongPingBuyGoods(nil,nil,nil,"TheUnbreathingQueen5",true)
-AddYouXianGongPingBuyGoods("¸»Ô£ÅÆ×é","Metadata/Items/DivinationCards/DivinationCardDeck")
-AddYouXianGongPingBuyGoods("»ìãçÊ¯","Metadata/Items/Currency/CurrencyRerollRare",true)
-
-AddYouXianGongPingBuyGoods(nil,nil," –¿¨ÀòÖ®ÑÀ","Arakaali's Fang",true)
-AddYouXianGongPingBuyGoods(nil,nil,"‘Å­é]æi","Fury Valve",true)
-AddYouXianGongPingBuyGoods(nil,nil,"ĞÇ¿ÕÖ®Ó°","Astral Projector",true)
-AddYouXianGongPingBuyGoods(nil,nil,"Å³·òµÄßz®a","Coward's Legacy",true)
-AddYouXianGongPingBuyGoods(nil,nil,"À¢¾ÎÖ®­h","Circle of Guilt",true)
-AddYouXianGongPingBuyGoods(nil,nil,"°¬ –¿¨ÀòÖ®ÑÀ","Arakaali's Fang",true)
-AddYouXianGongPingBuyGoods(nil,nil,"×ğŸÖ®Ó¡","Mark of the Elder",true)
-AddYouXianGongPingBuyGoods(nil,nil,"°º¶÷µÄŸ©À","Arn's Anguish",true)
-AddYouXianGongPingBuyGoods(nil,nil,"¾ŞÑÒÖ®­h","Cyclopean Coil",true)
--- AddYouXianGongPingBuyGoods(nil,nil,"ÑªÜ|•NÈA","Ascent From Flesh",true)
-AddYouXianGongPingBuyGoods(nil,nil,"ÙM –Á_ÓğÒÂ","Farrul's Fur",true)
-AddYouXianGongPingBuyGoods(nil,nil,"Ë¹¿¨ÎÖÖ®³²","Saqawal's Nest",true)
-AddYouXianGongPingBuyGoods(nil,nil,"ˆD¿Ë¹ş¬”±¤‰¾","Tukohama's Fortress",true)
-AddYouXianGongPingBuyGoods(nil,nil,"ÊÄ¼s","Pledge of Hands",true)
-AddYouXianGongPingBuyGoods(nil,nil,"ÔªËØµÄ±Ó×o","Prism Guardian",true)
-AddYouXianGongPingBuyGoods(nil,nil,"¿¨Ë¹ÆÕÀïµÄÔ¹ºŞ","Cospri's Malice",true)
-AddYouXianGongPingBuyGoods(nil,nil,"ØÀ×¿ËµÄ»ğÅcÀ×Ö®˜·","Berek's Respite",true)
-AddYouXianGongPingBuyGoods(nil,nil,"Ì«Æ½","The Halcyon",true)
--- AddYouXianGongPingBuyGoods(nil,nil,"ÏÈ×æÁb½O","The Primordial Chain",true)
-AddYouXianGongPingBuyGoods(nil,nil,"¸£ –Ö®·û","Voll's Devotion",true)
-AddYouXianGongPingBuyGoods(nil,nil,"Ë÷·üÖ®ĞÄ","Xoph's Heart",true)
-AddYouXianGongPingBuyGoods(nil,nil,"¶ÌÆÚ‚ùÈ¯","The Ephemeral Bond",true)
-AddYouXianGongPingBuyGoods(nil,nil,"‘ğÊ¿ßzÎï","Warrior's Legacy",true)
-AddYouXianGongPingBuyGoods(nil,nil,"±¯‘K»ÃÒ•","Calamitous Visions",true)
-AddYouXianGongPingBuyGoods(nil,nil,"³àÓ°‰ôô|","The Red Nightmare",true)
-AddYouXianGongPingBuyGoods(nil,nil,"ÇóÖªµÄŸáÇé","Inspired Learning",true)
-AddYouXianGongPingBuyGoods(nil,nil,"ÏÈ×æÁ¦Á¿","Primordial Might",true)
-AddYouXianGongPingBuyGoods(nil,nil,"Ëé»êÕß","Soul Ripper",true)
-AddYouXianGongPingBuyGoods(nil,nil,"œçÈÕ","Dying Sun",true)
-AddYouXianGongPingBuyGoods(nil,nil,"Æ¿ÖĞĞÅÑö","Bottled Faith",true)
-AddYouXianGongPingBuyGoods(nil,nil,"ÊÉ a®Y","Cinderswallow Urn",true)
--- AddYouXianGongPingBuyGoods(nil,nil,"ºŞÒâ","Taste of Hate",true)
-AddYouXianGongPingBuyGoods(nil,nil,"ô”Ã×µÄì`Ë","Rumi's Concoction",true)
-AddYouXianGongPingBuyGoods(nil,nil,"ÉñÂ}°§µ¿","The Sorrow of the Divine",true)
--- AddYouXianGongPingBuyGoods(nil,nil,"ÑªÜ|•NÈA","Ascent From Flesh",true)
-AddYouXianGongPingBuyGoods(nil,nil,"Ô¹ºŞå‘Ôì","Hateforge",true)
-AddYouXianGongPingBuyGoods(nil,nil,"¼ƒ²Å","Pure Talent",true)
-AddYouXianGongPingBuyGoods(nil,nil,"°¢ÆÀïÂ}»Õ","Atziri's Foible",true)
-AddYouXianGongPingBuyGoods(nil,nil,"ÒâÖ¾ºô†¾","Call of the Brotherhood",true)
-AddYouXianGongPingBuyGoods("¸»Ô£ÅÆ×é","Metadata/Items/DivinationCards/DivinationCardDeck",nil,nil,true)
-AddYouXianGongPingBuyGoods("»ìãçÊ¯","Metadata/Items/Currency/CurrencyRerollRare",nil,nil,true)
-
-AddYouXianGongPingBuyGoods(nil,nil,"ª{ÑÛµÄ˜sÒ«Ö®¶Ü","Lioneye's Remorse",true)
-
-
-
-AddYouXianGongPingBuyGoods("åXÅc™à","Metadata/Items/DivinationCards/DivinationCardWealthAndPower",nil,nil,true)
-AddYouXianGongPingBuyGoods("²ßÂÔ¼Ò","Metadata/Items/DivinationCards/DivinationCardTheStrategist",nil,nil,true)
-AddYouXianGongPingBuyGoods("Â}Í½Ö®Ø”","Metadata/Items/DivinationCards/DivinationCardTheSaintsTreasure",nil,nil,true)
-AddYouXianGongPingBuyGoods("·ä³²Öª×R","Metadata/Items/DivinationCards/DivinationCardTheHiveOfKnowledge",nil,nil,true)
-AddYouXianGongPingBuyGoods("¿Ö‘ÖÖ®ÑÛ","Metadata/Items/DivinationCards/DivinationCardTheEyeOfTerror",nil,nil,true)
-AddYouXianGongPingBuyGoods("Æ½ÈÀ","Metadata/Items/DivinationCards/DivinationCardTheVast",nil,nil,true)
-AddYouXianGongPingBuyGoods("È¼ŸıÖ®Ñª","Metadata/Items/DivinationCards/DivinationCardBurningBlood",nil,nil,true)
-AddYouXianGongPingBuyGoods("ø™œÏ","Metadata/Items/DivinationCards/DivinationCardTheGulf",nil,nil,true)
-AddYouXianGongPingBuyGoods("°¬Ë¹ÓÈ‚µÄˆó³ê","Metadata/Items/DivinationCards/DivinationCardAzyransReward",nil,nil,true)
-AddYouXianGongPingBuyGoods("±³ÅÑ","Metadata/Items/DivinationCards/DivinationCardTheBetrayal",nil,nil,true)
-AddYouXianGongPingBuyGoods("Õ„ÅĞ","Metadata/Items/DivinationCards/DivinationCardTheBargain",nil,nil,true)
-AddYouXianGongPingBuyGoods("«CÈËµÄª„Ùp","Metadata/Items/DivinationCards/DivinationCardHuntersReward",nil,nil,true)
-AddYouXianGongPingBuyGoods("ŒWĞg½ç","Metadata/Items/DivinationCards/DivinationCardTheAcademic",nil,nil,true)
-AddYouXianGongPingBuyGoods("Å®Íõ","Metadata/Items/DivinationCards/DivinationCardTheQueen",nil,nil,true)
-AddYouXianGongPingBuyGoods("²¡»¼","Metadata/Items/DivinationCards/DivinationCardThePatient",nil,nil,true)
-AddYouXianGongPingBuyGoods("ËÆÔøÏà×R","	Metadata/Items/DivinationCards/DivinationCardAFamiliarCall",nil,nil,true)
-AddYouXianGongPingBuyGoods("À×»ğ","Metadata/Items/DivinationCards/DivinationCardTheSparkAndTheFlame",nil,nil,true)
-AddYouXianGongPingBuyGoods("Å®ÎäÉñ","Metadata/Items/DivinationCards/DivinationCardTheValkyrie",nil,nil,true)
-AddYouXianGongPingBuyGoods("Øˆßä×h•ş","Metadata/Items/DivinationCards/DivinationCardCouncilOfCats",nil,nil,true)
-AddYouXianGongPingBuyGoods("ÆĞÌáÊÄ¼s","Metadata/Items/DivinationCards/DivinationCardSambodhisVow",nil,nil,true)
-AddYouXianGongPingBuyGoods("ÓXĞÑ","Metadata/Items/DivinationCards/DivinationCardTheAwakened",nil,nil,true)
-AddYouXianGongPingBuyGoods("Ò÷ß[èFÈË","Metadata/Items/DivinationCards/DivinationCardTheIronBard",nil,nil,true)
-AddYouXianGongPingBuyGoods("ÓÕÈËµÄ½±ÉÍ","Metadata/Items/DivinationCards/DivinationCardAlluringBounty",nil,nil,true)
-AddYouXianGongPingBuyGoods("Æú²ÆÇóÉú","Metadata/Items/DivinationCards/DivinationCardAbandonedWealth",nil,nil,true)
-AddYouXianGongPingBuyGoods("³ç¸ßÊ¯ËéÆ¬","Metadata/Items/Currency/CurrencyAddModToRareShard",nil,nil,true)
-AddYouXianGongPingBuyGoods("ÖÒ","Metadata/Items/DivinationCards/DivinationCardThePriceOfLoyalty",nil,nil,true)
-AddYouXianGongPingBuyGoods("ËéÁÑ´óµÛ","Metadata/Items/DivinationCards/DivinationCardTheBrittleEmperor",nil,nil,true)
-AddYouXianGongPingBuyGoods("ÉñÂ}Ê¯","Metadata/Items/Currency/CurrencyModValues",nil,nil,true)
-AddYouXianGongPingBuyGoods("×dÍıÓñ","Metadata/Items/Currency/CurrencyAfflictionOrbGeneric")
-AddYouXianGongPingBuyGoods("ÆÆÁÑ»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingMirror")
-AddYouXianGongPingBuyGoods("Ñªn»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingVaal")
-AddYouXianGongPingBuyGoods("µñ×Á»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingGemLevel")
-AddYouXianGongPingBuyGoods("µñ¼y»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingCorruptEssence")
-AddYouXianGongPingBuyGoods("¸ÄÔìÊ¯","Metadata/Items/Currency/CurrencyRerollMagic")
-AddYouXianGongPingBuyGoods("µã½ğÊ¯","Metadata/Items/Currency/CurrencyUpgradeToRare")
-
--- SetZhuangBeiBoss(bossName,srvName)--ÉèÖÃ·¢×°²Ö¿âºÅ bossName=·¢×°ºÅÃû×Ö ×Ö·û´®ĞÍ srvName=·şÎñÆ÷Ãû×Ö£¬Èç¹û¶à¸öÇøÓÃÍ¬Ò»·İÅäÖÃµÄ»°ÌîÉÏ·şÎñÆ÷Ãû×Ö¿Éµ¥¶ÀÇø·Ö Èç¹û²»ÊÇ¿ÉºöÂÔ »òÌînil 
---SetZhuangBeiBoss("×ÔÇ¿²»Ï¢µÄ°®Çé","½û¼ÉÂ}Óò")--·¢×°±¸µÄ²Ö¿âºÅ Èç¹û²»ĞèÒª ¾Í×¢ÊÍµô
---Ìí¼ÓÔÚ×öµ½Ä³¸öÈÎÎñÊ±¹ºÂò¼¼ÄÜ±¦Ê¯
+--SetNeedAddTianFu(tfStr)--ÉèÖÃÒì½çÌì¸³¼Óµã 
+SetNeedAddTianFu("Òì½çµØÍ¼Ìì¸³=atlas_boss_adjacent_maps_2-ÏààµØˆDµôÂä™CÂÊ|atlas_path_11-ÏààµØˆDµôÂä™CÂÊ|atlas_path_23_-ÏààµØˆDµôÂä™CÂÊ|atlas_boss_adjacent_maps_1-ÏààµØˆDµôÂä™CÂÊ|atlas_boss_adjacent_maps_8-ÏààµØˆDµôÂä™CÂÊ|atlas_kirac_1_10-»ùÀ­¿ËÈÎ„Õ™CÂÊ|atlas_kirac_1_9-»ùÀ­¿ËÈÎ„Õ™CÂÊ|atlas_zana_1_6-ÖØüc‚É²ì|atlas_kirac_1_8_-»ùÀ­¿ËÈÎ„Õ™CÂÊ|atlas_kirac_1_7-»ùÀ­¿ËÈÎ„Õ™CÂÊ|atlas_path_96-µôÂäÑ}ÑuµØˆD|atlas_map_tier_5_1-¸ßëAµØˆD™CÂÊ|atlas_map_tier_5_2-¸ßëAµØˆD™CÂÊ|atlas_map_tier_4_1-¸ßëAµØˆD™CÂÊ|atlas_map_tier_3_1-¸ßëAµØˆD™CÂÊ|atlas_map_tier_3_2-¸ßëAµØˆD™CÂÊ|atlas_path_94-µôÂäÑ}ÑuµØˆD|atlas_map_drops_8-µôÂäÑ}ÑuµØˆD|atlas_path_92-µôÂäÑ}ÑuµØˆD|atlas_path_61-ÎïÆ·”µÁ¿|atlas_path_44-ÎïÆ·”µÁ¿|atlas_path_35-ÎïÆ·”µÁ¿|atlas_path_90-µôÂäÑ}ÑuµØˆD|atlas_keystone_smallnodes_1-Á÷ÀËÖ®Â·|atlas_path_38-ÏààµØˆDµôÂä™CÂÊ|atlas_path_21-ÏààµØˆDµôÂä™CÂÊ|atlas_path_27-ÏààµØˆDµôÂä™CÂÊ|atlas_map_tier_2_1-¸ßëAµØˆD™CÂÊ|atlas_map_tier_2_2-¸ßëAµØˆD™CÂÊ|atlas_path_37-ÏààµØˆDµôÂä™CÂÊ|atlas_path_30-ÏààµØˆDµôÂä™CÂÊ|atlas_path_18-ÏààµØˆDµôÂä™CÂÊ|atlas_map_tier_1_2_-¸ßëAµØˆD™CÂÊ|atlas_map_tier_1_1-¸ßëAµØˆD™CÂÊ|atlas_path_6-ÏààµØˆDµôÂä™CÂÊ|atlas_path_8-ÏààµØˆDµôÂä™CÂÊ|atlas_path_5-ÏààµØˆDµôÂä™CÂÊ|atlas_path_13-ÏààµØˆDµôÂä™CÂÊ|atlas_path_10-ÏààµØˆDµôÂä™CÂÊ|atlas_path_19-ÏààµØˆDµôÂä™CÂÊ|atlas_path_1-ÏààµØˆDµôÂä™CÂÊ|atlas_path_20-ÏààµØˆDµôÂä™CÂÊ|atlas_path_9-ÏààµØˆDµôÂä™CÂÊ|atlas_path_22-ÏààµØˆDµôÂä™CÂÊ|atlas_path_12-ÏààµØˆDµôÂä™CÂÊ|atlas_path_24_-ÏààµØˆDµôÂä™CÂÊ|atlas_path_16-ÏààµØˆDµôÂä™CÂÊ|atlas_path_25_-ÏààµØˆDµôÂä™CÂÊ|atlas_map_drops_4-µôÂäÑ}ÑuµØˆD|atlas_path_83-µôÂäÑ}ÑuµØˆD|atlas_map_drops_5-µôÂäÑ}ÑuµØˆD|atlas_path_84-µôÂäÑ}ÑuµØˆD|atlas_path_95-µôÂäÑ}ÑuµØˆD|atlas_map_drops_9-µôÂäÑ}ÑuµØˆD|atlas_map_drops_15-µôÂäÑ}ÑuµØˆD|atlas_path_82-µôÂäÑ}ÑuµØˆD|atlas_map_drops_14-µôÂäÑ}ÑuµØˆD|atlas_map_drops_16-µôÂäÑ}ÑuµØˆD|atlas_map_drops_1-µôÂäÑ}ÑuµØˆD|atlas_map_drops_2-µôÂäÑ}ÑuµØˆD|atlas_map_drops_20-µôÂäÑ}ÑuµØˆD|")
 
 --Ìí¼ÓÔÚ×öµ½Ä³¸öÈÎÎñÊ±¹ºÂò¼¼ÄÜ±¦Ê¯
 --AddNeedBuySkillTime(city,task)-- city=³ÇÊĞË÷ÒıÊıÖµĞÍ 1-11 task=ÈÎÎñÀàÃû ×Ö·û´®ĞÍ ÈÎÎñÀàÃû¿ÉÒÔÔÚµ÷ÊÔ´°¿ÚÖĞµã»÷ ËùÓĞÈÎÎñ °´Å¥²é¿´µ½
@@ -241,17 +49,24 @@ AddNeedBuySkillTime(1,"a1q6")
 AddNeedBuySkillTime(1,"a1q9")
 AddNeedBuySkillTime(1,"a1q7")
 ----A2
-AddNeedBuySkillTime(2,"a2q7")
+AddNeedBuySkillTime(2,"a2q11")
+AddNeedBuySkillTime(1,"a2q11")
+AddNeedBuySkillTime(2,"a2q6")
 AddNeedBuySkillTime(1,"a2q6")
+AddNeedBuySkillTime(2,"a2q7")
+AddNeedBuySkillTime(1,"a2q7")
+AddNeedBuySkillTime(2,"a2q4")
+AddNeedBuySkillTime(1,"a2q4")
 AddNeedBuySkillTime(2,"a2q9")
 AddNeedBuySkillTime(1,"a2q9")
 AddNeedBuySkillTime(2,"a2q2")
-AddNeedBuySkillTime(1,"a2q8")
 AddNeedBuySkillTime(1,"a2q2")
+AddNeedBuySkillTime(2,"a2q8")
+AddNeedBuySkillTime(1,"a2q8")
 -----A3
 AddNeedBuySkillTime(2,"a3q1")
-AddNeedBuySkillTime(2,"a3q7")
 AddNeedBuySkillTime(2,"a3q11")
+AddNeedBuySkillTime(1,"a3q3")
 AddNeedBuySkillTime(1,"a3q4")
 AddNeedBuySkillTime(3,"a3q8")
 AddNeedBuySkillTime(3,"a3q9")
@@ -259,6 +74,8 @@ AddNeedBuySkillTime(3,"a3q12")
 AddNeedBuySkillTime(3,"a3q10")
 ----A4
 AddNeedBuySkillTime(3,"a4q2")
+AddNeedBuySkillTime(2,"a4q2")
+AddNeedBuySkillTime(1,"a4q2")
 AddNeedBuySkillTime(3,"a4q6")
 AddNeedBuySkillTime(3,"a4q3")
 AddNeedBuySkillTime(3,"a4q4")
@@ -266,10 +83,12 @@ AddNeedBuySkillTime(4,"a4q5")
 AddNeedBuySkillTime(3,"a4q1")
 ----A5
 AddNeedBuySkillTime(3,"a5q3")
+AddNeedBuySkillTime(2,"a5q3")
+AddNeedBuySkillTime(1,"a5q3")
 AddNeedBuySkillTime(4,"a5q5")
 
 AddNeedBuySkillTime(6,"a6q1")	--ÔÚµÚ6ÕÂµÄ¾ªº£Ö®ÍõÊ± ¼ì²â¹ºÂòÒ»±é
-AddNeedBuySkillTime(6,"a6q2")
+AddNeedBuySkillTime(6,"a6q2")f
 AddNeedBuySkillTime(6,"a6q3")
 AddNeedBuySkillTime(6,"a6q5")
 AddNeedBuySkillTime(6,"a7q2")
@@ -277,54 +96,39 @@ AddNeedBuySkillTime(6,"a8q2")
 AddNeedBuySkillTime(6,"a10q2")	--µÚ10ÕÂµÄËÀÍöºÍÖØÉúÈÎÎñ ¼ì²â¹ºÂòÒ»±é
 AddNeedBuySkillTime(11,"a11q1")	--ÔÚÊ°È¡ËéÆ¬ Õâ¸öÈÎÎñÊ±¼ì²â¹ºÂòÒ»±é
 
+
 --Ò©Æ¿°Ú·Å
--- SetNeedFlaskData(pos,flask)--ÉèÖÃÒ©  pos=Î»ÖÃ 1-5  flask=Ò© ×Ö·û´®ĞÍ£¬Ö§³ÖÒÔÏÂ (ÉúÃüÒ©¼Á,Ä§Á¦Ò©¼Á,¸´ºÏÒ©¼Á,±¦×êÒ©¼Á,ºìÓñÒ©¼Á,À¶ÓñÒ©¼Á,»ÆÓñÒ©¼Á,¼áÑÒÒ©¼Á,Ë®ÒøÒ©¼Á,×Ï¾§Ò©¼Á,Ê¯Ó¢Ò©¼Á,´äÓñÒ©¼Á,Ê¯»¯Ò©¼Á,º£À¶Ò©¼Á,ÃÔÎíÒ©¼Á,Áò»ÇÒ©¼Á,ÕæÒøÒ©¼Á,»ÒÑÒÒ©¼Á)
-SetNeedFlaskData(1,"ÉúÃüÒ©¼Á","ÃÜ·âÖ®,FlaskBleedCorruptingBloodImmunity1",20)
-SetNeedFlaskData(2,"ÉúÃüÒ©¼Á","ÖÎ°KÖ®,FlaskPoisonImmunity3",20)
-SetNeedFlaskData(3,"Ä§Á¦Ò©¼Á")
-SetNeedFlaskData(4,"¼áÑÒÒ©¼Á")
-SetNeedFlaskData(5,"Ë®ÒøÒ©¼Á")
+--SetNeedFlaskData(pos,flask,modsData,minLv)--ÉèÖÃÒ©Æ¿°Ú·Å
+SetNeedFlaskData(1,"ÉúÃüÒ©¼Á","ŸáÇéÑóÒçµÄ,FlaskPartialInstantRecovery3|ÃÜ·âÖ®,FlaskBleedCorruptingBloodImmunity1",90)
+SetNeedFlaskData(2,"Ä§Á¦Ò©¼Á","ÄÍ¾ÃµÄ,FlaskEffectNotRemovedOnFullMana1|ŠWĞgŸÖ®FlaskBuffReducedManaCostWhileHealing4",90)
+SetNeedFlaskData(3,"±¦×êÒ©¼Á","nil")
+SetNeedFlaskData(4,"×Ï¾§Ò©¼Á","nil")
+SetNeedFlaskData(5,"Ë®ÒøÒ©¼Á","nil")
 
 --AddNotMakeTaskData(taskClassName)--Ìí¼Ó²»ĞèÒª×öµÄÈÎÎñ taskClassNameÎªÈÎÎñÀàÃû
 AddNotMakeTaskData("a2q5")--ÃÎÖĞÊ¥µØ
 AddNotMakeTaskData("a2q10")--°×É«¾ŞÊŞ
 AddNotMakeTaskData("a3q13")--ÖØÉúµÄ¿ÊÍû
-AddNotMakeTaskData("a3q12")--ÃüÔËÖ®Óï
+--AddNotMakeTaskData("a3q12")--ÃüÔËÖ®Óï
 AddNotMakeTaskData("a6q5")--±ÏË¹ÌØ´«Ææ
+--AddNotMakeTaskData("a7q8")--¹ÅË¹ÌØµÄÄ¹±®
 AddNotMakeTaskData("a7q5")--ÒøÉ«µõ×¹
-AddNotMakeTaskData("a7q8")--¹ÅË¹ÌØµÄÄ¹±®
 AddNotMakeTaskData("a8q5")--ÍßË¹ÌáÀïÖ®Òí
 AddNotMakeTaskData("a9q4")--ÃüÔËÖ®Àú
 AddNotMakeTaskData("a10q4")--ÎŞ°®¾É»ê
 AddNotMakeTaskData("a10q5")--Éîº£Ö®Â·
 
--- SetTaskMiGongData(taskClassName,taskIndex,migongIndex)--ÉèÖÃÅÜÍ¼Ê±ÃÔ¹¬ taskClassName=ÈÎÎñÀàÃû taskIndex=ÈÎÎñË÷Òı nilÎªºöÂÔ£¬Ö»Æ¥ÅäÈÎÎñÀàÃû migongIndexÎªÃÔ¹¬Ë÷ÒıÌî 1=µÚÒ»´ÎÃÔ¹¬ 2=µÚ¶ş´ÎÃÔ¹¬
-SetTaskMiGongData("a4q3",nil,1)--µÚ5ÕÂ ÅÜÃÔ¹¬1
-SetTaskMiGongData("a9q3",nil,2)--µÚ9ÕÂ ÅÜÃÔ¹¬2
-SetTaskMiGongDataByLv(74,3)--µ½´ïµÈ¼¶ÅÜÃÔ¹¬3
 
--- SetZhongShenData(className1,className2)--ÉèÖÃÒª¼ÓµÄÖÚÉñµîÊı¾İ className1=¸ß½×Êı¾İÀàÃû ×Ö·û´®ĞÍ className2=µÍ½×Êı¾İÀàÃû ×Ö·û´®ĞÍ 
+--AddUseGoodsData(name,className)--Ìí¼ÓÒªÊ¹ÓÃµÄÎïÆ·±ØĞëÌîÒ»¸ö£¬ºöÂÔÌînil --name=ÎïÆ·Ãû×Ö className=ÎïÆ·ÀàÃû 
+
+
+
+--SetZhongShenData(className1,className2)--ÉèÖÃÒª¼ÓµÄÖÚÉñµîÊı¾İ className1=¸ß½×Êı¾İÀàÃû ×Ö·û´®ĞÍ className2=µÍ½×Êı¾İÀàÃû ×Ö·û´®ĞÍ 
 SetZhongShenData("Lunaris","Gruthkul")--ÉèÖÃÔÂÓ°Å®ÉñÖ®»êÓë¾øÍûÖ®Ä¸ ¸ñÂ³Ë¿¿ËÖ®»ê
 
-SetChatData(1,"Ann, do you want fragments?|++|Take Mara|Scarab|Card group++|Thief's coin|Tarnish illusion|Delirium fragment|Oiling|spider|Does Ann have it now|Things are too difficult to hit QAQ|I'm lucky today|Are you there++|I found something good|Probably not today|I think there should be|Make some at will|°²°² ÊÕËéÆ¬Âğ?|½ñÌìÔËÆøÕæºÃ|»¹ÓĞĞèÒªÂğ?|¸Ï½ôÀ´|Õâ¸ö¿ÉÒÔÚÀ|66|ÓĞºÃ¶«Î÷Å¶|Õâ¸öºÃÏñ»¹¿ÉÒÔ|°İÍĞ¿ìµãĞĞÂğ|»¹ÊÕÂğ?|Õâ¸öÄã¿´¿´?|»¹ÓĞÂğ|ÄãÄÇ±ß»¹ÓĞÃ»ÓĞ|ÏëÏë»¹ÕæÊÇºÃ Äã¿´¿´ĞèÒªµãÊ²Ã´|ÓĞ¶àÉÙ ¿ÉÒÔ¶¼¸ø Ã»¹ØÏµ|XDD ++|µÁÔô±ÒÊÕÂğ|»¹ĞèÒªµãÊ²Ã´¶«Î÷ ÎÒ¿´¿´»¹ÓĞÃ»ÓĞ|¸Ğ¶÷|·¢²Æ·¢²Æ|666|¹§Ï²·¢²Æ|Ò°ÍâÅçµÄÒ°Éú¶«Î÷|Ôç|Çï·çÆğ£¬º®Á÷¼±£»È°ÅóÓÑ£¬°®ÉíÌå|Ôç³¿Ğ¦Ò»Ğ¦È«ÌìÉú»îÓĞÇéµ÷|º£ÄÚ´æÖª¼º|ÄãÊÇ¿ìÀÖµÄÌì²Å|ÔÛÁ©¹ØÏµÔõÑù£¿|Äã¶®µÄ£¡|Åî²ªµÄ¼¤Çé|È÷ÍÑµÄ±íÇé|ĞÄÇéÊ±Ê±¶¼Ë³³©|Î¢Ğ¦ÔÚ°µÁµÄã|¿ªĞÄÔÚ×·ÇóÄã|Ò»½ï»¨Éú¶ş½ïÔæ|Èı½ïéÙ×ÓËÄ½ï½¶|Îå½ïÆÏÌÑÁù½ï³È|°Ë½ïÃ¢¹ûÊ®½ï¹Ï|ĞÒ¸£|¼ÅÄ¯|ÈËÉúÓĞÒ»±­¾Æ£¬Ö»ºÈÒ»¿Ú¾Í»á×íµ¹|ÀÍ¶¯¹âÈÙ|°®ÉíÌå£»¾ÆÒªÉÙ£¬ÑÌÒªÏ¡£»ÇÚ¶ÍÁ¶|ÎŞÂÛÊ±¹âÈçºÎÃàÑÓ|»ñµÃĞÒÔË|»ñµÃÖÇ»Û|»ñµÃ¿ìÀÖ|»ñµÃÓÑÒê|²»¹¼¸º×Ô¼º£¬²»½«¾ÍÉú»î|Îª×Ô¼ººÈ²Ê£¬Îª×Ô¼º¸Ğ¶¯|ÎŞÂÛºÎÊ±£¬¶¼ÒªÌ¤ÊµµØ×ßºÃÃ¿Ò»²½|ÈÏÕæÏ¸ÖÂµÄ¹ıºÃÃ¿Ò»Ìì|Å¬Á¦ÓÀÔ¶²»»áÆ­ÈË|×ÜÓĞÒ»ÌìÄã»á·¢ÏÖ£¬ÄãµÄ¼á³Ö»Ø±¨ÁËÄãµÄÆÚĞí|Å¬Á¦Ó¦¸ÃÊÇÒ»ÖÖÏ°¹ß£¬¶ø²»ÊÇÒ»Ê±ĞËÆğ|¿´²»µ½ÃÀºÃ£¬ÊÇÒòÎªÄãÃ»ÓĞ¼á³Ö×ßÏÂÈ¥|ÈËÉú¹óÔÚĞĞ¶¯£¬³ÙÒÉ²»¾öÊ±²»·ÁÏÈÂõ³öÒ»Ğ¡²½|Ã¿Ìì¶¼Òª×ö×î°ôµÄ×Ô¼º|²»¿ª¿Ú£¬Ã»ÓĞÈËÖªµÀÄãÏëÒªÊ²Ã´|²»È¥×ö£¬ÈÎºÎÏë·¨¶¼Ö»ÔÚÄÔº£ÀïÓÎÓ¾|²»Âõ³ö½Å²½£¬ÓÀÔ¶ÕÒ²»µ½ÄãÇ°½øµÄ·½Ïò|ÆäÊµÄãºÜÇ¿£¬Ö»ÊÇÀÁ¶è°ïÁËÄãµ¹Ã¦|Ï£ÍûÄãÃ¿ÌìĞÑÀ´¶¼ÊÇÑô¹âµÄ|Èç¹ûÊÂÓëÔ¸Î¥£¬¾ÍÏàĞÅÉÏÌìÒ»¶¨ÁíÓĞ°²ÅÅ|ËùÓĞÊ§È¥µÄ£¬¶¼»áÒÔÁíÍâÒ»ÖÖ·½Ê½¹éÀ´|Å¬Á¦ºÍÉÏ½ø|²»½«¾ÍÉú»î|¶ÁÊéºÜÀÛ£¬¿¼ÊÔºÜ¿à¡£µ«ÊÇ»¹ÊÇÒª¼ÌĞø¼ÓÓÍÅ¬Á¦|¼ÈÈ»Ï²»¶ÓÅĞãµÄÈËÄÇÄã×Ô¼º¾Í±ğ¶éÂä²»Î·¾åÎ´Öª²»¹¼¸ºĞÒÔË¡°ÎÒÏ£ÍûÎÒ°®µÄÈË¼ÇµÃÎÒ¡±|Å¬Á¦Íê³É×Ô¼ºÏëÒªÍê³ÉµÄÊÂÇé£¬²»¹¼¸ºÄê»ª£¬²»¹¼¸ºÊ±¹â£¡ËäÈ»Ê±¼ä¹ı°ë£¬µ«ÒÀÈ»Å¬Á¦Ö´×Å£¡|°×¾Ô¹ıÏ¶£¬Ê±¹âÜóÜÛ|Äê»ªÀÏÈ¥Ò²²»¹ıÊÇµ¯Ö¸Ò»»Ó¼ä¶øÒÑ|°´×Ô¼ºÏ²»¶µÄ·½Ê½¹ıÈÕ×Ó£¬²»¹¼¸º¾ÍÊÇ×îºÃ¡­¡­|Î´À´¿ÉÆÚ£¡|Ê²Ã´Ò²×ö²»ÁË£¬ĞÄÀïÈ´ºÜ²»Êæ·ş£¬Ö»Ô¸ºÃºÃµÄ£¡|Ìı¾¡Çé¸è£¬×Ö×Ö¾ä¾ä¿Ì¹ÇÉËÈË|Á³ÉÏµÄ¿ìÀÖ£¬±ğÈË¿´µÃµ½£¬ĞÄÀïµÄÍ´ÓÖÓĞË­ÄÜ¸Ğ¾õµ½¡£|Éú»îµÄ±¯¾çĞÔ£¬²»ÔÚÓÚÒ»¸öÈËÊäÁË£¬¶øÔÚÓÚËû²îÒ»µãÓ®ÁË¡£|¶¼ËµĞÖµÜÈçÊÖ×ã¡£¿ÉÊÇ£¬¸çÊÇÄãÃÇ»»²»ÆğµÄ¼ÙÖ«¡£|ÎÒĞÖµÜËµ£¬Ë¿Íà²»ÊÇÃ¿¸öÅ®º¢×Ó¶¼¿ÉÒÔ´©µÄ¡£|ÎÒÃÇ×ÜÊÇÔÚ¿ªÊ¼Ê±ºÁÎŞËùÎ½£¬ÔÚ½áÊøÊ±Í´³¹ĞÄ·Ç")
-
-SetNeedFengYinYeShou(nil,"Metadata/Monsters/LeagueBestiary/TigerBestiary")--ÙM –Á_ÃÍ»¢»Ã«F
-SetNeedFengYinYeShou(nil,"Metadata/Monsters/LeagueBestiary/Avians/MarakethBirdBestiary")--Ë¹¿¨ÎÖërøB
-SetNeedFengYinYeShou(nil,"Metadata/Monsters/LeagueBestiary/SpiderPlagueBestiary")--·Æ¶÷½zÒß²¡Ö©Öë
-SetNeedFengYinYeShou(nil,"Metadata/Monsters/LeagueBestiary/SpiderPlatedBestiary")--·Æ¶÷½z»ìÑªÖ©Öë
-SetNeedFengYinYeShou(nil,"Metadata/Monsters/LeagueBestiary/GemFrogBestiary")--¿ü –Éºıˆòá
-SetNeedFengYinYeShou(nil,"Metadata/Monsters/LeagueBestiary/TigerBestiarySpiritBoss")--³õÊ¼Ö®µØÙM –Á_
-SetNeedFengYinYeShou(nil,"Metadata/Monsters/LeagueBestiary/SpiderPlatedBestiarySpiritBoss")--³õÊ¼Ö®Ò¹·Æ¶÷½z
--- SetNeedFengYinYeShou(nil,"Metadata/Monsters/LeagueBestiary/BestiarySpiker")--ÙM –Á_¾Ş«F
--- SetNeedFengYinYeShou(nil,"Metadata/Monsters/LeagueBestiary/RootSpiderBestiary_")--·Æ¶÷½zÍÌÊÉ«F
--- SetNeedFengYinYeShou(nil,"Metadata/Monsters/LeagueBestiary/SnakeBestiary2")--Ë¹¿¨ÎÖÊÉÑª¶¾Éß
--- SetNeedFengYinYeShou(nil,"Metadata/Monsters/LeagueBestiary/InsectSpawnerBestiary")--·Æ¶÷½zÅ®»Ê
--- SetNeedFengYinYeShou(nil,"Metadata/Monsters/LeagueBestiary/SquidBestiary")--¿ü –Éº¿´ÊØÕß
--- SetNeedFengYinYeShou(nil,"Metadata/Monsters/LeagueBestiary/SandLeaperBestiary")--·Æ¶÷½z“vyÕß
-
 ------------------´æ²Ö·ÖÀà
--- SetSaveIndex(saveType,pageName,goodsName,goodsClassName,wordName,wordClassName,pageType)--ÉèÖÃ´æ²ÖÒ³Ãæ 
--- SaveType ÎïÆ·ÀàĞÍ ×Ö·û´®ĞÍ Ö§³ÖÒÔÏÂÖÖÀà ºöÂÔÌînil ¶àÖÖÀàĞÍÒÔ|·Ö¿ª -- SaveType ÀàĞÍ Ö§³ÖÒÔÏÂÖÖÀà ¶àÖÖÀàĞÍÒÔ|·Ö¿ª ÉúÃüÒ©¼Á|Ä§Á¦Ò©¼Á|¸´ºÏÒ©¼Á|Í¨»õ|ÏîÁ´|½äÖ¸|×¦|Ø°Ê×|·¨ÕÈ|µ¥ÊÖ½£|Ï¸½£|µ¥ÊÖ¸«|µ¥ÊÖ´¸|·ûÎÄØ°Ê×|¶ÌÕÈ|Õ½ÕÈ|¹­|³¤ÕÈ|Ë«ÊÖ½£|Ë«ÊÖ¸«|Ë«ÊÖ´¸|Ö÷¶¯¼¼ÄÜ±¦Ê¯|¸¨Öú¼¼ÄÜ±¦Ê¯|¼ı´ü|Ñü´ø|ÊÖÌ×|Ğ¬×Ó|ÒÂ·ş|Í·¿ø|¶Ü|Ğ¡ĞÍÊ¥Îï|ÖĞĞÍÊ¥Îï|´óĞÍÊ¥Îï|¿É¶ÑµşÍ¨»õ|ÈÎÎñÎïÆ·|¶ÌÕÈ|¹¦ÄÜÒ©¼Á|±©»÷Ò©¼Á|Òì½çµØÍ¼||Óã¸Í|µØÍ¼ËéÆ¬|²ØÉí´¦×°ÊÎ|ÉÌ³ÇÎïÆ·|µÁÔôÊÎÆ·Öé±¦|ÃüÔË¿¨|ÃÔ¹¬ÎïÆ·|ÃÔ¹¬ÊÎÆ·|Òì½çÃÔ¹¬ÎïÆ·|ÁÑÏ¶Ö®Ê¯|Èü¼¾Ê¯|ÉñÁéÖ®»ê|´«Ææ×°±¸ËéÆ¬|ÉîÔ¨Öé±¦|´©Ô½Í¨»õ|µØĞÄÌ½Ë÷£º¿ÉÏâÇ¶µÄÍ¨»õ|ÔĞÓıÊ¯|ËéÆ¬|ÆÆËéÖ®ĞÄ|·ûÎÄØ°Ê×|Õ½ÕÈ|µØĞÄÌ½Ë÷¿É¶Ñµş¿É²åÈëÍ¨»õ|
+--SetSaveIndex(saveType,pageName,goodsName,goodsClassName,wordName,wordClassName,pageType)--ÉèÖÃ´æ²ÖÒ³Ãæ 
+--saveType ÎïÆ·ÀàĞÍ ×Ö·û´®ĞÍ Ö§³ÖÒÔÏÂÖÖÀà ºöÂÔÌînil ¶àÖÖÀàĞÍÒÔ|·Ö¿ª --saveType ÀàĞÍ Ö§³ÖÒÔÏÂÖÖÀà ¶àÖÖÀàĞÍÒÔ|·Ö¿ª ÉúÃüÒ©¼Á|Ä§Á¦Ò©¼Á|¸´ºÏÒ©¼Á|Í¨»õ|ÏîÁ´|½äÖ¸|×¦|Ø°Ê×|·¨ÕÈ|µ¥ÊÖ½£|Ï¸½£|µ¥ÊÖ¸«|µ¥ÊÖ´¸|·ûÎÄØ°Ê×|¶ÌÕÈ|Õ½ÕÈ|¹­|³¤ÕÈ|Ë«ÊÖ½£|Ë«ÊÖ¸«|Ë«ÊÖ´¸|Ö÷¶¯¼¼ÄÜ±¦Ê¯|¸¨Öú¼¼ÄÜ±¦Ê¯|¼ı´ü|Ñü´ø|ÊÖÌ×|Ğ¬×Ó|ÒÂ·ş|Í·¿ø|¶Ü|Ğ¡ĞÍÊ¥Îï|ÖĞĞÍÊ¥Îï|´óĞÍÊ¥Îï|¿É¶ÑµşÍ¨»õ|ÈÎÎñÎïÆ·|¶ÌÕÈ|¹¦ÄÜÒ©¼Á|±©»÷Ò©¼Á|Òì½çµØÍ¼||Óã¸Í|µØÍ¼ËéÆ¬|²ØÉí´¦×°ÊÎ|ÉÌ³ÇÎïÆ·|Öé±¦|ÃüÔË¿¨|ÃÔ¹¬ÎïÆ·|ÃÔ¹¬ÊÎÆ·|Òì½çÃÔ¹¬ÎïÆ·|ÁÑÏ¶Ö®Ê¯|Èü¼¾Ê¯|ÉñÁéÖ®»ê|´«Ææ×°±¸ËéÆ¬|ÉîÔ¨Öé±¦|´©Ô½Í¨»õ|µØĞÄÌ½Ë÷£º¿ÉÏâÇ¶µÄÍ¨»õ|ÔĞÓıÊ¯|ËéÆ¬|ÆÆËéÖ®ĞÄ|·ûÎÄØ°Ê×|Õ½ÕÈ|µØĞÄÌ½Ë÷¿É¶Ñµş¿É²åÈëÍ¨»õ|
 --pageName ²Ö¿âÒ³ÃæÃû ×Ö·û´®ĞÍ ¿ÉÌî¶à¸ö£¬ÖĞ¼äÓÃ|¸ô¿ª
 --goodsName ÎïÆ·Ãû ×Ö·û´®ĞÍ ºöÂÔÌînil
 --goodsClassName ÎïÆ·ÀàÃû ×Ö·û´®ĞÍ ºöÂÔÌînil
@@ -333,141 +137,53 @@ SetNeedFengYinYeShou(nil,"Metadata/Monsters/LeagueBestiary/SpiderPlatedBestiaryS
 --pageType ²Ö¿âÒ³ÀàĞÍ ÊıÖµĞÍ ²»Ìî»ònil»ò0 ÎªÆÕÍ¨²Ö¿â 1ÎªÍ¨»õÒ³ 2ÎªÃüÔË¿¨Ò³  3ÎªËéÆ¬Ò³
 
 -------×¢ÒâÒª´óÀàÔÚÇ° Ğ¡Àà µ¥¶ÀÉèÖÃÔÚºóÃæÌí¼Ó
-SetSaveIndex("Í¨»õ|¿É¶ÑµşÍ¨»õ","1|2|3|4")
-SetSaveIndex("Òì½çµØÍ¼","2|5|6|7|8")
-SetSaveIndex("ÏîÁ´|½äÖ¸|×¦|Ø°Ê×|·¨ÕÈ|µ¥ÊÖ½£|Ï¸½£|µ¥ÊÖ¸«|µ¥ÊÖ´¸|·ûÎÄØ°Ê×|¶ÌÕÈ|Õ½ÕÈ|¹­|³¤ÕÈ|Ë«ÊÖ½£|Ë«ÊÖ¸«|Ë«ÊÖ´¸|Ñü´ø|ÊÖÌ×|Ğ¬×Ó|Í·¿ø","1|2|3|4|8")
-SetSaveIndex("Ö÷¶¯¼¼ÄÜ±¦Ê¯|¸¨Öú¼¼ÄÜ±¦Ê¯|Öé±¦|ÃüÔË¿¨|ÒÂ·ş|¶Ü|¼ı´ü|µØÍ¼ËéÆ¬|ÆõÔ¼|µØĞÄÌ½Ë÷£º¿ÉÏâÇ¶µÄÍ¨»õ","4|5|6|7|8")
-SetSaveIndex("ÉúÃüÒ©¼Á|Ä§Á¦Ò©¼Á|¸´ºÏÒ©¼Á|¹¦ÄÜÒ©¼Á|ÆõÔ¼|µØÍ¼ËéÆ¬|Ô¤ÑÔ","4|5|6|7|8")
-SetSaveIndex(nil,"4|5|6|7|8","Ô¤ÑÔ","Metadata/Items/Currency/CurrencyItemisedProphecy")
-SetSaveIndex(nil,"4|5|6|7|8","»ÃÉ«Ê¯","Metadata/Items/Currency/CurrencyRerollSocketColours")
-SetSaveIndex(nil,"4|5|6|7|8","Á´½áÊ¯","Metadata/Items/Currency/CurrencyRerollSocketLinks")
-SetSaveIndex(nil,"4|5|6|7|8","ÍØÓ¡µÄ·âÄ§Ö®Óñ","Metadata/Items/Currency/CurrencyItemisedCapturedMonster")
-SetSaveIndex(nil,"1|5|6|7|8","çèÎÛµÄ»ìãçÊ¯","Metadata/Items/Currency/CurrencyHellscapeRerollRare")
-SetSaveIndex(nil,"4|5|6|7|8","çèÎÛµÄ»ÃÉ«Ê¯","Metadata/Items/Currency/CurrencyHellscapeRerollSocketColours")
-SetSaveIndex(nil,"1|5|6|7|8","çèÎÛµÄÉñÊ¥ÀáÖé","Metadata/Items/Currency/CurrencyHellscapeUpgradeModTier")
-SetSaveIndex(nil,"1|5|6|7|8","çèÎÛµÄ³ç¸ßÊ¯","Metadata/Items/Currency/CurrencyHellscapeAddModToRare")
--- SetSaveIndex(nil,"1|5|6|7|8","çèÎÛµÄ¹¤½³Ê¯","Metadata/Items/Currency/CurrencyHellscapeRerollSocketNumbers")
-SetSaveIndex(nil,"4|5|6|7|8","çèÎÛµÄÁ´½áÊ¯","Metadata/Items/Currency/CurrencyHellscapeRerollSocketLinks")
-SetSaveIndex(nil,"4|5|6|7|8","çèÎÛµÄ×£¸£","Metadata/Items/Currency/CurrencyLabyrinthEnchantCorrupt")
---SetSaveIndex(nil,"4|5|6|7|8","¼ÀìëÁÑÆ¬","Metadata/Items/Currency/CurrencyRitualSplinter")
---SetSaveIndex(nil,"4|5|6|7|8","¼Àìë±®Æ÷","Metadata/Items/Currency/CurrencyRitualStone")
-SetSaveIndex("HarvestSeed","4")--ÖÖ×Ó
-SetSaveIndex("HeistBlueprint","4|1")--À¶Í¼
-SetSaveIndex(nil,"4",nil,"Metadata/Items/MapFragments/ClassicVaultKey")--¹Åµäßzè€
-SetSaveIndex(nil,"4",nil,"Metadata/Items/MapFragments/340VaultKey")--¹ÅĞàßzè€
-SetSaveIndex(nil,"4",nil,"Metadata/Items/MapFragments/VaalVaultKey")--Íß –ßzè€
-SetSaveIndex(nil,"4|5|6|7|8","Ì½ëUÈÕÕI","Metadata/Items/Expedition/ExpeditionLogbook")
-SetSaveIndex(nil,"4",nil,"Metadata/Items/MapFragments/RitualFragment")--½şÑª±®Æ÷
+SetSaveIndex("Í¨»õ|¿É¶ÑµşÍ¨»õ","1")
+SetSaveIndex("Òì½çµØÍ¼","2")
+SetSaveIndex("ÏîÁ´|½äÖ¸|×¦|Ø°Ê×|·¨ÕÈ|µ¥ÊÖ½£|Ï¸½£|µ¥ÊÖ¸«|µ¥ÊÖ´¸|·ûÎÄØ°Ê×|¶ÌÕÈ|Õ½ÕÈ|¹­|³¤ÕÈ|Ë«ÊÖ½£|Ë«ÊÖ¸«|Ë«ÊÖ´¸|Ñü´ø|ÊÖÌ×|Ğ¬×Ó|Í·¿ø","3|4")
+SetSaveIndex("Ö÷¶¯¼¼ÄÜ±¦Ê¯|¸¨Öú¼¼ÄÜ±¦Ê¯|Öé±¦|ÃüÔË¿¨|ÒÂ·ş|¶Ü|¼ı´ü|µØÍ¼ËéÆ¬","4")
+SetSaveIndex("ÉúÃüÒ©¼Á|Ä§Á¦Ò©¼Á|¸´ºÏÒ©¼Á|¹¦ÄÜÒ©¼Á","4")
+SetSaveIndex(nil,"4","å€Ä§ÑÛ¾¦","Metadata/Items/Metamorphosis/MetamorphosisEye")
+SetSaveIndex(nil,"4","Ô¤ÑÔ","Metadata/Items/Currency/CurrencyItemisedProphecy")
+SetSaveIndex(nil,"4","æœ½YÊ¯","Metadata/Items/Currency/CurrencyRerollSocketLinks")
+SetSaveIndex(nil,"4","¸ÄÔìÊ¯","Metadata/Items/Currency/CurrencyRerollMagic")
 
---ĞÇÍÅÖé±¦
--- SetSaveIndex(nil,"2",nil,"Metadata/Items/Jewels/JewelPassiveTreeExpansionLarge")--¾ŞĞÍĞÇÍÅ
--- SetSaveIndex(nil,"2",nil,"Metadata/Items/Jewels/JewelPassiveTreeExpansionMedium")--ÖĞĞÍĞÇÍÅ
+------------------¹Ò»úÏà¹Ø
+g_yijieNoWhiteMonster=false		--Òì½çÊ±ÊÇ·ñ²»´ò°×¹Ö trueÎª²»´ò nil»òfalseÎª´ò
+g_yijieNoWhiteBox=true			--Òì½çÊ±ÊÇ·ñ²»¿ª°×Ïä×Ó trueÎª²»¿ª nil»òfalseÎª¿ª
+g_useYiJieWanChengDuLv=90	--Ê¹ÓÃÏÂÃæÒì½çÍê³É¶ÈÄÇ¸öÉèÖÃµÄµÈ¼¶£¬Èç¹ûÎ´µ½µÈÔòË¢È«Í¼
+g_yiJieWanChengDu=0.9		--Òì½çÍê³É¶È Íê³É¶àÉÙ¾Í»ØÈ¥ Îª1»ò1ÒÔÏÂµÄĞ¡Êı
+g_yongHengShiBeiLv=90		--´óÓÚµÈÓÚ¶àÉÙ¼¶´òÓÀºãÊ¯±® 
+g_needTaFangLv=90			--´óÓÚµÈÓÚ¶àÉÙ¼¶´òËş·À
+g_needLianMoLv=90			--´óÓÚµÈÓÚ¶àÉÙ¼¶´òÁ¶Ä§
+g_attackFreezeMonsterLv=90	--´óÓÚµÈÓÚ¶àÉÙ¼¶´ò±ù¶³¹Ö
+g_needChuanYueLv=90			--´óÓÚµÈÓÚ¶àÉÙ¼¶´ò´©Ô½¹Ö
+g_needLieXiLv=90			--´óì¶µÈÓÚ¶àÉÙ¼¶´òÊ±¿ÕÁÑ·ì¹Ö
+g_needMiWuLv=90				--´óÓÚµÈÓÚ¶àÉÙ¼¶´òÃÔÎí
 
-SetSaveIndex(nil,"1|2|4","÷»×Ó","Metadata/Items/Currency/CurrencyRefreshGambler")
-SetSaveIndex(nil,"1|2|4","µÍ½×ÆÆËéÖ®»·ÎÄÎï","Metadata/Items/Expedition/ExpeditionVendorCurrencyFaction1_1")
-SetSaveIndex(nil,"1|2|4","ÆÕÍ¨ÆÆËéÖ®»·ÎÄÎï","Metadata/Items/Expedition/ExpeditionVendorCurrencyFaction1_2")
-SetSaveIndex(nil,"1|2|4","¸ß½×ÆÆËéÖ®»·ÎÄÎï","Metadata/Items/Expedition/ExpeditionVendorCurrencyFaction1_3")
-SetSaveIndex(nil,"1|2|4","ºêÎ°ÆÆËéÖ®»·ÎÄÎï","Metadata/Items/Expedition/ExpeditionVendorCurrencyFaction1_4")
-SetSaveIndex(nil,"1|2|4","µÍ½×ºÚ°µÑªÁ­ÎÄÎï","Metadata/Items/Expedition/ExpeditionVendorCurrencyFaction2_1")
-SetSaveIndex(nil,"1|2|4","ÆÕÍ¨ºÚ°µÑªÁ­ÎÄÎï","Metadata/Items/Expedition/ExpeditionVendorCurrencyFaction2_2")
-SetSaveIndex(nil,"1|2|4","¸ß½×ºÚ°µÑªÁ­ÎÄÎï","Metadata/Items/Expedition/ExpeditionVendorCurrencyFaction2_3")
-SetSaveIndex(nil,"1|2|4","ºêÎ°ºÚ°µÑªÁ­ÎÄÎï","Metadata/Items/Expedition/ExpeditionVendorCurrencyFaction2_4")
-SetSaveIndex(nil,"1|2|4","µÍ½×ÖÈĞòÎÄÎï","Metadata/Items/Expedition/ExpeditionVendorCurrencyFaction3_1")
-SetSaveIndex(nil,"1|2|4","ÆÕÍ¨ÖÈĞòÎÄÎï","Metadata/Items/Expedition/ExpeditionVendorCurrencyFaction3_2")
-SetSaveIndex(nil,"1|2|4","¸ß½×ÖÈĞòÎÄÎï","Metadata/Items/Expedition/ExpeditionVendorCurrencyFaction3_3")
-SetSaveIndex(nil,"1|2|4","ºêÎ°ÖÈĞòÎÄÎï","Metadata/Items/Expedition/ExpeditionVendorCurrencyFaction3_4")
-SetSaveIndex(nil,"1|2|4","µÍ½×ØWÑôÎÄÎï","Metadata/Items/Expedition/ExpeditionVendorCurrencyFaction4_1")
-SetSaveIndex(nil,"1|2|4","ÆÕÍ¨ØWÑôÎÄÎï","Metadata/Items/Expedition/ExpeditionVendorCurrencyFaction4_2")
-SetSaveIndex(nil,"1|2|4","¸ß½×ØWÑôÎÄÎï","Metadata/Items/Expedition/ExpeditionVendorCurrencyFaction4_3")
-SetSaveIndex(nil,"1|2|4","ºêÎ°ØWÑôÎÄÎï","Metadata/Items/Expedition/ExpeditionVendorCurrencyFaction4_4")
-
-SetSaveIndex(nil,"4|5|6|7|8","Ë{ˆD£ºÕ¹Ó[ÊÒ ","Metadata/Items/Heist/HeistBlueprintReliquary")
-SetSaveIndex(nil,"4|5|6|7|8","Ë{ˆD£ºµØµÀ","Metadata/Items/Heist/HeistBlueprintRobotTunnels")
-SetSaveIndex(nil,"4|5|6|7|8","Ë{ˆD£º½û¼Éğ^²Ø","Metadata/Items/Heist/HeistBlueprintLibrary")
-SetSaveIndex(nil,"4|5|6|7|8","Ë{ˆD£ºŒòÊÒ","Metadata/Items/Heist/HeistBlueprintDungeon")
-SetSaveIndex("Óã¸Í","4")
-
-
-
-
---ÉèÖÃ¶àÉÙÑù×°±¸»»C
-SetChangeLimitCnt("Í·¿ø|ÊÖÌ×|Ğ¬×Ó",3)
-SetChangeLimitCnt("Ñü´ø",4)
-SetChangeLimitCnt("ÏîÁ´|½äÖ¸",15)
-SetChangeLimitCnt("ÎäÆ÷|ÒÂ·ş",2)
-
-
+g_yuyanCnt=nil				--¹»¶àÉÙÒø±ÒÈ¥Ô¤ÑÔ£¬Ğ¡ÓÚ10Òø±Ò»òÌînil½«²»»á´¥·¢ Èç¹ûÉè¶¨È¥Ô¤ÑÔ£¬ÄÇÏÂÃæ»¹ĞèÒªÉèÖÃ½»Ò×¸ø²Ö¿âºÅµÄÔ¤ÑÔ
 
 --µØÍ¼Ïà¹Ø
--- SetNotMapGoMap(className,cnt) ÉèÖÃÎŞµØÍ¼»òÎ´µ½µÈ¼¶Ê±ÒªË¢µÄ¾çÇéµØÍ¼ className×Ö·û´®ĞÍ µØÍ¼ÀàÃû cnt=´ÎÊı
+--SetNotMapGoMap(className,cnt) ÉèÖÃÎŞµØÍ¼»òÎ´µ½µÈ¼¶Ê±ÒªË¢µÄ¾çÇéµØÍ¼ className×Ö·û´®ĞÍ µØÍ¼ÀàÃû cnt=´ÎÊı
 SetNotMapGoMap("2_9_1",10)	--ÎŞµØÍ¼Ê±Ë¢ÑªÉ«Í¨µÀ
 
---¹Ò»úµØÍ¼
+g_yiJieLv=72				--¹»ÁË¶àÉÙ¼¶²ÅÈ¥Ë¢Òì½ç
+g_checkSellMapCnt=100		--µØÍ¼³¬¹ıÕâ¸öÊıÁ¿²Å»á¼ì²â³öÊÛµØÍ¼
+g_destroyNoUseMap=true		--Ïú»ÙÉÏÃæÉèÖÃ²»Ê¹ÓÃµÄµØÍ¼ nil»òfalseÎª²»Ïú»Ù
+g_mapUseFuHaoLv=78			--´óÓÚµÈÓÚ¶àÉÙ¼¶¶ÔÀ¶Í¼Ê¹ÓÃ¸»ºÀÊ¯ nilÎªÓÀÔ¶²»Ê¹ÓÃ
+g_mapUseZengFuLv=78			--´óÓÚµÈÓÚ¶àÉÙ¼¶¶ÔÀ¶Í¼Ê¹ÓÃÔö·ùÊ¯ nilÎªÓÀÔ¶²»Ê¹ÓÃ
+g_mapUseDianJingLv=76		--´óÓÚµÈÓÚ¶àÉÙ¼¶¶Ô°×Í¼Ê¹ÓÃµã½ğÊ¯ nilÎªÓÀÔ¶²»Ê¹ÓÃ
+g_mapUseTuiBianLv=72		--´óÓÚµÈÓÚ¶àÉÙ¼¶¶Ô°×Í¼Ê¹ÓÃÍÉ±äÊ¯ nilÎªÓÀÔ¶²»Ê¹ÓÃ
+g_mapUseJiHuiLv=83			--´óÓÚµÈÓÚ¶àÉÙ¼¶¶Ô°×Í¼Ê¹ÓÃ»ú»áÊ¯ nilÎªÓÀÔ¶²»Ê¹ÓÃ
+g_mapUseWaErLv=83			--´óÓÚµÈÓÚ¶àÉÙ¼¶¶Ô°×¡¢À¶µØÍ¼Ê¹ÓÃÍß¶û±¦Öé nilÎªÓÀÔ¶²»Ê¹ÓÃ
+g_mapUseDingZiLv=nil			--´óÓÚµÈÓÚ¶àÉÙ¼¶Ê¹ÓÃÖÆÍ¼¶¤ nilÎªÓÀÔ¶²»Ê¹ÓÃ
+g_noUseMapLv=0				--²»Ê¹ÓÃ¡¢²»¼ñ¶àÉÙ½×¼°ÒÔÉÏµÄµØÍ¼ nil»ò0ÎªºöÂÔ ÉèÖÃÓÅÏÈµÄµØÍ¼³ıÍâ
+
 g_mapUseOrangeMap=false		--trueÎªÊ¹ÓÃ³ÈÍ¼ nil»òfalseÎª²»Ê¹ÓÃ
--- SetYouXianUseMapData(name,className,color)--ÉèÖÃÓÅÏÈÊ¹ÓÃµÄÒì½çµØÍ¼ 
---name ×Ö·û´®ĞÍ µØÍ¼Ãû 
---className ×Ö·û´®ĞÍ µØÍ¼ÀàÃû 
---color ×Ö·û´®ĞÍ ÑÕÉ« 0°×1À¶2»Æ3³È ÖĞ¼äÓÃ|¸ô¿ª
-g_mapUseOrangeMap=false		--trueÎªÊ¹ÓÃ³ÈÍ¼ nil»òfalseÎª²»Ê¹ÓÃ
--- SetYouXianUseMapData(name,className,color)--ÉèÖÃÓÅÏÈÊ¹ÓÃµÄÒì½çµØÍ¼ 
+--SetYouXianUseMapData(name,className,color)--ÉèÖÃÓÅÏÈÊ¹ÓÃµÄÒì½çµØÍ¼ 
 --name ×Ö·û´®ĞÍ µØÍ¼Ãû 
 --className ×Ö·û´®ĞÍ µØÍ¼ÀàÃû 
 --color ×Ö·û´®ĞÍ ÑÕÉ« 0°×1À¶2»Æ3³È ÖĞ¼äÓÃ|¸ô¿ª
 
-
---¶ÔµØÍ¼Ê¹ÓÃÊ¥¼×³æ
---AddMapUseGoods("Rusted Divination Scarab","Metadata/Items/Scarabs/ScarabDivinationCards1","1|2",78,true)--ÃüÔË¿¨50%
---AddMapUseGoods("Polished Divination Scarab","Metadata/Items/Scarabs/ScarabDivinationCards2","1|2",78,true)--ÃüÔË¿¨100%
---AddMapUseGoods("Gilded Divination Scarab","Metadata/Items/Scarabs/ScarabDivinationCards3","1|2",78,true)--ÃüÔË¿¨150%
---AddMapUseGoods("Rusted Expedition Scarab","Metadata/Items/Scarabs/ScarabPerandus1","1|2",78,true)--Õ¨‰
---AddMapUseGoods("Polished Expedition Scarab","Metadata/Items/Scarabs/ScarabPerandus2","1|2",78,true)--Õ¨‰
---AddMapUseGoods("Gilded Expedition Scarab","Metadata/Items/Scarabs/ScarabPerandus3","1|2",78,true)--Õ¨‰
---AddMapUseGoods("Rusted Torment Scarab","Metadata/Items/Scarabs/ScarabTorment1","1|2",78,true)--×ï»ê
---AddMapUseGoods("Polished Torment Scarab","Metadata/Items/Scarabs/ScarabTorment2","1|2",78,true)--×ï»ê
---AddMapUseGoods("Gilded Torment Scarab","Metadata/Items/Scarabs/ScarabTorment3","1|2",78,true)--×ï»ê
---AddMapUseGoods("Rusted Reliquary Scarab","Metadata/Items/Scarabs/ScarabUniques1","1|2",78,true)--°µ½ğÑb
---AddMapUseGoods("Polished Reliquary Scarab","Metadata/Items/Scarabs/ScarabUniques2","1|2",78,true)--°µ½ğÑb
---AddMapUseGoods("Gilded Reliquary Scarab","Metadata/Items/Scarabs/ScarabUniques3","1|2",78,true)--°µ½ğÑb
---AddMapUseGoods("Rusted Legion Scarab","Metadata/Items/Scarabs/ScarabLegion1","1|2",78,true)--ÜŠˆF
---AddMapUseGoods("Polished Legion Scarab","Metadata/Items/Scarabs/ScarabLegion2","1|2",78,true)--ÜŠˆF
---AddMapUseGoods("Gilded Legion Scarab","Metadata/Items/Scarabs/ScarabLegion3","1|2",78,true)--ÜŠˆF
---AddMapUseGoods("Rusted Breach Scarab","Metadata/Items/Scarabs/ScarabBreach1","1|2",78,true)--ÁÑÏ¶
---AddMapUseGoods("Polished Breach Scarab","Metadata/Items/Scarabs/ScarabLegion2","1|2",78,true)--ÁÑÏ¶
---AddMapUseGoods("Gilded Breach Scarab","Metadata/Items/Scarabs/ScarabLegion3","1|2",78,true)--ÁÑÏ¶
---AddMapUseGoods("Rusted Ambush Scarab","Metadata/Items/Scarabs/ScarabStrongbox1","1|2",78,true)--±£ÏÕÏä
---AddMapUseGoods("Polished Ambush Scarab","Metadata/Items/Scarabs/ScarabStrongbox2","1|2",78,true)--±£ÏÕÏä
---AddMapUseGoods("Gilded Ambush Scarab","Metadata/Items/Scarabs/ScarabStrongbox3","1|2",78,true)--±£ÏÕÏä
---AddMapUseGoods("Rusted Harbinger Scarab","Metadata/Items/Scarabs/ScarabHarbinger1","1|2",78,true)--ÏÈÇı
---AddMapUseGoods("Polished Harbinger Scarab","Metadata/Items/Scarabs/ScarabHarbinger2","1|2",78,true)--ÏÈÇı
---AddMapUseGoods("Gilded Harbinger Scarab","Metadata/Items/Scarabs/ScarabHarbinger3","1|2",78,true)--ÏÈÇı
---AddMapUseGoods("Rusted Metamorph Scarab","Metadata/Items/Scarabs/ScarabMetamorph1","1|2",78,true)--ÔÖ±ä
---AddMapUseGoods("Polished Metamorph Scarab","Metadata/Items/Scarabs/ScarabMetamorph2","1|2",78,true)--ÔÖ±ä
---AddMapUseGoods("Gilded Metamorph Scarab","Metadata/Items/Scarabs/ScarabMetamorph3","1|2",78,true)--ÔÖ±ä
---AddMapUseGoods("Rusted Abyss Scarab","Metadata/Items/Scarabs/ScarabAbyss1","1|2",78,true)--ÉîÔ¨
---AddMapUseGoods("Polished Abyss Scarab","Metadata/Items/Scarabs/ScarabAbyss2","1|2",78,true)--ÉîÔ¨
---AddMapUseGoods("Gilded Abyss Scarab","Metadata/Items/Scarabs/ScarabAbyss3","1|2",78,true)--ÉîÔ¨
-
-
--- SetYouXianUseMapData(name,className,color)--ÉèÖÃÓÅÏÈÊ¹ÓÃµÄÒì½çµØÍ¼ 
---name ×Ö·û´®ĞÍ µØÍ¼Ãû 
---className ×Ö·û´®ĞÍ µØÍ¼ÀàÃû 
---color ×Ö·û´®ĞÍ ÑÕÉ« 0°×1À¶2»Æ3³È ÖĞ¼äÓÃ|¸ô¿ª
-SetYouXianUseMapData("ºµµØÄ¹ÊÒ","Metadata/Items/Maps/MapWorldsBurialChambers","0|1|2")
-SetYouXianUseMapData("ç³ºìÉñµî","Metadata/Items/Maps/MapWorldsCrimsonTemple","0|1|2")
-SetYouXianUseMapData("¾ŞÖëÖ®ÁÖ","Metadata/Items/Maps/MapWorldsSpiderForest","0|1|2")
-SetYouXianUseMapData("ÖÂÃüÑÒÌ²","Metadata/Items/Maps/MapWorldsStrand","0|1|2")
-SetYouXianUseMapData("Â¶Ì¨»¨Ô°","Metadata/Items/Maps/MapWorldsTerrace","0|1|2")
-SetYouXianUseMapData("Äº¹âº£Ì²","Metadata/Items/Maps/MapWorldsShore","0|1|2")
-SetYouXianUseMapData("ÏóÑÀÉñµî","Metadata/Items/Maps/MapWorldsIvoryTemple","0|1|2")
-SetYouXianUseMapData("ÓÄ»êÕ¬Û¡","Metadata/Items/Maps/MapWorldsHauntedMansion","0|1|2")
-SetYouXianUseMapData("¿àĞĞÖ®Óò","Metadata/Items/Maps/MapWorldsPrecinct","0|1|2")
-SetYouXianUseMapData("æ¿¾êÉñµî","Metadata/Items/Maps/MapWorldsMoonTemple","0|1|2")
-SetYouXianUseMapData("»ğÉ½Ñ×¿Ú","Metadata/Items/Maps/MapWorldsCaldera","0|1|2")
-SetYouXianUseMapData("º£·ç¸ßÔ­","Metadata/Items/Maps/MapWorldsPlateau","0|1|2")
-SetYouXianUseMapData("Ê§Âä³ÇÎë","Metadata/Items/Maps/MapWorldsPort","0|1|2")
-SetYouXianUseMapData("¼²·çÏ¿Íå","Metadata/Items/Maps/MapWorldsCoves","0|1|2")
-SetYouXianUseMapData("ÒìÖëÄ¹‰V","Metadata/Items/Maps/MapWorldsArachnidTomb","0|1|2")
-SetYouXianUseMapData("ÆæÊõÖ®Í¥","Metadata/Items/Maps/MapWorldsCourtyard","0|1|2")
 
 -- SetNoUseMapShuXing(className)--ÉèÖÃ²»Ê¹ÓÃ´øÓĞÄ³ÖÖÊôĞÔµÄµØÍ¼,²ÎÊı classNameÎªÊôĞÔÀàÃû
 SetNoUseMapShuXing("map_monsters_reflect_%_physical_damage")--ÉèÖÃ²»´òÎïÀí·´ÉäÊôĞÔ
@@ -475,60 +191,88 @@ SetNoUseMapShuXing("map_monsters_reflect_%_elemental_damage")--ÉèÖÃ²»´òÄ§·¨·´ÉäÊ
 SetNoUseMapShuXing("map_players_no_regeneration_including_es")--ÎŞ·¨»Ø¸´
 SetNoUseMapShuXing("is_blighted_map")--µòÂäµØÍ¼
 
--- SetSellGoodsData(name,className,cnt,color)--ÉèÖÃÂô(»»)µÄµØÍ¼ 
---name=ÎïÆ·Ãû className=ÎïÆ·ÀàÃû ÏÈÊ¶±ğÎïÆ·Ãû Ê¶±ğ²»µ½¾ÍÊ¶±ğÀàÃû cnt=¹»¶àÉÙÈ¥Âô color=ÑÕÉ« 0°× 1À¶ 2»Æ ¶à¸öÓÃ|¸ô¿ª
-SetSellGoodsData("ºµµØÄ¹ÊÒ","Metadata/Items/Maps/MapWorldsBurialChambers",5,"0|1|2|")
-SetSellGoodsData("ç³ºìÉñµî","Metadata/Items/Maps/MapWorldsCrimsonTemple",5,"0|1|2|")
-SetSellGoodsData("¾ŞÖëÖ®ÁÖ","Metadata/Items/Maps/MapWorldsSpiderForest",5,"0|1|2|")
-SetSellGoodsData("ÖÂÃüÑÒÌ²","Metadata/Items/Maps/MapWorldsStrand",5,"0|1|2|")
-SetSellGoodsData("Â¶Ì¨»¨Ô°","Metadata/Items/Maps/MapWorldsTerrace",5,"0|1|2|")
-SetSellGoodsData("Äº¹âº£Ì²","Metadata/Items/Maps/MapWorldsShore",5,"0|1|2|")
-SetSellGoodsData("ÏóÑÀÉñµî","Metadata/Items/Maps/MapWorldsIvoryTemple",5,"0|1|2|")
-SetSellGoodsData("ÓÄ»êÕ¬Û¡","Metadata/Items/Maps/MapWorldsHauntedMansion",5,"0|1|2|")
-SetSellGoodsData("¿àĞĞÖ®Óò","Metadata/Items/Maps/MapWorldsPrecinct",5,"0|1|2|")
-SetSellGoodsData("æ¿¾êÉñµî","Metadata/Items/Maps/MapWorldsMoonTemple",5,"0|1|2|")
-SetSellGoodsData("»ğÉ½Ñ×¿Ú","Metadata/Items/Maps/MapWorldsCaldera",5,"0|1|2|")
-SetSellGoodsData("º£·ç¸ßÔ­","Metadata/Items/Maps/MapWorldsPlateau",5,"0|1|2|")
-SetSellGoodsData("Ê§Âä³ÇÎë","Metadata/Items/Maps/MapWorldsPort",5,"0|1|2|")
-SetSellGoodsData("¼²·çÏ¿Íå","Metadata/Items/Maps/MapWorldsCoves",5,"0|1|2|")
-SetSellGoodsData("ÒìÖëÄ¹‰V","Metadata/Items/Maps/MapWorldsArachnidTomb",5,"0|1|2|")
-SetSellGoodsData("ÆæÊõÖ®Í¥","Metadata/Items/Maps/MapWorldsCourtyard",5,"0|1|2|")
-SetSellGoodsData("Î£³ÇÏïÅª","Metadata/Items/Maps/MapWorldsAlleyways",2,"0|1|2|")
-SetSellGoodsData("¾²çËÁêÄ¹","Metadata/Items/Maps/MapWorldsMausoleum",2,"0|1|2|")
-SetSellGoodsData("¹Ç¼£ÁêÄ¹","Metadata/Items/Maps/MapWorldsBoneCrypt",2,"0|1|2|")
-SetSellGoodsData("¹Å²©Îï¹İ","Metadata/Items/Maps/MapWorldsMuseum",2,"0|1|2|")
-SetSellGoodsData("Òõ°µÄ¹‰V","Metadata/Items/Maps/MapWorldsSepulchre",2,"0|1|2|")
-SetSellGoodsData("Å­ÀËÖ®¸Û","Metadata/Items/Maps/MapWorldsPier",2,"0|1|2|")
-SetSellGoodsData("¾ª¾åÊ÷´Ô","Metadata/Items/Maps/MapWorldsThicket",2,"0|1|2|")
-SetSellGoodsData("Ä§Áé»ÃÓü","Metadata/Items/Maps/MapWorldsPhantasmagoria",2,"0|1|2|")
-SetSellGoodsData("´¢Îï²Ö","Metadata/Items/Maps/MapWorldsSilo",2,"0|1|2|")
-SetSellGoodsData("ÊµÑé¾ÓËù","Metadata/Items/Maps/MapWorldsLaboratory",2,"0|1|2|")
-SetSellGoodsData("¶á»êÖ®µî","Metadata/Items/Maps/MapWorldsTemple",2,"0|1|2|")
-SetSellGoodsData("¶³Ô­Ğ¡Îİ","Metadata/Items/Maps/MapWorldsFrozenCabins",2,"0|1|2|")
-SetSellGoodsData("ÊªµØ¿óÉ½","Metadata/Items/Maps/MapWorldsMineralPools",2,"0|1|2|")
-SetSellGoodsData("Ìúçn¹¤³§","Metadata/Items/Maps/MapWorldsFactory",2,"0|1|2|")
-SetSellGoodsData("Ä§Ó°Ä¹³¡","Metadata/Items/Maps/MapWorldsNecropolis",2,"0|1|2|")
-SetSellGoodsData("Ç¬³±ÁÖµØ","Metadata/Items/Maps/MapWorldsPeninsula",2,"0|1|2|")
-SetSellGoodsData("ÔÂÉ«Ş’ÀÈ","Metadata/Items/Maps/MapWorldsPromenade",2,"0|1|2|")
-SetSellGoodsData("»ğÉ½Ñ×Óò","Metadata/Items/Maps/MapWorldsVolcano",2,"0|1|2|")
-SetSellGoodsData("ÑÒ½¬ÈÛºş","Metadata/Items/Maps/MapWorldsLavaLake",1,"0|1|2|")
-SetSellGoodsData("²íºÓ","Metadata/Items/Maps/MapWorldsForkingRiver",1,"0|1|2|")
-SetSellGoodsData("ÒÅ¼£·ÏĞæ","Metadata/Items/Maps/MapWorldsCastleRuins",1,"0|1|2|")
-SetSellGoodsData("î¿ÆÆÀÎÁı","Metadata/Items/Maps/MapWorldsCage",1,"0|1|2|")
-SetSellGoodsData("Íß¶û½ğ×ÖËş","Metadata/Items/Maps/MapWorldsVaalPyramid",1,"0|1|2|")
-SetSellGoodsData("±õº£É½Çğ","Metadata/Items/Maps/MapWorldsAtoll",1,"0|1|2|")
-SetSellGoodsData("ÆÆËé±¤½¸","Metadata/Items/Maps/MapWorldsCoralRuins",1,"0|1|2|")
-SetSellGoodsData("¾ŞÖë³²Ñ¨","Metadata/Items/Maps/MapWorldsSpiderLair",1,"0|1|2|")
-SetSellGoodsData("ÒìÖë³²Ñ¨","Metadata/Items/Maps/MapWorldsArachnidNest",1,"0|1|2|")
-SetSellGoodsData("ÉñÖ÷¾ÓËù","Metadata/Items/Maps/MapWorldsResidence",1,"0|1|2|")
-SetSellGoodsData("ÕÎÆøÄàÕÓ","Metadata/Items/Maps/MapWorldsBog",1,"0|1|2|")
-SetSellGoodsData("ËáÑÒËáÓì","Metadata/Items/Maps/MapWorldsAcidLakes",1,"0|1|2|")
-SetSellGoodsData("Áò»ÇÊ´°¶","Metadata/Items/Maps/MapWorldsSulphurVents",1,"0|1|2|")
-SetSellGoodsData("¼«Ô­±ùÃ±","Metadata/Items/Maps/MapWorldsIceberg",1,"0|1|2|")
-SetSellGoodsData("²ĞÆÆéæ¿Ó","Metadata/Items/Maps/MapWorldsTribunal",1,"0|1|2|")
-SetSellGoodsData("ÃÜ²İÉñµî","Metadata/Items/Maps/MapWorldsOvergrownShrine",1,"0|1|2|")
 
--- SetCompoundDivinationCard(name,className,nType) --ÉèÖÃĞèÒªºÏ³ÉµÄÃüÔË¿¨ name=¿¨Æ¬Ãû className=¿¨Æ¬ÀàÃû nType=ºÏ³É³¡¾° nil»ò²»ÌîÎªÎŞÂÛºÎÊ±¶¼ºÏ³É 0ÎªÃ»ÔÚË¢Òì½ç²ÅºÏ 1ÎªÖ»ÔÚË¢Òì½ç²ÅºÏ
+--SetLastEnterSmallMap(mapClassName)--ÉèÖÃĞèÒªºó½øĞ¡·¿¼äµÄÒì½çµØÍ¼
+--mapClassName Òì½çµØÍ¼ÀàÃû ×Ö·û´®ĞÍ
+
+SetLastEnterSmallMap("MapWorldsArachnidTomb")--Áé³æÄ¹Ñ¨
+SetLastEnterSmallMap("MapWorldsTropicalIsland")--Çç¿ÕÓÄµº
+SetLastEnterSmallMap("MapWorldsBurialChambers")--ÓÄ±ÕÄ¹Áì
+SetLastEnterSmallMap("MapWorldsResidence")--ÉñÖ÷¾ÓËù
+SetLastEnterSmallMap("MapWorldsCage")--¶ñÄîÀÎÁı
+SetLastEnterSmallMap("MapWorldsRamparts")--Iº£±¤‰¾
+SetLastEnterSmallMap("MapWorldsCaldera")--»ğÉ½Ñ×¿Ú
+SetLastEnterSmallMap("MapWorldsVaalPyramid")--Íß¶û½ğ×ÖËş
+SetLastEnterSmallMap("MapWorldsArena")--¸‚¼¼ˆö
+SetLastEnterSmallMap("MapWorldsOvergrownRuin")--éL²İßzÛE
+SetLastEnterSmallMap("MapWorldsGorge")--±ù´¨É½Çğ
+
+--SetSellGoodsData(name,className,cnt,color)--ÉèÖÃÂô(»»)µÄµØÍ¼ 
+--name=ÎïÆ·Ãû className=ÎïÆ·ÀàÃû ÏÈÊ¶±ğÎïÆ·Ãû Ê¶±ğ²»µ½¾ÍÊ¶±ğÀàÃû cnt=¹»¶àÉÙÈ¥Âô color=ÑÕÉ« 0°× 1À¶ 2»Æ ¶à¸öÓÃ|¸ô¿ª
+
+SetSellGoodsData("„¡¶¾ÁÖ¹È","Metadata/Items/Maps/MapWorldsJungleValley",3,"0|1|2|")
+SetSellGoodsData("¶¾ÑÀº£¸Û","Metadata/Items/Maps/MapWorldsWharf",3,"0|1|2|")
+SetSellGoodsData("Å­ÀËÖ®¸Û","Metadata/Items/Maps/MapWorldsPier",3,"0|1|2|")
+SetSellGoodsData("°×É³©î^","Metadata/Items/Maps/MapWorldsBeach",3,"0|1|2|")
+SetSellGoodsData("÷ÈÓ°„eÊû","Metadata/Items/Maps/MapWorldsVilla",3,"0|1|2|")
+SetSellGoodsData("ÃÜÁÖ¹ûˆ@","Metadata/Items/Maps/MapWorldsOrchard",3,"0|1|2|")
+SetSellGoodsData("ºÖäÁêÄ¹","Metadata/Items/Maps/MapWorldsCursedCrypt",9,"0|1|2|")
+SetSellGoodsData("ÜŠĞµì","Metadata/Items/Maps/MapWorldsArmoury",3,"0|1|2|")
+SetSellGoodsData("Œò¾ÓËù","Metadata/Items/Maps/MapWorldsLaboratory",3,"0|1|2|")
+SetSellGoodsData("Iº£±¤‰¾","Metadata/Items/Maps/MapWorldsRamparts",3,"0|1|2|")
+SetSellGoodsData("Iº£ÓÄÑ¨","Metadata/Items/Maps/MapWorldsUndergroundSea",9,"0|1|2|")
+SetSellGoodsData("ºµÄ¾ÁÖµØ","Metadata/Items/Maps/MapWorldsAshenWood",9,"0|1|2|")
+SetSellGoodsData("ìo¿OÁêÄ¹","Metadata/Items/Maps/MapWorldsMausoleum",3,"0|1|2|")
+SetSellGoodsData("ÓÄ»êÕ¬Û¡","Metadata/Items/Maps/MapWorldsHauntedMansion",3,"0|1|2|")
+SetSellGoodsData("Ÿo½®ÌïÒ°","Metadata/Items/Maps/MapWorldsFields",3,"0|1|2|")
+SetSellGoodsData("±ù´¨É½Çğ","Metadata/Items/Maps/MapWorldsGorge",3,"0|1|2|")
+SetSellGoodsData("ÖÂÃüÑÒ©","Metadata/Items/Maps/MapWorldsStrand",9,"0|1|2|")
+SetSellGoodsData("Ç¬³±ÁÖµØ","Metadata/Items/Maps/MapWorldsPeninsula",3,"0|1|2|")
+SetSellGoodsData("¶¾¾úÄ§Óò","Metadata/Items/Maps/MapWorldsSprings",9,"0|1|2|")
+SetSellGoodsData("Øšñ¤Ö®µØ","Metadata/Items/Maps/MapWorldsDesert",3,"0|1|2|")
+SetSellGoodsData("Î£³ÇÏïÅª","Metadata/Items/Maps/MapWorldsAlleyways",9,"0|1|2|")
+SetSellGoodsData("‰™Ó°Ä¹ˆö","Metadata/Items/Maps/MapWorldsGraveyard",9,"0|1|2|")
+SetSellGoodsData("¹Å±ø¹¤S","Metadata/Items/Maps/MapWorldsArsenal",9,"0|1|2|")
+SetSellGoodsData("Æ½í”»ÄÄ®","Metadata/Items/Maps/MapWorldsMesa",3,"0|1|2|")
+SetSellGoodsData("¼²ïL{³","Metadata/Items/Maps/MapWorldsCoves",3,"0|1|2|")
+SetSellGoodsData("ÕÎšâÄàÕÓ","Metadata/Items/Maps/MapWorldsBog",3,"0|1|2|")
+SetSellGoodsData("»ÄµØ","Metadata/Items/Maps/MapWorldsWasteland",3,"0|1|2|")
+SetSellGoodsData("ë…í”çŠ˜Ç","Metadata/Items/Maps/MapWorldsBelfry",3,"0|1|2|")
+SetSellGoodsData("¹Å²©Îïğ^","Metadata/Items/Maps/MapWorldsMuseum",3,"0|1|2|")
+SetSellGoodsData("¸‚¼¼ˆö","Metadata/Items/Maps/MapWorldsArena",3,"0|1|2|")
+SetSellGoodsData("³¿êØÄ¹µØ","Metadata/Items/Maps/MapWorldsCemetery",3,"0|1|2|")
+SetSellGoodsData("Ä§½ğŒšì","Metadata/Items/Maps/MapWorldsVault",3,"0|1|2|")
+SetSellGoodsData("Î£™CË®µÀ","Metadata/Items/Maps/MapWorldsWaterways",3,"0|1|2|")
+SetSellGoodsData("‹È¾êÉñµî","Metadata/Items/Maps/MapWorldsMoonTemple",3,"0|1|2|")
+SetSellGoodsData("Íß –½ğ×ÖËş","Metadata/Items/Maps/MapWorldsVaalPyramid",3,"0|1|2|")
+SetSellGoodsData("éL²İßzÛE","Metadata/Items/Maps/MapWorldsOvergrownRuin",3,"0|1|2|")
+SetSellGoodsData("ßh¹ÅÊĞ¼¯","Metadata/Items/Maps/MapWorldsBazaar",9,"0|1|2|")
+SetSellGoodsData("ÄºÉ«É³Çğ","Metadata/Items/Maps/MapWorldsDunes",9,"0|1|2|")
+SetSellGoodsData("ŠZ»êÖ®µî","Metadata/Items/Maps/MapWorldsTemple",3,"0|1|2|")
+SetSellGoodsData("ßh¹ÅÎ£³Ç","Metadata/Items/Maps/MapWorldsAncientCity",3,"0|1|2|")
+SetSellGoodsData("¸¯”¡ÏÂË®µÀ","Metadata/Items/Maps/MapWorldsToxicSewer",3,"0|1|2|")
+SetSellGoodsData("»ğÉ½Ñ×Óò","Metadata/Items/Maps/MapWorldsVolcano",9,"0|1|2|")
+SetSellGoodsData("¹ÅµäÃÜÊÒ","Metadata/Items/Maps/MapWorldsRelicChambers",3,"0|1|2|")
+SetSellGoodsData("±À‰ÄéLÀÈ","Metadata/Items/Maps/MapWorldsArcade",9,"0|1|2|")
+SetSellGoodsData("ÁbÆÆÀÎ","Metadata/Items/Maps/MapWorldsCage",3,"0|1|2|")
+SetSellGoodsData("·xêªzÀÎ","Metadata/Items/Maps/MapWorldsPen",3,"0|1|2|")
+SetSellGoodsData("×Ï¾§µVÉ½","Metadata/Items/Maps/MapWorldsCrystalOre",3,"0|1|2|")
+SetSellGoodsData("²»½ÌÌÃ","Metadata/Items/Maps/MapWorldsDefiledCathedral",3,"0|1|2|")
+SetSellGoodsData("¾Ş¿Ó","Metadata/Items/Maps/MapWorldsPit",3,"0|1|2|")
+SetSellGoodsData("®ÖëÄ¹‰V","Metadata/Items/Maps/MapWorldsArachnidTomb",9,"0|1|2|")
+SetSellGoodsData("ËÀ¼ÅÄàœÏ","Metadata/Items/Maps/MapWorldsWastePool",3,"0|1|2|")
+SetSellGoodsData("Ô×H¾§¶´","Metadata/Items/Maps/MapWorldsGeode",3,"0|1|2|")
+SetSellGoodsData("¹ÇÛEÁêÄ¹","Metadata/Items/Maps/MapWorldsBoneCrypt",3,"0|1|2|")
+SetSellGoodsData("ÈÛÑÒÖ®ÊÒ","Metadata/Items/Maps/MapWorldsLavaChamber",3,"0|1|2|")
+SetSellGoodsData("ŸáÁÖ‰VÄ¹","Metadata/Items/Maps/MapWorldsBarrows",9,"0|1|2|")
+SetSellGoodsData("Ä§ì`»Ãªz","Metadata/Items/Maps/MapWorldsPhantasmagoria",3,"0|1|2|")
+SetSellGoodsData("ºì`ŒWÔº","Metadata/Items/Maps/MapWorldsAcademy",3,"0|1|2|")
+SetSellGoodsData("éœªz¼âËş","Metadata/Items/Maps/MapWorldsTower",3,"0|1|2|")
+SetSellGoodsData("»ğÉ½Ñ×¿Ú","Metadata/Items/Maps/MapWorldsCaldera",3,"0|1|2|")
+
+
+
+--SetCompoundDivinationCard(name,className,nType) --ÉèÖÃĞèÒªºÏ³ÉµÄÃüÔË¿¨ name=¿¨Æ¬Ãû className=¿¨Æ¬ÀàÃû nType=ºÏ³É³¡¾° nil»ò²»ÌîÎªÎŞÂÛºÎÊ±¶¼ºÏ³É 0ÎªÃ»ÔÚË¢Òì½ç²ÅºÏ 1ÎªÖ»ÔÚË¢Òì½ç²ÅºÏ
 SetCompoundDivinationCard("ºÚ°µÈıÃæ","Metadata/Items/DivinationCards/DivinationCardThreeFacesInTheDark")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
 SetCompoundDivinationCard("ÌmËş¶äÃÔã¯Ö®Û","Metadata/Items/DivinationCards/DivinationCardLantadorsLostLove")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
 SetCompoundDivinationCard("Ş±ÄİÑÅµÄĞÅÎï","Metadata/Items/DivinationCards/DivinationCardViniasToken")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
@@ -537,67 +281,49 @@ SetCompoundDivinationCard("»ëãçĞÔÇé","Metadata/Items/DivinationCards/DivinationC
 SetCompoundDivinationCard("µÛÔË","Metadata/Items/DivinationCards/DivinationCardEmperorsLuck")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
 SetCompoundDivinationCard("ºÃÔËÁ¬Á¬","Metadata/Items/DivinationCards/DivinationCardLuckyConnections")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
 SetCompoundDivinationCard("»ìãçÖ®Óê","Metadata/Items/DivinationCards/DivinationCardRainOfChaos")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
-SetCompoundDivinationCard("ï|¿ÊÖ®×","Metadata/Items/DivinationCards/DivinationCardCovetedPossession",1)--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
+SetCompoundDivinationCard("ï|¿ÊÖ®×","Metadata/Items/DivinationCards/DivinationCardCovetedPossession")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
 SetCompoundDivinationCard("—‰Ø”ÇóÉú","Metadata/Items/DivinationCards/DivinationCardAbandonedWealth")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
 SetCompoundDivinationCard("·¢Ã÷¼Ò","Metadata/Items/DivinationCards/DivinationCardTheInventor")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
 SetCompoundDivinationCard("¾ªÏ²ºĞ","Metadata/Items/DivinationCards/DivinationCardJackInTheBox")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
 SetCompoundDivinationCard("ÁªÒö","Metadata/Items/DivinationCards/DivinationCardTheUnion")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
 SetCompoundDivinationCard("Ô¹·Ş","Metadata/Items/DivinationCards/DivinationCardTheWrath")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
 SetCompoundDivinationCard("ÔÖ±ä","Metadata/Items/DivinationCards/DivinationCardTheCatalyst")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
-SetCompoundDivinationCard("Éç•şµÄ°Ã»Ú","Metadata/Items/DivinationCards/DivinationCardSocietysRemorse")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
 SetCompoundDivinationCard("ÇóÉú×¨¼Ò","Metadata/Items/DivinationCards/DivinationCardTheSurvivalist")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
-SetCompoundDivinationCard("ßmÕßÉú´æ","Metadata/Items/DivinationCards/DivinationCardAcclimatisation")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
 SetCompoundDivinationCard("ÖÒ³Ï","Metadata/Items/DivinationCards/DivinationCardLoyalty")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
 SetCompoundDivinationCard("ÖÆÍ¼Ê¦","Metadata/Items/DivinationCards/DivinationCardTheCartographer")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
---SetCompoundDivinationCard("ÉúÃüÖ®˜ä","Metadata/Items/DivinationCards/DivinationCardTheSephirot")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
+SetCompoundDivinationCard("ÉúÃüÖ®˜ä","Metadata/Items/DivinationCards/DivinationCardTheSephirot")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
 SetCompoundDivinationCard("Â}Í½Ö®Ø”","Metadata/Items/DivinationCards/DivinationCardTheSaintsTreasure")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
 SetCompoundDivinationCard("ŸoºÛ","Metadata/Items/DivinationCards/DivinationCardNoTraces")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
 SetCompoundDivinationCard("ÉÆ","Metadata/Items/DivinationCards/DivinationCardTheInnocent")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
 SetCompoundDivinationCard("ÓŞÈË","Metadata/Items/DivinationCards/DivinationCardTheFool")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
 SetCompoundDivinationCard("¶ÄÍ½","Metadata/Items/DivinationCards/DivinationCardTheGambler")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
-SetCompoundDivinationCard("¹¤½³´óÊ¦","Metadata/Items/DivinationCards/DivinationCardMasterArtisan")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
-SetCompoundDivinationCard("Ç«Ñ·","Metadata/Items/DivinationCards/DivinationCardHumility",0)--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
-SetCompoundDivinationCard("Ğé¿Õ","Metadata/Items/DivinationCards/DivinationCardTheVoid")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
-SetCompoundDivinationCard("µÛ¹úµÄÒÅ²ú","Metadata/Items/DivinationCards/DivinationCardImperialLegacy")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
-SetCompoundDivinationCard("ÑªÈâÖ®Ü|","Metadata/Items/DivinationCards/DivinationCardTheBody")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
-SetCompoundDivinationCard("ŒšÊ¯½³µÄÔÊÖZ","Metadata/Items/DivinationCards/DivinationCardGemcuttersPromise")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
-SetCompoundDivinationCard("¿şÀÜ","Metadata/Items/DivinationCards/DivinationCardTheDoppelganger")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
+SetCompoundDivinationCard("¹¤½³´óÊ¦","Metadata/Items/DivinationCards/DivinationCardTheMasterArtisan")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
+SetCompoundDivinationCard("ÇéÈË","Metadata/Items/DivinationCards/DivinationCardTheLover")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
 SetCompoundDivinationCard("¾»°×","Metadata/Items/DivinationCards/DivinationCardTheOpulecent")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
-SetCompoundDivinationCard(nil,"Metadata/Items/DivinationCards/DivinationCardDemigodsWager")--•NÈAµÄÙ€×¢
-SetCompoundDivinationCard(nil,"Metadata/Items/DivinationCards/DivinationCardTheSeeker")--Ì½Œ¤Õß
-SetCompoundDivinationCard(nil,"Metadata/Items/DivinationCards/DivinationCardThePuzzle")--Öi
-SetCompoundDivinationCard(nil,"Metadata/Items/DivinationCards/DivinationCardTheObscured")--»Ş­
-SetCompoundDivinationCard(nil,"Metadata/Items/DivinationCards/DivinationCardLuckyDeck")--ĞÒß\ÅÆ½M enName:lucky-deck
-SetCompoundDivinationCard(nil,"Metadata/Items/DivinationCards/DivinationCardTheHoarder")--ŒšÏä enName:the-hoarder
-SetCompoundDivinationCard(nil,"Metadata/Items/DivinationCards/DivinationCardTheAwakened")--¾õĞÑ enName:the-hoarder
-SetCompoundDivinationCard(nil,"Metadata/Items/DivinationCards/DivinationCardAcclimatisation")--ÆøºòÊÊÓ¦ enName:the-hoarder
-SetCompoundDivinationCard(nil,"Metadata/Items/DivinationCards/DivinationCardSocietysRemorse")--ÉçÍÅÖ®»Ú enName:the-hoarder
-SetCompoundDivinationCard(nil,"Metadata/Items/DivinationCards/DivinationCardTheTinkerersTable")--äI½³Ö®×À
-SetCompoundDivinationCard("²®ÖÙØ”ì","Metadata/Items/DivinationCards/DivinationCardBrothersStash")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
-SetCompoundDivinationCard("Ë{º£","Metadata/Items/DivinationCards/DivinationCardASeaOfBlue")--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
+SetCompoundDivinationCard("Ç«Ñ·","Metadata/Items/DivinationCards/DivinationCardHumility",0)--ÉèÖÃºÏ³ÉÖÒ³ÏÃüÔË¿¨
 
-
--- SetNeedBuyGoodsData(name,className,cnt,buyName,buyClassName)--ÉèÖÃ¿ªÊ¼Ë¢Òì½çÊ±¼ä¼ì²â¹ºÂòÖ¸¶¨ÎïÆ·
+--SetNeedBuyGoodsData(name,className,cnt,buyName,buyClassName)--ÉèÖÃ¿ªÊ¼Ë¢Òì½çÊ±¼ä¼ì²â¹ºÂòÖ¸¶¨ÎïÆ·
 --name=×Ô¼ºÓĞµÄÍ¨»õÃû className=×Ô¼ºÓĞµÄÍ¨»õÀàÃû cnt=¹»¶àÉÙ¸ö´¥·¢ 0»ònil ²»»á´¥·¢ buyName=ĞèÒª¹ºÂòµÄÎïÆ·Ãû buyClassName=ĞèÒª¹ºÂòµÄÎïÆ·ÀàÃû
 
 g_buyNpcData={
-mapClassName="2_8_town"
-,className="Metadata/NPC/Act8/ClarissaTown"
-}--½«»áÔÚ3ÕÂ 2_8_town ´ËNPCÏÂ¹ºÂò name:¿¨ –ûÉ¯ className:Metadata/NPC/Act8/ClarissaTown 
+mapClassName="1_1_town"
+,className="Metadata/NPC/Act1/NessaTown"
+}--½«»áÔÚ1ÕÂ 1_1_town ´ËNPCÏÂ¹ºÂò name:ÄÎÉ³
 
-SetNeedBuyGoodsData("ÖªÊ¶¾íÖá","Metadata/Items/Currency/CurrencyIdentification",nil,"¾íÖá","Metadata/Items/Currency/CurrencyPortal")
+SetNeedBuyGoodsData("ÖªÊ¶¾íÖá","Metadata/Items/Currency/CurrencyIdentification",nil,"´«ËÍ¾íÖá","Metadata/Items/Currency/CurrencyPortal")
 SetNeedBuyGoodsData("´«ËÍ¾íÖá","Metadata/Items/Currency/CurrencyPortal",nil,"ÍÉ±äÊ¯","Metadata/Items/Currency/CurrencyUpgradeToMagic")
-SetNeedBuyGoodsData("ÍÉ±äÊ¯","Metadata/Items/Currency/CurrencyUpgradeToMagic",200,"Ôö·ùÊ¯","Metadata/Items/Currency/CurrencyAddModToMagic")
-SetNeedBuyGoodsData("Ôö·ùÊ¯","Metadata/Items/Currency/CurrencyAddModToMagic",100,"¸ÄÔìÊ¯","Metadata/Items/Currency/CurrencyRerollMagic")
---SetNeedBuyGoodsData("¸ÄÔìÊ¯","Metadata/Items/Currency/CurrencyRerollMagic",200,"¹¤½³Ê¯","Metadata/Items/Currency/CurrencyRerollSocketNumbers")
-SetNeedBuyGoodsData("¹¤½³Ê¯","Metadata/Items/Currency/CurrencyRerollSocketNumbers",80,"Á´½áÊ¯","Metadata/Items/Currency/CurrencyRerollSocketLinks")
+--SetNeedBuyGoodsData("ÍÉ±äÊ¯","Metadata/Items/Currency/CurrencyUpgradeToMagic",200,"Ôö·ùÊ¯","Metadata/Items/Currency/CurrencyAddModToMagic")
+--SetNeedBuyGoodsData("Ôö·ùÊ¯","Metadata/Items/Currency/CurrencyAddModToMagic",200,"¸ÄÔìÊ¯","Metadata/Items/Currency/CurrencyRerollMagic")
+--SetNeedBuyGoodsData("¸ÄÔìÊ¯","Metadata/Items/Currency/CurrencyRerollMagic",nil,"¹¤½³Ê¯","Metadata/Items/Currency/CurrencyRerollSocketNumbers")
+--SetNeedBuyGoodsData("¹¤½³Ê¯","Metadata/Items/Currency/CurrencyRerollSocketNumbers",100,"Á´½áÊ¯","Metadata/Items/Currency/CurrencyRerollSocketLinks")
 --SetNeedBuyGoodsData("Á´½áÊ¯","Metadata/Items/Currency/CurrencyRerollSocketLinks",100,"»ú»áÊ¯","Metadata/Items/Currency/CurrencyUpgradeRandomly")
-SetNeedBuyGoodsData("»ú»áÊ¯","Metadata/Items/Currency/CurrencyUpgradeRandomly",80,"ÖØÖıÊ¯","Metadata/Items/Currency/CurrencyConvertToNormal")
---SetNeedBuyGoodsData("ÖØÖıÊ¯","Metadata/Items/Currency/CurrencyConvertToNormal",80,"ºó»ÚÊ¯","Metadata/Items/Currency/CurrencyPassiveRefund")
---SetNeedBuyGoodsData("ºó»ÚÊ¯","Metadata/Items/Currency/CurrencyPassiveRefund",10,"µã½ğÊ¯","Metadata/Items/Currency/CurrencyUpgradeToRare")
+--SetNeedBuyGoodsData("»ú»áÊ¯","Metadata/Items/Currency/CurrencyUpgradeRandomly",100,"ÖØÖıÊ¯","Metadata/Items/Currency/CurrencyConvertToNormal")
+--SetNeedBuyGoodsData("ÖØÖıÊ¯","Metadata/Items/Currency/CurrencyConvertToNormal",nil,"ºó»ÚÊ¯","Metadata/Items/Currency/CurrencyPassiveRefund")
+--SetNeedBuyGoodsData("ºó»ÚÊ¯","Metadata/Items/Currency/CurrencyPassiveRefund",nil,"µã½ğÊ¯","Metadata/Items/Currency/CurrencyUpgradeToRare")
 
--- SetGoodsCaoZuo(goodsType,czType,name,className,wordName,wordClassName,pingzhi,cnt,color,socketCnt,lineCnt,checkCangKu)-- ÉèÖÃÒª²Ù×÷µÄÎïÆ·
---goodsType ×Ö·û´®ĞÍ ²Ù×÷µÄÎïÆ·ÀàĞÍºöÂÔÀàĞÍÇëÌî nil Ö§³ÖÒÔÏÂÖÖÀà ¶àÖÖÀàĞÍÒÔ|·Ö¿ª -- SaveType ÀàĞÍ Ö§³ÖÒÔÏÂÖÖÀà ¶àÖÖÀàĞÍÒÔ|·Ö¿ª ÉúÃüÒ©¼Á|Ä§Á¦Ò©¼Á|¸´ºÏÒ©¼Á|Í¨»õ|ÏîÁ´|½äÖ¸|×¦|Ø°Ê×|·¨ÕÈ|µ¥ÊÖ½£|Ï¸½£|µ¥ÊÖ¸«|µ¥ÊÖ´¸|·ûÎÄØ°Ê×|¶ÌÕÈ|Õ½ÕÈ|¹­|³¤ÕÈ|Ë«ÊÖ½£|Ë«ÊÖ¸«|Ë«ÊÖ´¸|Ö÷¶¯¼¼ÄÜ±¦Ê¯|¸¨Öú¼¼ÄÜ±¦Ê¯|¼ı´ü|Ñü´ø|ÊÖÌ×|Ğ¬×Ó|ÒÂ·ş|Í·¿ø|¶Ü|Ğ¡ĞÍÊ¥Îï|ÖĞĞÍÊ¥Îï|´óĞÍÊ¥Îï|¿É¶ÑµşÍ¨»õ|ÈÎÎñÎïÆ·|¶ÌÕÈ|¹¦ÄÜÒ©¼Á|±©»÷Ò©¼Á|Òì½çµØÍ¼||Óã¸Í|µØÍ¼ËéÆ¬|²ØÉí´¦×°ÊÎ|ÉÌ³ÇÎïÆ·|Öé±¦|ÃüÔË¿¨|ÃÔ¹¬ÎïÆ·|ÃÔ¹¬ÊÎÆ·|Òì½çÃÔ¹¬ÎïÆ·|ÁÑÏ¶Ö®Ê¯|Èü¼¾Ê¯|ÉñÁéÖ®»ê|´«Ææ×°±¸ËéÆ¬|ÉîÔ¨Öé±¦|´©Ô½Í¨»õ|µØĞÄÌ½Ë÷£º¿ÉÏâÇ¶µÄÍ¨»õ|ÔĞÓıÊ¯|ËéÆ¬|ÆÆËéÖ®ĞÄ|·ûÎÄØ°Ê×|Õ½ÕÈ|µØĞÄÌ½Ë÷¿É¶Ñµş¿É²åÈëÍ¨»õ|
+
+--SetGoodsCaoZuo(goodsType,czType,name,className,wordName,wordClassName,pingzhi,cnt,color,socketCnt,lineCnt,checkCangKu)-- ÉèÖÃÒª²Ù×÷µÄÎïÆ·
+--goodsType ×Ö·û´®ĞÍ ²Ù×÷µÄÎïÆ·ÀàĞÍºöÂÔÀàĞÍÇëÌî nil Ö§³ÖÒÔÏÂÖÖÀà ¶àÖÖÀàĞÍÒÔ|·Ö¿ª --saveType ÀàĞÍ Ö§³ÖÒÔÏÂÖÖÀà ¶àÖÖÀàĞÍÒÔ|·Ö¿ª ÉúÃüÒ©¼Á|Ä§Á¦Ò©¼Á|¸´ºÏÒ©¼Á|Í¨»õ|ÏîÁ´|½äÖ¸|×¦|Ø°Ê×|·¨ÕÈ|µ¥ÊÖ½£|Ï¸½£|µ¥ÊÖ¸«|µ¥ÊÖ´¸|·ûÎÄØ°Ê×|¶ÌÕÈ|Õ½ÕÈ|¹­|³¤ÕÈ|Ë«ÊÖ½£|Ë«ÊÖ¸«|Ë«ÊÖ´¸|Ö÷¶¯¼¼ÄÜ±¦Ê¯|¸¨Öú¼¼ÄÜ±¦Ê¯|¼ı´ü|Ñü´ø|ÊÖÌ×|Ğ¬×Ó|ÒÂ·ş|Í·¿ø|¶Ü|Ğ¡ĞÍÊ¥Îï|ÖĞĞÍÊ¥Îï|´óĞÍÊ¥Îï|¿É¶ÑµşÍ¨»õ|ÈÎÎñÎïÆ·|¶ÌÕÈ|¹¦ÄÜÒ©¼Á|±©»÷Ò©¼Á|Òì½çµØÍ¼||Óã¸Í|µØÍ¼ËéÆ¬|²ØÉí´¦×°ÊÎ|ÉÌ³ÇÎïÆ·|Öé±¦|ÃüÔË¿¨|ÃÔ¹¬ÎïÆ·|ÃÔ¹¬ÊÎÆ·|Òì½çÃÔ¹¬ÎïÆ·|ÁÑÏ¶Ö®Ê¯|Èü¼¾Ê¯|ÉñÁéÖ®»ê|´«Ææ×°±¸ËéÆ¬|ÉîÔ¨Öé±¦|´©Ô½Í¨»õ|µØĞÄÌ½Ë÷£º¿ÉÏâÇ¶µÄÍ¨»õ|ÔĞÓıÊ¯|ËéÆ¬|ÆÆËéÖ®ĞÄ|·ûÎÄØ°Ê×|Õ½ÕÈ|µØĞÄÌ½Ë÷¿É¶Ñµş¿É²åÈëÍ¨»õ|
 --czType:×Ö·û´®ĞÍ 0ÎªÊ° 1Âô 2´æ 3¶ª 4¼ø¶¨ ¿É¶à¸öÖĞ¼äÓÃ|¸ô¿ª
 --name ×Ö·û´®ĞÍ ÎïÆ·µÄÃû×Ö ºöÂÔÔòÌî nil
 --className ×Ö·û´®ĞÍ ÎïÆ·µÄÀàÃû ºöÂÔÔòÌî nil
@@ -606,22 +332,19 @@ SetNeedBuyGoodsData("»ú»áÊ¯","Metadata/Items/Currency/CurrencyUpgradeRandomly",8
 --pingzhi Êı×ÖĞÍ ÎïÆ·µÄÆ·ÖÊ ºöÂÔÔòÌî nil
 --cnt Êı×ÖĞÍ ±£ÁôÊıÁ¿ ºöÂÔÔòÌî nil
 --color ×Ö·û´®ĞÍ ÑÕÉ« 0°× 1À¶ 2»Æ 3³È ¶à¸öÓÃ|¸ô¿ª nilÎªËùÓĞ
--- SocketCnt Êı×ÖĞÍ ×Ü¶´ÊıÁ¿ ºöÂÔÔòÌî nil
+--socketCnt Êı×ÖĞÍ ×Ü¶´ÊıÁ¿ ºöÂÔÔòÌî nil
 --lineCnt Êı×ÖĞÍ Á¬¶´ÊıÁ¿ ºöÂÔÔòÌî nil
 --checkCangKu ¼ÆËã±£ÁôÊıÁ¿Ê±ÊÇ·ñÁ¬²Ö¿âÄÚµÄÊıÁ¿Ò²¼ÆËã½øÈ¥ nil»òfalseÎª²»¼ÆËã²Ö¿â true ÎªĞèÒª¼ÆËã
 SetGoodsCaoZuo("Í¨»õ|¿É¶ÑµşÍ¨»õ|Òì½çµØÍ¼","0|2")--¶à¸ö´óÀàÉèÖÃ¼ñ´æ
 SetGoodsCaoZuo("Ö÷¶¯¼¼ÄÜ±¦Ê¯|¸¨Öú¼¼ÄÜ±¦Ê¯","0|2",nil,nil,nil,nil,5)--Ê°È¡Æ·ÖÊ³¬¹ı5µÄ¼¼ÄÜ±¦Ê¯
 
 SetGoodsCaoZuo(nil,"0|1|4",nil,nil,nil,nil,nil,nil,"3")--Ê°È¡ ¼ø¶¨ ³öÊÛ³ÈÉ«ÎïÆ·
-SetGoodsCaoZuo(nil,nil,"ÖªÊ¶¾íÖá","Metadata/Items/Currency/CurrencyIdentification",nil,nil,nil,30)--¹»ÁË¾Í²»¼ñÁË
-SetGoodsCaoZuo(nil,nil,"´«ËÍ¾íÖá","Metadata/Items/Currency/CurrencyPortal",nil,nil,nil,30)--¹»ÁË¾Í²»¼ñÁË
+SetGoodsCaoZuo(nil,nil,"ÖªÊ¶¾íÖá","Metadata/Items/Currency/CurrencyIdentification",nil,nil,nil,40)--¹»ÁË¾Í²»¼ñÁË
+SetGoodsCaoZuo(nil,nil,"´«ËÍ¾íÖá","Metadata/Items/Currency/CurrencyPortal",nil,nil,nil,80)--¹»ÁË¾Í²»¼ñÁË
+SetGoodsCaoZuo(nil,nil,"µã½ğÊ¯","Metadata/Items/Currency/CurrencyUpgradeToRare",nil,nil,nil,40)--ÉíÉÏ±£Áô40
 SetGoodsCaoZuo(nil,"0|1",nil,nil,nil,nil,nil,nil,"0|1|2",6)--6¶´×°ÉèÖÃ¼ñÂô
 SetGoodsCaoZuo(nil,"0|1",nil,nil,nil,nil,nil,nil,"0|1|2",nil,6)--6Á¬¶´×°ÉèÖÃ¼ñÂô
---SetGoodsCaoZuo("·¨ÕÈ","0|1|4",nil,nil,nil,nil,nil,nil,"2")--¼ñÂô¾«Á¼µÄ»Æ×¦×Ó
---SetGoodsCaoZuo("µ¥ÊÖ¸«","0|1|4",nil,nil,nil,nil,5,nil,"2")--¼ñÂô¾«Á¼µÄ»Æ×¦×Ó
---SetGoodsCaoZuo("¶ÌÕÈ","0|1|4",nil,nil,nil,nil,5,nil,"2")--¼ñÂô¾«Á¼µÄ»Æ×¦×Ó
---SetGoodsCaoZuo("Ø°Ê×","0|1|4",nil,nil,nil,nil,5,nil,"2")--¼ñÂô¾«Á¼µÄ»Æ×¦×Ó
---SetGoodsCaoZuo("Ï¸½£","0|1|4",nil,nil,nil,nil,5,nil,"2")--¼ñÂô¾«Á¼µÄ»Æ×¦×Ó
+SetGoodsCaoZuo("×¦","0|1|4",nil,nil,nil,nil,5,nil,"2")--¼ñÂô¾«Á¼µÄ»Æ×¦×Ó
 SetGoodsCaoZuo("Öé±¦|ÉîÔ¨Öé±¦","0|1|4",nil,nil,nil,nil,nil,nil,"2")--Ê°È¡ ¼ø¶¨ ³öÊÛ»ÆÉ«ÎïÆ·Öé±¦
 SetGoodsCaoZuo(nil,"1|3","ÖÜÄê¸£´ü","Metadata/Items/MicrotransactionCurrency/MicrotransactionTencentEventCoin")--
 SetGoodsCaoZuo(nil,"1|3","²£Á§µ¯Öé","Metadata/Items/Currency/CurrencyFlaskQuality")--
@@ -629,149 +352,69 @@ SetGoodsCaoZuo(nil,"0","Ä¥µ¶Ê¯","Metadata/Items/Currency/CurrencyWeaponQuality")
 SetGoodsCaoZuo(nil,"0","»¤¼×Æ¬","Metadata/Items/Currency/CurrencyArmourQuality")--»¤¼×Æ¬²»´æ
 SetGoodsCaoZuo(nil,"3","¾íÖáËéÆ¬","Metadata/Items/Currency/CurrencyIdentificationShard")--¾íÖáËéÆ¬¶ª
 SetGoodsCaoZuo(nil,"3","Ô¤ÑÔ","Metadata/Items/Currency/CurrencyItemisedProphecy")--¶ªÔ¤ÑÔ
--- SetGoodsCaoZuo(nil,"3","¼ÀìëÁÑÆ¬","Metadata/Items/Currency/CurrencyRitualSplinter")
--- SetGoodsCaoZuo(nil,"3","¼Àìë±®Æ÷","Metadata/Items/Currency/CurrencyRitualStone")
--- SetGoodsCaoZuo(nil,"1|3","×£¸£Ê¯","Metadata/Items/Currency/CurrencyRerollImplicit")--
+SetGoodsCaoZuo(nil,"0|2","ÌmËş¶äÃÔã¯Ö®Û","Metadata/Items/DivinationCards/DivinationCardLantadorsLostLove")
+SetGoodsCaoZuo(nil,"1|3","×£¸£Ê¯","Metadata/Items/Currency/CurrencyRerollImplicit")--
 SetGoodsCaoZuo(nil,"1|3","Êø¿`Ê¯","Metadata/Items/Currency/CurrencyUpgradeToRareAndSetSockets")--
-SetGoodsCaoZuo(nil,"1|3","Êø¿`Ê¯ËéÆ¬","Metadata/Items/Currency/CurrencyUpgradeToRareAndSetSocketsShard")--
-SetGoodsCaoZuo(nil,"1|3","¹¤³ÌÊ¯ËéÆ¬","Metadata/Items/Currency/CurrencyStrongboxQualityShard")--
 SetGoodsCaoZuo(nil,"1|3","¹¤³ÌÊ¯","Metadata/Items/Currency/CurrencyStrongboxQuality")--
-SetGoodsCaoZuo(nil,"1|3","Ê¥½àËø¼×","Metadata/Items/Armours/BodyArmours/BodyStrInt17","½«¾üµÄ¸´Éú","Chains of Command")
-SetGoodsCaoZuo(nil,"1|3","Æ¤¸ïÑü´ø","Metadata/Items/Belts/Belt3","ÓÀÉú","Immortal Flesh")
--- SetGoodsCaoZuo(nil,"1|3","Ê¥Óñ","Metadata/Items/Currency/CurrencyRerollDefences")
--- SetGoodsCaoZuo(nil,"1|3","çèÎÛµÄ»¤¼×Æ¬","Metadata/Items/Currency/CurrencyHellscapeArmourQuality")
--- SetGoodsCaoZuo(nil,"1|3","çèÎÛµÄÄ¥µ¶Ê¯","Metadata/Items/Currency/CurrencyHellscapeWeaponQuality")
--- SetGoodsCaoZuo(nil,"1|3","çèÎÛµÄ×£¸£","Metadata/Items/Currency/CurrencyLabyrinthEnchantCorrupt")
--- SetGoodsCaoZuo(nil,"1|3","çèÎÛµÄ¹¤½³Ê¯","Metadata/Items/Currency/CurrencyHellscapeRerollSocketNumbers")
--- SetGoodsCaoZuo(nil,"1|3","çèÎÛµÄ³ç¸ßÊ¯","Metadata/Items/Currency/CurrencyHellscapeAddModToRare")
--- SetGoodsCaoZuo(nil,"1|3","çèÎÛµÄ»ÃÉ«Ê¯","Metadata/Items/Currency/CurrencyHellscapeRerollSocketColours",nil,nil,nil,nil)
---SetGoodsCaoZuo(nil,"1|3","»ÃÉ«Ê¯","Metadata/Items/Currency/CurrencyRerollSocketColours")
+
+
 SetGoodsCaoZuo(nil,"1|3",nil,"Metadata/Items/Metamorphosis/MetamorphosisBrain")--å€Ä§ÄXËè²»¼ñ
 SetGoodsCaoZuo(nil,"1|3",nil,"Metadata/Items/Metamorphosis/MetamorphosisEye")--å€Ä§ÑÛ¾¦²»¼ñ
 SetGoodsCaoZuo(nil,"1|3",nil,"Metadata/Items/Metamorphosis/MetamorphosisLiver")--å€Ä§¸ÎÅK²»¼ñ
 SetGoodsCaoZuo(nil,"1|3",nil,"Metadata/Items/Metamorphosis/MetamorphosisLung")--å€Ä§·ÎÅK²»¼ñ
 SetGoodsCaoZuo(nil,"1|3",nil,"Metadata/Items/Metamorphosis/MetamorphosisHeart")--å€Ä§ĞÄÅK²»¼ñ
-SetGoodsCaoZuo(nil,"3","»ÃÉ«Ê¯","Metadata/Items/Currency/CurrencyRerollSocketColours",nil,nil,nil,80,nil,nil,nil,true)
 
+SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","Å­ÀËÖ®¸Û","Metadata/Items/Maps/MapWorldsPier")
+SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","Áò»ÇÊ´°¶","Metadata/Items/Maps/MapWorldsSulphurVents")
+SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","ÈçÂÄÎ£ ","Metadata/Items/Maps/MapWorldsLookout")
+SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","¹Å¸‚ËÙˆö","Metadata/Items/Maps/MapWorldsRacecourse")
+SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","ÑªĞÈÕÓÉ","Metadata/Items/Maps/MapWorldsPrimordialPool")
+SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","ê»ŞÄà©","Metadata/Items/Maps/MapWorldsMudGeyser")
+SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","Ä§½ğŒšì","Metadata/Items/Maps/MapWorldsVault")
+SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","»Ä›öÄÁÒ°","Metadata/Items/Maps/MapWorldsLeyline")
+SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","Vˆö","Metadata/Items/Maps/MapWorldsPlaza")
+SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","ˆ@ÁÖÔ·","Metadata/Items/Maps/MapWorldsPark")
+SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","¼¤‘ğÖùÀÈ","Metadata/Items/Maps/MapWorldsColonnade")
+SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","ÈÛ»ğÑÒ©","Metadata/Items/Maps/MapWorldsEstuary")
+SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","Äº¹âº£©","Metadata/Items/Maps/MapWorldsShore")
+SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","ÆæĞgÖ®Í¥","Metadata/Items/Maps/MapWorldsCourtyard")
+SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","ó@‘Ö˜ä…²","Metadata/Items/Maps/MapWorldsThicket")
+SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","ŒÒİœØ·¿","Metadata/Items/Maps/MapWorldsConservatory")
+SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","Â}µî","Metadata/Items/Maps/MapWorldsBasilica")
+SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","Î£™Cº£½¸","Metadata/Items/Maps/MapWorldsReef")
+SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","ßzÛEUĞæ","Metadata/Items/Maps/MapWorldsCastleRuins")
+SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","ÖËê–{¹È","Metadata/Items/Maps/MapWorldsCanyon")
+SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","¹Å±¤","Metadata/Items/Maps/MapWorldsChateau")
+SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","»ÄµØ","Metadata/Items/Maps/MapWorldsWasteland")
+SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","ë…í”çŠ˜Ç","Metadata/Items/Maps/MapWorldsBelfry")
+SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","Ä§½ğŒšì","Metadata/Items/Maps/MapWorldsVault")
+SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","»ğÉ½Ñ×Óò","Metadata/Items/Maps/MapWorldsVolcano")
+SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","¹ÅµäÃÜÊÒ","Metadata/Items/Maps/MapWorldsRelicChambers")
+SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","ËÀ¼ÅÄàœÏ","Metadata/Items/Maps/MapWorldsWastePool")
+SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","éœªz¼âËş","Metadata/Items/Maps/MapWorldsTower")
+SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","»ğÉ½Ñ×¿Ú","Metadata/Items/Maps/MapWorldsCaldera")
 
-
-SetGoodsCaoZuo("ÆõÔ¼","0|2",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,function(r)return r.lv>68 end)
-SetGoodsCaoZuo(nil,"0","ÉÍ½ğÁÔÈËÓ¡¼Ç","Metadata/Items/Heist/HeistCoin")--Ö»¼ñ²»´æ¶á±¦±Ò
-SetGoodsCaoZuo(nil,nil,"ÉÍ½ğÁÔÈËÓ¡¼Ç","Metadata/Items/Heist/HeistCoin",nil,nil,nil,30000)--¹»ÁË¾Í²»¼ñÁË
-
-
-SetGoodsCaoZuo(nil,"3",nil,"Metadata/Items/Heist/HeistBlueprintDungeon")--Ë{ˆD£ºŒòÊÒ
-SetGoodsCaoZuo(nil,"3",nil,"Metadata/Items/Heist/HeistBlueprintReliquary")--Ë{ˆD£ºÕ¹Ó[ÊÒ
-SetGoodsCaoZuo(nil,"3",nil,"Metadata/Items/Heist/HeistBlueprintLibrary")--Ë{ˆD£º½û¼Éğ^²Ø
-SetGoodsCaoZuo(nil,"3",nil,"Metadata/Items/Heist/HeistBlueprintRobotTunnels")--Ë{ˆD£ºµØµÀ
-
-
--- ¶ªÆúµØÍ¼
-SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","ÈÛÑÒÖ®ÊÒ","Metadata/Items/Maps/MapWorldsLavaChamber")
-SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","ç³ºìĞ¡Õò","Metadata/Items/Maps/MapWorldsCrimsonTownship")
---SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","Å­ÀËÖ®¸Û","Metadata/Items/Maps/MapWorldsPier")
---SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","÷ÈÓ°„eÊû","Metadata/Items/Maps/MapWorldsVilla")
---SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","ÈçÂÄÎ£ ","Metadata/Items/Maps/MapWorldsLookout")
---SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","¹Å¸‚ËÙˆö","Metadata/Items/Maps/MapWorldsRacecourse")
---SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","ÑªĞÈÕÓÉ","Metadata/Items/Maps/MapWorldsPrimordialPool")
---SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","ë…í”çŠ˜Ç","Metadata/Items/Maps/MapWorldsBelfry")
---SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","¸‚¼¼ˆö","Metadata/Items/Maps/MapWorldsArena")
---SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","Ä§½ğŒšì","Metadata/Items/Maps/MapWorldsVault")
---SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","ê»ŞÄà©","Metadata/Items/Maps/MapWorldsMudGeyser")
---SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","Íß –½ğ×ÖËş","Metadata/Items/Maps/MapWorldsVaalPyramid")
---SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","Vˆö","Metadata/Items/Maps/MapWorldsPlaza")
---SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","×Ï¾§µVÉ½","Metadata/Items/Maps/MapWorldsCrystalOre")
---SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","¼¤‘ğÖùÀÈ","Metadata/Items/Maps/MapWorldsColonnade")
---SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","ÈÛ»ğÑÒ©","Metadata/Items/Maps/MapWorldsEstuary")
---SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","ËÀ¼ÅÄàœÏ","Metadata/Items/Maps/MapWorldsWastePool")
---SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","ÆæĞgÖ®Í¥","Metadata/Items/Maps/MapWorldsCourtyard")
---SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","Ô×H¾§¶´","Metadata/Items/Maps/MapWorldsGeode")
---SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","ÈÛÑÒÖ®ÊÒ","Metadata/Items/Maps/MapWorldsLavaChamber")
---SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","ó@‘Ö˜ä…²","Metadata/Items/Maps/MapWorldsThicket")
---SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","Ä§ì`»Ãªz","Metadata/Items/Maps/MapWorldsPhantasmagoria")
---SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","ºì`ŒWÔº","Metadata/Items/Maps/MapWorldsAcademy")
---SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","Â}µî","Metadata/Items/Maps/MapWorldsBasilica")
---SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","»ğÉ½Ñ×¿Ú","Metadata/Items/Maps/MapWorldsCaldera")
---SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","Î£™Cº£½¸","Metadata/Items/Maps/MapWorldsReef")
---SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","ßzÛEUĞæ","Metadata/Items/Maps/MapWorldsCastleRuins")
---SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","ÖËê–{¹È","Metadata/Items/Maps/MapWorldsCanyon")
---SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","¹Å±¤","Metadata/Items/Maps/MapWorldsChateau")
---SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","ÉñÖ÷¾ÓËù","Metadata/Items/Maps/MapWorldsResidence")
-
-SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","Vault Map","Metadata/Items/Maps/MapWorldsVault",nil,nil,nil,nil,"0|1|2")--»ú¹Ø±¦¿â---²»ÄÜ´ò---15¼¶
-SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","Summit Map","Metadata/Items/Maps/MapWorldsSummit",nil,nil,nil,nil,"0|1|2")--º®¶¥Ö®áÛ--16¼¶
-SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","Laboratory Map","Metadata/Items/Maps/MapWorldsLaboratory",nil,nil,nil,nil,"0|1|2")--ÊµÑéÃÜÊÒ---ĞèÒª¿ª»ú¹ØÄÑ´ò---5¼¶
-SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","Crater Map","Metadata/Items/Maps/MapWorldsTribunal",nil,nil,nil,nil,"0|1|2")--ÔÉ¿Ó---µØĞÎ¸´ÔÓ---3¼¶
-SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","Terrace Map","Metadata/Items/Maps/MapWorldsTerrace",nil,nil,nil,nil,"0|1|2")--º£±õÌ¨µØ---boss¸´ÔÓÄÑ´ò---4¼¶
-SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","Pier Map","Metadata/Items/Maps/MapWorldsPier",nil,nil,nil,nil,"0|1|2")--Å­ÀËÖ®¸Û---boss½×¶Î¶à---»ú¹Ø¶à---2¼¶
-
---SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","ÖÂÃüÑÒ©","Metadata/Items/Maps/MapWorldsCursedCrypt",nil,nil,nil,nil,"3")
---SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","Iº£É½Çğ","Metadata/Items/Maps/MapWorldsAtoll",nil,nil,nil,nil,"3")
---SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","³¿êØÄ¹µØ","Metadata/Items/Maps/MapWorldsCemetery",nil,nil,nil,nil,"3")
---SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","ÄºÉ«É³Çğ","Metadata/Items/Maps/MapWorldsDunes",nil,nil,nil,nil,"3")
---SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","¹ÇÛEÁêÄ¹","Metadata/Items/Maps/MapWorldsBoneCrypt",nil,nil,nil,nil,"3")
---SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","Íß –½ğ×ÖËş","Metadata/Items/Maps/MapWorldsVaalPyramid",nil,nil,nil,nil,"3")
-SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","ÃÜ²İÉñµî","Metadata/Items/Maps/MapWorldsOvergrownShrine",nil,nil,nil,nil,"0|1|2|3")
+SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","ÖÂÃüÑÒ©","Metadata/Items/Maps/MapWorldsCursedCrypt",nil,nil,nil,nil,"3")
+SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","Iº£É½Çğ","Metadata/Items/Maps/MapWorldsAtoll",nil,nil,nil,nil,"3")
+SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","³¿êØÄ¹µØ","Metadata/Items/Maps/MapWorldsCemetery",nil,nil,nil,nil,"3")
+SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","ÄºÉ«É³Çğ","Metadata/Items/Maps/MapWorldsDunes",nil,nil,nil,nil,"3")
+SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","¹ÇÛEÁêÄ¹","Metadata/Items/Maps/MapWorldsBoneCrypt",nil,nil,nil,nil,"3")
+SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","Íß –½ğ×ÖËş","Metadata/Items/Maps/MapWorldsVaalPyramid",nil,nil,nil,nil,"3")
+SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","ÃÜ²İÉñµî","Metadata/Items/Maps/MapWorldsOvergrownShrine",nil,nil,nil,nil,"3")
 SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","Iº£ÓÄÑ¨","Metadata/Items/Maps/MapWorldsUndergroundSea",nil,nil,nil,nil,"3")
---SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","Ä§Ó°Ä¹ˆö","Metadata/Items/Maps/MapWorldsNecropolis",nil,nil,nil,nil,"3")
+SetGoodsCaoZuo("Òì½çµØÍ¼","1|3","Ä§Ó°Ä¹ˆö","Metadata/Items/Maps/MapWorldsNecropolis",nil,nil,nil,nil,"3")
 
 SetGoodsCaoZuo(nil,"1|3","ÆÕÀ¼µÂË¹½ğ±Ò","Metadata/Items/Currency/CurrencyPerandusCoin",nil,nil,nil,nil)
-SetGoodsCaoZuo(nil,"1|3","Æ÷Ãó","Metadata/Items/Currency/CurrencyCorruptMonolith",nil,nil,nil,nil)
-SetGoodsCaoZuo(nil,"1|3","³äÄÜµÄ´ß»¯„©","Metadata/Items/Currency/CurrencyJewelleryQualityCaster",nil,nil,nil,nil)
-SetGoodsCaoZuo(nil,"1|3","›°œ¥µÄ´ß»¯„©","Metadata/Items/Currency/CurrencyJewelleryQualityElemental",nil,nil,nil,nil)
-SetGoodsCaoZuo(nil,"1|3","Ò±å€µÄ´ß»¯„©","Metadata/Items/Currency/CurrencyJewelleryQualityDefense",nil,nil,nil,nil)
-SetGoodsCaoZuo(nil,"1|3","±¾Ù|µÄ´ß»¯„©","Metadata/Items/Currency/CurrencyJewelleryQualityAttribute",nil,nil,nil,nil)
-SetGoodsCaoZuo(nil,"1|3","ÑĞÄ¥µÄ´ß»¯„©","Metadata/Items/Currency/CurrencyJewelleryQualityAttack",nil,nil,nil,nil)
-SetGoodsCaoZuo(nil,"1|3","¶¾ĞÔ´ß»¯„©","Metadata/Items/Currency/CurrencyJewelleryQualityPhysicalChaos",nil,nil,nil,nil)
-SetGoodsCaoZuo(nil,"1|3","Ò××ƒ´ß»¯„©","Metadata/Items/Currency/CurrencyJewelleryQualityCritical",nil,nil,nil,nil)
-SetGoodsCaoZuo(nil,"1|3","¼ÓËÙ´ß»¯„©","Metadata/Items/Currency/CurrencyJewelleryQualitySpeed",nil,nil,nil,nil)
 
 
-
-
-
+--SetGoodsCaoZuo(nil,"0|2",nil,nil,nil,"Advancing Fortress",nil,nil,"3")--Ê°È¡ ´æ´¢Ö¸¶¨³ÈÉ«ÎïÆ·
 SetGoodsCaoZuo(nil,"1|3","ÇåÍ¸ÓÍÆ¿","Metadata/Items/Currency/Mushrune1")
 SetGoodsCaoZuo(nil,"1|3","ÉîºÖÓÍÆ¿","Metadata/Items/Currency/Mushrune2")
 SetGoodsCaoZuo(nil,"1|3","çúçêÓÍÆ¿","Metadata/Items/Currency/Mushrune3")
 SetGoodsCaoZuo(nil,"1|3","´ä¾GÓÍÆ¿","Metadata/Items/Currency/Mushrune4")
 SetGoodsCaoZuo(nil,"1|3","Çå¾GÓÍÆ¿","Metadata/Items/Currency/Mushrune5")
 SetGoodsCaoZuo(nil,"1|3","±ÌË{ÓÍÆ¿","Metadata/Items/Currency/Mushrune6")
-SetGoodsCaoZuo(nil,"1|3","×ÏÉ«Ê¥ÓÍ","Metadata/Items/Currency/Mushrune7")
-
---¿¨Æ¬±£Áô
-SetGoodsCaoZuo(nil,"0|2","ºÚ°µÈıÃæ","Metadata/Items/DivinationCards/DivinationCardThreeFacesInTheDark")
-SetGoodsCaoZuo(nil,"0|2","ÌmËş¶äÃÔã¯Ö®Û","Metadata/Items/DivinationCards/DivinationCardLantadorsLostLove")
-SetGoodsCaoZuo(nil,"0|2","Ş±ÄİÑÅµÄĞÅÎï","Metadata/Items/DivinationCards/DivinationCardViniasToken")
-SetGoodsCaoZuo(nil,"0|2","Öé±¦½³","Metadata/Items/DivinationCards/DivinationCardTheGemcutter")
-SetGoodsCaoZuo(nil,"0|2","»ëãçĞÔÇé","Metadata/Items/DivinationCards/DivinationCardChaoticDisposition")
-SetGoodsCaoZuo(nil,"0|2","µÛÔË","Metadata/Items/DivinationCards/DivinationCardEmperorsLuck")
-SetGoodsCaoZuo(nil,"0|2","ºÃÔËÁ¬Á¬","Metadata/Items/DivinationCards/DivinationCardLuckyConnections")
-SetGoodsCaoZuo(nil,"0|2","»ìãçÖ®Óê","Metadata/Items/DivinationCards/DivinationCardRainOfChaos")
-SetGoodsCaoZuo(nil,"0|2","ï|¿ÊÖ®×","Metadata/Items/DivinationCards/DivinationCardCovetedPossession")
-SetGoodsCaoZuo(nil,"0|2","·¢Ã÷¼Ò","Metadata/Items/DivinationCards/DivinationCardTheInventor")
-SetGoodsCaoZuo(nil,"0|2","¾ªÏ²ºĞ","Metadata/Items/DivinationCards/DivinationCardJackInTheBox")
-SetGoodsCaoZuo(nil,"0|2","ÁªÒö","Metadata/Items/DivinationCards/DivinationCardTheUnion")
-SetGoodsCaoZuo(nil,"0|2","Ô¹·Ş","Metadata/Items/DivinationCards/DivinationCardTheWrath")
-SetGoodsCaoZuo(nil,"0|2","ÔÖ±ä","Metadata/Items/DivinationCards/DivinationCardTheCatalyst")
-SetGoodsCaoZuo(nil,"0|2","Éç•şµÄ°Ã»Ú","Metadata/Items/DivinationCards/DivinationCardSocietysRemorse")
-SetGoodsCaoZuo(nil,"0|2","ÇóÉú×¨¼Ò","Metadata/Items/DivinationCards/DivinationCardTheSurvivalist")
-SetGoodsCaoZuo(nil,"0|2","ßmÕßÉú´æ","Metadata/Items/DivinationCards/DivinationCardAcclimatisation")
-SetGoodsCaoZuo(nil,"0|2","ÖÒ³Ï","Metadata/Items/DivinationCards/DivinationCardLoyalty")
-SetGoodsCaoZuo(nil,"0|2","ÖÆÍ¼Ê¦","Metadata/Items/DivinationCards/DivinationCardTheCartographer")
-SetGoodsCaoZuo(nil,"0|2","ŸoºÛ","Metadata/Items/DivinationCards/DivinationCardNoTraces")
-SetGoodsCaoZuo(nil,"0|2","ÉÆ","Metadata/Items/DivinationCards/DivinationCardTheInnocent")
-SetGoodsCaoZuo(nil,"0|2","ÓŞÈË","Metadata/Items/DivinationCards/DivinationCardTheFool")
-SetGoodsCaoZuo(nil,"0|2","¶ÄÍ½","Metadata/Items/DivinationCards/DivinationCardTheGambler")
-SetGoodsCaoZuo(nil,"0|2","¹¤½³´óÊ¦","Metadata/Items/DivinationCards/DivinationCardMasterArtisan")
-SetGoodsCaoZuo(nil,"0|2","Ğé¿Õ","Metadata/Items/DivinationCards/DivinationCardTheVoid")
-SetGoodsCaoZuo(nil,"0|2","µÛ¹úµÄÒÅ²ú","Metadata/Items/DivinationCards/DivinationCardImperialLegacy")
-SetGoodsCaoZuo(nil,"0|2","ÑªÈâÖ®Ü|","Metadata/Items/DivinationCards/DivinationCardTheBody")
-SetGoodsCaoZuo(nil,"0|2","ŒšÊ¯½³µÄÔÊÖZ","Metadata/Items/DivinationCards/DivinationCardGemcuttersPromise")
-SetGoodsCaoZuo(nil,"0|2","¿şÀÜ","Metadata/Items/DivinationCards/DivinationCardTheDoppelganger")
-SetGoodsCaoZuo(nil,"0|2","¾»°×","Metadata/Items/DivinationCards/DivinationCardTheOpulecent")
-SetGoodsCaoZuo(nil,"0|2","²®ÖÙØ”ì","Metadata/Items/DivinationCards/DivinationCardBrothersStash")
-SetGoodsCaoZuo(nil,"0|2","Ë{º£","Metadata/Items/DivinationCards/DivinationCardASeaOfBlue")
-
+--SetGoodsCaoZuo(nil,"1|3","Ô¤ÑÔ","Metadata/Items/Currency/CurrencyItemisedProphecy")
 SetGoodsCaoZuo(nil,"1|3","±©Ñ×»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingFire")--¿É¶Ñ¯BÍ¨Ø›
 SetGoodsCaoZuo(nil,"1|3","º®ïL»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingCold")--¿É¶Ñ¯BÍ¨Ø›
 SetGoodsCaoZuo(nil,"1|3","½ğä“»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingLightning")--¿É¶Ñ¯BÍ¨Ø›
@@ -779,11 +422,15 @@ SetGoodsCaoZuo(nil,"1|3","äıX»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCrafti
 SetGoodsCaoZuo(nil,"1|3","ÌØ®»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingChaos")--¿É¶Ñ¯BÍ¨Ø›
 SetGoodsCaoZuo(nil,"1|3","Ô­Ê¼»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingLife")--¿É¶Ñ¯BÍ¨Ø›
 SetGoodsCaoZuo(nil,"1|3","³íÃÜ»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingDefences")--¿É¶Ñ¯BÍ¨Ø›
+SetGoodsCaoZuo(nil,"1|3","°ßñg»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingBleedPoison")--¿É¶Ñ¯BÍ¨Ø›
 SetGoodsCaoZuo(nil,"1|3","ÈıÏà»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingElemental")--¿É¶Ñ¯BÍ¨Ø›
 SetGoodsCaoZuo(nil,"1|3","Éñ»Ã»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingCasterMods")--¿É¶Ñ¯BÍ¨Ø›
 SetGoodsCaoZuo(nil,"1|3","ÀûıX»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingAttackMods")--¿É¶Ñ¯BÍ¨Ø›
 SetGoodsCaoZuo(nil,"1|3","Ã÷Í¸»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingMana")--¿É¶Ñ¯BÍ¨Ø›
 SetGoodsCaoZuo(nil,"1|3","îü»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingSpeed")--¿É¶Ñ¯BÍ¨Ø›
+SetGoodsCaoZuo(nil,"1|3","î³Óò»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingMinionsAuras")--¿É¶Ñ¯BÍ¨Ø›
+SetGoodsCaoZuo(nil,"1|3","Ÿoè¦»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingQuality")--¿É¶Ñ¯BÍ¨Ø›
+SetGoodsCaoZuo(nil,"1|3","¸½Ä§»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingEnchant")--¿É¶Ñ¯BÍ¨Ø›
 SetGoodsCaoZuo(nil,"1|3","è‚ï—»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingSockets")--¿É¶Ñ¯BÍ¨Ø›
 SetGoodsCaoZuo(nil,"1|3","µñ×Á»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingGemLevel")--¿É¶Ñ¯BÍ¨Ø›
 SetGoodsCaoZuo(nil,"1|3","Ñªn»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingVaal")--¿É¶Ñ¯BÍ¨Ø›
@@ -793,545 +440,131 @@ SetGoodsCaoZuo(nil,"1|3","µñ¼y»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCrafti
 SetGoodsCaoZuo(nil,"1|3","ÎÉy»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingRandom")--¿É¶Ñ¯BÍ¨Ø›
 SetGoodsCaoZuo(nil,"1|3","ÉñÂ}»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingLuckyModRolls")--¿É¶Ñ¯BÍ¨Ø›
 SetGoodsCaoZuo(nil,"1|3","è‚½ğ»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingSellPrice")--¿É¶Ñ¯BÍ¨Ø›
-SetGoodsCaoZuo(nil,"1|3","°ßñg»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingBleedPoison")--¿É¶Ñ¯BÍ¨Ø›
-SetGoodsCaoZuo(nil,"1|3","Ÿoè¦»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingQuality")--¿É¶Ñ¯BÍ¨Ø›
-SetGoodsCaoZuo(nil,"1|3","î³Óò»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingMinionsAuras")--¿É¶Ñ¯BÍ¨Ø›
-SetGoodsCaoZuo(nil,"1|3","¸½Ä§»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingEnchant")--¿É¶Ñ¯BÍ¨Ø›
+
+SetGoodsCaoZuo(nil,"1|3","ÍØÓ¡µÄ·âÄ§Ö®Óñ","Metadata/Items/Currency/CurrencyItemisedCapturedMonster")--ËùÓĞ¾«»ªÉèÖÃ¶ªÂô
+SetGoodsCaoZuo(nil,"1|3","Ô÷ºŞÖ®µÍÓï¾«»ª","Metadata/Items/Currency/CurrencyEssenceHatred1")
+SetGoodsCaoZuo(nil,"1|3","Ô÷ºŞÖ®ÄØà«¾«»ª","Metadata/Items/Currency/CurrencyEssenceHatred2")
+SetGoodsCaoZuo(nil,"1|3","Ô÷ºŞÖ®ÌäÆü¾«»ª","Metadata/Items/Currency/CurrencyEssenceHatred3")
+SetGoodsCaoZuo(nil,"1|3","Ô÷ºŞÖ®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceHatred4")
+SetGoodsCaoZuo(nil,"1|3","Ô÷ºŞÖ®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceHatred5")
+SetGoodsCaoZuo(nil,"1|3","Ô÷ºŞÖ®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceHatred6")
+SetGoodsCaoZuo(nil,"1|3","Ô÷ºŞÖ®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceHatred7")
+SetGoodsCaoZuo(nil,"1|3","±¯Í´Ö®µÍÓï¾«»ª","Metadata/Items/Currency/CurrencyEssenceWoe1")
+SetGoodsCaoZuo(nil,"1|3","±¯Í´Ö®ÄØà«¾«»ª","Metadata/Items/Currency/CurrencyEssenceWoe2")
+SetGoodsCaoZuo(nil,"1|3","±¯Í´Ö®ÌäÆü¾«»ª","Metadata/Items/Currency/CurrencyEssenceWoe3")
+SetGoodsCaoZuo(nil,"1|3","±¯Í´Ö®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceWoe4")
+SetGoodsCaoZuo(nil,"1|3","±¯Í´Ö®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceWoe5")
+SetGoodsCaoZuo(nil,"1|3","±¯Í´Ö®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceWoe6")
+SetGoodsCaoZuo(nil,"1|3","±¯Í´Ö®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceWoe7")
+SetGoodsCaoZuo(nil,"1|3","Ì°À·Ö®µÍÓï¾«»ª","Metadata/Items/Currency/CurrencyEssenceGreed1")
+SetGoodsCaoZuo(nil,"1|3","Ì°À·Ö®ÄØà«¾«»ª","Metadata/Items/Currency/CurrencyEssenceGreed2")
+SetGoodsCaoZuo(nil,"1|3","Ì°À·Ö®ÌäÆü¾«»ª","Metadata/Items/Currency/CurrencyEssenceGreed3")
+SetGoodsCaoZuo(nil,"1|3","Ì°À·Ö®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceGreed4")
+SetGoodsCaoZuo(nil,"1|3","Ì°À·Ö®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceGreed5")
+SetGoodsCaoZuo(nil,"1|3","Ì°À·Ö®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceGreed6")
+SetGoodsCaoZuo(nil,"1|3","Ì°À·Ö®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceGreed7")
+SetGoodsCaoZuo(nil,"1|3","ÇáÊÓÖ®µÍÓï¾«»ª","Metadata/Items/Currency/CurrencyEssenceContempt1")
+SetGoodsCaoZuo(nil,"1|3","ÇáÊÓÖ®ÄØà«¾«»ª","Metadata/Items/Currency/CurrencyEssenceContempt2")
+SetGoodsCaoZuo(nil,"1|3","ÇáÊÓÖ®ÌäÆü¾«»ª","Metadata/Items/Currency/CurrencyEssenceContempt3")
+SetGoodsCaoZuo(nil,"1|3","ÇáÊÓÖ®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceContempt4")
+SetGoodsCaoZuo(nil,"1|3","ÇáÊÓÖ®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceContempt5")
+SetGoodsCaoZuo(nil,"1|3","ÇáÊÓÖ®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceContempt6")
+SetGoodsCaoZuo(nil,"1|3","ÇáÊÓÖ®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceContempt7")
+SetGoodsCaoZuo(nil,"1|3","°§Ï§Ö®ÄØà«¾«»ª","Metadata/Items/Currency/CurrencyEssenceSorrow1")
+SetGoodsCaoZuo(nil,"1|3","°§Ï§Ö®ÌäÆü¾«»ª","Metadata/Items/Currency/CurrencyEssenceSorrow2")
+SetGoodsCaoZuo(nil,"1|3","°§Ï§Ö®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceSorrow3")
+SetGoodsCaoZuo(nil,"1|3","°§Ï§Ö®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceSorrow4")
+SetGoodsCaoZuo(nil,"1|3","°§Ï§Ö®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceSorrow5")
+SetGoodsCaoZuo(nil,"1|3","°§Ï§Ö®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceSorrow6")
+SetGoodsCaoZuo(nil,"1|3","·ßÅ­Ö®ÄØà«¾«»ª","Metadata/Items/Currency/CurrencyEssenceAnger1")
+SetGoodsCaoZuo(nil,"1|3","·ßÅ­Ö®ÌäÆü¾«»ª","Metadata/Items/Currency/CurrencyEssenceAnger2")
+SetGoodsCaoZuo(nil,"1|3","·ßÅ­Ö®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceAnger3")
+SetGoodsCaoZuo(nil,"1|3","·ßÅ­Ö®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceAnger4")
+SetGoodsCaoZuo(nil,"1|3","·ßÅ­Ö®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceAnger5")
+SetGoodsCaoZuo(nil,"1|3","·ßÅ­Ö®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceAnger6")
+SetGoodsCaoZuo(nil,"1|3","ÕÛÄ¥Ö®ÄØà«¾«»ª","Metadata/Items/Currency/CurrencyEssenceTorment1")
+SetGoodsCaoZuo(nil,"1|3","ÕÛÄ¥Ö®ÌäÆü¾«»ª","Metadata/Items/Currency/CurrencyEssenceTorment2")
+SetGoodsCaoZuo(nil,"1|3","ÕÛÄ¥Ö®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceTorment3")
+SetGoodsCaoZuo(nil,"1|3","ÕÛÄ¥Ö®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceTorment4")
+SetGoodsCaoZuo(nil,"1|3","ÕÛÄ¥Ö®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceTorment5")
+SetGoodsCaoZuo(nil,"1|3","ÕÛÄ¥Ö®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceTorment6")
+SetGoodsCaoZuo(nil,"1|3","¿Ö¾åÖ®ÄØà«¾«»ª","Metadata/Items/Currency/CurrencyEssenceFear1")
+SetGoodsCaoZuo(nil,"1|3","¿Ö¾åÖ®ÌäÆü¾«»ª","Metadata/Items/Currency/CurrencyEssenceFear2")
+SetGoodsCaoZuo(nil,"1|3","¿Ö¾åÖ®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceFear3")
+SetGoodsCaoZuo(nil,"1|3","¿Ö¾åÖ®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceFear4")
+SetGoodsCaoZuo(nil,"1|3","¿Ö¾åÖ®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceFear5")
+SetGoodsCaoZuo(nil,"1|3","¿Ö¾åÖ®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceFear6")
+SetGoodsCaoZuo(nil,"1|3","¿àÄÑÖ®ÌäÆü¾«»ª","Metadata/Items/Currency/CurrencyEssenceSuffering1")
+SetGoodsCaoZuo(nil,"1|3","¿àÄÑÖ®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceSuffering2")
+SetGoodsCaoZuo(nil,"1|3","¿àÄÑÖ®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceSuffering3")
+SetGoodsCaoZuo(nil,"1|3","¿àÄÑÖ®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceSuffering4")
+SetGoodsCaoZuo(nil,"1|3","¿àÄÑÖ®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceSuffering5")
+SetGoodsCaoZuo(nil,"1|3","ËÁÅ°Ö®ÌäÆü¾«»ª","Metadata/Items/Currency/CurrencyEssenceRage1")
+SetGoodsCaoZuo(nil,"1|3","ËÁÅ°Ö®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceRage2")
+SetGoodsCaoZuo(nil,"1|3","ËÁÅ°Ö®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceRage3")
+SetGoodsCaoZuo(nil,"1|3","ËÁÅ°Ö®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceRage4")
+SetGoodsCaoZuo(nil,"1|3","ËÁÅ°Ö®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceRage5")
+SetGoodsCaoZuo(nil,"1|3","À×öªÖ®ÌäÆü¾«»ª","Metadata/Items/Currency/CurrencyEssenceWrath1")
+SetGoodsCaoZuo(nil,"1|3","À×öªÖ®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceWrath2")
+SetGoodsCaoZuo(nil,"1|3","À×öªÖ®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceWrath3")
+SetGoodsCaoZuo(nil,"1|3","À×öªÖ®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceWrath4")
+SetGoodsCaoZuo(nil,"1|3","À×öªÖ®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceWrath5")
+SetGoodsCaoZuo(nil,"1|3","ÒÉ»óÖ®ÌäÆü¾«»ª","Metadata/Items/Currency/CurrencyEssenceDoubt1")
+SetGoodsCaoZuo(nil,"1|3","ÒÉ»óÖ®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceDoubt2")
+SetGoodsCaoZuo(nil,"1|3","ÒÉ»óÖ®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceDoubt3")
+SetGoodsCaoZuo(nil,"1|3","ÒÉ»óÖ®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceDoubt4")
+SetGoodsCaoZuo(nil,"1|3","ÒÉ»óÖ®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceDoubt5")
+SetGoodsCaoZuo(nil,"1|3","¼å°¾Ö®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceAnguish1")
+SetGoodsCaoZuo(nil,"1|3","¼å°¾Ö®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceAnguish2")
+SetGoodsCaoZuo(nil,"1|3","¼å°¾Ö®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceAnguish3")
+SetGoodsCaoZuo(nil,"1|3","¼å°¾Ö®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceAnguish4")
+SetGoodsCaoZuo(nil,"1|3","Ñá¶ñÖ®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceLoathing1")
+SetGoodsCaoZuo(nil,"1|3","Ñá¶ñÖ®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceLoathing2")
+SetGoodsCaoZuo(nil,"1|3","Ñá¶ñÖ®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceLoathing3")
+SetGoodsCaoZuo(nil,"1|3","Ñá¶ñÖ®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceLoathing4")
+SetGoodsCaoZuo(nil,"1|3","¿Ì¶¾Ö®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceSpite1")
+SetGoodsCaoZuo(nil,"1|3","¿Ì¶¾Ö®¾Şºğ¾«»ª","Metadata/Items/Currency/CurrencyEssenceSpite2")
+SetGoodsCaoZuo(nil,"1|3","¿Ì¶¾Ö®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceSpite3")
+SetGoodsCaoZuo(nil,"1|3","¿Ì¶¾Ö®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceSpite4")
+SetGoodsCaoZuo(nil,"1|3","ÈÈÇéÖ®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceZeal1")
+SetGoodsCaoZuo(nil,"1|3","ÈÈÇéÖ®¾Şºğ¾«»ª","Metadata/Items/Currency/CurrencyEssenceZeal2")
+SetGoodsCaoZuo(nil,"1|3","ÈÈÇéÖ®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceZeal3")
+SetGoodsCaoZuo(nil,"1|3","ÈÈÇéÖ®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceZeal4")
+SetGoodsCaoZuo(nil,"1|3","Æà²ÒÖ®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceMisery1")
+SetGoodsCaoZuo(nil,"1|3","Æà²ÒÖ®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceMisery2")
+SetGoodsCaoZuo(nil,"1|3","Æà²ÒÖ®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceMisery3")
+SetGoodsCaoZuo(nil,"1|3","¼Éµ¬Ö®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceDread1")
+SetGoodsCaoZuo(nil,"1|3","¼Éµ¬Ö®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceDread2")
+SetGoodsCaoZuo(nil,"1|3","¼Éµ¬Ö®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceDread3")
+SetGoodsCaoZuo(nil,"1|3","°ÁÊÓÖ®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceScorn1")
+SetGoodsCaoZuo(nil,"1|3","°ÁÊÓÖ®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceScorn2")
+SetGoodsCaoZuo(nil,"1|3","°ÁÊÓÖ®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceScorn3")
+SetGoodsCaoZuo(nil,"1|3","¼É¶ÊÖ®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceEnvy1")
+SetGoodsCaoZuo(nil,"1|3","¼É¶ÊÖ®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceEnvy2")
+SetGoodsCaoZuo(nil,"1|3","¼É¶ÊÖ®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceEnvy3")
+SetGoodsCaoZuo(nil,"1|3","¸¡¿ä¾«»ª","Metadata/Items/Currency/CurrencyEssenceHysteria1")
+SetGoodsCaoZuo(nil,"1|3","´íÂÒ¾«»ª","Metadata/Items/Currency/CurrencyEssenceInsanity1")
+SetGoodsCaoZuo(nil,"1|3","¼«¿Ö¾«»ª","Metadata/Items/Currency/CurrencyEssenceHorror1")
+SetGoodsCaoZuo(nil,"1|3","ÚŞÍı¾«»ª","Metadata/Items/Currency/CurrencyEssenceDelirium1")
 
 
---SetGoodsCaoZuo(nil,"1|3","ÍØÓ¡µÄ·âÄ§Ö®Óñ","Metadata/Items/Currency/CurrencyItemisedCapturedMonster")
---SetGoodsCaoZuo(nil,"1|3","Ô÷ºŞÖ®µÍÓï¾«»ª","Metadata/Items/Currency/CurrencyEssenceHatred1")
---SetGoodsCaoZuo(nil,"1|3","Ô÷ºŞÖ®ÄØà«¾«»ª","Metadata/Items/Currency/CurrencyEssenceHatred2")
---SetGoodsCaoZuo(nil,"1|3","Ô÷ºŞÖ®ÌäÆü¾«»ª","Metadata/Items/Currency/CurrencyEssenceHatred3")
---SetGoodsCaoZuo(nil,"1|3","Ô÷ºŞÖ®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceHatred4")
---SetGoodsCaoZuo(nil,"1|3","Ô÷ºŞÖ®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceHatred5")
---SetGoodsCaoZuo(nil,"1|3","Ô÷ºŞÖ®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceHatred6")
---SetGoodsCaoZuo(nil,"1|3","Ô÷ºŞÖ®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceHatred7")
---SetGoodsCaoZuo(nil,"1|3","±¯Í´Ö®µÍÓï¾«»ª","Metadata/Items/Currency/CurrencyEssenceWoe1")
---SetGoodsCaoZuo(nil,"1|3","±¯Í´Ö®ÄØà«¾«»ª","Metadata/Items/Currency/CurrencyEssenceWoe2")
---SetGoodsCaoZuo(nil,"1|3","±¯Í´Ö®ÌäÆü¾«»ª","Metadata/Items/Currency/CurrencyEssenceWoe3")
---SetGoodsCaoZuo(nil,"1|3","±¯Í´Ö®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceWoe4")
---SetGoodsCaoZuo(nil,"1|3","±¯Í´Ö®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceWoe5")
---SetGoodsCaoZuo(nil,"1|3","±¯Í´Ö®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceWoe6")
---SetGoodsCaoZuo(nil,"1|3","±¯Í´Ö®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceWoe7")
---SetGoodsCaoZuo(nil,"1|3","Ì°À·Ö®µÍÓï¾«»ª","Metadata/Items/Currency/CurrencyEssenceGreed1")
---SetGoodsCaoZuo(nil,"1|3","Ì°À·Ö®ÄØà«¾«»ª","Metadata/Items/Currency/CurrencyEssenceGreed2")
---SetGoodsCaoZuo(nil,"1|3","Ì°À·Ö®ÌäÆü¾«»ª","Metadata/Items/Currency/CurrencyEssenceGreed3")
---SetGoodsCaoZuo(nil,"1|3","Ì°À·Ö®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceGreed4")
---SetGoodsCaoZuo(nil,"1|3","Ì°À·Ö®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceGreed5")
---SetGoodsCaoZuo(nil,"1|3","Ì°À·Ö®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceGreed6")
---SetGoodsCaoZuo(nil,"1|3","Ì°À·Ö®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceGreed7")
---SetGoodsCaoZuo(nil,"1|3","ÇáÊÓÖ®µÍÓï¾«»ª","Metadata/Items/Currency/CurrencyEssenceContempt1")
---SetGoodsCaoZuo(nil,"1|3","ÇáÊÓÖ®ÄØà«¾«»ª","Metadata/Items/Currency/CurrencyEssenceContempt2")
---SetGoodsCaoZuo(nil,"1|3","ÇáÊÓÖ®ÌäÆü¾«»ª","Metadata/Items/Currency/CurrencyEssenceContempt3")
---SetGoodsCaoZuo(nil,"1|3","ÇáÊÓÖ®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceContempt4")
---SetGoodsCaoZuo(nil,"1|3","ÇáÊÓÖ®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceContempt5")
---SetGoodsCaoZuo(nil,"1|3","ÇáÊÓÖ®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceContempt6")
---SetGoodsCaoZuo(nil,"1|3","ÇáÊÓÖ®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceContempt7")
---SetGoodsCaoZuo(nil,"1|3","°§Ï§Ö®ÄØà«¾«»ª","Metadata/Items/Currency/CurrencyEssenceSorrow1")
---SetGoodsCaoZuo(nil,"1|3","°§Ï§Ö®ÌäÆü¾«»ª","Metadata/Items/Currency/CurrencyEssenceSorrow2")
---SetGoodsCaoZuo(nil,"1|3","°§Ï§Ö®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceSorrow3")
---SetGoodsCaoZuo(nil,"1|3","°§Ï§Ö®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceSorrow4")
---SetGoodsCaoZuo(nil,"1|3","°§Ï§Ö®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceSorrow5")
---SetGoodsCaoZuo(nil,"1|3","°§Ï§Ö®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceSorrow6")
---SetGoodsCaoZuo(nil,"1|3","·ßÅ­Ö®ÄØà«¾«»ª","Metadata/Items/Currency/CurrencyEssenceAnger1")
---SetGoodsCaoZuo(nil,"1|3","·ßÅ­Ö®ÌäÆü¾«»ª","Metadata/Items/Currency/CurrencyEssenceAnger2")
---SetGoodsCaoZuo(nil,"1|3","·ßÅ­Ö®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceAnger3")
---SetGoodsCaoZuo(nil,"1|3","·ßÅ­Ö®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceAnger4")
---SetGoodsCaoZuo(nil,"1|3","·ßÅ­Ö®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceAnger5")
---SetGoodsCaoZuo(nil,"1|3","·ßÅ­Ö®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceAnger6")
---SetGoodsCaoZuo(nil,"1|3","ÕÛÄ¥Ö®ÄØà«¾«»ª","Metadata/Items/Currency/CurrencyEssenceTorment1")
---SetGoodsCaoZuo(nil,"1|3","ÕÛÄ¥Ö®ÌäÆü¾«»ª","Metadata/Items/Currency/CurrencyEssenceTorment2")
---SetGoodsCaoZuo(nil,"1|3","ÕÛÄ¥Ö®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceTorment3")
---SetGoodsCaoZuo(nil,"1|3","ÕÛÄ¥Ö®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceTorment4")
---SetGoodsCaoZuo(nil,"1|3","ÕÛÄ¥Ö®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceTorment5")
---SetGoodsCaoZuo(nil,"1|3","ÕÛÄ¥Ö®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceTorment6")
---SetGoodsCaoZuo(nil,"1|3","¿Ö¾åÖ®ÄØà«¾«»ª","Metadata/Items/Currency/CurrencyEssenceFear1")
---SetGoodsCaoZuo(nil,"1|3","¿Ö¾åÖ®ÌäÆü¾«»ª","Metadata/Items/Currency/CurrencyEssenceFear2")
---SetGoodsCaoZuo(nil,"1|3","¿Ö¾åÖ®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceFear3")
---SetGoodsCaoZuo(nil,"1|3","¿Ö¾åÖ®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceFear4")
---SetGoodsCaoZuo(nil,"1|3","¿Ö¾åÖ®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceFear5")
---SetGoodsCaoZuo(nil,"1|3","¿Ö¾åÖ®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceFear6")
---SetGoodsCaoZuo(nil,"1|3","¿àÄÑÖ®ÌäÆü¾«»ª","Metadata/Items/Currency/CurrencyEssenceSuffering1")
---SetGoodsCaoZuo(nil,"1|3","¿àÄÑÖ®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceSuffering2")
---SetGoodsCaoZuo(nil,"1|3","¿àÄÑÖ®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceSuffering3")
---SetGoodsCaoZuo(nil,"1|3","¿àÄÑÖ®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceSuffering4")
---SetGoodsCaoZuo(nil,"1|3","¿àÄÑÖ®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceSuffering5")
---SetGoodsCaoZuo(nil,"1|3","ËÁÅ°Ö®ÌäÆü¾«»ª","Metadata/Items/Currency/CurrencyEssenceRage1")
---SetGoodsCaoZuo(nil,"1|3","ËÁÅ°Ö®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceRage2")
---SetGoodsCaoZuo(nil,"1|3","ËÁÅ°Ö®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceRage3")
---SetGoodsCaoZuo(nil,"1|3","ËÁÅ°Ö®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceRage4")
---SetGoodsCaoZuo(nil,"1|3","ËÁÅ°Ö®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceRage5")
---SetGoodsCaoZuo(nil,"1|3","À×öªÖ®ÌäÆü¾«»ª","Metadata/Items/Currency/CurrencyEssenceWrath1")
---SetGoodsCaoZuo(nil,"1|3","À×öªÖ®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceWrath2")
---SetGoodsCaoZuo(nil,"1|3","À×öªÖ®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceWrath3")
---SetGoodsCaoZuo(nil,"1|3","À×öªÖ®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceWrath4")
---SetGoodsCaoZuo(nil,"1|3","À×öªÖ®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceWrath5")
---SetGoodsCaoZuo(nil,"1|3","ÒÉ»óÖ®ÌäÆü¾«»ª","Metadata/Items/Currency/CurrencyEssenceDoubt1")
---SetGoodsCaoZuo(nil,"1|3","ÒÉ»óÖ®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceDoubt2")
---SetGoodsCaoZuo(nil,"1|3","ÒÉ»óÖ®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceDoubt3")
---SetGoodsCaoZuo(nil,"1|3","ÒÉ»óÖ®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceDoubt4")
---SetGoodsCaoZuo(nil,"1|3","ÒÉ»óÖ®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceDoubt5")
---SetGoodsCaoZuo(nil,"1|3","¼å°¾Ö®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceAnguish1")
---SetGoodsCaoZuo(nil,"1|3","¼å°¾Ö®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceAnguish2")
---SetGoodsCaoZuo(nil,"1|3","¼å°¾Ö®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceAnguish3")
---SetGoodsCaoZuo(nil,"1|3","¼å°¾Ö®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceAnguish4")
---SetGoodsCaoZuo(nil,"1|3","Ñá¶ñÖ®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceLoathing1")
---SetGoodsCaoZuo(nil,"1|3","Ñá¶ñÖ®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceLoathing2")
---SetGoodsCaoZuo(nil,"1|3","Ñá¶ñÖ®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceLoathing3")
---SetGoodsCaoZuo(nil,"1|3","Ñá¶ñÖ®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceLoathing4")
---SetGoodsCaoZuo(nil,"1|3","¿Ì¶¾Ö®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceSpite1")
---SetGoodsCaoZuo(nil,"1|3","¿Ì¶¾Ö®¾Şºğ¾«»ª","Metadata/Items/Currency/CurrencyEssenceSpite2")
---SetGoodsCaoZuo(nil,"1|3","¿Ì¶¾Ö®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceSpite3")
---SetGoodsCaoZuo(nil,"1|3","¿Ì¶¾Ö®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceSpite4")
---SetGoodsCaoZuo(nil,"1|3","ÈÈÇéÖ®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceZeal1")
---SetGoodsCaoZuo(nil,"1|3","ÈÈÇéÖ®¾Şºğ¾«»ª","Metadata/Items/Currency/CurrencyEssenceZeal2")
---SetGoodsCaoZuo(nil,"1|3","ÈÈÇéÖ®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceZeal3")
---SetGoodsCaoZuo(nil,"1|3","ÈÈÇéÖ®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceZeal4")
---SetGoodsCaoZuo(nil,"1|3","Æà²ÒÖ®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceMisery1")
---SetGoodsCaoZuo(nil,"1|3","Æà²ÒÖ®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceMisery2")
---SetGoodsCaoZuo(nil,"1|3","Æà²ÒÖ®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceMisery3")
---SetGoodsCaoZuo(nil,"1|3","¼Éµ¬Ö®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceDread1")
---SetGoodsCaoZuo(nil,"1|3","¼Éµ¬Ö®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceDread2")
---SetGoodsCaoZuo(nil,"1|3","¼Éµ¬Ö®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceDread3")
---SetGoodsCaoZuo(nil,"1|3","°ÁÊÓÖ®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceScorn1")
---SetGoodsCaoZuo(nil,"1|3","°ÁÊÓÖ®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceScorn2")
---SetGoodsCaoZuo(nil,"1|3","°ÁÊÓÖ®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceScorn3")
---SetGoodsCaoZuo(nil,"1|3","¼É¶ÊÖ®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceEnvy1")
---SetGoodsCaoZuo(nil,"1|3","¼É¶ÊÖ®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceEnvy2")
---SetGoodsCaoZuo(nil,"1|3","¼É¶ÊÖ®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceEnvy3")
---SetGoodsCaoZuo(nil,"1|3","¸¡¿ä¾«»ª","Metadata/Items/Currency/CurrencyEssenceHysteria1")
---SetGoodsCaoZuo(nil,"1|3","´íÂÒ¾«»ª","Metadata/Items/Currency/CurrencyEssenceInsanity1")
---SetGoodsCaoZuo(nil,"1|3","¼«¿Ö¾«»ª","Metadata/Items/Currency/CurrencyEssenceHorror1")
---SetGoodsCaoZuo(nil,"1|3","ÚŞÍı¾«»ª","Metadata/Items/Currency/CurrencyEssenceDelirium1")
---SetGoodsCaoZuo(nil,"1|3","ÁÑÏ¶ËéÆ¬(Ë÷·ü)","Metadata/Items/Currency/CurrencyBreachFireShard")
---SetGoodsCaoZuo(nil,"1|3","ÁÑÏ¶ËéÆ¬(°¬Ğí)","Metadata/Items/Currency/CurrencyBreachLightningShard")
-
---------------------------------------------------------------
---------------------------------------------------------------
-
---AddJiaoYiTime(startHour,endHour)--Ìí¼Ó½»Ò×Ê±¼ä¶Î´óÓÚµÈÓÚstartHour ²¢ÇÒĞ¡ÓÚµÈÓÚendHour Ê±»á¼ì²â½»Ò×
--- StartHour Êı×ÖĞÍ ¿ªÊ¼½»Ò×µÄĞ¡Ê± 
---endHour Êı×ÖĞÍ ½áÊø½»Ò×µÄĞ¡Ê±
-AddJiaoYiTime(0,24)--ÍíÉÏ11µãµ½8µãÇ°»á¼ì²â½»Ò×
-
-AddJiaoYiBossName("²ÍücÙEÁãÒ»",nil,nil,nil,true)
 
 
+
+
+--¼¯»õbossÃû ×Ö·û´®ĞÍ
+--AddJiaoYiBossName(bossName,computerName,mohu) Ìí¼Ó²Ö¿âºÅ
+--bossName ²Ö¿âºÅÃû×Ö 
+--computerName µçÄÔÃû µ¥¶ÀÎªÄ³Ì¨µçÄÔÖ¸¶¨²»Í¬µÄ²Ö¿âºÅ ºöÂÔÌînil
+--mohu trueÎªÄ£ºıÆ¥Åä false »ò nil »ò²»ÌîÎªÍêÕûÆ¥Åä
+AddJiaoYiBossName("ÕâÀïÌîÉÏÄãÒªÓÃÀ´ÊÕ»õµÄ²Ö¿âºÅÃû×Ö")
 --AddJiaoYiTime(startHour,endHour)--Ìí¼Ó½»Ò×Ê±¼ä¶Î´óÓÚµÈÓÚstartHour ²¢ÇÒĞ¡ÓÚµÈÓÚendHour Ê±»á¼ì²â½»Ò×
 --startHour Êı×ÖĞÍ ¿ªÊ¼½»Ò×µÄĞ¡Ê± 
 --endHour Êı×ÖĞÍ ½áÊø½»Ò×µÄĞ¡Ê±
-AddJiaoYiTime(0,24)--ÍíÉÏ11µãµ½8µãÇ°»á¼ì²â½»Ò×
+AddJiaoYiTime(0,12)--0µãµ½12µã»á¼ì²â½»Ò×
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
---¹«»á²Ö¿â´æ²Ö
-
-SetSaveIndex("Í¨»õ|¿É¶ÑµşÍ¨»õ","1|7|8|9|10|11",nil,nil,nil,nil,nil,true)
-SetSaveIndex("ÃüÔË¿¨","2|7|8|9|10|11",nil,nil,nil,nil,nil,true)
-SetSaveIndex("Öé±¦","7|8|9|10|11",nil,nil,nil,nil,nil,true)
-SetSaveIndex("×¦|Ø°Ê×|·¨ÕÈ|µ¥ÊÖ½£|Ï¸½£|µ¥ÊÖ¸«|µ¥ÊÖ´¸|·ûÎÄØ°Ê×|¶ÌÕÈ|Õ½ÕÈ|¹­|³¤ÕÈ|Ë«ÊÖ½£|Ë«ÊÖ¸«|Ë«ÊÖ´¸|¼ı´ü|ÊÖÌ×|ÒÂ·ş|¶Ü|Ñü´ø|Ğ¬×Ó|Í·¿ø|","7|8|9|10|11",nil,nil,nil,nil,nil,true)
-SetSaveIndex("ÉúÃüÒ©¼Á|Ä§Á¦Ò©¼Á|¸´ºÏÒ©¼Á|¹¦ÄÜÒ©¼Á","7|8|9|10|11",nil,nil,nil,nil,nil,true)
-SetSaveIndex("Ñü´ø|ÏîÁ´|½äÖ¸|","7|8|9|10|11",nil,nil,nil,nil,nil,true)
-SetSaveIndex("Òì½çµØÍ¼","7|8|9|10|11",nil,nil,nil,nil,nil,true)
-SetSaveIndex("Ö÷¶¯¼¼ÄÜ±¦Ê¯|¸¨Öú¼¼ÄÜ±¦Ê¯","7|8|9|10|11",nil,nil,nil,nil,nil,true)
-
--- SetSaveIndex(nil,"6|17|18",nil,"Metadata/Items/Currency/CurrencyRerollRare",nil,nil,nil,true)--»ìãçÊ¯
--- SetSaveIndex(nil,"17|17|17",nil,"Metadata/Items/Currency/CurrencyRerollSocketColours",nil,nil,nil,true)--»ÃÉ«Ê¯
-SetSaveIndex(nil,"1|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyUpgradeToRareShard",nil,nil,nil,true)--üc½ğÊ¯ËéÆ¬
-SetSaveIndex(nil,"1|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyRemoveModShard",nil,nil,nil,true)--ŸoĞ§Ê¯ËéÆ¬
-SetSaveIndex(nil,"1|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyRerollUniqueShard",nil,nil,nil,true)--¹Å×ƒÊ¯ËéÆ¬
-SetSaveIndex(nil,"1|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyAddModToRareShard",nil,nil,nil,true)--³ç¸ßÊ¯ËéÆ¬
-SetSaveIndex(nil,"1|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyRerollRareShard",nil,nil,nil,true)--»ìãçÊ¯ËéÆ¬
-SetSaveIndex(nil,"1|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyRerollMagicShard",nil,nil,nil,true)--¸ÄÔìÊ¯ËéÆ¬
-SetSaveIndex(nil,"1|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyRerollMagic",nil,nil,nil,true)--¸ÄÔìÊ¯
-
---SetSaveIndex(nil,"14",nil,"Metadata/Items/Currency/CurrencyEnkindlingOrb",nil,nil,nil,true)--ücÈ¼Ê¯
---SetSaveIndex(nil,"14",nil,"Metadata/Items/Currency/CurrencyInstillingOrb",nil,nil,nil,true)--µÎ×¢Ê¯
-SetSaveIndex(nil,"1|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEldritchIchor1",nil,nil,nil,true)--µÍëA®ÄÜì`Òº
-SetSaveIndex(nil,"1|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEldritchEmber1",nil,nil,nil,true)--µÍëA®ÄÜ»Ò a
-
-SetSaveIndex("MiscMapItem","14|14|14|7|8|9|10|11",nil,nil,nil,nil,nil,true)--ÁÑÏ¶Ö®Ê¯Ô¿³×
-SetSaveIndex("HeistBlueprint","14|14|14|7|8|9|10|11",nil,nil,nil,nil,nil,true)--À¶Í¼
-SetSaveIndex("MapFragment","3|7|8|9|10|11",nil,nil,nil,nil,nil,true)--Â}¼×Ïx
-SetSaveIndex("Òì½çÍ¼¼øÉı¼¶ÎïÆ·","14|7|8|9|10|11",nil,nil,nil,nil,nil,true)--Òì½çÍ¼¼øÉı¼¶ÎïÆ·
-SetSaveIndex("HarvestSeed","14|7|8|9|10|11",nil,nil,nil,nil,nil,true)--ÖÖ×Ó
-SetSaveIndex("ExpeditionLogbook","14|7|8|9|10|11",nil,nil,nil,nil,nil,true)--Ì½ëUÈÕÕI
-SetSaveIndex("MetamorphosisDNA","14|7|8|9|10|11",nil,nil,nil,nil,nil,true)--å€Ä§˜Ó±¾
-SetSaveIndex("HeistContract","14|7|8|9|10|11",nil,nil,nil,nil,nil,true)--Æõ¼s•ø
-SetSaveIndex("SentinelDrone","14|7|8|9|10|11",nil,nil,nil,nil,nil,true)--»¤ÎÀ
-SetSaveIndex("DelveSocketableCurrency","14|7|8|9|10|11",nil,nil,nil,nil,nil,true)--¾òªz²å²ÛÍ¨Ø›
-SetSaveIndex("DelveStackableSocketableCurrency","14|7|8|9|10|11",nil,nil,nil,nil,nil,true)--¾òªz¿É¶Ñ¯BÓĞ²å²ÛÍ¨Ø›
-
-SetSaveIndex(nil,"14|7|8|9|10|11",nil,"Metadata/Items/Metamorphosis/CurrencyItemisedProphecy",nil,nil,nil,true)--îAÑÔ
-SetSaveIndex(nil,"14|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyItemisedCapturedMonster",nil,nil,nil,true)--ÍØÓ¡«F»êÓñ enName:
---SetSaveIndex(nil,"14|7|8|9|10|11",nil,"Metadata/Items/Heist/HeistCoin",nil,nil,nil,true)--±IÙ\Ö®Ó¡ enName:rogues-marker
---SetSaveIndex(nil,"14|14|14|14|14|2|2|1|5|6",nil,"Metadata/Items/Currency/CurrencyRitualStone",nil,nil,nil,true)--¼Àìë±®Æ÷
-
-SetSaveIndex(nil,"14|7|8|9|10|11",nil,"Metadata/Items/Belts/Belt3",nil,nil,nil,true)--Æ¤¸ïÑü§
-SetSaveIndex(nil,"14|7|8|9|10|11",nil,nil,nil,"The Squire",nil,true)--"´óµØÖ÷"
-SetSaveIndex(nil,"14|7|8|9|10|11",nil,nil,nil,"Mageblood",nil,true)--"Ä§Ñª"
-SetSaveIndex(nil,"14|7|8|9|10|11",nil,nil,nil,"Headhunter",nil,true)--"«CÊ×"
-SetSaveIndex(nil,"14|7|8|9|10|11",nil,"Metadata/Items/Armours/Shields/ShieldStrDex13",nil,nil,nil,true)--™àÙFˆA¶Ü
-
- SetSaveIndex(nil,"1|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyRerollDefences",nil,nil,nil,true)--Â}Óñ
- SetSaveIndex(nil,"1|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyHellscapeRerollSocketColours",nil,nil,nil,true)--çèÎÛµÄ»ÃÉ«Ê¯
- SetSaveIndex(nil,"1|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyHellscapeRerollSocketLinks",nil,nil,nil,true)--çèÎÛµÄæœ½YÊ¯
- SetSaveIndex(nil,"1|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyHellscapeRerollSocketNumbers",nil,nil,nil,true)--çèÎÛµÄ¹¤½³Ê¯
- SetSaveIndex(nil,"1|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyHellscapeRerollRare",nil,nil,nil,true)--çèÎÛµÄ»ìãçÊ¯
- SetSaveIndex(nil,"1|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyHellscapeAddModToRare",nil,nil,nil,true)--çèÎÛµÄ³ç¸ßÊ¯
- SetSaveIndex(nil,"1|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyHellscapeUpgradeToUnique",nil,nil,nil,true)--çèÎÛµÄÉñÔ’Ê¯
- SetSaveIndex(nil,"1|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyHellscapeArmourQuality",nil,nil,nil,true)--çèÎÛµÄ×o¼×Æ¬
- SetSaveIndex(nil,"1|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyHellscapeWeaponQuality",nil,nil,nil,true)--çèÎÛµÄÄ¥µ¶Ê¯
- SetSaveIndex(nil,"1|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyHellscapeUpgradeModTier",nil,nil,nil,true)--çèÎÛµÄÉñÂ}œIÖé
- SetSaveIndex(nil,"1|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyLabyrinthEnchantCorrupt",nil,nil,nil,true)--çèÎÛµÄ×£¸£
-
--- SetSaveIndex(nil,"18|17|16|11",nil,"Metadata/Items/Currency/CurrencyUpgradeToRare",nil,nil,nil,true)--üc½ğÊ¯
--- SetSaveIndex(nil,"18|17|16|11",nil,"Metadata/Items/Currency/CurrencyWeaponQuality",nil,nil,nil,true)--Ä¥µ¶Ê¯
--- SetSaveIndex(nil,"18|17|16|11",nil,"Metadata/Items/Currency/CurrencyArmourQuality",nil,nil,nil,true)--×o¼×Æ¬
--- SetSaveIndex(nil,"11|20",nil,"Metadata/Items/Currency/CurrencyAtlasPassiveRefund",nil,nil,nil,true)--³·äNÊ¯
--- SetSaveIndex(nil,"11|19|1|2|3|5|6",nil,"Metadata/Items/Currency/CurrencyRerollRareVeiled",nil,nil,nil,true)--ë[Ää»ìãçÊ¯
-
-SetSaveIndex(nil,"1|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyRefreshGambler",nil,nil,nil,true)--÷»×Ó
-SetSaveIndex(nil,"1|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyRefreshDealer",nil,nil,nil,true)--U½ğŒÙ
-SetSaveIndex(nil,"1|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyRefreshBarter",nil,nil,nil,true)--®ÓòÅèT
-SetSaveIndex(nil,"1|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyRefreshSaga",nil,nil,nil,true)--ÂñÔáª„ÕÂ
-
- SetSaveIndex(nil,"1|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyUpgradeMapTier",nil,nil,nil,true)--ÏÈÇıÊ¯=ÉñÖIÊ¯
--- SetSaveIndex(nil,"11|16|17|3|14|19|1|2|5|6|4",nil,"Metadata/Items/Currency/CurrencyAddAtlasModMid",nil,nil,nil,true)--ÑuˆDÁù·Öƒx£®¾«ÈA
- SetSaveIndex(nil,"1|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyAddAtlasModHigh",nil,nil,nil,true)--ÑuˆDÁù·Öƒx£®ÓXĞÑ
-
-SetSaveIndex(nil,"3|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyAfflictionShard",nil,nil,nil,true)--»ÃÏñ”àÆ¬
-SetSaveIndex(nil,"3|7|8|9|10|11",nil,"Metadata/Items/MapFragments/CurrencyAfflictionFragment",nil,nil,nil,true)--»ÃÏñ®½ç
-SetSaveIndex(nil,"3|7|8|9|10|11",nil,"Metadata/Items/MapFragments/ClassicVaultKey",nil,nil,nil,true)--¹Åµäßzè€
-SetSaveIndex(nil,"3|7|8|9|10|11",nil,"Metadata/Items/MapFragments/340VaultKey",nil,nil,nil,true)--¹ÅĞàßzè€
-SetSaveIndex(nil,"3|7|8|9|10|11",nil,"Metadata/Items/MapFragments/VaalVaultKey",nil,nil,nil,true)--Íß –ßzè€
-SetSaveIndex(nil,"3|7|8|9|10|11",nil,"Metadata/Items/MapFragments/RitualFragment",nil,nil,nil,true)--½şÑª±®Æ÷
-
---·Åµ½E301
-SetSaveIndex(nil,"2|7|8|9|10|11",nil,"Metadata/Items/DivinationCards/DivinationCardAbandonedWealth",nil,nil,nil,true)--—‰Ø”ÇóÉú
-SetSaveIndex(nil,"2|7|8|9|10|11",nil,"Metadata/Items/DivinationCards/DivinationCardTheSaintsTreasure",nil,nil,nil,true)--Â}Í½Ö®Ø”
-SetSaveIndex(nil,"2|7|8|9|10|11",nil,"Metadata/Items/DivinationCards/DivinationCardAlluringBounty",nil,nil,nil,true)--ÕT»óÖ®Œš
-SetSaveIndex(nil,"2|7|8|9|10|11",nil,"Metadata/Items/DivinationCards/DivinationCardTheHoarder",nil,nil,nil,true)--ŒšÏä
-SetSaveIndex(nil,"2|7|8|9|10|11",nil,"Metadata/Items/DivinationCards/DivinationCardBrothersStash",nil,nil,nil,true)--²®ÖÙØ”ì
-SetSaveIndex(nil,"2|7|8|9|10|11",nil,"Metadata/Items/DivinationCards/DivinationCardTheScout",nil,nil,nil,true)--Í¯×ÓÜŠ
-SetSaveIndex(nil,"2|7|8|9|10|11",nil,"Metadata/Items/DivinationCards/DivinationCardUnrequitedLove",nil,nil,nil,true)--†ÎÏàË¼ enName:unrequited-love
-SetSaveIndex(nil,"2|7|8|9|10|11",nil,"Metadata/Items/DivinationCards/DivinationCardDemigodsWager",nil,nil,nil,true)--•NÈAµÄÙ€×¢	
-SetSaveIndex(nil,"2|7|8|9|10|11",nil,"Metadata/Items/DivinationCards/DivinationCardTheSephirot",nil,nil,nil,true)--ÉúÃüÖ®˜ä enName:the-sephirot
-
- SetSaveIndex(nil,"2|7|8|9|10|11",nil,"Metadata/Items/DivinationCards/DivinationCardTheValkyrie",nil,nil,nil,true)--Å®ÎäÉñ
- SetSaveIndex(nil,"2|7|8|9|10|11",nil,"Metadata/Items/DivinationCards/DivinationCardTheUndaunted",nil,nil,nil,true)--²»ÅÂ²»ÅÂ enName:the-undaunted
- SetSaveIndex(nil,"2|7|8|9|10|11",nil,"Metadata/Items/DivinationCards/DivinationCardTheWretched",nil,nil,nil,true)--óaóv
- SetSaveIndex(nil,"2|7|8|9|10|11",nil,"Metadata/Items/DivinationCards/DivinationCardTheDemon",nil,nil,nil,true)--ºÄ§ enName:the-demon
- SetSaveIndex(nil,"2|7|8|9|10|11",nil,"Metadata/Items/DivinationCards/DivinationCardTheFiend",nil,nil,nil,true)--Ä§¹í
- SetSaveIndex(nil,"2|7|8|9|10|11",nil,"Metadata/Items/DivinationCards/DivinationCardTheDoctor",nil,nil,nil,true)--¯‚át enName:the-doctor
- SetSaveIndex(nil,"2|7|8|9|10|11",nil,"Metadata/Items/DivinationCards/DivinationCardTheNurse",nil,nil,nil,true)--×oÀíŸ
- SetSaveIndex(nil,"2|7|8|9|10|11",nil,"Metadata/Items/DivinationCards/DivinationCardThePatient",nil,nil,nil,true)--²¡»¼
- SetSaveIndex(nil,"2|7|8|9|10|11",nil,"Metadata/Items/DivinationCards/DivinationCardHouseOfMirrors",nil,nil,nil,true)--Ã÷çR
- SetSaveIndex(nil,"2|7|8|9|10|11",nil,"Metadata/Items/DivinationCards/DivinationCardSevenYearsBadLuck",nil,nil,nil,true)--ÆßÄêÃ¹ß\
-
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Ô­Ê¼½Y¾§Éúì`Ö®Á¦","Metadata/Items/Currency/HarvestSeedBlue",nil,nil,nil,nil)
-SetSaveIndex(nil,"7|8|9|10|11",nil,"ÉñÂ}½Y¾§Éúì`Ö®Á¦","Metadata/Items/Currency/HarvestSeedBoss",nil,nil,nil,1)
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Ò°ĞÔ½Y¾§Éúì`Ö®Á¦","Metadata/Items/Currency/HarvestSeedRed",nil,nil,nil,nil)
-SetSaveIndex(nil,"7|8|9|10|11",nil,"ì`¬F½Y¾§Éúì`Ö®Á¦","Metadata/Items/Currency/HarvestSeedGreen",nil,nil,nil,nil)
-
-
-SetSaveIndex(nil,"3|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyBreachFireShard",nil,nil,nil,true)--Ë÷·üÁÑÆ¬
-SetSaveIndex(nil,"3|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyBreachColdShard",nil,nil,nil,true)--ÍĞÎÖÁÑÆ¬
-SetSaveIndex(nil,"3|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyBreachLightningShard",nil,nil,nil,true)--°¬ÔSÁÑÆ¬
-SetSaveIndex(nil,"3|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyBreachPhysicalShard",nil,nil,nil,true)--õ –Äá¶àÁÑÆ¬
-SetSaveIndex(nil,"3|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyBreachChaosShard",nil,nil,nil,true)--ÏÄõÀ­ÁÑÆ¬
-SetSaveIndex(nil,"3|7|8|9|10|11",nil,"Metadata/Items/MapFragments/BreachFragmentFire",nil,nil,nil,true)--Ë÷·üÁÑºÛÊ¯
-SetSaveIndex(nil,"3|7|8|9|10|11",nil,"Metadata/Items/MapFragments/BreachFragmentCold",nil,nil,nil,true)--ÍĞÎÖÁÑºÛÊ¯
-SetSaveIndex(nil,"3|7|8|9|10|11",nil,"Metadata/Items/MapFragments/BreachFragmentLightning",nil,nil,nil,true)--°¬ÔSÁÑºÛÊ¯
-SetSaveIndex(nil,"3|7|8|9|10|11",nil,"Metadata/Items/MapFragments/BreachFragmentPhysical",nil,nil,nil,true)--õ –Äá¶àÁÑºÛÊ¯
-SetSaveIndex(nil,"3|7|8|9|10|11",nil,"Metadata/Items/MapFragments/BreachFragmentChaos",nil,nil,nil,true)--ÏÄõÀ­ÁÑºÛÊ¯
-
-SetSaveIndex(nil,"3|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyLegionKaruiShard",nil,nil,nil,true)--ÓÀa¿¨ô”ÁÑÆ¬
-SetSaveIndex(nil,"3|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyLegionMarakethShard",nil,nil,nil,true)--ÓÀañRÀ­¿ËË¹ÁÑÆ¬
-SetSaveIndex(nil,"3|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyLegionEternalEmpireShard",nil,nil,nil,true)--ÓÀa²»ĞàµÛ‡øÁÑÆ¬
-SetSaveIndex(nil,"3|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyLegionTemplarShard",nil,nil,nil,true)--ÓÀaÂ}×ÚÁÑÆ¬
-SetSaveIndex(nil,"3|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyLegionVaalShard",nil,nil,nil,true)--ÓÀaÍß –ÁÑÆ¬
-SetSaveIndex(nil,"3|7|8|9|10|11",nil,"Metadata/Items/MapFragments/CurrencyLegionFragmentKarui",nil,nil,nil,true)--ÓÀa¿¨ô”»ÕÓ¡
-SetSaveIndex(nil,"3|7|8|9|10|11",nil,"Metadata/Items/MapFragments/CurrencyLegionFragmentMaraketh",nil,nil,nil,true)--ÓÀañRÀ­¿ËË¹»ÕÓ¡
-SetSaveIndex(nil,"3|7|8|9|10|11",nil,"Metadata/Items/MapFragments/CurrencyLegionFragmentEternal",nil,nil,nil,true)--ÓÀa²»ĞàµÛ‡ø»ÕÓ¡
-SetSaveIndex(nil,"3|7|8|9|10|11",nil,"Metadata/Items/MapFragments/CurrencyLegionFragmentTemplar",nil,nil,nil,true)--ÓÀaÂ}×Ú»ÕÓ¡
-SetSaveIndex(nil,"3|7|8|9|10|11",nil,"Metadata/Items/MapFragments/CurrencyLegionFragmentVaal",nil,nil,nil,true)--ÓÀaÍß –»ÕÓ¡
-
-SetSaveIndex(nil,"4|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyJewelleryQualityElemental",nil,nil,nil,true)--›°œ¥µÄ´ß»¯„©
-SetSaveIndex(nil,"4|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyJewelleryQualityCaster",nil,nil,nil,true)--³äÄÜµÄ´ß»¯„©
-SetSaveIndex(nil,"4|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyJewelleryQualityAttack",nil,nil,nil,true)--ÑĞÄ¥µÄ´ß»¯„©
-SetSaveIndex(nil,"4|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyJewelleryQualityDefense",nil,nil,nil,true)--Ò±å€µÄ´ß»¯„©
-SetSaveIndex(nil,"4|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyJewelleryQualityResource",nil,nil,nil,true)--¸»ğˆµÄ´ß»¯„©
-SetSaveIndex(nil,"4|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyJewelleryQualityResistance",nil,nil,nil,true)--¶à¶ µÄ´ß»¯„©
-SetSaveIndex(nil,"4|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyJewelleryQualityAttribute",nil,nil,nil,true)--±¾Ù|µÄ´ß»¯„©
-SetSaveIndex(nil,"4|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyJewelleryQualityPhysicalChaos",nil,nil,nil,true)--¶¾ĞÔ´ß»¯„©
-SetSaveIndex(nil,"4|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyJewelleryQualitySpeed",nil,nil,nil,true)--¼ÓËÙ´ß»¯„©
-SetSaveIndex(nil,"4|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyJewelleryQualityCritical",nil,nil,nil,true)--Ò××ƒ´ß»¯„©
-
--- SetSaveIndex(nil,"14|14|14|19|1|2|3|5|6|4",nil,"Metadata/Items/Currency/Mushrune1",nil,nil,nil,true)--ÇåÍ¸ÓÍÆ¿
--- SetSaveIndex(nil,"14|14|14|19|1|2|3|5|6|4",nil,"Metadata/Items/Currency/Mushrune2",nil,nil,nil,true)--ÉîºÖÓÍÆ¿
--- SetSaveIndex(nil,"14|14|14|19|1|2|3|5|6|4",nil,"Metadata/Items/Currency/Mushrune3",nil,nil,nil,true)--çúçêÓÍÆ¿
--- SetSaveIndex(nil,"14|14|14|19|1|2|3|5|6|4",nil,"Metadata/Items/Currency/Mushrune4",nil,nil,nil,true)--´ä¾GÓÍÆ¿
--- SetSaveIndex(nil,"14|14|14|19|1|2|3|5|6|4",nil,"Metadata/Items/Currency/Mushrune5",nil,nil,nil,true)--Çå¾GÓÍÆ¿
--- SetSaveIndex(nil,"14|14|14|19|1|2|3|5|6|4",nil,"Metadata/Items/Currency/Mushrune6",nil,nil,nil,true)--±ÌË{ÓÍÆ¿
--- SetSaveIndex(nil,"14|14|14|19|1|2|3|5|6|4",nil,"Metadata/Items/Currency/Mushrune6b",nil,nil,nil,true)--µåÇàÓÍÆ¿
-SetSaveIndex(nil,"5|7|8|9|10|11",nil,"Metadata/Items/Currency/Mushrune7",nil,nil,nil,true)--Šg×ÏÓÍÆ¿
-SetSaveIndex(nil,"14|5|7|8|9|10|11",nil,"Metadata/Items/Currency/Mushrune8",nil,nil,nil,true)--¾p¼tÓÍÆ¿
-SetSaveIndex(nil,"14|5|7|8|9|10|11",nil,"Metadata/Items/Currency/Mushrune9",nil,nil,nil,true)--ÆáºÚÓÍÆ¿
-SetSaveIndex(nil,"14|5|7|8|9|10|11",nil,"Metadata/Items/Currency/Mushrune10",nil,nil,nil,true)--Èé°×ÓÍÆ¿
-SetSaveIndex(nil,"14|5|7|8|9|10|11",nil,"Metadata/Items/Currency/Mushrune11",nil,nil,nil,true)--¼ƒãyÓÍÆ¿
-SetSaveIndex(nil,"14|5|7|8|9|10|11",nil,"Metadata/Items/Currency/Mushrune12",nil,nil,nil,true)--½ğüSÓÍÆ¿
-
---ÁùÁ¬¿¨Æ¬
--- SetSaveIndex(nil,"1|2|3|5|6|14|19|13",nil,"Metadata/Items/DivinationCards/DivinationCardTheDarkMage",nil,nil,nil,true)--ºÚ°µĞgÕß enName:the-dark-mage
--- SetSaveIndex(nil,"1|2|3|5|6|14|19|13",nil,"Metadata/Items/DivinationCards/DivinationCardTheCelestialJusticar",nil,nil,nil,true)--ÌìÌÃˆÌ·¨¹Ù enName:the-celestial-justicar
--- SetSaveIndex(nil,"1|2|3|5|6|14|19|13",nil,"Metadata/Items/DivinationCards/DivinationCardTheChainsThatBind",nil,nil,nil,true)--Êø¿`Ö®å€ enName:the-chains-that-bind
--- SetSaveIndex(nil,"1|2|3|5|6|14|19|13",nil,"Metadata/Items/DivinationCards/DivinationCardTheWarlord",nil,nil,nil,true)--´óÜŠéy enName:the-warlord
--- SetSaveIndex(nil,"1|2|3|5|6|14|19|13",nil,"Metadata/Items/DivinationCards/DivinationCardTheEthereal",nil,nil,nil,true)--¿Õì` enName:the-ethereal
--- SetSaveIndex(nil,"1|2|3|5|6|14|19|13",nil,"Metadata/Items/DivinationCards/DivinationCardTheDapperProdigy",nil,nil,nil,true)--˜OÖÂ²»·² enName:the-dapper-prodigy
--- SetSaveIndex(nil,"1|2|3|5|6|14|19|13",nil,"Metadata/Items/DivinationCards/DivinationCardEmperorOfPurity",nil,nil,nil,true)--¼ƒµÛÍõ enName:emperor-of-purity
--- SetSaveIndex(nil,"1|2|3|5|6|14|19|13",nil,"Metadata/Items/DivinationCards/DivinationCardThePorcupine",nil,nil,nil,true)--´ÌÎo enName:the-porcupine
--- SetSaveIndex(nil,"1|2|3|5|6|14|19|13",nil,"Metadata/Items/DivinationCards/DivinationCardTheSacrifice",nil,nil,nil,true)-- ŞÉü enName:the-sacrifice
--- SetSaveIndex(nil,"1|2|3|5|6|14|19|13",nil,"Metadata/Items/DivinationCards/DivinationCardImperialLegacy",nil,nil,nil,true)--²»ĞàÂ}Îï enName:imperial-legacy
--- SetSaveIndex(nil,"1|2|3|5|6|14|19|13",nil,"Metadata/Items/DivinationCards/DivinationCardTheWhiteKnight",nil,nil,nil,true)--°×òTÊ¿ enName:the-white-knight
--- SetSaveIndex(nil,"1|2|3|5|6|14|19|13",nil,"Metadata/Items/DivinationCards/DivinationCardDrapedInDreams",nil,nil,nil,true)--Åû‰ô
-
---³æ¿¨Æ¬
--- SetSaveIndex(nil,"1|2|3|5|6|14|19|13",nil,"Metadata/Items/DivinationCards/DivinationCardBuriedTreasure",nil,nil,nil,true)--ÉîÂñµzŒš enName:buried-treasure
--- SetSaveIndex(nil,"1|2|3|5|6|14|19|13",nil,"Metadata/Items/DivinationCards/DivinationCardMoreIsNeverEnough",nil,nil,nil,true)--ØÀ·Ÿo±M enName:more-is-never-enough
--- SetSaveIndex(nil,"1|2|3|5|6|14|19|13",nil,"Metadata/Items/DivinationCards/DivinationCardTheDeal",nil,nil,nil,true)--ÙIÙu enName:the-deal
--- SetSaveIndex(nil,"1|2|3|5|6|14|19|13",nil,"Metadata/Items/DivinationCards/DivinationCardCameriasCut",nil,nil,nil,true)--¿¨ûœšv†Ö®¸î enName:camerias-cut
--- SetSaveIndex(nil,"1|2|3|5|6|14|19|13",nil,"Metadata/Items/DivinationCards/DivinationCardTheCardSharp",nil,nil,nil,true)--ÀÏÇ§
-
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyDelveCraftingDefences",nil,nil,nil,true)--³íÃÜ»¯Ê¯
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyDelveCraftingBleedPoison",nil,nil,nil,true)--°ßñg»¯Ê¯
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyDelveCraftingElemental",nil,nil,nil,true)--ÈıÏà»¯Ê¯
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyDelveCraftingCasterMods",nil,nil,nil,true)--Éñ»Ã»¯Ê¯
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyDelveCraftingAttackMods",nil,nil,nil,true)--ÀûıX»¯Ê¯
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyDelveCraftingMana",nil,nil,nil,true)--Ã÷Í¸»¯Ê¯
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyDelveCraftingSpeed",nil,nil,nil,true)--îü»¯Ê¯
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyDelveCraftingMinionsAuras",nil,nil,nil,true)--î³Óò»¯Ê¯
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyDelveCraftingQuality",nil,nil,nil,true)--Ÿoè¦»¯Ê¯
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyDelveCraftingEnchant",nil,nil,nil,true)--¸½Ä§»¯Ê¯
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyDelveCraftingSockets",nil,nil,nil,true)--è‚ï—»¯Ê¯
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyDelveCraftingFire",nil,nil,nil,true)--³ãÑ×»¯Ê¯
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyDelveCraftingCold",nil,nil,nil,true)--±ùÙı»¯Ê¯
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyDelveCraftingLightning",nil,nil,nil,true)--½ğÊô»¯Ê¯
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyDelveCraftingPhysical",nil,nil,nil,true)--¾â³İ»¯Ê¯
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyDelveCraftingChaos",nil,nil,nil,true)--»û±ä»¯Ê¯
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyDelveCraftingLife",nil,nil,nil,true)--Ô­Ê¼»¯Ê¯
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyDelveCraftingGemLevel",nil,nil,nil,true)--ÀâÃæ»¯Ê¯
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyDelveCraftingVaal",nil,nil,nil,true)--½¦Ñª»¯Ê¯
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyDelveCraftingAbyss",nil,nil,nil,true)--ïÎ¿Õ»¯Ê¯
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyDelveCraftingMirror",nil,nil,nil,true)--·ÖÁÑ»¯Ê¯
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyDelveCraftingCorruptEssence",nil,nil,nil,true)--µñ¿Ì»¯Ê¯
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyDelveCraftingRandom",nil,nil,nil,true)--¾À²ø»¯Ê¯
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyDelveCraftingLuckyModRolls",nil,nil,nil,true)--Ê¥½à»¯Ê¯
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyDelveCraftingSellPrice",nil,nil,nil,true)--Ïâ½ğ»¯Ê¯
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceHatred1",nil,nil,nil,true)--Ô÷ºŞÖ®µÍÕZ¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceHatred2",nil,nil,nil,true)--Ô÷ºŞÖ®ÄØà«¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceHatred3",nil,nil,nil,true)--Ô÷ºŞÖ®ÌäÆü¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceHatred4",nil,nil,nil,true)--Ô÷ºŞÖ®°§º¿¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceHatred5",nil,nil,nil,true)--Ô÷ºŞÖ®ÅØÏø¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceHatred6",nil,nil,nil,true)--Ô÷ºŞÖ®¼â‡[¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceHatred7",nil,nil,nil,true)--Ô÷ºŞÖ®ÆÆ¿Õ¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceWoe1",nil,nil,nil,true)--±¯Í´Ö®µÍÕZ¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceWoe2",nil,nil,nil,true)--±¯Í´Ö®ÄØà«¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceWoe3",nil,nil,nil,true)--±¯Í´Ö®ÌäÆü¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceWoe4",nil,nil,nil,true)--±¯Í´Ö®°§º¿¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceWoe5",nil,nil,nil,true)--±¯Í´Ö®ÅØÏø¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceWoe6",nil,nil,nil,true)--±¯Í´Ö®¼â‡[¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceWoe7",nil,nil,nil,true)--±¯Í´Ö®ÆÆ¿Õ¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceGreed1",nil,nil,nil,true)--ØÀ·Ö®µÍÕZ¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceGreed2",nil,nil,nil,true)--ØÀ·Ö®ÄØà«¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceGreed3",nil,nil,nil,true)--ØÀ·Ö®ÌäÆü¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceGreed4",nil,nil,nil,true)--ØÀ·Ö®°§º¿¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceGreed5",nil,nil,nil,true)--ØÀ·Ö®ÅØÏø¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceGreed6",nil,nil,nil,true)--ØÀ·Ö®¼â‡[¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceGreed7",nil,nil,nil,true)--ØÀ·Ö®ÆÆ¿Õ¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceContempt1",nil,nil,nil,true)--İpÒ•Ö®µÍÕZ¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceContempt2",nil,nil,nil,true)--İpÒ•Ö®ÄØà«¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceContempt3",nil,nil,nil,true)--İpÒ•Ö®ÌäÆü¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceContempt4",nil,nil,nil,true)--İpÒ•Ö®°§º¿¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceContempt5",nil,nil,nil,true)--İpÒ•Ö®ÅØÏø¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceContempt6",nil,nil,nil,true)--İpÒ•Ö®¼â‡[¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceContempt7",nil,nil,nil,true)--İpÒ•Ö®ÆÆ¿Õ¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceSorrow1",nil,nil,nil,true)--°§Ï§Ö®ÄØà«¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceSorrow2",nil,nil,nil,true)--°§Ï§Ö®ÌäÆü¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceSorrow3",nil,nil,nil,true)--°§Ï§Ö®°§º¿¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceSorrow4",nil,nil,nil,true)--°§Ï§Ö®ÅØÏø¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceSorrow5",nil,nil,nil,true)--°§Ï§Ö®¼â‡[¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceSorrow6",nil,nil,nil,true)--°§Ï§Ö®ÆÆ¿Õ¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceAnger1",nil,nil,nil,true)--‘Å­Ö®ÄØà«¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceAnger2",nil,nil,nil,true)--‘Å­Ö®ÌäÆü¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceAnger3",nil,nil,nil,true)--‘Å­Ö®°§º¿¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceAnger4",nil,nil,nil,true)--‘Å­Ö®ÅØÏø¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceAnger5",nil,nil,nil,true)--‘Å­Ö®¼â‡[¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceAnger6",nil,nil,nil,true)--‘Å­Ö®ÆÆ¿Õ¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceTorment1",nil,nil,nil,true)--ÕÛÄ¥Ö®ÄØà«¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceTorment2",nil,nil,nil,true)--ÕÛÄ¥Ö®ÌäÆü¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceTorment3",nil,nil,nil,true)--ÕÛÄ¥Ö®°§º¿¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceTorment4",nil,nil,nil,true)--ÕÛÄ¥Ö®ÅØÏø¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceTorment5",nil,nil,nil,true)--ÕÛÄ¥Ö®¼â‡[¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceTorment6",nil,nil,nil,true)--ÕÛÄ¥Ö®ÆÆ¿Õ¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceFear1",nil,nil,nil,true)--¿Ö‘ÖÖ®ÄØà«¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceFear2",nil,nil,nil,true)--¿Ö‘ÖÖ®ÌäÆü¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceFear3",nil,nil,nil,true)--¿Ö‘ÖÖ®°§º¿¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceFear4",nil,nil,nil,true)--¿Ö‘ÖÖ®ÅØÏø¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceFear5",nil,nil,nil,true)--¿Ö‘ÖÖ®¼â‡[¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceFear6",nil,nil,nil,true)--¿Ö‘ÖÖ®ÆÆ¿Õ¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceSuffering1",nil,nil,nil,true)--¿àëyÖ®ÌäÆü¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceSuffering2",nil,nil,nil,true)--¿àëyÖ®°§º¿¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceSuffering3",nil,nil,nil,true)--¿àëyÖ®ÅØÏø¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceSuffering4",nil,nil,nil,true)--¿àëyÖ®¼â‡[¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceSuffering5",nil,nil,nil,true)--¿àëyÖ®ÆÆ¿Õ¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceRage1",nil,nil,nil,true)--ËÁÅ°Ö®ÌäÆü¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceRage2",nil,nil,nil,true)--ËÁÅ°Ö®°§º¿¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceRage3",nil,nil,nil,true)--ËÁÅ°Ö®ÅØÏø¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceRage4",nil,nil,nil,true)--ËÁÅ°Ö®¼â‡[¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceRage5",nil,nil,nil,true)--ËÁÅ°Ö®ÆÆ¿Õ¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceWrath1",nil,nil,nil,true)--À×öªÖ®ÌäÆü¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceWrath2",nil,nil,nil,true)--À×öªÖ®°§º¿¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceWrath3",nil,nil,nil,true)--À×öªÖ®ÅØÏø¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceWrath4",nil,nil,nil,true)--À×öªÖ®¼â‡[¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceWrath5",nil,nil,nil,true)--À×öªÖ®ÆÆ¿Õ¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceDoubt1",nil,nil,nil,true)--ÒÉ»óÖ®ÌäÆü¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceDoubt2",nil,nil,nil,true)--ÒÉ»óÖ®°§º¿¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceDoubt3",nil,nil,nil,true)--ÒÉ»óÖ®ÅØÏø¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceDoubt4",nil,nil,nil,true)--ÒÉ»óÖ®¼â‡[¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceDoubt5",nil,nil,nil,true)--ÒÉ»óÖ®ÆÆ¿Õ¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceAnguish1",nil,nil,nil,true)--¼å°¾Ö®°§º¿¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceAnguish2",nil,nil,nil,true)--¼å°¾Ö®ÅØÏø¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceAnguish3",nil,nil,nil,true)--¼å°¾Ö®¼â‡[¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceAnguish4",nil,nil,nil,true)--¼å°¾Ö®ÆÆ¿Õ¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceLoathing1",nil,nil,nil,true)--…’ºÖ®°§º¿¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceLoathing2",nil,nil,nil,true)--…’ºÖ®ÅØÏø¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceLoathing3",nil,nil,nil,true)--…’ºÖ®¼â‡[¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceLoathing4",nil,nil,nil,true)--…’ºÖ®ÆÆ¿Õ¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceSpite1",nil,nil,nil,true)--¿Ì¶¾Ö®°§º¿¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceSpite2",nil,nil,nil,true)--¿Ì¶¾Ö®ÅØÏø¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceSpite3",nil,nil,nil,true)--¿Ì¶¾Ö®¼â‡[¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceSpite4",nil,nil,nil,true)--¿Ì¶¾Ö®ÆÆ¿Õ¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceZeal1",nil,nil,nil,true)--ŸáÇéÖ®°§º¿¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceZeal2",nil,nil,nil,true)--ŸáÇéÖ®ÅØÏø¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceZeal3",nil,nil,nil,true)--ŸáÇéÖ®¼â‡[¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceZeal4",nil,nil,nil,true)--ŸáÇéÖ®ÆÆ¿Õ¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceMisery1",nil,nil,nil,true)--¢‘KÖ®ÅØÏø¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceMisery2",nil,nil,nil,true)--¢‘KÖ®¼â‡[¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceMisery3",nil,nil,nil,true)--¢‘KÖ®ÆÆ¿Õ¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceDread1",nil,nil,nil,true)--¼É‘„Ö®ÅØÏø¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceDread2",nil,nil,nil,true)--¼É‘„Ö®¼â‡[¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceDread3",nil,nil,nil,true)--¼É‘„Ö®ÆÆ¿Õ¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceScorn1",nil,nil,nil,true)--°ÁÒ•Ö®ÅØÏø¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceScorn2",nil,nil,nil,true)--°ÁÒ•Ö®¼â‡[¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceScorn3",nil,nil,nil,true)--°ÁÒ•Ö®ÆÆ¿Õ¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceEnvy1",nil,nil,nil,true)--¼É¶ÊÖ®ÅØÏø¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceEnvy2",nil,nil,nil,true)--¼É¶ÊÖ®¼â‡[¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceEnvy3",nil,nil,nil,true)--¼É¶ÊÖ®ÆÆ¿Õ¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceHysteria1",nil,nil,nil,true)--¸¡ÕF¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceInsanity1",nil,nil,nil,true)--åey¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceHorror1",nil,nil,nil,true)--˜O¿Ö¾«Ëè
-SetSaveIndex(nil,"6|7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyEssenceDelirium1",nil,nil,nil,true)--×dÍı¾«Ëè
-
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Expedition/ExpeditionVendorCurrencyFaction1_1",nil,nil,nil,true)--µÍëAÆÆËéÖ®­hÎÄÎï
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Expedition/ExpeditionVendorCurrencyFaction1_2",nil,nil,nil,true)--ÆÕÍ¨ÆÆËéÖ®­hÎÄÎï
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Expedition/ExpeditionVendorCurrencyFaction1_3",nil,nil,nil,true)--¸ßëAÆÆËéÖ®­hÎÄÎï
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Expedition/ExpeditionVendorCurrencyFaction1_4",nil,nil,nil,true)--ºê‚¥ÆÆËéÖ®­hÎÄÎï
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Expedition/ExpeditionVendorCurrencyFaction2_1",nil,nil,nil,true)--µÍëAºÚ°µÑªç ÎÄÎï
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Expedition/ExpeditionVendorCurrencyFaction2_2",nil,nil,nil,true)--ÆÕÍ¨ºÚ°µÑªç ÎÄÎï
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Expedition/ExpeditionVendorCurrencyFaction2_3",nil,nil,nil,true)--¸ßëAºÚ°µÑªç ÎÄÎï
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Expedition/ExpeditionVendorCurrencyFaction2_4",nil,nil,nil,true)--ºê‚¥ºÚ°µÑªç ÎÄÎï
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Expedition/ExpeditionVendorCurrencyFaction3_1",nil,nil,nil,true)--µÍëAÖÈĞòÎÄÎï
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Expedition/ExpeditionVendorCurrencyFaction3_2",nil,nil,nil,true)--ÆÕÍ¨ÖÈĞòÎÄÎï
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Expedition/ExpeditionVendorCurrencyFaction3_3",nil,nil,nil,true)--¸ßëAÖÈĞòÎÄÎï
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Expedition/ExpeditionVendorCurrencyFaction3_4",nil,nil,nil,true)--ºê‚¥ÖÈĞòÎÄÎï
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Expedition/ExpeditionVendorCurrencyFaction4_1",nil,nil,nil,true)--µÍëAØWê–ÎÄÎï
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Expedition/ExpeditionVendorCurrencyFaction4_2",nil,nil,nil,true)--ÆÕÍ¨ØWê–ÎÄÎï
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Expedition/ExpeditionVendorCurrencyFaction4_3",nil,nil,nil,true)--¸ßëAØWê–ÎÄÎï
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Expedition/ExpeditionVendorCurrencyFaction4_4",nil,nil,nil,true)--ºê‚¥ØWê–ÎÄÎï
-
-SetSaveIndex(nil,"14|14|14|14|14|14|2|4",nil,"Metadata/Items/Currency/ScoutingReports/AtlasScoutingReportUnique",nil,nil,nil,true)--×¿Ô½‚É²éˆó¸æ
-SetSaveIndex(nil,"14|14|14|14|14|14|2|4",nil,"Metadata/Items/Currency/ScoutingReports/AtlasScoutingReportBreachstone",nil,nil,nil,true)--³¬·²‚É²éˆó¸æ
-SetSaveIndex(nil,"14|14|14|14|14|14|2|4",nil,"Metadata/Items/Currency/ScoutingReports/AtlasScoutingReportMoreHidden",nil,nil,nil,true)--È«Ãæ‚É²éˆó¸æ
-SetSaveIndex(nil,"14|14|14|14|14|14|2|4",nil,"Metadata/Items/Currency/ScoutingReports/AtlasScoutingReportCorrupted",nil,nil,nil,true)--Íß –‚É²éˆó¸æ
-SetSaveIndex(nil,"14|14|14|14|14|14|2|4",nil,"Metadata/Items/Currency/ScoutingReports/AtlasScoutingReportDelirium",nil,nil,nil,true)--×dÍı‚É²éˆó¸æ
-SetSaveIndex(nil,"14|14|14|14|14|14|2|4",nil,"Metadata/Items/Currency/ScoutingReports/AtlasScoutingReportJuiced",nil,nil,nil,true)--¼¼¹¤‚É²éˆó¸æ
-SetSaveIndex(nil,"14|14|14|14|14|14|2|4",nil,"Metadata/Items/Currency/ScoutingReports/AtlasScoutingReportBlighted",nil,nil,nil,true)--µòÂä‚É²éˆó¸æ
-SetSaveIndex(nil,"14|14|14|14|14|14|2|4",nil,"Metadata/Items/Currency/ScoutingReports/AtlasScoutingReportGuardian",nil,nil,nil,true)--„İÁ¦‚É²éˆó¸æ
-SetSaveIndex(nil,"14|14|14|14|14|14|2|4",nil,"Metadata/Items/Currency/ScoutingReports/AtlasScoutingReportExplorers",nil,nil,nil,true)--Ì½ëU¼Ò‚É²éˆó¸æ
-
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyItemiseSextantModifier",nil,nil,nil,true)--Õ{²é†TµÄÁ_±P
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyItemisedSextantModifier",nil,nil,nil,true)--³äÄÜµÄÁ_±P
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyRerollSkillQualityType",nil,nil,nil,true)--³õëAºY·ÖÖ®çR
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyRerollSupportQualityType",nil,nil,nil,true)--´ÎëAºY·ÖÖ®çR
-
---SetSaveIndex(nil,"14|14|14|14|14|19|2|6|4",nil,"Metadata/Items/Currency/CurrencyAfflictionOrbCurrency",nil,nil,nil,true)--¾«Á¼Ö®×dÍıÓñ
---SetSaveIndex(nil,"14|14|14|14|14|19|2|6|4",nil,"Metadata/Items/Currency/CurrencyAfflictionOrbUniques",nil,nil,nil,true)--×¿Ô½Ö®×dÍıÓñ
---SetSaveIndex(nil,"14|14|14|14|14|19|2|6|4",nil,"Metadata/Items/Currency/CurrencyAfflictionOrbGems",nil,nil,nil,true)--ÆæĞgÖ®×dÍıÓñ
---SetSaveIndex(nil,"14|14|14|14|14|19|2|6|4",nil,"Metadata/Items/Currency/CurrencyAfflictionOrbWeapons",nil,nil,nil,true)--èF½³Ö®×dÍıÓñ
---SetSaveIndex(nil,"14|14|14|14|14|19|2|6|4",nil,"Metadata/Items/Currency/CurrencyAfflictionOrbArmour",nil,nil,nil,true)--×o¼×Ö®×dÍıÓñ
---SetSaveIndex(nil,"14|14|14|14|14|19|2|6|4",nil,"Metadata/Items/Currency/CurrencyAfflictionOrbMaps",nil,nil,nil,true)--ÑuˆDÖ®×dÍıÓñ
---SetSaveIndex(nil,"14|14|14|14|14|19|2|6|4",nil,"Metadata/Items/Currency/CurrencyAfflictionOrbTrinkets",nil,nil,nil,true)--ï—Æ·Ö®×dÍıÓñ
---SetSaveIndex(nil,"14|14|14|14|14|19|2|6|4",nil,"Metadata/Items/Currency/CurrencyAfflictionOrbAbyss",nil,nil,nil,true)--ÉîœYÖ®×dÍıÓñ
---SetSaveIndex(nil,"14|14|14|14|14|19|2|6|4",nil,"Metadata/Items/Currency/CurrencyAfflictionOrbPerandus",nil,nil,nil,true)--‰™ÂäÖ®×dÍıÓñ
---SetSaveIndex(nil,"14|14|14|14|14|19|2|6|4",nil,"Metadata/Items/Currency/CurrencyAfflictionOrbHarbinger",nil,nil,nil,true)--îA¸ĞÖ®×dÍıÓñ
---SetSaveIndex(nil,"14|14|14|14|14|19|2|6|4",nil,"Metadata/Items/Currency/CurrencyAfflictionOrbBreach",nil,nil,nil,true)--»Ş­Ö®×dÍıÓñ
---SetSaveIndex(nil,"14|14|14|14|14|19|2|6|4",nil,"Metadata/Items/Currency/CurrencyAfflictionOrbEssences",nil,nil,nil,true)--µÍÕZÖ®×dÍıÓñ
---SetSaveIndex(nil,"14|14|14|14|14|19|2|6|4",nil,"Metadata/Items/Currency/CurrencyAfflictionOrbFragments",nil,nil,nil,true)--ËéÆ¬Ö®×dÍıÓñ
---SetSaveIndex(nil,"14|14|14|14|14|19|2|6|4",nil,"Metadata/Items/Currency/CurrencyAfflictionOrbScarabs",nil,nil,nil,true)--ïwÂÓÖ®×dÍıÓñ
---SetSaveIndex(nil,"14|14|14|14|14|19|2|6|4",nil,"Metadata/Items/Currency/CurrencyAfflictionOrbFossils",nil,nil,nil,true)--Ê¯»¯Ö®×dÍıÓñ
---SetSaveIndex(nil,"14|14|14|14|14|19|2|6|4",nil,"Metadata/Items/Currency/CurrencyAfflictionOrbProphecies",nil,nil,nil,true)--îAÕ×Ö®×dÍıÓñ
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyAfflictionOrbDivinationCards",nil,nil,nil,true)--Â}ÈËÖ®×dÍıÓñ
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyAfflictionOrbGeneric",nil,nil,nil,true)--×dÍıÓñ
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyAfflictionOrbTalismans",nil,nil,nil,true)--³õÊ¼Ö®×dÍıÓñ
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyAfflictionOrbLabyrinth",nil,nil,nil,true)--µÛÍõÖ®×dÍıÓñ
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyAfflictionOrbIncubators",nil,nil,nil,true)--ÓÀaÖ®×dÍıÓñ
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyAfflictionOrbBlight",nil,nil,nil,true)--µòÂäÖ®×dÍıÓñ
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Currency/CurrencyAfflictionOrbMetamorphosis",nil,nil,nil,true)--×ƒ‘BÖ®×dÍıÓñ
-
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Currency/SentinelCurrencyBasic",nil,nil,nil,true)--„ÓÁ¦ºËĞÄ
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Currency/SentinelCurrencyMutate",nil,nil,nil,true)--¸ÄÔì„ÓÁ¦ºËĞÄ
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Currency/SentinelCurrencyUpgradeMod",nil,nil,nil,true)--ÔöŠ„ÓÁ¦ºËĞÄ
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Currency/SentinelCurrencyAddMod",nil,nil,nil,true)--ÌáÉı„ÓÁ¦ºËĞÄ
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Currency/SentinelCurrencyArmour",nil,nil,nil,true)--×o¼×ÖØ½MÑbÖÃ
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Currency/SentinelCurrencyWeapon",nil,nil,nil,true)--ÎäÆ÷ÖØ½MÑbÖÃ
-SetSaveIndex(nil,"7|8|9|10|11",nil,"Metadata/Items/Currency/SentinelCurrencyJewellery",nil,nil,nil,true)--ï—Æ·ÖØ½MÑbÖÃ
-
---¸ß¼¶»»×°´æµÄÒ³Ãæ
--- SetSaveIndex(nil,"2|2|14|14|19|4",nil,"Metadata/Items/Armours/BodyArmours/BodyInt1","ÎŞ¾¡Ö®ÒÂ","Tabula Rasa",nil,true)
-SetSaveIndex(nil,"2|2|14|14|19|4",nil,"Metadata/Items/Armours/Shields/ShieldStrDex9","µÂÈğË÷µÄÓÂÕßÖ®¶Ü","Daresso's Courage",nil,true)--¶ÜÅÆ
-SetSaveIndex(nil,"2|2|14|14|19|4",nil,"Metadata/Items/Belts/Belt5","ÆÕÀ¼µÂË¹Ö®Ó¡","Perandus Blazon",nil,true)--Ñü´ø
-SetSaveIndex(nil,"2|2|14|14|19|4",nil,"Metadata/Items/Amulets/Amulet3","ĞÅÄîÖ®Õè","The Anvil",nil,true)--ÏîÁ´
---SetSaveIndex(nil,"2|2|14|14|19|4",nil,"Metadata/Items/Rings/Ring10","ÍöÕßºô»½","Death Rush",nil,true)--ÓÒ½äÖ¸
-SetSaveIndex(nil,"2|2|14|14|19|4",nil,"Metadata/Items/Rings/Ring1","Ó¢Áé±¦»·","Le Heup of All",nil,true)--×ó½äÖ¸
-SetSaveIndex(nil,"2|2|14|14|19|4",nil,"Metadata/Items/Armours/Boots/BootsStrInt6","°¢¶û±´Â¡µÄÕ÷Í¾","Alberon's Warpath",nil,true)--Ğ¬×Ó
---SetSaveIndex(nil,"2|2|14|14|19|4",nil,"Metadata/Items/Armours/Helmets/HelmetStrInt7","¼ª –·ÆµÄ˜s¹â","Geofri's Crest",nil,true)--Í·¿ø
-SetSaveIndex(nil,"2|2|14|14|19|4",nil,"Metadata/Items/Armours/Gloves/GlovesInt1","ÁÔ±¦ÕßµÄ»¤ÊÖ","Sadima's Touch",nil,true)--ÊÖÌ×
-SetSaveIndex(nil,"2|2|14|14|19|4",nil,"Metadata/Items/Flasks/FlaskUtility6","ÉËÎ¸¾Æ","Rotgut",nil,true)
-SetSaveIndex(nil,"2|2|14|14|19|4",nil,"Metadata/Items/Flasks/FlaskUtility5","Ê¨ºğ¾«»ª","Lion's Roar",nil,true)--Ò©Ë®
-SetSaveIndex(nil,"2|2|14|14|19|4",nil,"Metadata/Items/Flasks/FlaskHybrid3","±¦ÊÓ¾«»ª","Divination Distillate",nil,true)--Ò©Ë®
-SetSaveIndex(nil,"2|2|14|14|19|4",nil,"Metadata/Items/Weapons/OneHandWeapons/Claws/Claw12","³¬Ô½±ÚÀİ","Advancing Fortress",nil,true)--ÎäÆ÷
---SetSaveIndex(nil,"2|2|14|14|19|4",nil,"Metadata/Items/Belts/Belt4","Í»Î§Õß","Siegebreaker",nil,true)--Ñü´ø
-SetSaveIndex(nil,"2|2|14|14|19|4",nil,"Metadata/Items/Armours/Shields/ShieldStr17","ª{ÑÛµÄ˜sÒ«Ö®¶Ü","Lioneye's Remorse",nil,true)--¶ÜÅÆ
-SetSaveIndex(nil,"2|2|14|14|19|4",nil,"Metadata/Items/Amulets/Amulet6","®…Ë¹¿ÜµÄí—È¦","Bisco's Collar",nil,true)--ÏîÁ´
-SetSaveIndex(nil,"2|2|14|14|19|4",nil,"Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/OneHandMace11","ËÜÄàÕß","Clayshaper",nil,true)--ÎäÆ÷
-SetSaveIndex(nil,"2|2|14|14|19|4",nil,"Metadata/Items/Weapons/OneHandWeapons/Claws/Claw12","–|Ö®ï—","Ornament of the East","Clayshaper",nil,true)--ÎäÆ÷
-
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-
-
-
-
---------------------------------------------------------------
---------------------------------------------------------------
-
-
--- SetJiaoYiGoods(goodsType,name,className,wordName,wordClassName,color,chufaCnt)-- ÉèÖÃÒª½»Ò×µÄÎïÆ·
---goodsType ×Ö·û´®ĞÍ ²Ù×÷µÄÎïÆ·ÀàĞÍºöÂÔÀàĞÍÇëÌî nil Ö§³ÖÒÔÏÂÖÖÀà ¶àÖÖÀàĞÍÒÔ|·Ö¿ª -- SaveType ÀàĞÍ Ö§³ÖÒÔÏÂÖÖÀà ¶àÖÖÀàĞÍÒÔ|·Ö¿ª ÉúÃüÒ©¼Á|Ä§Á¦Ò©¼Á|¸´ºÏÒ©¼Á|Í¨»õ|ÏîÁ´|½äÖ¸|×¦|Ø°Ê×|·¨ÕÈ|µ¥ÊÖ½£|Ï¸½£|µ¥ÊÖ¸«|µ¥ÊÖ´¸|·ûÎÄØ°Ê×|¶ÌÕÈ|Õ½ÕÈ|¹­|³¤ÕÈ|Ë«ÊÖ½£|Ë«ÊÖ¸«|Ë«ÊÖ´¸|Ö÷¶¯¼¼ÄÜ±¦Ê¯|¸¨Öú¼¼ÄÜ±¦Ê¯|¼ı´ü|Ñü´ø|ÊÖÌ×|Ğ¬×Ó|ÒÂ·ş|Í·¿ø|¶Ü|Ğ¡ĞÍÊ¥Îï|ÖĞĞÍÊ¥Îï|´óĞÍÊ¥Îï|¿É¶ÑµşÍ¨»õ|ÈÎÎñÎïÆ·|¶ÌÕÈ|¹¦ÄÜÒ©¼Á|±©»÷Ò©¼Á|Òì½çµØÍ¼||Óã¸Í|µØÍ¼ËéÆ¬|²ØÉí´¦×°ÊÎ|ÉÌ³ÇÎïÆ·|Öé±¦|ÃüÔË¿¨|ÃÔ¹¬ÎïÆ·|ÃÔ¹¬ÊÎÆ·|Òì½çÃÔ¹¬ÎïÆ·|ÁÑÏ¶Ö®Ê¯|Èü¼¾Ê¯|ÉñÁéÖ®»ê|´«Ææ×°±¸ËéÆ¬|ÉîÔ¨Öé±¦|´©Ô½Í¨»õ|µØĞÄÌ½Ë÷£º¿ÉÏâÇ¶µÄÍ¨»õ|ÔĞÓıÊ¯|ËéÆ¬|ÆÆËéÖ®ĞÄ|·ûÎÄØ°Ê×|Õ½ÕÈ|µØĞÄÌ½Ë÷¿É¶Ñµş¿É²åÈëÍ¨»õ|
+--SetJiaoYiGoods(goodsType,name,className,wordName,wordClassName,color,chufaCnt)-- ÉèÖÃÒª½»Ò×µÄÎïÆ·
+--goodsType ×Ö·û´®ĞÍ ²Ù×÷µÄÎïÆ·ÀàĞÍºöÂÔÀàĞÍÇëÌî nil Ö§³ÖÒÔÏÂÖÖÀà ¶àÖÖÀàĞÍÒÔ|·Ö¿ª --saveType ÀàĞÍ Ö§³ÖÒÔÏÂÖÖÀà ¶àÖÖÀàĞÍÒÔ|·Ö¿ª ÉúÃüÒ©¼Á|Ä§Á¦Ò©¼Á|¸´ºÏÒ©¼Á|Í¨»õ|ÏîÁ´|½äÖ¸|×¦|Ø°Ê×|·¨ÕÈ|µ¥ÊÖ½£|Ï¸½£|µ¥ÊÖ¸«|µ¥ÊÖ´¸|·ûÎÄØ°Ê×|¶ÌÕÈ|Õ½ÕÈ|¹­|³¤ÕÈ|Ë«ÊÖ½£|Ë«ÊÖ¸«|Ë«ÊÖ´¸|Ö÷¶¯¼¼ÄÜ±¦Ê¯|¸¨Öú¼¼ÄÜ±¦Ê¯|¼ı´ü|Ñü´ø|ÊÖÌ×|Ğ¬×Ó|ÒÂ·ş|Í·¿ø|¶Ü|Ğ¡ĞÍÊ¥Îï|ÖĞĞÍÊ¥Îï|´óĞÍÊ¥Îï|¿É¶ÑµşÍ¨»õ|ÈÎÎñÎïÆ·|¶ÌÕÈ|¹¦ÄÜÒ©¼Á|±©»÷Ò©¼Á|Òì½çµØÍ¼||Óã¸Í|µØÍ¼ËéÆ¬|²ØÉí´¦×°ÊÎ|ÉÌ³ÇÎïÆ·|Öé±¦|ÃüÔË¿¨|ÃÔ¹¬ÎïÆ·|ÃÔ¹¬ÊÎÆ·|Òì½çÃÔ¹¬ÎïÆ·|ÁÑÏ¶Ö®Ê¯|Èü¼¾Ê¯|ÉñÁéÖ®»ê|´«Ææ×°±¸ËéÆ¬|ÉîÔ¨Öé±¦|´©Ô½Í¨»õ|µØĞÄÌ½Ë÷£º¿ÉÏâÇ¶µÄÍ¨»õ|ÔĞÓıÊ¯|ËéÆ¬|ÆÆËéÖ®ĞÄ|·ûÎÄØ°Ê×|Õ½ÕÈ|µØĞÄÌ½Ë÷¿É¶Ñµş¿É²åÈëÍ¨»õ|
 --name ×Ö·û´®ĞÍ ÎïÆ·µÄÃû×Ö
 --className ×Ö·û´®ĞÍ ÎïÆ·µÄÀàÃû
 --wordName ×Ö·û´®ĞÍ ÎïÆ·µÄ´Ê×ºÃû
@@ -1339,34 +572,24 @@ SetSaveIndex(nil,"2|2|14|14|19|4",nil,"Metadata/Items/Weapons/OneHandWeapons/Cla
 --color ×Ö·û´®ĞÍ ÑÕÉ« 0°× 1À¶ 2»Æ 3³È ¶à¸öÓÃ|¸ô¿ª nilÎªËùÓĞ
 --chufaCnt Êı×ÖĞÍ ´¥·¢½»Ò×µÄÊıÁ¿ 0»ònil Îª²»´¥·¢
 --bossJiaoYiCnt Êı×ÖĞÍ ½»Ò×Ê±²Ö¿âºÅ½»Ò×¸ø¹Ò»úºÅµÄÊıÁ¿
---giveFaZhuang Âß¼­ĞÍ ÊÇ·ñ¿ÉÒÔ¼¯¸ø·¢×°ºÅ trueÎª¿ÉÒÔ¸ø·¢×°ºÅ false »ònil Îª²»ĞèÒª
---baoliuCnt Êı×ÖĞÍ ¹Ò»úºÅ½»Ò×Ê±±£ÁôµÄÊıÁ¿
---lineSocketCnt Êı×ÖĞÍ Á¬¶´ÊıÁ¿ ºöÂÔÇëÌînil
---shuXingLimit ×Ö·û´®ĞÍ ÊôĞÔÏŞÖÆ ×Ô¼ºÏëÒªµÄÊôĞÔ ¸ñÊ½Îª "ÊôĞÔÀàÃû1,ÊôĞÔ×îĞ¡Öµ1|ÊôĞÔÀàÃû2,ÊôĞÔ×îĞ¡Öµ2" ¿ÉÖ§³Ö¶à¸ö£¬¶à¸öÊ±±ØĞë¶¼Âú×ãÁË²ÅËã ÖĞ¼äÓÃ|¸ô¿ª ºöÂÔÇëÌînil
---funcCheck ¹ıÂËº¯Êı£¬¸ø×÷ÕßÔ¤ÁôµÄ½Ó¿Ú£¬²»¶®²»ÒªÂÒÌî£¬ºöÂÔÇëÌînil
-SetJiaoYiGoods(nil,"»ìãçÊ¯","Metadata/Items/Currency/CurrencyRerollRare",nil,nil,nil,10)
+
+SetJiaoYiGoods(nil,"»ìãçÊ¯","Metadata/Items/Currency/CurrencyRerollRare",nil,nil,nil,100)
 SetJiaoYiGoods(nil,"¿¨À¼µÂµÄÄ§¾µ","Metadata/Items/Currency/CurrencyDuplicate",nil,nil,nil,1)
-SetJiaoYiGoods(nil,"µã½ğÊ¯","Metadata/Items/Currency/CurrencyUpgradeToRare",nil,nil,nil,nil,20)--±£Áô30¸öµã½ğÊ¯ ¶à³öÀ´µÄ½»Ò×¸ø²Ö¿âºÅ
+SetJiaoYiGoods(nil,"µã½ğÊ¯","Metadata/Items/Currency/CurrencyUpgradeToRare",nil,nil,nil,nil,20)
+SetJiaoYiGoods(nil,"»ú»áÊ¯","Metadata/Items/Currency/CurrencyUpgradeRandomly",nil,nil,nil,nil)
+SetJiaoYiGoods(nil,"ºó»ÚÊ¯","Metadata/Items/Currency/CurrencyPassiveRefund",nil,nil,nil,nil)
+--SetJiaoYiGoods(nil,"ÍÉ±äÊ¯","Metadata/Items/Currency/CurrencyUpgradeToMagic",nil,nil,nil,nil)
 SetJiaoYiGoods(nil,"¸ÄÔìÊ¯","Metadata/Items/Currency/CurrencyRerollMagic",nil,nil,nil,nil)
---SetJiaoYiGoods(nil,"»ú»áÊ¯","Metadata/Items/Currency/CurrencyUpgradeRandomly",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"»ÃÏñ”àÆ¬","Metadata/Items/Currency/CurrencySimulacrumSplinter",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"ÉÍ½ğÁÔÈËÓ¡¼Ç","Metadata/Items/Heist/HeistCoin",nil,nil,nil,nil,nil,nil,30000)--±£Áô1000¸ö¶á±¦±Ò ¶à³öÀ´µÄ½»Ò×¸ø²Ö¿âºÅ
-SetJiaoYiGoods(nil,"ºó»ÚÊ¯","Metadata/Items/Currency/CurrencyPassiveRefund",nil,nil,nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"ÍÉ±äÊ¯","Metadata/Items/Currency/CurrencyUpgradeToMagic",nil,nil,nil,nil)
---SetJiaoYiGoods(nil,"¼Àìë±®Æ÷","Metadata/Items/Currency/CurrencyRitualStone")
 SetJiaoYiGoods(nil,"ÖØÖıÊ¯","Metadata/Items/Currency/CurrencyConvertToNormal",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"³ç¸ßÊ¯","Metadata/Items/Currency/CurrencyAddModToRare",nil,nil,nil,nil)
+SetJiaoYiGoods(nil,"³ç¸ßÊ¯","Metadata/Items/Currency/CurrencyAddModToRare",nil,nil,nil,1)
 SetJiaoYiGoods(nil,"¸»ºÀÊ¯","Metadata/Items/Currency/CurrencyUpgradeMagicToRare",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"Ôö·ùÊ¯","Metadata/Items/Currency/CurrencyAddModToMagic",nil,nil,nil,nil)
+--SetJiaoYiGoods(nil,"Ôö·ùÊ¯","Metadata/Items/Currency/CurrencyAddModToMagic",nil,nil,nil,nil)
 SetJiaoYiGoods(nil,"±¦Ê¯½³µÄÀâ¾µ","Metadata/Items/Currency/CurrencyGemQuality",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"µØÆ½Ê¯","Metadata/Items/Currency/CurrencyRerollMapType",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"³·äNÊ¯","Metadata/Items/Currency/CurrencyAtlasPassiveRefund",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"³ç¸ßÊ¯ËéÆ¬","Metadata/Items/Currency/CurrencyExaltedShard",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"ë[Ää»ìãçÊ¯","Metadata/Items/Currency/CurrencyRerollRareVeiled",nil,nil,nil,nil)
+SetJiaoYiGoods(nil,"»ÃÉ«Ê¯","Metadata/Items/Currency/CurrencyRerollSocketColours",nil,nil,nil,nil)
 SetJiaoYiGoods(nil,"Á´½áÊ¯","Metadata/Items/Currency/CurrencyRerollSocketLinks",nil,nil,nil,nil)
---SetJiaoYiGoods(nil,"¹¤½³Ê¯","Metadata/Items/Currency/CurrencyRerollSocketNumbers",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"ÉñÊ¥Ê¯","Metadata/Items/Currency/CurrencyModValues",nil,nil,nil,1)
-SetJiaoYiGoods(nil,"×£¸£Ê¯","Metadata/Items/Currency/CurrencyRerollImplicit",nil,nil,nil,nil)
+SetJiaoYiGoods(nil,"¹¤½³Ê¯","Metadata/Items/Currency/CurrencyRerollSocketNumbers",nil,nil,nil,nil)
+SetJiaoYiGoods(nil,"ÉñÊ¥Ê¯","Metadata/Items/Currency/CurrencyModValues",nil,nil,nil,nil)
+--SetJiaoYiGoods(nil,"×£¸£Ê¯","Metadata/Items/Currency/CurrencyRerollImplicit",nil,nil,nil,nil)
 SetJiaoYiGoods(nil,"ÖÆÍ¼¶¤","Metadata/Items/Currency/CurrencyMapQuality",nil,nil,nil,nil)
 SetJiaoYiGoods(nil,"ÓÀºã±¦Öé","Metadata/Items/Currency/CurrencyImprintOrb","¹â²Ê¶áÄ¿","Glorious Vanity",nil,nil)
 SetJiaoYiGoods(nil,"ÓÀºã±¦Öé","Metadata/Items/Currency/CurrencyImprintOrb","ºÃÕ½µÄĞÅÑö","Militant Faith",nil,nil)
@@ -1375,255 +598,52 @@ SetJiaoYiGoods(nil,"ÓÀºã±¦Öé","Metadata/Items/Currency/CurrencyImprintOrb","ÖÂÃü
 SetJiaoYiGoods(nil,"ÓÀºã±¦Öé","Metadata/Items/Currency/CurrencyImprintOrb","ÓÅÑÅµÄ¿ñÍı","Elegant Hubris",nil,nil)
 SetJiaoYiGoods(nil,"Íß¶û±¦Öé","Metadata/Items/Currency/CurrencyCorrupt",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"ÆÕÀ¼µÂË¹½ğ±Ò","Metadata/Items/Currency/CurrencyPerandusCoin",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"Â}‘ğÊ¿µÄ³ç¸ßÊ¯","Metadata/Items/Currency/CurrencyCrusadersExaltedOrb",nil,nil,nil,1)
-SetJiaoYiGoods(nil,"¾ÈÚHÕßµÄ³ç¸ßÊ¯","Metadata/Items/Currency/CurrencyRedeemersExaltedOrb",nil,nil,nil,1)
-SetJiaoYiGoods(nil,"á÷«CÕßµÄ³ç¸ßÊ¯","Metadata/Items/Currency/CurrencyHuntersExaltedOrb",nil,nil,nil,1)
-SetJiaoYiGoods(nil,"¿‚¶½ÜŠµÄ³ç¸ßÊ¯","Metadata/Items/Currency/CurrencyWarlordsExaltedOrb",nil,nil,nil,1)
---
---SetJiaoYiGoods(nil,"»ÃÉ«Ê¯","Metadata/Items/Currency/CurrencyRerollSocketColours",nil,nil,nil,nil)
---SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/CurrencyEnkindlingOrb",nil,nil,nil,nil)--ücÈ¼Ê¯
---SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/CurrencyInstillingOrb",nil,nil,nil,nil)--µÎ×¢Ê¯
-SetJiaoYiGoods(nil,"Íß –ßzè€","Metadata/Items/MapFragments/VaalVaultKey")
-SetJiaoYiGoods(nil,"çèÎÛµÄ»ìãçÊ¯","Metadata/Items/Currency/CurrencyHellscapeRerollRare",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"çèÎÛµÄ»ÃÉ«Ê¯","Metadata/Items/Currency/CurrencyHellscapeRerollSocketColours",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"çèÎÛµÄÉñÊ¥ÀáÖé","Metadata/Items/Currency/CurrencyHellscapeUpgradeModTier",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"çèÎÛµÄ³ç¸ßÊ¯","Metadata/Items/Currency/CurrencyHellscapeAddModToRare",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"çèÎÛµÄ¹¤½³Ê¯","Metadata/Items/Currency/CurrencyHellscapeRerollSocketNumbers",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"çèÎÛµÄÁ´½áÊ¯","Metadata/Items/Currency/CurrencyHellscapeRerollSocketLinks",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"Â}Óñ","Metadata/Items/Currency/CurrencyRerollDefences",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"çèÎÛµÄ×o¼×Æ¬","Metadata/Items/Currency/CurrencyHellscapeArmourQuality",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"çèÎÛµÄÄ¥µ¶Ê¯","Metadata/Items/Currency/CurrencyHellscapeWeaponQuality",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"çèÎÛµÄ×£¸£","Metadata/Items/Currency/CurrencyLabyrinthEnchantCorrupt",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"çèÎÛµÄÉñÔ’Ê¯","Metadata/Items/Currency/CurrencyHellscapeUpgradeToUnique",nil,nil,nil,nil)
---SetJiaoYiGoods(nil,"¼ÀìëÁÑÆ¬","Metadata/Items/Currency/CurrencyRitualSplinter")
 
---ĞÇÍÅÖé±¦½»Ò×
--- SetJiaoYiGoods(nil,"ÖĞĞÍĞÇÍÅÖé±¦","Metadata/Items/Jewels/JewelPassiveTreeExpansionMedium")
--- SetJiaoYiGoods(nil,"´óĞÍĞÇÍÅÖé±¦","Metadata/Items/Jewels/JewelPassiveTreeExpansionLarge")
 
-SetJiaoYiGoods(nil,"Ô¤ÑÔ","Metadata/Items/Currency/CurrencyItemisedProphecy",nil,"CompletingLabyrinthRewardsTwoEnchantmentUses",nil,nil)--Á½´Î¸½Ä§ V
-SetJiaoYiGoods(nil,"Ô¤ÑÔ","Metadata/Items/Currency/CurrencyItemisedProphecy",nil,"TheMagnateFated2",nil,nil)--±±¾³µÄ‚¥´óîIŒ§
-SetJiaoYiGoods(nil,"Ô¤ÑÔ","Metadata/Items/Currency/CurrencyItemisedProphecy",nil,"TheIgnomonFated",nil,nil)--Ã¤Ä V
-SetJiaoYiGoods(nil,"Ô¤ÑÔ","Metadata/Items/Currency/CurrencyItemisedProphecy",nil,"TheFeralLord5",nil,nil)--Ò°«FÖ®Íõ V
-SetJiaoYiGoods(nil,"Ô¤ÑÔ","Metadata/Items/Currency/CurrencyItemisedProphecy",nil,"UnbearableWhispers5",nil,nil)--¼â´Ì¶úÕZ V
-SetJiaoYiGoods(nil,"Ô¤ÑÔ","Metadata/Items/Currency/CurrencyItemisedProphecy",nil,"ThePlaguemaw5",nil,nil)--Òß²¡´ó×ìÊŞ V
-SetJiaoYiGoods(nil,"Ô¤ÑÔ","Metadata/Items/Currency/CurrencyItemisedProphecy",nil,"TheUnbreathingQueen5",nil,nil)--ÎŞÏ¢Å®Íõ V
-SetJiaoYiGoods(nil,"Ô¤ÑÔ","Metadata/Items/Currency/CurrencyItemisedProphecy",nil,"RareAncientConstructDropsAtzirisFoible",nil,nil)--ÎŞÁéÒ°ÊŞ
+--ÖµÇ®µÄÔ¤ÑÔ
 SetJiaoYiGoods(nil,"Ô¤ÑÔ","Metadata/Items/Currency/CurrencyItemisedProphecy",nil,"AsenathsMarkFated",nil,nil)--½z¿Ë¬”Ö®Çú
 SetJiaoYiGoods(nil,"Ô¤ÑÔ","Metadata/Items/Currency/CurrencyItemisedProphecy",nil,"GeofrisCrestFated",nil,nil)--Ö÷½ÌßzÖ¾
 SetJiaoYiGoods(nil,"Ô¤ÑÔ","Metadata/Items/Currency/CurrencyItemisedProphecy",nil,"WindscreamFated",nil,nil)--½û¼É¼â‡[
 SetJiaoYiGoods(nil,"Ô¤ÑÔ","Metadata/Items/Currency/CurrencyItemisedProphecy",nil,"HyrrisBiteFated",nil,nil)--°İuÖ®ËÀ
-SetJiaoYiGoods(nil,"Ô¤ÑÔ","Metadata/Items/Currency/CurrencyItemisedProphecy",nil,"KillingHatebeatWithBlackgleamAddsSpecificMod",nil,nil)--»ğºÍÁò»Ç
-SetJiaoYiGoods(nil,"Ô¤ÑÔ","Metadata/Items/Currency/CurrencyItemisedProphecy",nil,"RareTunnelerDropsPledgeOfHandsMap",nil,nil)--¿Õ¶´ÊÄÑÔ
-SetJiaoYiGoods(nil,"Ô¤ÑÔ","Metadata/Items/Currency/CurrencyItemisedProphecy",nil,"HeatshiverFated",nil,nil)--±ù»ğÖ®Ò•
+-- SetJiaoYiGoods(nil,"Ô¤ÑÔ","Metadata/Items/Currency/CurrencyItemisedProphecy",nil,"KillingHatebeatWithBlackgleamAddsSpecificMod",nil,nil)--»ğºÍÁò»Ç
+-- SetJiaoYiGoods(nil,"Ô¤ÑÔ","Metadata/Items/Currency/CurrencyItemisedProphecy",nil,"RareTunnelerDropsPledgeOfHandsMap",nil,nil)--¿Õ¶´ÊÄÑÔ
+-- SetJiaoYiGoods(nil,"Ô¤ÑÔ","Metadata/Items/Currency/CurrencyItemisedProphecy",nil,"ArmourAbleToBecomesFiveLinkedWhenJewellersOrbApplied",nil,nil)--¹¤½³»ê
+-- SetJiaoYiGoods(nil,"Ô¤ÑÔ","Metadata/Items/Currency/CurrencyItemisedProphecy",nil,"HeatshiverFated",nil,nil)--±ù»ğÖ®Ò•
 -- SetJiaoYiGoods(nil,"Ô¤ÑÔ","Metadata/Items/Currency/CurrencyItemisedProphecy",nil,"TheAmbitiousBandit3",nil,nil)--±IÙ\µÄÒ°Íû III
 SetJiaoYiGoods(nil,"Ô¤ÑÔ","Metadata/Items/Currency/CurrencyItemisedProphecy",nil,"RollingSixSocketBodyArmourLinksAllSockets",nil,nil)--Ãüß\ßB½Y
 SetJiaoYiGoods(nil,"Ô¤ÑÔ","Metadata/Items/Currency/CurrencyItemisedProphecy",nil,"AtzirisMirrorFated",nil,nil)--Å®Íõ«I¼À
 SetJiaoYiGoods(nil,"Ô¤ÑÔ","Metadata/Items/Currency/CurrencyItemisedProphecy",nil,"ItemAbleToBecomesUniqueWhenChanceOrbApplied",nil,nil)--ÂéÈ¸×ƒøP»Ë
 SetJiaoYiGoods(nil,"Ô¤ÑÔ","Metadata/Items/Currency/CurrencyItemisedProphecy",nil,"RareUndyingArchivistDropsAstramentis",nil,nil)--ßzÊ§ì¶•øí“
 SetJiaoYiGoods(nil,"Ô¤ÑÔ","Metadata/Items/Currency/CurrencyItemisedProphecy",nil,"UniqueLightningGolemAppearsOutsideBubble",nil,nil)--²»×ÔÈ»ÄÜÁ¿
-SetJiaoYiGoods(nil,"Ô¤ÑÔ","Metadata/Items/Currency/CurrencyItemisedProphecy",nil,"MapExtraZana",nil,nil)--µØ·½µÄ´óÊ¦ĞèÒªÖ§³Ö
-SetJiaoYiGoods(nil,"Ô¤ÑÔ","Metadata/Items/Currency/CurrencyItemisedProphecy",nil,"MapExtraJun",nil,nil)--µØ·½µÄ´óÊ¦ĞèÒªÖ§³Ö
-SetJiaoYiGoods(nil,"Ô¤ÑÔ","Metadata/Items/Currency/CurrencyItemisedProphecy",nil,"The Mentor",nil,nil)--ÇÖÂÔÕßµÄ½Küc
-SetJiaoYiGoods(nil,"Ô¤ÑÔ","Metadata/Items/Currency/CurrencyItemisedProphecy",nil,"The Prison Key",nil,nil)--ÀÎ·¿è€³×
-SetJiaoYiGoods(nil,"Ô¤ÑÔ","Metadata/Items/Currency/CurrencyItemisedProphecy",nil,"Nemesis of Greed",nil,nil)--ØÀ·µÄÍ³ğ
-SetJiaoYiGoods(nil,"Ô¤ÑÔ","Metadata/Items/Currency/CurrencyItemisedProphecy",nil,"The Flayed Man",nil,nil)--Æ¤é_Èâ¾`
-SetJiaoYiGoods(nil,"Ô¤ÑÔ","Metadata/Items/Currency/CurrencyItemisedProphecy",nil,"The Bowstring's Music",nil,nil)--¹­ÏÒÖ®˜·
-SetJiaoYiGoods(nil,"Ô¤ÑÔ","Metadata/Items/Currency/CurrencyItemisedProphecy",nil,"Battle Hardened",nil,nil)--Ó²‘ğ
-SetJiaoYiGoods(nil,"Ô¤ÑÔ","Metadata/Items/Currency/CurrencyItemisedProphecy",nil,"RareSuturedAberrationDropsMaligarosVirtuosity",nil,nil)--ÆæÃîÖ®ÊÖ
-SetJiaoYiGoods(nil,"Ô¤ÑÔ","Metadata/Items/Currency/CurrencyItemisedProphecy",nil,"KillingKaomWithKaomsSignAddsSpecificMod",nil,nil)--‡øÍõÖ®µÀ
-SetJiaoYiGoods(nil,"Ô¤ÑÔ","Metadata/Items/Currency/CurrencyItemisedProphecy",nil,"RareUndyingIncineratorDropsSireOfShards",nil,nil)--ÁÒÑæÖ®ĞÄ
-SetJiaoYiGoods(nil,"Ô¤ÑÔ","Metadata/Items/Currency/CurrencyItemisedProphecy",nil,"MapTempestCorrupt",nil,nil)--Íß¶ûÁÒ·ç
-SetJiaoYiGoods(nil,"Ô¤ÑÔ","Metadata/Items/Currency/CurrencyItemisedProphecy",nil,"IronHeartFated",nil,nil)--Éí¾­°ÙÕ½
+
 
 --ÖµÇ®µÄµØÍ¼
-SetJiaoYiGoods(nil,"ÓÀa¿¨ô”»ÕÓ¡","Metadata/Items/MapFragments/CurrencyLegionFragmentKarui")
-SetJiaoYiGoods(nil,"ÓÀañRÀ­¿ËË¹»ÕÓ¡","Metadata/Items/MapFragments/CurrencyLegionFragmentMaraketh")
-SetJiaoYiGoods(nil,"ÓÀa²»ĞàµÛ‡ø»ÕÓ¡","Metadata/Items/MapFragments/CurrencyLegionFragmentEternal")
-SetJiaoYiGoods(nil,"ÓÀaÂ}×Ú»ÕÓ¡","Metadata/Items/MapFragments/CurrencyLegionFragmentTemplar")
-SetJiaoYiGoods(nil,"ÓÀaÍß –»ÕÓ¡","Metadata/Items/MapFragments/CurrencyLegionFragmentVaal")
-
-
-SetJiaoYiGoods(nil,"Ôö·ùİoÖú","Metadata/Items/Gems/SupportGemAdditionalQuality")
-SetJiaoYiGoods(nil,"†¢ÃÉİoÖú","Metadata/Items/Gems/SupportGemAdditionalXP")
-SetJiaoYiGoods(nil,"ÙxÓèİoÖú","Metadata/Items/Gems/SupportGemAdditionalLevel")
-SetJiaoYiGoods(nil,"×îááÍ¨ëºµñ¿Ì","Metadata/Items/Ultimatum/ItemisedTrial")
-
-SetJiaoYiGoods(nil,"ÍØÓ¡µÄ·âÄ§Ö®Óñ","Metadata/Items/Currency/CurrencyItemisedCapturedMonster",nil,nil,nil,nil)
-
 SetJiaoYiGoods(nil,nil,nil,nil,"Caer Blaidd, Wolfpack's Den")--"Èû –£®ÑÀ×µÂÀÇÑ¨"
 SetJiaoYiGoods(nil,nil,nil,nil,"The Vinktar Square")--"¾S¿ËËşVˆö"
 SetJiaoYiGoods(nil,nil,nil,nil,"The Putrid Cloister")--"¸¯³ôŞ’ÀÈ"
 SetJiaoYiGoods(nil,nil,nil,nil,"The Coward's Trial")--"Å³ÕßµÄÔ‡ò"
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Maps/MapWorldsHarbingerLow")--"ÉñÖIÖ®µî£®šwÍ½"	
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Maps/MapWorldsHarbingerMid")--"ÉñÖIÖ®µî£®½µŸ"	
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Maps/MapWorldsHarbingerHigh")--"ÉñÖIÖ®µî£®ÉñÅR"	
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Maps/MapWorldsHarbingerUber")--"ÉñÖIÖ®µî£®Ÿ’ªz"
+SetJiaoYiGoods(nil,nil,"Metadata/Items/Maps/MapWorldsHarbingerLow")--"ÉñÖIÖ®µî£®šwÍ½"
+--SetJiaoYiGoods("Òì½çµØÍ¼",nil,nil,nil,nil,"3")
 
-SetJiaoYiGoods(nil,nil,nil,nil,"Emperor's Vigilance")--"µÛÍõµÄ½äĞÄ"
-SetJiaoYiGoods(nil,nil,nil,nil,"The Fulcrum")--"Ö§üc"
--- SetJiaoYiGoods(nil,nil,nil,nil,"The Iron Fortress")--"ä“èF±Ú‰¾"
-SetJiaoYiGoods(nil,nil,nil,nil,"Storm Secret")--"ïL±©Ö®ÃÜ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Asenath's Chant")--"°²ÙÄÈ½zµÄ¸èí"
-SetJiaoYiGoods(nil,nil,nil,nil,"Crown of the Tyrant")--"ÌÃ»Ê¹ÚÃá"
-SetJiaoYiGoods(nil,nil,nil,nil,"Apep's Supremacy")--"°¬ÆÕ°Ô™à"
-SetJiaoYiGoods(nil,nil,nil,nil,"Putembo's Meadow")--"ÆÕÌ¹±¤µÄ²İÔ­"
-SetJiaoYiGoods(nil,nil,nil,nil,"Putembo's Mountain")--"ÆÕÌ¹±¤µÄÉ½n"
-SetJiaoYiGoods(nil,nil,nil,nil,"The Torrent's Reclamation")--"±¼Á÷Ö®é_ÍØ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Uzaza's Valley")--"ÓÈÉ¯É¯µÄ{¹È"
-SetJiaoYiGoods(nil,nil,nil,nil,"Uzaza's Mountain")--"ÓÈÉ¯É¯µÄÉ½n"
-SetJiaoYiGoods(nil,nil,nil,nil,"Uzaza's Meadow")--"ÓÈÉ¯É¯µÄ²İÔ­"
-SetJiaoYiGoods(nil,nil,nil,nil,"Death's Door")--"ËÀÍö´óéT"
-SetJiaoYiGoods(nil,nil,nil,nil,"Putembo's Mountain")--"ÆÕÌ¹±¤µÄÉ½n"
-SetJiaoYiGoods(nil,nil,nil,nil,"The Torrent's Reclamation")--"±¼Á÷Ö®é_ÍØ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Uzaza's Valley")--"ÓÈÉ¯É¯µÄ{¹È"
-SetJiaoYiGoods(nil,nil,nil,nil,"Putembo's Meadow")--"ÆÕÌ¹±¤µÄ²İÔ­"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Storm Secret")--"ïL±©Ö®ÃÜ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Coward's Legacy")--"Å³·òµÄßz®a"
-SetJiaoYiGoods(nil,nil,nil,nil,"Aul's Uprising")--"ŠW –µÄáÈÆğ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Ahkeli's Valley")--"°¢¿¨ÀòµÄ{¹È"
-SetJiaoYiGoods(nil,nil,nil,nil,"Ahkeli's Mountain")--"°¢¿¨ÀòµÄÉ½n"
-SetJiaoYiGoods(nil,nil,nil,nil,"Fated End")--"½K½Y"
-SetJiaoYiGoods(nil,nil,nil,nil,"Putembo's Valley")--"ÆÕÌ¹±¤µÄ{¹È"
-SetJiaoYiGoods(nil,nil,nil,nil,"Star of Wraeclast")--"Íß –¿ËÀ­Ë¹Ö®ĞÇ"
-SetJiaoYiGoods(nil,nil,nil,nil,"The Ephemeral Bond")--"¶ÌÆÚ‚ùÈ¯"
-SetJiaoYiGoods(nil,nil,nil,nil,"Transcendent Mind")--"³¬·²Ö®Òâ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Reefbane")--"ÄµœÖ®½¸"
-SetJiaoYiGoods(nil,nil,nil,nil,"Song of the Sirens")--"º£Ñı÷ÈÇú"
-SetJiaoYiGoods(nil,nil,nil,nil,"Fate of the Vaal")--"Íß –Ö®Ãü"
-SetJiaoYiGoods(nil,nil,nil,nil,"The Hidden Blade")--"ë[²ØÖ®„¦",
-SetJiaoYiGoods(nil,nil,nil,nil,"The Surging Thoughts")--"œ¥ÀËÖ®Ë¼Ïë"
-SetJiaoYiGoods(nil,nil,nil,nil,"Duskdawn")--"Ïü•Ô"
-SetJiaoYiGoods(nil,nil,nil,nil,"Actum")--"Õ„ÅĞ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Disintegrator")--"œçËéâ²ÕÈ"
-SetJiaoYiGoods(nil,nil,nil,nil,"The Unshattered Will")--"²»œçÒâÖ¾"
-
-
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/CurrencyEssenceHysteria1")--¸¡ÕF¾«Ëè
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/CurrencyEssenceInsanity1")--åey¾«Ëè
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/CurrencyEssenceHorror1")--˜O¿Ö¾«Ëè
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/CurrencyEssenceDelirium1")--×dÍı¾«Ëè
-SetJiaoYiGoods(nil,nil,"Metadata/Items/MicrotransactionItemEffects/MicrotransactionEssenceWings")--±³ï—£º¾«Ëè
-SetJiaoYiGoods(nil,nil,"Metadata/Items/MicrotransactionItemEffects/MicrotransactionEssencePortal")--•r¿ÕÖ®éT£®¾«Ëè
-SetJiaoYiGoods(nil,nil,"Metadata/Items/MicrotransactionItemEffects/MicrotransactionEssenceFootprints")--ĞĞ×ßÌØĞ§£º¾«Ëè
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Hideout/HideoutTotemPole6")--¾«ËèÌô‘ğÕßª„° 
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Hideout/HideoutTotemPole6Test")--¾«ËèÌô‘ğÕßª„° 
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Leaguestones/EssenceLeaguestone")--¾«ËèÂ“ÃËÊ¯
-SetJiaoYiGoods(nil,"Ô÷ºŞÖ®µÍÓï¾«»ª","Metadata/Items/Currency/CurrencyEssenceHatred1")
-SetJiaoYiGoods(nil,"Ô÷ºŞÖ®ÄØà«¾«»ª","Metadata/Items/Currency/CurrencyEssenceHatred2")
-SetJiaoYiGoods(nil,"Ô÷ºŞÖ®ÌäÆü¾«»ª","Metadata/Items/Currency/CurrencyEssenceHatred3")
-SetJiaoYiGoods(nil,"Ô÷ºŞÖ®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceHatred4")
-SetJiaoYiGoods(nil,"Ô÷ºŞÖ®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceHatred5")
-SetJiaoYiGoods(nil,"Ô÷ºŞÖ®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceHatred6")
-SetJiaoYiGoods(nil,"Ô÷ºŞÖ®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceHatred7")
-SetJiaoYiGoods(nil,"±¯Í´Ö®µÍÓï¾«»ª","Metadata/Items/Currency/CurrencyEssenceWoe1")
-SetJiaoYiGoods(nil,"±¯Í´Ö®ÄØà«¾«»ª","Metadata/Items/Currency/CurrencyEssenceWoe2")
-SetJiaoYiGoods(nil,"±¯Í´Ö®ÌäÆü¾«»ª","Metadata/Items/Currency/CurrencyEssenceWoe3")
-SetJiaoYiGoods(nil,"±¯Í´Ö®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceWoe4")
-SetJiaoYiGoods(nil,"±¯Í´Ö®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceWoe5")
-SetJiaoYiGoods(nil,"±¯Í´Ö®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceWoe6")
-SetJiaoYiGoods(nil,"±¯Í´Ö®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceWoe7")
-SetJiaoYiGoods(nil,"Ì°À·Ö®µÍÓï¾«»ª","Metadata/Items/Currency/CurrencyEssenceGreed1")
-SetJiaoYiGoods(nil,"Ì°À·Ö®ÄØà«¾«»ª","Metadata/Items/Currency/CurrencyEssenceGreed2")
-SetJiaoYiGoods(nil,"Ì°À·Ö®ÌäÆü¾«»ª","Metadata/Items/Currency/CurrencyEssenceGreed3")
-SetJiaoYiGoods(nil,"Ì°À·Ö®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceGreed4")
-SetJiaoYiGoods(nil,"Ì°À·Ö®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceGreed5")
-SetJiaoYiGoods(nil,"Ì°À·Ö®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceGreed6")
-SetJiaoYiGoods(nil,"Ì°À·Ö®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceGreed7")
-SetJiaoYiGoods(nil,"ÇáÊÓÖ®µÍÓï¾«»ª","Metadata/Items/Currency/CurrencyEssenceContempt1")
-SetJiaoYiGoods(nil,"ÇáÊÓÖ®ÄØà«¾«»ª","Metadata/Items/Currency/CurrencyEssenceContempt2")
-SetJiaoYiGoods(nil,"ÇáÊÓÖ®ÌäÆü¾«»ª","Metadata/Items/Currency/CurrencyEssenceContempt3")
-SetJiaoYiGoods(nil,"ÇáÊÓÖ®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceContempt4")
-SetJiaoYiGoods(nil,"ÇáÊÓÖ®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceContempt5")
-SetJiaoYiGoods(nil,"ÇáÊÓÖ®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceContempt6")
-SetJiaoYiGoods(nil,"ÇáÊÓÖ®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceContempt7")
-SetJiaoYiGoods(nil,"°§Ï§Ö®ÄØà«¾«»ª","Metadata/Items/Currency/CurrencyEssenceSorrow1")
-SetJiaoYiGoods(nil,"°§Ï§Ö®ÌäÆü¾«»ª","Metadata/Items/Currency/CurrencyEssenceSorrow2")
-SetJiaoYiGoods(nil,"°§Ï§Ö®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceSorrow3")
-SetJiaoYiGoods(nil,"°§Ï§Ö®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceSorrow4")
-SetJiaoYiGoods(nil,"°§Ï§Ö®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceSorrow5")
-SetJiaoYiGoods(nil,"°§Ï§Ö®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceSorrow6")
-SetJiaoYiGoods(nil,"·ßÅ­Ö®ÄØà«¾«»ª","Metadata/Items/Currency/CurrencyEssenceAnger1")
-SetJiaoYiGoods(nil,"·ßÅ­Ö®ÌäÆü¾«»ª","Metadata/Items/Currency/CurrencyEssenceAnger2")
-SetJiaoYiGoods(nil,"·ßÅ­Ö®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceAnger3")
-SetJiaoYiGoods(nil,"·ßÅ­Ö®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceAnger4")
-SetJiaoYiGoods(nil,"·ßÅ­Ö®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceAnger5")
-SetJiaoYiGoods(nil,"·ßÅ­Ö®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceAnger6")
-SetJiaoYiGoods(nil,"ÕÛÄ¥Ö®ÄØà«¾«»ª","Metadata/Items/Currency/CurrencyEssenceTorment1")
-SetJiaoYiGoods(nil,"ÕÛÄ¥Ö®ÌäÆü¾«»ª","Metadata/Items/Currency/CurrencyEssenceTorment2")
-SetJiaoYiGoods(nil,"ÕÛÄ¥Ö®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceTorment3")
-SetJiaoYiGoods(nil,"ÕÛÄ¥Ö®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceTorment4")
-SetJiaoYiGoods(nil,"ÕÛÄ¥Ö®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceTorment5")
-SetJiaoYiGoods(nil,"ÕÛÄ¥Ö®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceTorment6")
-SetJiaoYiGoods(nil,"¿Ö¾åÖ®ÄØà«¾«»ª","Metadata/Items/Currency/CurrencyEssenceFear1")
-SetJiaoYiGoods(nil,"¿Ö¾åÖ®ÌäÆü¾«»ª","Metadata/Items/Currency/CurrencyEssenceFear2")
-SetJiaoYiGoods(nil,"¿Ö¾åÖ®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceFear3")
-SetJiaoYiGoods(nil,"¿Ö¾åÖ®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceFear4")
-SetJiaoYiGoods(nil,"¿Ö¾åÖ®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceFear5")
-SetJiaoYiGoods(nil,"¿Ö¾åÖ®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceFear6")
-SetJiaoYiGoods(nil,"¿àÄÑÖ®ÌäÆü¾«»ª","Metadata/Items/Currency/CurrencyEssenceSuffering1")
-SetJiaoYiGoods(nil,"¿àÄÑÖ®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceSuffering2")
-SetJiaoYiGoods(nil,"¿àÄÑÖ®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceSuffering3")
-SetJiaoYiGoods(nil,"¿àÄÑÖ®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceSuffering4")
-SetJiaoYiGoods(nil,"¿àÄÑÖ®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceSuffering5")
-SetJiaoYiGoods(nil,"ËÁÅ°Ö®ÌäÆü¾«»ª","Metadata/Items/Currency/CurrencyEssenceRage1")
-SetJiaoYiGoods(nil,"ËÁÅ°Ö®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceRage2")
-SetJiaoYiGoods(nil,"ËÁÅ°Ö®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceRage3")
-SetJiaoYiGoods(nil,"ËÁÅ°Ö®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceRage4")
-SetJiaoYiGoods(nil,"ËÁÅ°Ö®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceRage5")
-SetJiaoYiGoods(nil,"À×öªÖ®ÌäÆü¾«»ª","Metadata/Items/Currency/CurrencyEssenceWrath1")
-SetJiaoYiGoods(nil,"À×öªÖ®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceWrath2")
-SetJiaoYiGoods(nil,"À×öªÖ®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceWrath3")
-SetJiaoYiGoods(nil,"À×öªÖ®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceWrath4")
-SetJiaoYiGoods(nil,"À×öªÖ®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceWrath5")
-SetJiaoYiGoods(nil,"ÒÉ»óÖ®ÌäÆü¾«»ª","Metadata/Items/Currency/CurrencyEssenceDoubt1")
-SetJiaoYiGoods(nil,"ÒÉ»óÖ®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceDoubt2")
-SetJiaoYiGoods(nil,"ÒÉ»óÖ®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceDoubt3")
-SetJiaoYiGoods(nil,"ÒÉ»óÖ®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceDoubt4")
-SetJiaoYiGoods(nil,"ÒÉ»óÖ®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceDoubt5")
-SetJiaoYiGoods(nil,"¼å°¾Ö®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceAnguish1")
-SetJiaoYiGoods(nil,"¼å°¾Ö®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceAnguish2")
-SetJiaoYiGoods(nil,"¼å°¾Ö®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceAnguish3")
-SetJiaoYiGoods(nil,"¼å°¾Ö®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceAnguish4")
-SetJiaoYiGoods(nil,"Ñá¶ñÖ®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceLoathing1")
-SetJiaoYiGoods(nil,"Ñá¶ñÖ®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceLoathing2")
-SetJiaoYiGoods(nil,"Ñá¶ñÖ®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceLoathing3")
-SetJiaoYiGoods(nil,"Ñá¶ñÖ®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceLoathing4")
-SetJiaoYiGoods(nil,"¿Ì¶¾Ö®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceSpite1")
-SetJiaoYiGoods(nil,"¿Ì¶¾Ö®¾Şºğ¾«»ª","Metadata/Items/Currency/CurrencyEssenceSpite2")
-SetJiaoYiGoods(nil,"¿Ì¶¾Ö®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceSpite3")
-SetJiaoYiGoods(nil,"¿Ì¶¾Ö®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceSpite4")
-SetJiaoYiGoods(nil,"ÈÈÇéÖ®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceZeal1")
-SetJiaoYiGoods(nil,"ÈÈÇéÖ®¾Şºğ¾«»ª","Metadata/Items/Currency/CurrencyEssenceZeal2")
-SetJiaoYiGoods(nil,"ÈÈÇéÖ®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceZeal3")
-SetJiaoYiGoods(nil,"ÈÈÇéÖ®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceZeal4")
-SetJiaoYiGoods(nil,"Æà²ÒÖ®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceMisery1")
-SetJiaoYiGoods(nil,"Æà²ÒÖ®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceMisery2")
-SetJiaoYiGoods(nil,"Æà²ÒÖ®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceMisery3")
-SetJiaoYiGoods(nil,"¼Éµ¬Ö®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceDread1")
-SetJiaoYiGoods(nil,"¼Éµ¬Ö®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceDread2")
-SetJiaoYiGoods(nil,"¼Éµ¬Ö®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceDread3")
-SetJiaoYiGoods(nil,"°ÁÊÓÖ®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceScorn1")
-SetJiaoYiGoods(nil,"°ÁÊÓÖ®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceScorn2")
-SetJiaoYiGoods(nil,"°ÁÊÓÖ®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceScorn3")
-SetJiaoYiGoods(nil,"¼«¿Ö¾«»ª","Metadata/Items/Currency/CurrencyEssenceHorror1")
-SetJiaoYiGoods(nil,"¼É¶ÊÖ®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceEnvy1")
-SetJiaoYiGoods(nil,"¼É¶ÊÖ®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceEnvy2")
-SetJiaoYiGoods(nil,"¼É¶ÊÖ®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceEnvy3")
-
+--ÖµÇ®µÄÒ©¼Á
+SetJiaoYiGoods(nil,nil,nil,nil,"Blood of the Karui")--"¿¨ô”Ö®Ñª Â}»¯ÉúÃüË„©"
+SetJiaoYiGoods(nil,nil,nil,nil,"Zerphi's Last Breath")--"É·ğÒÁµÄ½KÏ¢ ƒÙ|Ä§Á¦Ë„©"
+SetJiaoYiGoods(nil,nil,nil,nil,"Dying Sun")--"œçÈÕ ¼tÓñË„©"
+SetJiaoYiGoods(nil,nil,nil,nil,"Taste of Hate")--"ºŞÒâ Ë{ÓñË„©"
+SetJiaoYiGoods(nil,nil,nil,nil,"The Sorrow of the Divine")--"ÉñÂ}°§µ¿ Áò»ÇË„©"
+SetJiaoYiGoods(nil,nil,nil,nil,"Sin's Rebirth")--"ÔÙÉúµÄ×ïº ÃÔìFË„©"
+SetJiaoYiGoods(nil,nil,nil,nil,"TBottled Faith")--"Æ¿ÖĞĞÅÑö Áò»ÇË„©"
+SetJiaoYiGoods(nil,nil,nil,nil,"Cinderswallow Urn")--"ÊÉ a®Y ÕæãyË„©"
+--SetJiaoYiGoods("Ò©¼Á",nil,nil,nil,nil,"3")
 
 -- SetJiaoYiGoods(nil,"Òø±Ò","Metadata/Items/Currency/CurrencySilverCoin",nil,nil,nil,nil)
-
---SetJiaoYiGoods(nil,"›°œ¥µÄ´ß»¯„©","Metadata/Items/Currency/CurrencyJewelleryQualityElemental",nil,nil,nil,nil)
---SetJiaoYiGoods(nil,"¶¾ĞÔ´ß»¯„©","Metadata/Items/Currency/CurrencyJewelleryQualityPhysicalChaos",nil,nil,nil,nil)
---SetJiaoYiGoods(nil,"Ò××ƒ´ß»¯„©","Metadata/Items/Currency/CurrencyJewelleryQualityCritical",nil,nil,nil,nil)
---SetJiaoYiGoods(nil,"¼ÓËÙ´ß»¯„©","Metadata/Items/Currency/CurrencyJewelleryQualitySpeed",nil,nil,nil,nil)
---SetJiaoYiGoods(nil,"³äÄÜµÄ´ß»¯„©","Metadata/Items/Currency/CurrencyJewelleryQualityCaster",nil,nil,nil,nil)
---SetJiaoYiGoods(nil,"ÑĞÄ¥µÄ´ß»¯„©","Metadata/Items/Currency/CurrencyJewelleryQualityAttack",nil,nil,nil,nil)
---SetJiaoYiGoods(nil,"±¾Ù|µÄ´ß»¯„©","Metadata/Items/Currency/CurrencyJewelleryQualityAttribute",nil,nil,nil,nil)
---SetJiaoYiGoods(nil,"Ò±å€µÄ´ß»¯„©","Metadata/Items/Currency/CurrencyJewelleryQualityDefense",nil,nil,nil,nil)
---SetJiaoYiGoods(nil,"¸»ğˆµÄ´ß»¯„©","Metadata/Items/Currency/CurrencyJewelleryQualityResource",nil,nil,nil,nil)
---SetJiaoYiGoods(nil,"¶à¶ µÄ´ß»¯„©","Metadata/Items/Currency/CurrencyJewelleryQualityResistance",nil,nil,nil,nil)
+SetJiaoYiGoods(nil,"›°œ¥µÄ´ß»¯„©","Metadata/Items/Currency/CurrencyJewelleryQualityElemental",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"³äÄÜµÄ´ß»¯„©","Metadata/Items/Currency/CurrencyJewelleryQualityCaster",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÑĞÄ¥µÄ´ß»¯„©","Metadata/Items/Currency/CurrencyJewelleryQualityAttack",nil,nil,nil,nil)
+SetJiaoYiGoods(nil,"±¾Ù|µÄ´ß»¯„©","Metadata/Items/Currency/CurrencyJewelleryQualityAttribute",nil,nil,nil,nil)
+SetJiaoYiGoods(nil,"Ò±å€µÄ´ß»¯„©","Metadata/Items/Currency/CurrencyJewelleryQualityDefense",nil,nil,nil,nil)
+SetJiaoYiGoods(nil,"¸»ğˆµÄ´ß»¯„©","Metadata/Items/Currency/CurrencyJewelleryQualityResource",nil,nil,nil,nil)
+SetJiaoYiGoods(nil,"¶à¶ µÄ´ß»¯„©","Metadata/Items/Currency/CurrencyJewelleryQualityResistance",nil,nil,nil,nil)
 SetJiaoYiGoods(nil,"Å«ÒÛ”àÆ¬","Metadata/Items/MapFragments/CurrencyElderFragment1",nil,nil,nil,nil)
 SetJiaoYiGoods(nil,"¸ù³ı”àÆ¬","Metadata/Items/MapFragments/CurrencyElderFragment2",nil,nil,nil,nil)
 SetJiaoYiGoods(nil,"¸É”_”àÆ¬","Metadata/Items/MapFragments/CurrencyElderFragment3",nil,nil,nil,nil)
@@ -1632,56 +652,114 @@ SetJiaoYiGoods(nil,"¿Ö‘Ö”àÆ¬","Metadata/Items/MapFragments/CurrencyUberElderFrag
 SetJiaoYiGoods(nil,"¿ÕÌ“”àÆ¬","Metadata/Items/MapFragments/CurrencyUberElderFragment2",nil,nil,nil,nil)
 SetJiaoYiGoods(nil,"µñËÜ”àÆ¬","Metadata/Items/MapFragments/CurrencyUberElderFragment3",nil,nil,nil,nil)
 SetJiaoYiGoods(nil,"ÖÇ»Û”àÆ¬","Metadata/Items/MapFragments/CurrencyUberElderFragment4",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"¾Åî^Éß”àÆ¬","Metadata/Items/MapFragments/CurrencyFragmentoftheHydra",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"ÆæÃÀÀ­”àÆ¬","Metadata/Items/MapFragments/CurrencyFragmentoftheChimera",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"Å£î^”àÆ¬","Metadata/Items/MapFragments/CurrencyFragmentoftheMinotaur",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"øP»Ë”àÆ¬","Metadata/Items/MapFragments/CurrencyFragmentofthePhoenix",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"¸£ì –Ö®è€","Metadata/Items/MapFragments/CurrencyVolkuursKey",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"ÒğÑÅÖ®è€","Metadata/Items/MapFragments/CurrencyInyasKey",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"ÒÁÈğÖ®è€","Metadata/Items/MapFragments/CurrencyYrielsKey",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"Ï£²®Ö®è€","Metadata/Items/MapFragments/CurrencyEbersKey",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"·²ÈËµÄ°§‚û","Metadata/Items/MapFragments/CurrencyMortalGrief",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"·²ÈËµÄŸoÖª","Metadata/Items/MapFragments/CurrencyMortalIgnorance",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"·²ÈËµÄÏ£Íû","Metadata/Items/MapFragments/CurrencyMortalHope",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"·²ÈËµÄ‘Å­","Metadata/Items/MapFragments/CurrencyMortalRage",nil,nil,nil,nil)
 
--- Ì½ÏÕ
-SetJiaoYiGoods(nil,"Ì½ëUÈÕÕI","Metadata/Items/Expedition/ExpeditionLogbook")
-SetJiaoYiGoods(nil,"Ò©²Ä","Metadata/Items/Currency/CurrencyRefreshGambler")
-SetJiaoYiGoods(nil,"÷»×Ó","Metadata/Items/Currency/CurrencyRefreshGambler")
-SetJiaoYiGoods(nil,"ÒìÓò±ÒÖı","Metadata/Items/Currency/CurrencyRefreshBarter")
-SetJiaoYiGoods(nil,"·Ï½ğÊô","Metadata/Items/Currency/CurrencyRefreshDealer")
-SetJiaoYiGoods(nil,"ÂñÔá½±ÕÂ","Metadata/Items/Currency/CurrencyRefreshSaga")
-SetJiaoYiGoods(nil,"µÍ½×ÆÆËéÖ®»·ÎÄÎï","Metadata/Items/Expedition/ExpeditionVendorCurrencyFaction1_1")
-SetJiaoYiGoods(nil,"ÆÕÍ¨ÆÆËéÖ®»·ÎÄÎï","Metadata/Items/Expedition/ExpeditionVendorCurrencyFaction1_2")
-SetJiaoYiGoods(nil,"¸ß½×ÆÆËéÖ®»·ÎÄÎï","Metadata/Items/Expedition/ExpeditionVendorCurrencyFaction1_3")
-SetJiaoYiGoods(nil,"ºêÎ°ÆÆËéÖ®»·ÎÄÎï","Metadata/Items/Expedition/ExpeditionVendorCurrencyFaction1_4")
-SetJiaoYiGoods(nil,"µÍ½×ºÚ°µÑªÁ­ÎÄÎï","Metadata/Items/Expedition/ExpeditionVendorCurrencyFaction2_1")
-SetJiaoYiGoods(nil,"ÆÕÍ¨ºÚ°µÑªÁ­ÎÄÎï","Metadata/Items/Expedition/ExpeditionVendorCurrencyFaction2_2")
-SetJiaoYiGoods(nil,"¸ß½×ºÚ°µÑªÁ­ÎÄÎï","Metadata/Items/Expedition/ExpeditionVendorCurrencyFaction2_3")
-SetJiaoYiGoods(nil,"ºêÎ°ºÚ°µÑªÁ­ÎÄÎï","Metadata/Items/Expedition/ExpeditionVendorCurrencyFaction2_4")
-SetJiaoYiGoods(nil,"µÍ½×ÖÈĞòÎÄÎï","Metadata/Items/Expedition/ExpeditionVendorCurrencyFaction3_1")
-SetJiaoYiGoods(nil,"ÆÕÍ¨ÖÈĞòÎÄÎï","Metadata/Items/Expedition/ExpeditionVendorCurrencyFaction3_2")
-SetJiaoYiGoods(nil,"¸ß½×ÖÈĞòÎÄÎï","Metadata/Items/Expedition/ExpeditionVendorCurrencyFaction3_3")
-SetJiaoYiGoods(nil,"ºêÎ°ÖÈĞòÎÄÎï","Metadata/Items/Expedition/ExpeditionVendorCurrencyFaction3_4")
-SetJiaoYiGoods(nil,"µÍ½×ØWÑôÎÄÎï","Metadata/Items/Expedition/ExpeditionVendorCurrencyFaction4_1")
-SetJiaoYiGoods(nil,"ÆÕÍ¨ØWÑôÎÄÎï","Metadata/Items/Expedition/ExpeditionVendorCurrencyFaction4_2")
-SetJiaoYiGoods(nil,"¸ß½×ØWÑôÎÄÎï","Metadata/Items/Expedition/ExpeditionVendorCurrencyFaction4_3")
-SetJiaoYiGoods(nil,"ºêÎ°ØWÑôÎÄÎï","Metadata/Items/Expedition/ExpeditionVendorCurrencyFaction4_4")
-
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/CurrencyEssenceHysteria1")--¸¡ÕF¾«Ëè
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/CurrencyEssenceInsanity1")--åey¾«Ëè
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/CurrencyEssenceHorror1")--˜O¿Ö¾«Ëè
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/CurrencyEssenceDelirium1")--×dÍı¾«Ëè
-SetJiaoYiGoods(nil,nil,"Metadata/Items/MicrotransactionItemEffects/MicrotransactionEssenceWings")--±³ï—£º¾«Ëè
-SetJiaoYiGoods(nil,nil,"Metadata/Items/MicrotransactionItemEffects/MicrotransactionEssencePortal")--•r¿ÕÖ®éT£®¾«Ëè
-SetJiaoYiGoods(nil,nil,"Metadata/Items/MicrotransactionItemEffects/MicrotransactionEssenceFootprints")--ĞĞ×ßÌØĞ§£º¾«Ëè
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Hideout/HideoutTotemPole6")--¾«ËèÌô‘ğÕßª„° 
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Hideout/HideoutTotemPole6Test")--¾«ËèÌô‘ğÕßª„° 
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Leaguestones/EssenceLeaguestone")--¾«ËèÂ“ÃËÊ¯
-
-
-
+-- SetJiaoYiGoods(nil,"Ô¤ÑÔ","Metadata/Items/Currency/CurrencyItemisedProphecy",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÍØÓ¡µÄ·âÄ§Ö®Óñ","Metadata/Items/Currency/CurrencyItemisedCapturedMonster",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"Ô÷ºŞÖ®µÍÓï¾«»ª","Metadata/Items/Currency/CurrencyEssenceHatred1",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"Ô÷ºŞÖ®ÄØà«¾«»ª","Metadata/Items/Currency/CurrencyEssenceHatred2",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"Ô÷ºŞÖ®ÌäÆü¾«»ª","Metadata/Items/Currency/CurrencyEssenceHatred3",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"Ô÷ºŞÖ®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceHatred4",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"Ô÷ºŞÖ®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceHatred5",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"Ô÷ºŞÖ®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceHatred6",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"Ô÷ºŞÖ®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceHatred7",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"±¯Í´Ö®µÍÓï¾«»ª","Metadata/Items/Currency/CurrencyEssenceWoe1",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"±¯Í´Ö®ÄØà«¾«»ª","Metadata/Items/Currency/CurrencyEssenceWoe2",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"±¯Í´Ö®ÌäÆü¾«»ª","Metadata/Items/Currency/CurrencyEssenceWoe3",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"±¯Í´Ö®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceWoe4",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"±¯Í´Ö®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceWoe5",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"±¯Í´Ö®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceWoe6",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"±¯Í´Ö®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceWoe7",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"Ì°À·Ö®µÍÓï¾«»ª","Metadata/Items/Currency/CurrencyEssenceGreed1",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"Ì°À·Ö®ÄØà«¾«»ª","Metadata/Items/Currency/CurrencyEssenceGreed2",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"Ì°À·Ö®ÌäÆü¾«»ª","Metadata/Items/Currency/CurrencyEssenceGreed3",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"Ì°À·Ö®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceGreed4",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"Ì°À·Ö®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceGreed5",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"Ì°À·Ö®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceGreed6",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"Ì°À·Ö®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceGreed7",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÇáÊÓÖ®µÍÓï¾«»ª","Metadata/Items/Currency/CurrencyEssenceContempt1",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÇáÊÓÖ®ÄØà«¾«»ª","Metadata/Items/Currency/CurrencyEssenceContempt2",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÇáÊÓÖ®ÌäÆü¾«»ª","Metadata/Items/Currency/CurrencyEssenceContempt3",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÇáÊÓÖ®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceContempt4",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÇáÊÓÖ®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceContempt5",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÇáÊÓÖ®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceContempt6",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÇáÊÓÖ®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceContempt7",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"°§Ï§Ö®ÄØà«¾«»ª","Metadata/Items/Currency/CurrencyEssenceSorrow1",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"°§Ï§Ö®ÌäÆü¾«»ª","Metadata/Items/Currency/CurrencyEssenceSorrow2",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"°§Ï§Ö®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceSorrow3",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"°§Ï§Ö®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceSorrow4",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"°§Ï§Ö®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceSorrow5",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"°§Ï§Ö®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceSorrow6",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"·ßÅ­Ö®ÄØà«¾«»ª","Metadata/Items/Currency/CurrencyEssenceAnger1",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"·ßÅ­Ö®ÌäÆü¾«»ª","Metadata/Items/Currency/CurrencyEssenceAnger2",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"·ßÅ­Ö®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceAnger3",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"·ßÅ­Ö®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceAnger4",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"·ßÅ­Ö®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceAnger5",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"·ßÅ­Ö®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceAnger6",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÕÛÄ¥Ö®ÄØà«¾«»ª","Metadata/Items/Currency/CurrencyEssenceTorment1",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÕÛÄ¥Ö®ÌäÆü¾«»ª","Metadata/Items/Currency/CurrencyEssenceTorment2",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÕÛÄ¥Ö®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceTorment3",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÕÛÄ¥Ö®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceTorment4",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÕÛÄ¥Ö®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceTorment5",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÕÛÄ¥Ö®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceTorment6",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"¿Ö¾åÖ®ÄØà«¾«»ª","Metadata/Items/Currency/CurrencyEssenceFear1",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"¿Ö¾åÖ®ÌäÆü¾«»ª","Metadata/Items/Currency/CurrencyEssenceFear2",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"¿Ö¾åÖ®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceFear3",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"¿Ö¾åÖ®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceFear4",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"¿Ö¾åÖ®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceFear5",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"¿Ö¾åÖ®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceFear6",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"¿àÄÑÖ®ÌäÆü¾«»ª","Metadata/Items/Currency/CurrencyEssenceSuffering1",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"¿àÄÑÖ®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceSuffering2",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"¿àÄÑÖ®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceSuffering3",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"¿àÄÑÖ®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceSuffering4",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"¿àÄÑÖ®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceSuffering5",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ËÁÅ°Ö®ÌäÆü¾«»ª","Metadata/Items/Currency/CurrencyEssenceRage1",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ËÁÅ°Ö®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceRage2",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ËÁÅ°Ö®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceRage3",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ËÁÅ°Ö®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceRage4",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ËÁÅ°Ö®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceRage5",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"À×öªÖ®ÌäÆü¾«»ª","Metadata/Items/Currency/CurrencyEssenceWrath1",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"À×öªÖ®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceWrath2",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"À×öªÖ®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceWrath3",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"À×öªÖ®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceWrath4",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"À×öªÖ®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceWrath5",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÒÉ»óÖ®ÌäÆü¾«»ª","Metadata/Items/Currency/CurrencyEssenceDoubt1",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÒÉ»óÖ®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceDoubt2",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÒÉ»óÖ®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceDoubt3",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÒÉ»óÖ®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceDoubt4",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÒÉ»óÖ®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceDoubt5",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"¼å°¾Ö®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceAnguish1",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"¼å°¾Ö®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceAnguish2",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"¼å°¾Ö®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceAnguish3",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"¼å°¾Ö®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceAnguish4",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"Ñá¶ñÖ®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceLoathing1",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"Ñá¶ñÖ®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceLoathing2",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"Ñá¶ñÖ®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceLoathing3",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"Ñá¶ñÖ®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceLoathing4",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"¿Ì¶¾Ö®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceSpite1",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"¿Ì¶¾Ö®¾Şºğ¾«»ª","Metadata/Items/Currency/CurrencyEssenceSpite2",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"¿Ì¶¾Ö®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceSpite3",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"¿Ì¶¾Ö®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceSpite4",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÈÈÇéÖ®°§º¿¾«»ª","Metadata/Items/Currency/CurrencyEssenceZeal1",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÈÈÇéÖ®¾Şºğ¾«»ª","Metadata/Items/Currency/CurrencyEssenceZeal2",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÈÈÇéÖ®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceZeal3",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÈÈÇéÖ®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceZeal4",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"Æà²ÒÖ®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceMisery1",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"Æà²ÒÖ®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceMisery2",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"Æà²ÒÖ®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceMisery3",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"¼Éµ¬Ö®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceDread1",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"¼Éµ¬Ö®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceDread2",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"¼Éµ¬Ö®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceDread3",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"°ÁÊÓÖ®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceScorn1",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"°ÁÊÓÖ®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceScorn2",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"°ÁÊÓÖ®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceScorn3",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"¼É¶ÊÖ®ÅØÏø¾«»ª","Metadata/Items/Currency/CurrencyEssenceEnvy1",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"¼É¶ÊÖ®¼âĞ¥¾«»ª","Metadata/Items/Currency/CurrencyEssenceEnvy2",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"¼É¶ÊÖ®ÆÆ¿Õ¾«»ª","Metadata/Items/Currency/CurrencyEssenceEnvy3",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"¸¡¿ä¾«»ª","Metadata/Items/Currency/CurrencyEssenceHysteria1",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"´íÂÒ¾«»ª","Metadata/Items/Currency/CurrencyEssenceInsanity1",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"¼«¿Ö¾«»ª","Metadata/Items/Currency/CurrencyEssenceHorror1",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÚŞÍı¾«»ª","Metadata/Items/Currency/CurrencyEssenceDelirium1",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÒÅÍüµÄ¸¯»¯Æ÷Ãó","Metadata/Items/Currency/CurrencyCorruptMonolith",nil,nil,nil,nil)
 SetJiaoYiGoods(nil,"³õ¼¶ÖÆÍ¼Áù·ÖÒÇ","Metadata/Items/Currency/CurrencyAddAtlasMod",nil,nil,nil,nil)
 SetJiaoYiGoods(nil,"ÖĞ¼¶ÖÆÍ¼Áù·ÖÒÇ","Metadata/Items/Currency/CurrencyAddAtlasModMid",nil,nil,nil,nil)
 SetJiaoYiGoods(nil,"´óÊ¦ÖÆÍ¼Áù·ÖÒÇ","Metadata/Items/Currency/CurrencyAddAtlasModHigh",nil,nil,nil,nil)
@@ -1693,28 +771,12 @@ SetJiaoYiGoods(nil,"ÁÑÏ¶ËéÆ¬(Ë÷·ü)","Metadata/Items/Currency/CurrencyBreachFireS
 SetJiaoYiGoods(nil,"ÁÑÏ¶ËéÆ¬(ÍĞÎÖ)","Metadata/Items/Currency/CurrencyBreachColdShard",nil,nil,nil,nil)
 SetJiaoYiGoods(nil,"ÁÑÏ¶ËéÆ¬(°¬Ğí)","Metadata/Items/Currency/CurrencyBreachLightningShard",nil,nil,nil,nil)
 SetJiaoYiGoods(nil,"ÁÑÏ¶ËéÆ¬(ÎÚ¶ûÄá¶à)","Metadata/Items/Currency/CurrencyBreachPhysicalShard",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"ÏÄõÀ­¼ƒœQÁÑºÛÊ¯","Metadata/Items/Currency/CurrencyChayulasPurestone",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"õ –Äá¶à¼ƒœQÁÑºÛÊ¯","Metadata/Items/Currency/CurrencyUulNetolsPurestone",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"°¬ÔS¼ƒœQÁÑºÛÊ¯","Metadata/Items/Currency/CurrencyEshsPurestone",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"ÍĞÎÖ¼ƒœQÁÑºÛÊ¯","Metadata/Items/Currency/CurrencyTulsPurestone",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"Ë÷·ü¼ƒœQÁÑºÛÊ¯","Metadata/Items/Currency/CurrencyXophsPurestone",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"ÏÄõÀ­¸»Ô£ÁÑºÛÊ¯","Metadata/Items/Currency/CurrencyChayulasEnrichedstone",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"õ –Äá¶à¸»Ô£ÁÑºÛÊ¯","Metadata/Items/Currency/CurrencyUulNetolsEnrichedstone",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"°¬ÔS¸»Ô£ÁÑºÛÊ¯","Metadata/Items/Currency/CurrencyEshsEnrichedstone",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"ÍĞÎÖ¸»Ô£ÁÑºÛÊ¯","Metadata/Items/Currency/CurrencyTulsEnrichedstone",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"Ë÷·ü¸»Ô£ÁÑºÛÊ¯","Metadata/Items/Currency/CurrencyXophsEnrichedstone",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"ÏÄõÀ­³äÄÜÁÑºÛÊ¯","Metadata/Items/Currency/CurrencyChayulasChargedstone",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"õ –Äá¶à³äÄÜÁÑºÛÊ¯","Metadata/Items/Currency/CurrencyUulNetolsChargedstone",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"°¬ÔS³äÄÜÁÑºÛÊ¯","Metadata/Items/Currency/CurrencyEshsChargedstone",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"ÍĞÎÖ³äÄÜÁÑºÛÊ¯","Metadata/Items/Currency/CurrencyTulsChargedstone",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"Ë÷·ü³äÄÜÁÑºÛÊ¯","Metadata/Items/Currency/CurrencyXophsChargedstone",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"ÏÄõÀ­ÁÑºÛÊ¯","Metadata/Items/Currency/CurrencyChayulasstone")
-SetJiaoYiGoods(nil,"õ –Äá¶àÁÑºÛÊ¯","Metadata/Items/Currency/CurrencyUulNetolsstone")
-SetJiaoYiGoods(nil,"ÍĞÎÖÁÑºÛÊ¯","Metadata/Items/Currency/CurrencyTulsstone")
-SetJiaoYiGoods(nil,"Ë÷·üÁÑºÛÊ¯","Metadata/Items/MapFragments/CurrencyBreachFragmentFire")
-SetJiaoYiGoods(nil,"°¬ÔSÁÑºÛÊ¯","Metadata/Items/MapFragments/CurrencyBreachFragmentLightning")
-
 SetJiaoYiGoods(nil,"ÁÑÏ¶ËéÆ¬(ÏÄÎÚÀ­)","Metadata/Items/Currency/CurrencyBreachChaosShard",nil,nil,nil,nil)
+SetJiaoYiGoods(nil,"Ë÷·üÁÑºÛÊ¯","Metadata/Items/MapFragments/BreachFragmentFire")
+SetJiaoYiGoods(nil,"ÍĞÎÖÁÑºÛÊ¯","Metadata/Items/MapFragments/BreachFragmentCold")
+SetJiaoYiGoods(nil,"°¬ÔSÁÑºÛÊ¯","Metadata/Items/MapFragments/BreachFragmentLightning")
+SetJiaoYiGoods(nil,"õ –Äá¶àÁÑºÛÊ¯","Metadata/Items/MapFragments/BreachFragmentPhysical")
+SetJiaoYiGoods(nil,"ÏÄõÀ­ÁÑºÛÊ¯","Metadata/Items/MapFragments/BreachFragmentChaos")
 SetJiaoYiGoods(nil,"Ë÷·üµÄ×£¸£","Metadata/Items/Currency/CurrencyBreachUpgradeUniqueFire",nil,nil,nil,nil)
 SetJiaoYiGoods(nil,"ÍĞÎÖµÄ×£¸£","Metadata/Items/Currency/CurrencyBreachUpgradeUniqueCold",nil,nil,nil,nil)
 SetJiaoYiGoods(nil,"°¬ĞíµÄ×£¸£","Metadata/Items/Currency/CurrencyBreachUpgradeUniqueLightning",nil,nil,nil,nil)
@@ -1726,166 +788,101 @@ SetJiaoYiGoods(nil,"ÓÀºãµÛ¹úÁÑÆ¬","Metadata/Items/Currency/CurrencyLegionEternal
 SetJiaoYiGoods(nil,"ÓÀºãÊ¥ÌÃÁÑÆ¬","Metadata/Items/Currency/CurrencyLegionTemplarShard",nil,nil,nil,nil)
 SetJiaoYiGoods(nil,"ÓÀºãÍß¶ûÁÑÆ¬","Metadata/Items/Currency/CurrencyLegionVaalShard",nil,nil,nil,nil)
 SetJiaoYiGoods(nil,"°şÀëÊ¯","Metadata/Items/Currency/CurrencyRemoveMod",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"¸ß½×µã½ğÊ¯","Metadata/Items/Currency/CurrencyUpgradeToRareAndSetSockets",nil,nil,nil,nil)
+--SetJiaoYiGoods(nil,"¸ß½×µã½ğÊ¯","Metadata/Items/Currency/CurrencyUpgradeToRareAndSetSockets",nil,nil,nil,nil)
 SetJiaoYiGoods(nil,"Æ½ĞĞÊ¯=µØÆ½Ê¯","Metadata/Items/Currency/CurrencyRerollMapType",nil,nil,nil,nil)
 SetJiaoYiGoods(nil,"ÏÈÇıÊ¯","Metadata/Items/Currency/CurrencyUpgradeMapTier",nil,nil,nil,nil)
+--SetJiaoYiGoods(nil,"ÖÆÏäÑÒ=¹¤³ÌÊ¯","Metadata/Items/Currency/CurrencyStrongboxQuality",nil,nil,nil,nil)
 SetJiaoYiGoods(nil,"Ô¶¹ÅÊ¯","Metadata/Items/Currency/CurrencyRerollUnique",nil,nil,nil,nil)
 SetJiaoYiGoods(nil,"ÑuˆDÁù·Öƒx£®º†Ò×","Metadata/Items/Currency/CurrencyAddAtlasMod",nil,nil,nil,nil)
 SetJiaoYiGoods(nil,"ÑuˆDÁù·Öƒx£®¾«ÈA","Metadata/Items/Currency/CurrencyAddAtlasModMid",nil,nil,nil,nil)
 SetJiaoYiGoods(nil,"ÑuˆDÁù·Öƒx£®ÓXĞÑ","Metadata/Items/Currency/CurrencyAddAtlasModHigh",nil,nil,nil,nil)
 SetJiaoYiGoods(nil,"Â}‘ğÊ¿µÄ³ç¸ßÊ¯","Metadata/Items/AtlasExiles/AddModToRareCrusader",nil,nil,nil,nil)
 SetJiaoYiGoods(nil,"¾ÈÚHÕßµÄ³ç¸ßÊ¯","Metadata/Items/AtlasExiles/AddModToRareRedeemer",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"×ƒ‘BÖ®×dÍıÓñ","Metadata/Items/Currency/CurrencyAmorphousDeliriumOrb",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"µòÂäÖ®×dÍıÓñ","Metadata/Items/Currency/CurrencyBlightedDeliriumOrb",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"ÓÀaÖ®×dÍıÓñ","Metadata/Items/Currency/CurrencyTimelessDeliriumOrb",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"µÛÍõÖ®×dÍıÓñ","Metadata/Items/Currency/CurrencyImperialDeliriumOrb",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"³õÊ¼Ö®×dÍıÓñ","Metadata/Items/Currency/CurrencyPrimalDeliriumOrb",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"Â}ÈËÖ®×dÍıÓñ","Metadata/Items/Currency/CurrencyDivinersDeliriumOrb",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"îAÕ×Ö®×dÍıÓñ","Metadata/Items/Currency/CurrencyPortentousDeliriumOrb",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"Ê¯»¯Ö®×dÍıÓñ","Metadata/Items/Currency/CurrencyFossilisedDeliriumOrb",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"ïwÂÓÖ®×dÍıÓñ","Metadata/Items/Currency/CurrencySkitteringDeliriumOrb",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"ËéÆ¬Ö®×dÍıÓñ","Metadata/Items/Currency/CurrencyFragmentedDeliriumOrb",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"µÍÕZÖ®×dÍıÓñ","Metadata/Items/Currency/CurrencyWhisperingDeliriumOrb",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"»Ş­Ö®×dÍıÓñ","Metadata/Items/Currency/CurrencyObscuredDeliriumOrb",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"îA¸ĞÖ®×dÍıÓñ","Metadata/Items/Currency/CurrencyForebodingDeliriumOrb",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"‰™ÂäÖ®×dÍıÓñ","Metadata/Items/Currency/CurrencyDecadentDeliriumOrb",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"ÉîœYÖ®×dÍıÓñ","Metadata/Items/Currency/CurrencyAbyssalDeliriumOrb",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"ï—Æ·Ö®×dÍıÓñ","Metadata/Items/Currency/CurrencyJewellersDeliriumOrb",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"ÑuˆDÖ®×dÍıÓñ","Metadata/Items/Currency/CurrencyCartographersDeliriumOrb",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"×o¼×Ö®×dÍıÓñ","Metadata/Items/Currency/CurrencyArmoursmithsDeliriumOrb",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"èF½³Ö®×dÍıÓñ","Metadata/Items/Currency/CurrencyBlacksmithsDeliriumOrb",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"ÆæĞgÖ®×dÍıÓñ","Metadata/Items/Currency/CurrencyThaumaturgesDeliriumOrb",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"×¿Ô½Ö®×dÍıÓñ","Metadata/Items/Currency/CurrencySingularDeliriumOrb",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"¾«Á¼Ö®×dÍıÓñ","Metadata/Items/Currency/CurrencyFineDeliriumOrb",nil,nil,nil,nil)
 SetJiaoYiGoods(nil,"á÷«CÕßµÄ³ç¸ßÊ¯","Metadata/Items/AtlasExiles/AddModToRareHunter",nil,nil,nil,nil)
 SetJiaoYiGoods(nil,"¿‚¶½ÜŠµÄ³ç¸ßÊ¯","Metadata/Items/AtlasExiles/AddModToRareWarlord",nil,nil,nil,nil)
 SetJiaoYiGoods(nil,"†¾ĞÑÕßÖ®Óñ","Metadata/Items/AtlasExiles/ApplyInfluence",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/CurrencyAfflictionOrbPerandus")--¿¨ –¸ğÖ®×dÍıÓñ
 
-
-
---´ò±¦¹Ò»ú×°
-SetJiaoYiGoods(nil,nil,nil,nil,"ª{ÑÛµÄ˜sÒ«Ö®¶Ü","Lioneye's Remorse")
-
-SetJiaoYiGoods(nil,"ƒÑÅÃÔçR","Metadata/Items/Belts/Belt4","Ê¼×æ¼ı´ü","The Poised Prism","3",nil)
-SetJiaoYiGoods(nil,"¿¨ÌmµÂÖ®Ó|","Metadata/Items/Belts/Belt4","½äÖ¸","Kalandra's Touch","3",nil)
---SetJiaoYiGoods(nil,nil,nil,nil,"Sadima's Touch",nil,nil,nil,nil,nil,nil,"base_item_found_quantity_+%,8")--"«CŒšÕßµÄ×oÊÖ"
---SetJiaoYiGoods(nil,nil,nil,nil,"Perandus Blazon",nil,nil,nil,nil,nil,nil,"base_item_found_quantity_+%,7")--"ÆÕÀ¼µÂË¹Ö®Ó¡"
-SetJiaoYiGoods(nil,nil,nil,nil,"Lioneye's Remorse")--"Ê¨ÑÛµÄÈÙÒ«Ëş¶Ü"
---SetJiaoYiGoods(nil,nil,nil,nil,"Divination Distillate")--"ŒšÒ•¾«ÈA"
-SetJiaoYiGoods(nil,nil,nil,nil,"Astramentis")--"¾ùºâÖ®·û"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Advancing Fortress")--"³¬Ô½±ÚÀİ"
---SetJiaoYiGoods(nil,nil,nil,nil,"Tabula Rasa")--"ÎŞ¾¡Ö®ÒÂ"
--- SetJiaoYiGoods(nil,nil,nil,nil,"The Highwayman")--"¸ßÉĞÖ®ÈË"
-SetJiaoYiGoods(nil,nil,nil,nil,"Rumi's Concoction")--"ô”Ã×µÄì`Ë"
-SetJiaoYiGoods(nil,nil,nil,nil,"Iron Flask")--"ä“èFË„©"
-
-SetJiaoYiGoods(nil,nil,nil,nil,"The Scourge")--"Äº¦"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Tremor Rod")--"î¶¶Ö®ÕÈ"
+--SetJiaoYiGoods(nil,nil,nil,nil,"The Scourge")--"Äº¦"
 SetJiaoYiGoods(nil,nil,nil,nil,"The Poet's Pen")--"ŒW¸»Ö®¹P"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Shade of Solaris")--"ÈÕÒ«Ö®Ó°"
-SetJiaoYiGoods(nil,nil,nil,nil,"Shimmeron")--"µÍ·üÎ¢¹â"
+SetJiaoYiGoods(nil,nil,nil,nil,"Shade of Solaris")--"ÈÕÒ«Ö®Ó°"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Shimmeron")--"µÍ·üÎ¢¹â"
 SetJiaoYiGoods(nil,nil,nil,nil,"Void Battery")--"“ÄÜÄ§°ô"
 SetJiaoYiGoods(nil,nil,nil,nil,"Oni-Goroshi")--"Î÷À­šâÁ÷š¢"
 SetJiaoYiGoods(nil,nil,nil,nil,"Fate of the Vaal")--"Íß –Ö®Ãü"
-SetJiaoYiGoods(nil,nil,nil,nil,"The Rippling Thoughts")--"iäôÚ¤Ïë"
+--SetJiaoYiGoods(nil,nil,nil,nil,"The Rippling Thoughts")--"iäôÚ¤Ïë"
 SetJiaoYiGoods(nil,nil,nil,nil,"The Saviour")--"¾ÈÊÀÖ÷"
-SetJiaoYiGoods(nil,nil,nil,nil,"Cold Iron Point")--"º®ä“Ö®ÈĞ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Paradoxica")--"Ã¬¶ÜŒ¦›Q"
-SetJiaoYiGoods(nil,nil,nil,nil,"The Rippling Thoughts")--"iäôÚ¤Ïë"
-SetJiaoYiGoods(nil,nil,nil,nil,"The Saviour")--"¾ÈÊÀÖ÷"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Midnight Bargain")--"Ú¤¼s"
---SetJiaoYiGoods(nil,nil,nil,nil,"Honourhome")--"Ë½‘jµÄ¹âİx"
-SetJiaoYiGoods(nil,nil,nil,nil,"Prism Guardian")--"ÔªËØµÄ±Ó×o"
+SetJiaoYiGoods(nil,nil,nil,nil,"Rebuke of the Vaal")--"Íß –‘ğÈĞ"
 SetJiaoYiGoods(nil,nil,nil,nil,"Beltimber Blade")--"µ¶äh½û²Ä"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Grelwood Shank")--"ÎÖµÂ²½·¥"
+SetJiaoYiGoods(nil,nil,nil,nil,"Grelwood Shank")--"ÎÖµÂ²½·¥"
 SetJiaoYiGoods(nil,nil,nil,nil,"Cospri's Malice")--"¿¨Ë¹ÆÕÀïµÄÔ¹ºŞ"
 SetJiaoYiGoods(nil,nil,nil,nil,"Soul Taker")--"é_ÌÅ¸«"
-SetJiaoYiGoods(nil,nil,nil,nil,"Nebuloch")--"ãyºÓĞÇë…"
-SetJiaoYiGoods(nil,nil,nil,nil,"Nebulis")--"ãyºÓĞÇë…"
-SetJiaoYiGoods(nil,nil,nil,nil,"Doryani's Catalyst")--"¶àÀï†ÄáµÄ»Ã»¯Ö®ÕÈ"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Nebuloch")--"ãyºÓĞÇë…"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Nebulis")--"ãyºÓĞÇë…"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Doryani's Catalyst")--"¶àÀï†ÄáµÄ»Ã»¯Ö®ÕÈ"
 SetJiaoYiGoods(nil,nil,nil,nil,"Arakaali's Fang")--"°¬ –¿¨ÀòÖ®ÑÀ"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Vulconus")--"×£ÈÚå‘Ò±"
+--SetJiaoYiGoods(nil,nil,nil,nil,"The Crimson Storm")--"¾p¼tïL±©"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Xoph's Nurture")--"Ë÷·üµÄÛ“á"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Hopeshredder")--"ÆÆœçÖ®Ï£"
 SetJiaoYiGoods(nil,nil,nil,nil,"Darkscorn")--"Ò¹Ò÷"
-SetJiaoYiGoods(nil,nil,nil,nil,"Vulconus")--"×£ÈÚå‘Ò±"
-SetJiaoYiGoods(nil,nil,nil,nil,"The Crimson Storm")--"¾p¼tïL±©"
-SetJiaoYiGoods(nil,nil,nil,nil,"Xoph's Nurture")--"Ë÷·üµÄÛ“á"
-SetJiaoYiGoods(nil,nil,nil,nil,"Hopeshredder")--"ÆÆœçÖ®Ï£"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Slivertongue")--"ÁÑÉà"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Martyr of Innocence")--"ÁÒÊ¿Ö®œQ"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Slivertongue")--"ÁÑÉà"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Martyr of Innocence")--"ÁÒÊ¿Ö®œQ"
 SetJiaoYiGoods(nil,nil,nil,nil,"Starforge")--"ºËĞÇ"
 SetJiaoYiGoods(nil,nil,nil,nil,"Voidforge")--"ºËÌ“"
 SetJiaoYiGoods(nil,nil,nil,nil,"Atziri's Disfavour")--"°¢ÆÀïµÄĞÌÈĞ"
 SetJiaoYiGoods(nil,nil,nil,nil,"Kingmaker")--"ÍõÕßÖ®ÈĞ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Marohi Erqi	")--" –ÆæµÄ¾Şì`Ö®åN"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Tidebreaker")--"ÆÆÀËÕß"
-SetJiaoYiGoods(nil,nil,nil,nil,"Pledge of Hands")--"ÊÄ¼s"
--- SetJiaoYiGoods(nil,nil,nil,nil,"The Grey Spire")--"°ßñgÉnÕÈ"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Pledge of Hands")--"ÊÄ¼s"
+SetJiaoYiGoods(nil,nil,nil,nil,"The Grey Spire")--"°ßñgÉnÕÈ"
 SetJiaoYiGoods(nil,nil,nil,nil,"Rigwald's Quills")--"Èğ·ğÖ®Óğ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Maloney's Mechanism")--"ñRÂåÄáµÄ™CêP"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Whakatutuki o Matua")--"ğBÓıÖ®¶÷"
-SetJiaoYiGoods(nil,nil,nil,nil,"Light of Lunaris")--"ÔÂÓ°Ö®Ò«"
-SetJiaoYiGoods(nil,nil,nil,nil,"Apep's Supremacy")--"°¬ÆÕ°Ô™à"
-SetJiaoYiGoods(nil,nil,nil,nil,"Unyielding Flame")--"²»Çüº»ğ"
 SetJiaoYiGoods(nil,nil,nil,nil,"The Fracturing Spinner")--"ÁÑ”àÖë½z"
 SetJiaoYiGoods(nil,nil,nil,nil,"Voidfletcher")--"Ì“ÑÛ¼ıÊ¸"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Xoph's Inception")--"Ë÷·üµÄÊ¼Ô´"
-SetJiaoYiGoods(nil,nil,nil,nil,"Aegis Aurora")--"»ÃÃ¢Â}¶Ü"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Hrimsorrow")--±ùÀäÖ®ÑÛ
--- SetJiaoYiGoods(nil,nil,nil,nil,"Incandescent Heart")--"ÁÒÑ×Ö®ĞÄ"
+SetJiaoYiGoods(nil,nil,nil,nil,"Maloney's Mechanism")--"ñRÂåÄáµÄ™CêP"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Tukohama's Fortress")--"ˆD¿Ë¹ş¬”±¤‰¾"
+SetJiaoYiGoods(nil,nil,nil,nil,"Whakatutuki o Matua")--"ğBÓıÖ®¶÷"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Light of Lunaris")--"ÔÂÓ°Ö®Ò«"
+SetJiaoYiGoods(nil,nil,nil,nil,"Apep's Supremacy")--"°¬ÆÕ°Ô™à"
+SetJiaoYiGoods(nil,nil,nil,nil,"Unyielding Flame")--"²»Çüº»ğ"
+
 SetJiaoYiGoods(nil,nil,nil,nil,"Atziri's Acuity")--"°¢×ÈÀïµÄ½İË¼"
 SetJiaoYiGoods(nil,nil,nil,nil,"Craiceann's Pincers")--"¿ü –ÉºˆÔãQ"
 SetJiaoYiGoods(nil,nil,nil,nil,"Maligaro's Virtuosity")--"ñRÀ×¸ğÌ}µÄÑªÈ¾ÊÖÌ×"
 SetJiaoYiGoods(nil,nil,nil,nil,"Asenath's Gentle Touch")--"°²ÙÄÈ½zµÄ°²“áÖ®ÕZ"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Grip of the Council")--"×h•şÖ®ÎÕ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Farrul's Pounce")--"ÙM –Á_äh×¦"
+SetJiaoYiGoods(nil,nil,nil,nil,"Grip of the Council")--"×h•şÖ®ÎÕ"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Farrul's Pounce")--"ÙM –Á_äh×¦"
 SetJiaoYiGoods(nil,nil,nil,nil,"Breathstealer")--"ÍµÏ¢"
-SetJiaoYiGoods(nil,nil,nil,nil,"Saqawal's Nest")--"Ë¹¿¨ÎÖÖ®³²"
-SetJiaoYiGoods(nil,nil,nil,nil,"Saqawal's Winds")--"Ë¹¿¨ÎÖÖ®Òí"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Saqawal's Winds")--"Ë¹¿¨ÎÖÖ®Òí"
 SetJiaoYiGoods(nil,nil,nil,nil,"Command of the Pit")--"éœºËÌ–Áî"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Null and Void")--"Ì“¿Õ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Offering to the Serpent")--"ÉßÆ¤«I¼À"
-SetJiaoYiGoods(nil,nil,nil,nil,"Shaper's Touch")--"ËÜÕßÖ®Ó|"
+SetJiaoYiGoods(nil,nil,nil,nil,"Null and Void")--"Ì“¿Õ"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Offering to the Serpent")--"ÉßÆ¤«I¼À"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Shaper's Touch")--"ËÜÕßÖ®Ó|"
 SetJiaoYiGoods(nil,nil,nil,nil,"Hands of the High Templar")--"Â}×ÚÉñÊÖ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Viridi's Veil")--"¾SÀïµÏµÄ±¡¼†"
-SetJiaoYiGoods(nil,nil,nil,nil,"Windshriek")--"ïL‡["
-SetJiaoYiGoods(nil,nil,nil,nil,"The Tempest's Binding")--"ïL±©µÄ¾ĞÊø"
-SetJiaoYiGoods(nil,nil,nil,nil,"Cadigan's Crown")--"¿¨µÏ¸ù»Ê¹Ú"
-SetJiaoYiGoods(nil,nil,nil,nil,"Voll's Vision")--"¸£ –µÄßhÒŠ"
-SetJiaoYiGoods(nil,nil,nil,nil,"The Anticipation")--"‘ÒÄî"
---SetJiaoYiGoods(nil,nil,nil,nil,"Algor Mortis")--"°¢ –¸ê£®ÄªµÌË¹"
-SetJiaoYiGoods(nil,nil,nil,nil,"The Covenant")--"ÑªÊÄ"
-
+SetJiaoYiGoods(nil,nil,nil,nil,"Aukuna's Will")--"ŠWì¼{Ö®Òâ"
 SetJiaoYiGoods(nil,nil,nil,nil,"Slavedriver's Hand")--"Å«ÒÛÖ®ÊÖ"
 SetJiaoYiGoods(nil,nil,nil,nil,"Fenumus' Weave")--"·Æ¶÷½zÒ¹¿—"
-SetJiaoYiGoods(nil,nil,nil,nil,"Storm's Gift")--"ïL±©Ö®Ù›"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Storm's Gift")--"ïL±©Ö®Ù›"
 SetJiaoYiGoods(nil,nil,nil,nil,"Machina Mitts")--"ÔÓ‹Ä§ÊÖ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Craiceann's Tracks")--"¿ü –ÉºÖ®ÛE"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Craiceann's Tracks")--"¿ü –ÉºÖ®ÛE"
 SetJiaoYiGoods(nil,nil,nil,nil,"The Red Trail")--"³à¼tÛ™ÛE"
 SetJiaoYiGoods(nil,nil,nil,nil,"Seven-League Step")--"ÃËÊÄÖ®ÛE"
+SetJiaoYiGoods(nil,nil,nil,nil,"Abberath's Hooves")--"°¬ØÀ­Ë¹Ö®Ìã"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Goldwyrm")--"ıˆÑ××ãÛE"
 SetJiaoYiGoods(nil,nil,nil,nil,"Garukhan's Flight")--"¿¨Âåº²Ö®Ó°"
-SetJiaoYiGoods(nil,nil,nil,nil,"Shadows and Dust")--"É³‰mÖ®Ó°"
-SetJiaoYiGoods(nil,nil,nil,nil,"Farrul's Chase")--"ÙM –Á_«CÑ¥"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Inya's Epiphany")--"ÒğÑÅµÄîDÎò"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Farrul's Chase")--"ÙM –Á_«CÑ¥"
+SetJiaoYiGoods(nil,nil,nil,nil,"Inya's Epiphany")--"ÒğÑÅµÄîDÎò"
 SetJiaoYiGoods(nil,nil,nil,nil,"Skyforth")--"¿ÕÏò"
-SetJiaoYiGoods(nil,nil,nil,nil,"Saqawal's Talons")--"Ë¹¿¨ÎÖú—×¦"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Lioneye's Paws")--"ª{ÑÛµÄôYÖ¾"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Saqawal's Talons")--"Ë¹¿¨ÎÖú—×¦"
 SetJiaoYiGoods(nil,nil,nil,nil,"Omeyocan")--"šWéTÓÆ¸ù"
 SetJiaoYiGoods(nil,nil,nil,nil,"Fenumus' Spinnerets")--"·Æ¶÷½z´ÌÑ¥"
-SetJiaoYiGoods(nil,nil,nil,nil,"The Stampede")--"¢ÌÓÖ®Ñ¥"
-SetJiaoYiGoods(nil,nil,nil,nil,"Voidwalker")--"Ì“¿ÕĞĞÕß"
+--SetJiaoYiGoods(nil,nil,nil,nil,"The Stampede")--"¢ÌÓÖ®Ñ¥"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Voidwalker")--"Ì“¿ÕĞĞÕß"
 SetJiaoYiGoods(nil,nil,nil,nil,"Craiceann's Carapace")--"¿ü –ÉºÓ²¼×"
 SetJiaoYiGoods(nil,nil,nil,nil,"The Brass Dome")--"ˆÔã~‘ğÕÖ"
 SetJiaoYiGoods(nil,nil,nil,nil,"Kaom's Heart")--"ŒùÄ·µÄ‰ÑÖ¾"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Yriel's Fostering")--"ÒÁÈğµÄÔÔÅà"
+SetJiaoYiGoods(nil,nil,nil,nil,"Yriel's Fostering")--"ÒÁÈğµÄÔÔÅà"
 SetJiaoYiGoods(nil,nil,nil,nil,"Hyrri's Ire")--"Î÷ÀïµÄ‘ğÒÂ"
-SetJiaoYiGoods(nil,nil,nil,nil,"The Perfect Form")--"ÍêÃÀ×Ë‘B"
-SetJiaoYiGoods(nil,nil,nil,nil,"Perfidy")--"±³ĞÅÍüÁx"
-SetJiaoYiGoods(nil,nil,nil,nil,"Garb of the Ephemeral")--"Ÿo³£¶YÅÛ"
-
-SetJiaoYiGoods(nil,nil,nil,nil,"Skin of the Lords")--"¾ıÖ÷Ö®Äw"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Belly of the Beast")--"«F¸¹"
-SetJiaoYiGoods(nil,nil,nil,nil,"Daresso's Defiance")--"µÂÈğË÷µÄĞlÒÂ"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Rotting Legion")--"¸¯”¡ÜŠˆF"
-
+--SetJiaoYiGoods(nil,nil,nil,nil,"The Perfect Form")--"ÍêÃÀ×Ë‘B"
+SetJiaoYiGoods(nil,nil,nil,nil,"Tabula Rasa")--"Ÿo±MÖ®ÒÂ"
 SetJiaoYiGoods(nil,nil,nil,nil,"Skin of the Lords")--"¾ıÖ÷Ö®Äw"
 SetJiaoYiGoods(nil,nil,nil,nil,"Cloak of Tawm'r Isley")--"ÌÕÃ×ƒº°¬Ë¹ÀíÖ®ÅÛ"
 SetJiaoYiGoods(nil,nil,nil,nil,"Garb of the Ephemeral")--"Ÿo³£¶YÅÛ"
@@ -1893,131 +890,110 @@ SetJiaoYiGoods(nil,nil,nil,nil,"Shavronne's Wrappings")--"Ñ¦ÀÊµÄ×oÉíéLÅÛ"
 SetJiaoYiGoods(nil,nil,nil,nil,"Fenumus' Shroud")--"·Æ¶÷½zô|¼×"
 SetJiaoYiGoods(nil,nil,nil,nil,"The Queen's Hunger")--"Å®ÍõµÄ¿ÊÍû"
 SetJiaoYiGoods(nil,nil,nil,nil,"Gruthkul's Pelt")--"¸ğô”Ë¹¿ÜÕæÆ¤"
-SetJiaoYiGoods(nil,nil,nil,nil,"Farrul's Fur")--"ÙM –Á_ÓğÒÂ"
-SetJiaoYiGoods(nil,nil,nil,nil,"CLight of Lunaris")--ÔÂÓ°Ö®Ò«
+--SetJiaoYiGoods(nil,nil,nil,nil,"Daresso's Defiance")--"µÂÈğË÷µÄĞlÒÂ"
+SetJiaoYiGoods(nil,nil,nil,nil,"Romira's Banquet")--"ÙM –Á_ÓğÒÂ"
+SetJiaoYiGoods(nil,nil,nil,nil,"Voll's Protector")--"¸£ –µÄ‘ğæz"
 SetJiaoYiGoods(nil,nil,nil,nil,"Crystal Vault")--"Ë®¾§Œšì"
-SetJiaoYiGoods(nil,nil,nil,nil,"Dialla's Malefaction")--ß_À­
+--SetJiaoYiGoods(nil,nil,nil,nil,"Rotting Legion")--"¸¯”¡ÜŠˆF"
 SetJiaoYiGoods(nil,nil,nil,nil,"Sporeguard")--"¶¾æßÊØĞl"
-SetJiaoYiGoods(nil,nil,nil,nil,"Maw of Conquest")--ğñøBî^
--- SetJiaoYiGoods(nil,nil,nil,nil,"Tinkerskin")--"º¸½³Ö®Äw"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Soul Mantle")--"×æì`Ö®¼s"
--- SetJiaoYiGoods(nil,nil,nil,nil,"The Ivory Tower")--"ÏóÑÀËş"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Cloak of Defiance")--"ĞlµÀÖ®ÅÛ"
+SetJiaoYiGoods(nil,nil,nil,nil,"The Ivory Tower")--"ÏóÑÀËş"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Cloak of Defiance")--"ĞlµÀÖ®ÅÛ"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Carcass Jack")--"ÖÂÃüÖ®ów"
 SetJiaoYiGoods(nil,nil,nil,nil,"The Eternity Shroud")--"ÓÀaŒÆ²¼"
 SetJiaoYiGoods(nil,nil,nil,nil,"Inpulsa's Broken Heart")--"Ó¡²·Ë_µÄĞÄËé"
 SetJiaoYiGoods(nil,nil,nil,nil,"Shroud of the Lightless")--"»Ş°µµÄŒÆ²¼"
-SetJiaoYiGoods(nil,nil,nil,nil,"Atziri's Splendour")--"°¢ÆÀïÂ}»Õ"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Atziri's Splendour")--"°¢ÆÀïµÄÍş™à"
 SetJiaoYiGoods(nil,nil,nil,nil,"Shadowstitch")--"¿pÓ°"
-SetJiaoYiGoods(nil,nil,nil,nil,"Saqawal's Flock")--"Ë¹¿¨ÎÖÖ®Í½"
-SetJiaoYiGoods(nil,nil,nil,nil,"Cowl of the Cryophile")--"¿áº®¶·Åñ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Obscurantis")--"ëü–VÔÃæ"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Saqawal's Flock")--"Ë¹¿¨ÎÖÖ®Í½"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Cowl of the Cryophile")--"¿áº®¶·Åñ"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Obscurantis")--"ëü–VÔÃæ"
+SetJiaoYiGoods(nil,nil,nil,nil,"Maw of Conquest")--"ërøBÖ®Õ÷"
 SetJiaoYiGoods(nil,nil,nil,nil,"The Devouring Diadem")--"ÍÌÊÉÖ®¹Ú"
-SetJiaoYiGoods(nil,nil,nil,nil,"Cowl of the Ceraunophile")--"¿ñÀ×¶·Åñ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Hale Negator")--"Š—Şqñg"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Cowl of the Ceraunophile")--"¿ñÀ×¶·Åñ"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Hale Negator")--"Š—Şqñg"
 SetJiaoYiGoods(nil,nil,nil,nil,"Indigon")--"µØÓ¡Ö®­h"
-SetJiaoYiGoods(nil,nil,nil,nil,"Craiceann's Chitin")--"¿ü –Éº»ûÃæ"
+SetJiaoYiGoods(nil,nil,nil,nil,"Honourhome")--"Ë½‘jµÄ¹âİx"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Craiceann's Chitin")--"¿ü –Éº»ûÃæ"
 SetJiaoYiGoods(nil,nil,nil,nil,"Mask of the Stitched Demon")--"º¿pÖ®Ãæ"
 SetJiaoYiGoods(nil,nil,nil,nil,"Crown of the Tyrant")--"ÌÃ»Ê¹ÚÃá"
 SetJiaoYiGoods(nil,nil,nil,nil,"The Brine Crown")--"º£Íõ¹ÚÃá"
-SetJiaoYiGoods(nil,nil,nil,nil,"Crown of the Inward Eye")--"°µÑÛÖ®¹Ú"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Memory Vault")--"»Ø‘›Œšì"
-SetJiaoYiGoods(nil,nil,nil,nil,"Farrul's Bite")--"ÙM –Á_†Aà¹"
-SetJiaoYiGoods(nil,nil,nil,nil,"The Vertex")--"ÖiÈİ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Thunderfist")--ŞZÌìÀ×
-SetJiaoYiGoods(nil,nil,nil,nil,"Abhorrent Interrogation")--"ã£ÄæŒÓ"
-SetJiaoYiGoods(nil,nil,nil,nil,"The Surrender")--"½µ·ü"
-SetJiaoYiGoods(nil,nil,nil,nil,"Doryani's Delusion")--"¶àÀï†ÄáµÄ»ÃÏë"
-SetJiaoYiGoods(nil,"¿ñÅ°ÕßÊøÒÂ","Metadata/Items/Armours/BodyArmours/BodyDexInt16","ß_Åå –¸Ê¸ñ‚ÎÑb",nil,"3",nil)
--- SetJiaoYiGoods(nil,nil,nil,nil,"Ylfeban's Trickery")--"ÒÁÜ½°àµÄÔÓ‹"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Lioneye's Vision")--"ª{ÑÛµÄÒ•¾€"
-SetJiaoYiGoods(nil,nil,nil,nil,"Alpha's Howl")--"˜OµØÖ®àÆ"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Abyssus")--"ÉîœYÖ®†¾"
-SetJiaoYiGoods(nil,nil,nil,nil,"Crest of Desire")--"‘jÍûÖ®¹Ú"
-SetJiaoYiGoods(nil,nil,nil,nil,"Asenath's Mark")--"°²ÙÄÈ½zµÄÑ¸ÃôÖ®¹Ú"
-SetJiaoYiGoods(nil,nil,nil,nil,"The Devouring Diadem")--"ÍÌÊÉÕßÍõ¹Ú"
-SetJiaoYiGoods(nil,nil,nil,nil,"Memory Vault")--"¼ÇÒäÇôÁı"
-SetJiaoYiGoods(nil,nil,nil,nil,"Windshriek")--"·çÏø"
-SetJiaoYiGoods(nil,nil,nil,nil,"Cadigan's Crown")--"¿¨µÏ¸ù»Ê¹Ú"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Crown of the Inward Eye")--"°µÑÛÖ®¹Ú"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Memory Vault")--"»Ø‘›Œšì"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Farrul's Bite")--"ÙM –Á_†Aà¹"
+--SetJiaoYiGoods(nil,nil,nil,nil,"The Vertex")--"ÖiÈİ"
 
-
-SetJiaoYiGoods(nil,nil,nil,nil,"Conqueror's Efficiency")--"Õ÷·şÕßµÄÑ¸½İ"
--- SetJiaoYiGoods(nil,nil,nil,nil,"The Primordial Chain")--"ÏÈ×æÁb½O"
+--SetJiaoYiGoods(nil,nil,nil,nil,"The Primordial Chain")--"ÏÈ×æÁb½O"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Tavukai")--"¿ñì`Ö®Å­"
 SetJiaoYiGoods(nil,nil,nil,nil,"Xoph's Heart")--"Ë÷·üÖ®ĞÄ"
 SetJiaoYiGoods(nil,nil,nil,nil,"Xoph's Blood")--"Ë÷·üÖ®Ñª"
+SetJiaoYiGoods(nil,nil,nil,nil,"Karui Charge")--"¿¨ô”³äÄÜ"
 SetJiaoYiGoods(nil,nil,nil,nil,"The Halcyon")--"Ì«Æ½"
 SetJiaoYiGoods(nil,nil,nil,nil,"The Pandemonius")--"ÈºÄ§µî"
-SetJiaoYiGoods(nil,nil,nil,nil,"Fury Valve")--"‘Å­é]æi"
--- SetJiaoYiGoods(nil,nil,nil,nil,"The Ascetic")--"¿àĞĞ"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Hyrri's Truth")--"Î÷ÀïµÄÕæÀí"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Fury Valve")--"‘Å­é]æi"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Voice of the Storm")--"±©ïLÖ®ÑÔ"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Choir of the Storm")--"±©ïLÖ®ÕZ"
+SetJiaoYiGoods(nil,nil,nil,nil,"The Ascetic")--"¿àĞĞ"
+SetJiaoYiGoods(nil,nil,nil,nil,"Bisco's Collar")--"®…Ë¹¿ÜµÄí—È¦"
+SetJiaoYiGoods(nil,nil,nil,nil,"Astramentis")--"¾ùºâÖ®·û"
 SetJiaoYiGoods(nil,nil,nil,nil,"Presence of Chayula")--"ÏÄõÀ­Ö®Ó¡"
-SetJiaoYiGoods(nil,nil,nil,nil,"Yoke of Suffering")--"Ä¥ëyÖ®Ü—"
-SetJiaoYiGoods(nil,nil,nil,nil,"Impresence")--"²»ÔÚˆö×CÃ÷"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Yoke of Suffering")--"Ä¥ëyÖ®Ü—"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Impresence")--"²»ÔÚˆö×CÃ÷"
 SetJiaoYiGoods(nil,nil,nil,nil,"Aul's Uprising")--"ŠW –µÄáÈÆğ"
 SetJiaoYiGoods(nil,nil,nil,nil,"Solstice Vigil")--"ÊØÒ¹Ö®ÖÁ"
 SetJiaoYiGoods(nil,nil,nil,nil,"Badge of the Brotherhood")--"¼¤ÇéÖ®ÕÂ"
 SetJiaoYiGoods(nil,nil,nil,nil,"Voll's Devotion")--"¸£ –µÄÖÒÕ\Ö®·û"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Eye of Innocence")--"Ÿo×ïÖ®ÑÛ"
+SetJiaoYiGoods(nil,nil,nil,nil,"Eye of Innocence")--"Ÿo×ïÖ®ÑÛ"
 SetJiaoYiGoods(nil,nil,nil,nil,"Eyes of the Greatwolf")--"¾ŞÀÇÖ®ÑÛ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Zerphi's Heart")--"É·ğÒÁÖ®ĞÄ"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Tavukai")--"¿ñì`Ö®Å­"
-SetJiaoYiGoods(nil,nil,nil,nil,"Karui Charge")--"¿¨ô”³äÄÜ"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Queen of the Forest")--"É­ÁÖÖ®ºó"
-SetJiaoYiGoods(nil,nil,nil,nil,"The Jinxed Juju")--"ºÖä×o·û"
-SetJiaoYiGoods(nil,nil,nil,nil,"Arborix")--"°¢²¼ÀïË¹"
-SetJiaoYiGoods(nil,nil,nil,nil,"Bisco's Collar")--"®…Ë¹¿ÜµÄí—È¦"
-SetJiaoYiGoods(nil,nil,nil,nil,"Astramentis")--"¾ùºâÖ®·û"
-SetJiaoYiGoods(nil,nil,nil,nil,"Sunblast")--ÈÕÑ×
-SetJiaoYiGoods(nil,nil,nil,nil,"Aul's Uprising")--"ŠW –µÄáÈÆğ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Solstice Vigil")--"ÊØÒ¹Ö®ÖÁ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Atziri's Foible")--"°¢ÆÀïÂ}»Õ"
 
-SetJiaoYiGoods(nil,nil,nil,nil,"Calamitous Visions")--"±¯‘K»ÃÒ•"
-SetJiaoYiGoods(nil,nil,nil,nil,"Voidheart")--"Ì“¿ÕĞÄì`"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Icefang Orbit")--"±ùïLÜ‰ÛE"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Voidheart")--"Ì“¿ÕĞÄì`"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Icefang Orbit")--"±ùïLÜ‰ÛE"
 SetJiaoYiGoods(nil,nil,nil,nil,"Circle of Guilt")--"À¢¾ÎÖ®­h"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Winterweave")--"¶¬¿—"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Winterweave")--"¶¬¿—"
 SetJiaoYiGoods(nil,nil,nil,nil,"Ventor's Gamble")--"Ù€Éñ·Ò¶à"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Valako's Sign")--"ÍßÀ­ìÖ®Ó¡"
+SetJiaoYiGoods(nil,nil,nil,nil,"Valako's Sign")--"ÍßÀ­ìÖ®Ó¡"
 SetJiaoYiGoods(nil,nil,nil,nil,"Circle of Regret")--"ßzº¶Ö®­h"
 SetJiaoYiGoods(nil,nil,nil,nil,"Astral Projector")--"ĞÇ¿ÕÖ®Ó°"
-SetJiaoYiGoods(nil,nil,nil,nil,"Snakepit")--"Éß³²"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Snakepit")--"Éß³²"
 SetJiaoYiGoods(nil,nil,nil,nil,"Circle of Fear")--"¿Ö‘ÖÖ®­h"
 SetJiaoYiGoods(nil,nil,nil,nil,"Circle of Anguish")--"¼å°¾Ö®­h"
 SetJiaoYiGoods(nil,nil,nil,nil,"Warrior's Legacy")--"‘ğÊ¿ßzÎï"
 SetJiaoYiGoods(nil,nil,nil,nil,"The Taming")--"ÔªËØÖ®ÕÂ"
+SetJiaoYiGoods(nil,nil,nil,nil,"Thief's Torment")--"¸`×ï"
 SetJiaoYiGoods(nil,nil,nil,nil,"Shavronne's Revelation")--"Ñ¦ÀÊµÄ†¢Ê¾Ö®­h"
-SetJiaoYiGoods(nil,nil,nil,nil,"Circle of Nostalgia")--"‘ÑÅfÖ®­h"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Circle of Nostalgia")--"‘ÑÅfÖ®­h"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Berek's Grip")--"ØÀ×¿ËµÄ±ùÅcÀ×Ö®Çú"
 SetJiaoYiGoods(nil,nil,nil,nil,"Berek's Respite")--"ØÀ×¿ËµÄ»ğÅcÀ×Ö®˜·"
 SetJiaoYiGoods(nil,nil,nil,nil,"Call of the Brotherhood")--"ÒâÖ¾ºô†¾"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Rigwald's Crest")--"Èğ·ğÖ®¹Ú"
+--SetJiaoYiGoods(nil,nil,nil,nil,"The Pariah")--"²İÃñ"
 SetJiaoYiGoods(nil,nil,nil,nil,"Angler's Plait")--"O·òÖ®Şp"
 SetJiaoYiGoods(nil,nil,nil,nil,"Vivinsect")--"¼ÄÉúºÄ§"
 SetJiaoYiGoods(nil,nil,nil,nil,"Mark of the Elder")--"×ğŸÖ®Ó¡"
 SetJiaoYiGoods(nil,nil,nil,nil,"Mark of the Shaper")--"ËÜÕßÖ®Ó¡"
 
-
+--SetJiaoYiGoods(nil,nil,nil,nil,"Faminebind")--"ğ‡»ÄÖ®½Y"
+--SetJiaoYiGoods(nil,nil,nil,nil,"The Retch")--"‡IÍÂ"
 SetJiaoYiGoods(nil,nil,nil,nil,"Coward's Chains")--"Å³·òµÄæiæœ"
 SetJiaoYiGoods(nil,nil,nil,nil,"Coward's Legacy")--"Å³·òµÄßz®a"
 SetJiaoYiGoods(nil,nil,nil,nil,"Headhunter")--"«CÊ×"
-SetJiaoYiGoods(nil,nil,nil,nil,"Cyclopean Coil")--"¾ŞÑÒÖ®­h"
-SetJiaoYiGoods(nil,nil,nil,nil,"Hyperboreus")--"˜OµØÊø¸¹"
-SetJiaoYiGoods(nil,nil,nil,nil,"Mother's Embrace")--"Ä¸ÓHµÄ“í±§"
-SetJiaoYiGoods(nil,nil,nil,nil,"The Flow Untethered")--"äıÁ÷²»Ï¢"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Umbilicus Immortalis")--"²»ĞàÀMÃü"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Cyclopean Coil")--"¾ŞÑÒÖ®­h"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Hyperboreus")--"˜OµØÊø¸¹"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Mother's Embrace")--"Ä¸ÓHµÄ“í±§"
+--SetJiaoYiGoods(nil,nil,nil,nil,"The Flow Untethered")--"äıÁ÷²»Ï¢"
 SetJiaoYiGoods(nil,nil,nil,nil,"Ryslatha's Coil")--"ÈğË¹À­Ë_Ö®Àp"
+SetJiaoYiGoods(nil,nil,nil,nil,"The Tactician")--"ÖÇÓÂÜŠŸ"
 SetJiaoYiGoods(nil,nil,nil,nil,"The Nomad")--"ÓÎÄÁ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Bear's Girdle")--"ĞÜÖ®Êø"
 
-
-SetJiaoYiGoods(nil,nil,nil,nil,"One With Nothing")--"Ò»ŸoËùÓĞ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Kitava's Teachings")--"ÆæËş¸¥µÄ½ÌŒW"
 SetJiaoYiGoods(nil,nil,nil,nil,"Inspired Learning")--"ÇóÖªµÄŸáÇé"
-SetJiaoYiGoods(nil,nil,nil,nil,"Voices")--"É¤Òô"
-SetJiaoYiGoods(nil,nil,nil,nil,"Megalomaniac")--"ÍıÏëÖ¢"
 SetJiaoYiGoods(nil,nil,nil,nil,"Efficient Training")--"³ä·ÖÓ–¾š"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Fragility")--"Ì“Èõ"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Fragility")--"Ì“Èõ"
 SetJiaoYiGoods(nil,nil,nil,nil,"Emperor's Might")--"µÛÍõµÄ°Ô™à"
 SetJiaoYiGoods(nil,nil,nil,nil,"Emperor's Mastery")--"µÛÍõµÄ¼ƒÊì"
 SetJiaoYiGoods(nil,nil,nil,nil,"Emperor's Cunning")--"µÛÍõµÄÔÓ‹"
 SetJiaoYiGoods(nil,nil,nil,nil,"Emperor's Wit")--"µÛÍõµÄÖÇ»Û"
-SetJiaoYiGoods(nil,nil,nil,nil,"Primordial Might")--"ÏÈ×æÁ¦Á¿"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Primordial Might")--"ÏÈ×æÁ¦Á¿"
 SetJiaoYiGoods(nil,nil,nil,nil,"The Red Dream")--"³àÓ°‰ô¾³"
 SetJiaoYiGoods(nil,nil,nil,nil,"Might of the Meek")--"Èå×Ó¿É½Ì"
 SetJiaoYiGoods(nil,nil,nil,nil,"Transcendent Flesh")--"³¬·²Ö®ów"
@@ -2028,243 +1004,51 @@ SetJiaoYiGoods(nil,nil,nil,nil,"The Green Dream")--"ÇàÓ°‰ô¾³"
 SetJiaoYiGoods(nil,nil,nil,nil,"The Green Nightmare")--"ÇàÓ°‰ôô|"
 SetJiaoYiGoods(nil,nil,nil,nil,"Transcendent Spirit")--"³¬·²Ö®ì`"
 SetJiaoYiGoods(nil,nil,nil,nil,"Unnatural Instinct")--"Éñ¸Ğ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Mantra of Flames")--
-SetJiaoYiGoods(nil,nil,nil,nil,"Healthy Mind")--
-SetJiaoYiGoods(nil,nil,nil,nil,"Quickening Covenant")--
-SetJiaoYiGoods(nil,nil,nil,nil,"Careful Planning")--
-SetJiaoYiGoods(nil,nil,nil,nil,"Clear Mind")--"ÀíÖÇ"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Clear Mind")--"ÀíÖÇ"
 SetJiaoYiGoods(nil,nil,nil,nil,"Energy From Within")--"“ÄÜ·À×o"
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Jewels/JewelDex",nil,"Grand Spectrum")--"¾Ş¹â×V" 
-SetJiaoYiGoods("Öé±¦","¾Û¹âÖ®Ê¯",nil,"³àºìÖé±¦","Grand Spectrum",3,1)--¾Ş¹â
-SetJiaoYiGoods("Öé±¦","¾Û¹âÖ®Ê¯",nil,"îÜÀ¶Öé±¦","Grand Spectrum",3,1)--¾Ş¹â
-SetJiaoYiGoods("Öé±¦","¾Û¹âÖ®Ê¯",nil,"´äÂÌÖé±¦","Grand Spectrum",3,1)--¾Ş¹â
+SetJiaoYiGoods(nil,nil,nil,nil,"Grand Spectrum")--"¾Ş¹â×V"
 SetJiaoYiGoods(nil,nil,nil,nil,"Unending Hunger")--"Ÿo±M¿ÊÍû"
-SetJiaoYiGoods(nil,nil,nil,nil,"Primordial Harmony")--"ÏÈ×æºÍÖC"
-SetJiaoYiGoods(nil,nil,nil,nil,"Primordial Eminence")--"ÏÈ×æ×¿Ô½"
+--SetJiaoYiGoods(nil,nil,nil,nil,"Primordial Harmony")--"ÏÈ×æºÍÖC"
 SetJiaoYiGoods(nil,nil,nil,nil,"Fortress Covenant")--"ˆÔ±ÚÊÄ¼s"
 SetJiaoYiGoods(nil,nil,nil,nil,"The Blue Dream")--"±ÌÓ°‰ô¾³"
 SetJiaoYiGoods(nil,nil,nil,nil,"The Blue Nightmare")--"±ÌÓ°‰ôô|"
 SetJiaoYiGoods(nil,nil,nil,nil,"The Anima Stone")--"¾Û»êÊ¯"
 SetJiaoYiGoods(nil,nil,nil,nil,"Watcher's Eye")--"¿´ÊØÖ®ÑÛ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Conqueror's Potency")--"Õ÷·şÕßµÄÁ¦Á¿ "
 SetJiaoYiGoods(nil,nil,nil,nil,"Glorious Vanity")--"İx»ÍµÄÌ“˜s"
 SetJiaoYiGoods(nil,nil,nil,nil,"Lethal Pride")--"ÖÂÃüµÄòœ°Á"
 SetJiaoYiGoods(nil,nil,nil,nil,"Brutal Restraint")--"šˆ¿áµÄ¼oÂÉ"
 SetJiaoYiGoods(nil,nil,nil,nil,"Militant Faith")--"¼¤ßMµÄĞÅÑö"
 SetJiaoYiGoods(nil,nil,nil,nil,"Elegant Hubris")--"ƒÑÅµÄ¸ß°Á"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Atziri's Foible")--"°¢×ÈÀïÊ¥»Õ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Healthy Mind")--"ì`ówŞD“Q"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Rain of Splinters")--"Ëéæ—Óê"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Hazardous Research")--"Î£™CŒW"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Combat Focus")--"Œ£¾«×÷‘ğ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Frozen Trail")--"ÛEƒö"
---SetJiaoYiGoods(nil,nil,nil,nil,"Heartbreaker")--"ÁÑĞÄÈĞ"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Divide and Conquer")--"·ĞòvÖ®Å­"
-SetJiaoYiGoods(nil,nil,nil,nil,"Tempered Flesh")--"Ò±å€Ö®ów"
-SetJiaoYiGoods(nil,nil,nil,nil,"Tempered Spirit")--"Ò±å€Ö®ì`"
-SetJiaoYiGoods(nil,nil,nil,nil,"Tempered Mind")--"Ò±å€Ö®Òâ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Glimpse of Chaos")--"»ìãçÒ»Æ³"
-SetJiaoYiGoods(nil,nil,nil,nil,"The Hidden Blade")--"ë[²ØÖ®„¦"
--- SetJiaoYiGoods(nil,nil,nil,nil,"The Supreme Truth")--"ŸoÉÏóğÑÔ"
---SetJiaoYiGoods(nil,nil,nil,nil,"Victario's Charity")--"¾S¶àÀïŠWµÄØ•«I"
-SetJiaoYiGoods(nil,nil,nil,nil,"Mahuxotl's Machination")--"¬”¹şË_¶àµÄêÖ\"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Kikazaru")--"»ù¼ÓË_ô”"
-SetJiaoYiGoods(nil,nil,nil,nil,"Temptation Step")--"ÕT»ó²½·¥"
-SetJiaoYiGoods(nil,nil,nil,nil,"Cane of Kulemak")--"÷¼ótñR¿ËµÄì`ÕÈ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Ulaman's Gaze")--"õÀ­ÂüµÄĞ°ÑÛ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Tecrod's Gaze")--"ÌØ¿ËÁ_µÂµÄĞ°ÑÛ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Kurgal's Gaze")--"¿Â¸êµÄĞ°ÑÛ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Amanamu's Gaze")--"°¢Ä·ÄÇÄ·µÄĞ°ÑÛ"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Rainbowstride")--"ºçÄ»"
-SetJiaoYiGoods(nil,nil,nil,nil,"Starlight Chalice")--"ĞÇ¹âÂ}±­"
-SetJiaoYiGoods(nil,nil,nil,nil,"Olroth's Resolve")--"ŠW –Á_Ë¹µÄ›QĞÄ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Gravebind")--"ÓÄÄ¹Êø¿`"
-SetJiaoYiGoods(nil,nil,nil,nil,"Mageblood")--"Ä§Ñª"
-SetJiaoYiGoods(nil,nil,nil,nil,"Ralakesh's Impatience")--ÜÇÀÕÉwÔSµÄ¼±Ôê
-SetJiaoYiGoods(nil,nil,nil,nil,"Stranglegasp")--"¶óš¢Ö®Ï¢"
-SetJiaoYiGoods(nil,nil,nil,nil,"The Squire")--"´óµØÖ÷"
-SetJiaoYiGoods(nil,nil,nil,nil,"Uul-Netol's Vow")--"õ –Äá¶àÖ®ÊÄ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Dead Reckoning")--"ËÀÍöÇåËã"
-SetJiaoYiGoods(nil,nil,nil,nil,"Fleshcrafter")--"ÈËów½³Ÿ"
-SetJiaoYiGoods(nil,nil,nil,nil,"The Gull")--ÉñµîøBî^
-SetJiaoYiGoods(nil,nil,nil,nil,"Anatomical Knowledge")--"ÕæÖª×ÆÒŠ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Shadows and Dust")--"É³‰mÖ®Ó°"
-SetJiaoYiGoods(nil,nil,nil,nil,"Doryani's Prototype")--"¶àÀï†ÄáÖ®ĞÍ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Stasis Prison")--"ìoÖ¹ÀÎ»\"
-SetJiaoYiGoods(nil,nil,nil,nil,"The Interrogation")--"Œ†–"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Carcass Jack")--"ÖÂÃüÖ®ów"
-SetJiaoYiGoods(nil,nil,nil,nil,"Survival Secrets")--"Éú´æÃØ¼¼"
-SetJiaoYiGoods(nil,"É°Ó°¶ÌÑ¥","Metadata/Items/Armours/Boots/BootsDex4","ıˆÑ××ãÛE","Goldwyrm","3",nil)
-SetJiaoYiGoods(nil,"ÖØ¸ïÑü´ø","Metadata/Items/Belts/Belt4","®…Ë¹¿ÜÀM§","Bisco's Leash","3",nil)
---SetJiaoYiGoods(nil,"ÖØ¸ïÑü´ø","Metadata/Items/Belts/Belt4","½ÆÍ½ÊøÑü","Belt of the Deceiver","3",nil)
-SetJiaoYiGoods(nil,"Ç±ÄÜÖ®½ä","Metadata/Items/Rings/Ring15","²İÃñ","The Pariah","3",nil)
-SetJiaoYiGoods(nil,nil,nil,nil,"Aegis Aurora")--"»ÃÃ¢Â}¶Ü"
-SetJiaoYiGoods(nil,nil,nil,nil,"Apparitions")--"Ó³Ïñ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Natural Affinity")--"ÌìĞÔ"
-SetJiaoYiGoods(nil,nil,nil,nil,"The Siege")--"‡ú³Ç"
-SetJiaoYiGoods(nil,nil,nil,nil,"Child of Violence")--"±©Á¦Ö®×Ó"
-SetJiaoYiGoods(nil,nil,nil,nil,"The Front Line")--"Ç°ÁĞµÄ¾€"
-SetJiaoYiGoods(nil,nil,nil,nil,"Split Personality")--"ÈË¸ñ·ÖÁÑ"
 
-
---SetJiaoYiGoods(nil,nil,nil,nil,"Blood of the Karui")--"¿¨ô”Ö®Ñª"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Zerphi's Last Breath")--"É·ğÒÁµÄ½KÏ¢"
+SetJiaoYiGoods(nil,nil,nil,nil,"Blood of the Karui")--"¿¨ô”Ö®Ñª"
+SetJiaoYiGoods(nil,nil,nil,nil,"Zerphi's Last Breath")--"É·ğÒÁµÄ½KÏ¢"
+SetJiaoYiGoods(nil,nil,nil,nil,"Divination Distillate")--"ŒšÒ•¾«ÈA"
 SetJiaoYiGoods(nil,nil,nil,nil,"Dying Sun")--"œçÈÕ"
 SetJiaoYiGoods(nil,nil,nil,nil,"Taste of Hate")--"ºŞÒâ"
 SetJiaoYiGoods(nil,nil,nil,nil,"Vessel of Vinktar")--"¾S¿ËËşÑªÆ÷"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Sin's Rebirth")--"ÔÙÉúµÄ×ïº"
+SetJiaoYiGoods(nil,nil,nil,nil,"Rumi's Concoction")--"ô”Ã×µÄì`Ë"
+SetJiaoYiGoods(nil,nil,nil,nil,"Sin's Rebirth")--"ÔÙÉúµÄ×ïº"
+SetJiaoYiGoods(nil,nil,nil,nil,"The Sorrow of the Divine")--"ÉñÂ}°§µ¿"
 SetJiaoYiGoods(nil,nil,nil,nil,"Bottled Faith")--"Æ¿ÖĞĞÅÑö"
 SetJiaoYiGoods(nil,nil,nil,nil,"Cinderswallow Urn")--"ÊÉ a®Y"
--- SetJiaoYiGoods(nil,nil,nil,nil,"The Wise Oak")--"ÕÜ™µ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Cinderswallow Urn")--"ÊÉ a®Y"
-SetJiaoYiGoods(nil,nil,nil,nil,"Elixir of the Unbroken Circle")--"²»ÆÆ­hÖ®ì`Ë"
-SetJiaoYiGoods(nil,nil,nil,nil,"Vorana's Preparation")--"ÎÖÀ­ÄÈµÄájá„"
-SetJiaoYiGoods(nil,nil,nil,nil,"The Iron Mass")--"èF‰K"
-SetJiaoYiGoods(nil,nil,nil,nil,"Vorana's March")--"ÎÖÀ­ÄÈµÄÜŠê "
-SetJiaoYiGoods(nil,nil,nil,nil,"Arborix")--"°¢²¼ÀïË¹"
-SetJiaoYiGoods(nil,nil,nil,nil,"Replica Maloney's Mechanism")--"ñRÂåÄáµÄ™CêP"
-SetJiaoYiGoods(nil,nil,nil,nil,"Font of Thunder")--"À×öªÂ}Æ÷"
-SetJiaoYiGoods(nil,nil,nil,nil,"Blackflame")--"÷öÑ×"
+SetJiaoYiGoods(nil,nil,nil,nil,"The Wise Oak")--"ÕÜ™µ"
 
-SetJiaoYiGoods(nil,nil,nil,nil,"Panquetzaliztli")--"‡“ôÖ®åN"
-SetJiaoYiGoods(nil,nil,nil,nil,"The Dancing Duo")--"ëpÈËÎè"
-SetJiaoYiGoods(nil,nil,nil,nil,"Atziri's Rule")--"°¢×ÈÀïµÄÍ³Óù"
-SetJiaoYiGoods(nil,nil,nil,nil,"The Enmity Divine")--"ºÑÔÂ}ÕZ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Witchhunter's Judgment")--"«CÎ×ÕßµÄŒÅĞ"
-SetJiaoYiGoods(nil,nil,nil,nil,"The Great Leader of the North")--"±±¾³µÄ‚¥´óîIŒ§"
-SetJiaoYiGoods(nil,nil,nil,nil,"Choir of the Storm")--"±©ïLÖ®ÕZ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Ryslatha's Coil")--"ÈğË¹À­Ë_Ö®Àp"
-SetJiaoYiGoods(nil,nil,nil,nil,"Expedition's End")--"ßhÕ÷Ö®±M"
-SetJiaoYiGoods(nil,nil,nil,nil,"Crest of Desire")--"‘jÍûÖ®¹Ú"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Ascent From Flesh")--"ÑªÜ|•NÈA"
-SetJiaoYiGoods(nil,nil,nil,nil,"Hateforge")--"Ô¹ºŞå‘Ôì"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Pure Talent")--"¼ƒ²Å"
-SetJiaoYiGoods(nil,nil,nil,nil,"Alpha's Howl")--"˜OµØÖ®àÆ"
-SetJiaoYiGoods(nil,"ÖØ¸ïÑü´ø","Metadata/Items/Belts/Belt4","Ä§Ñª","Mageblood","3",nil)
-SetJiaoYiGoods(nil,"È¨¹óÔ²¶Ü","Metadata/Items/Armours/Shields/ShieldStrDex13","´óµØÖ÷","The Squire","3",nil)
-SetJiaoYiGoods(nil,"Ï¦Äº»¤Éí·û","Metadata/Items/Amulets/Amulet12","ÎÚ¶ûÄá¶àÖ®ÊÄ","Uul-Netol's Vow","3",nil)
-SetJiaoYiGoods(nil,nil,nil,nil,"Expedition's End")--"ßhÕ÷Ö®±M"
-SetJiaoYiGoods(nil,nil,nil,nil,"The Admiral")--"ÉÏŒ¢"
-SetJiaoYiGoods(nil,nil,nil,nil,"Corpsewalker")--"ĞĞŒÆ×ßÈâ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Crest of Desire")--"‘jÍûÖ®¹Ú"
-SetJiaoYiGoods(nil,nil,nil,nil,"Fated End")--"Ãüß\½K½Y"
-SetJiaoYiGoods(nil,nil,nil,nil,"Shattershard")--"ÆÆËéÖ®Ğ¼"
-SetJiaoYiGoods(nil,nil,nil,nil,"Font of Thunder")--"À×öªÂ}Æ÷"
-SetJiaoYiGoods(nil,nil,nil,nil,"The Hidden Blade")--"ë[²ØÖ®„¦"
-SetJiaoYiGoods(nil,nil,nil,nil,"Actum")--"Õ„ÅĞ"
-SetJiaoYiGoods(nil,nil,nil,nil,"The Iron Mass")--"èF‰K"
-SetJiaoYiGoods(nil,nil,nil,nil,"Apex Mode")--"p·åÄ£Ê½"
-SetJiaoYiGoods(nil,nil,nil,nil,"Nadir Mode")--"ÉîœYÄ£Ê½"
-SetJiaoYiGoods(nil,nil,nil,nil,"The Fulcrum")--"Ö§üc"
-SetJiaoYiGoods(nil,nil,nil,nil,"Atziri's Rule")--"°¢ÆÀïµÄ½yÓù"
-SetJiaoYiGoods(nil,nil,nil,nil,"Cane of Kulemak")--"÷¼ótñR¿ËµÄì`ÕÈ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Glimpse of Chaos")--"»ìãçÒ»Æ³"
-SetJiaoYiGoods(nil,nil,nil,nil,"Hateforge")--"Ô¹ºŞå‘Ôì"
---SetJiaoYiGoods(nil,nil,nil,nil,"Ungil's Harmony")--¶÷¼ª –µÄºÍÖC
-SetJiaoYiGoods(nil,nil,nil,nil,"Mahuxotl's Machination")--"¬”¹şË_¶àµÄêÖ\"
-SetJiaoYiGoods(nil,nil,nil,nil,"Relic of the Pact")--"¹ÅµäÚ¤¼s"
-SetJiaoYiGoods(nil,nil,nil,nil,"Steelworm")--"èFÄ»Ïx"
-SetJiaoYiGoods(nil,nil,nil,nil,"Temptation Step")--"ÕT»ó²½·¥"
-SetJiaoYiGoods(nil,nil,nil,nil,"The Scales of Justice")--"ÕıÁxÌì³Ó"
-SetJiaoYiGoods(nil,nil,nil,nil,"Yaomac's Accord")--"ˆòñR¿ËÖ®™à"
-SetJiaoYiGoods(nil,nil,nil,nil,"Ulaman's Gaze")--"õÀ­ÂüµÄĞ°ÑÛ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Tecrod's Gaze")--"ÌØ¿ËÁ_µÂµÄĞ°ÑÛ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Kurgal's Gaze")--"¿Â¸êµÄĞ°ÑÛ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Amanamu's Gaze")--"°¢Ä·ÄÇÄ·µÄĞ°ÑÛ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Triumvirate Authority")--"Èıów™àÍş"
-SetJiaoYiGoods(nil,nil,nil,nil,"The Squire")--"´óµØÖ÷"
-SetJiaoYiGoods(nil,nil,nil,nil,"Mageblood")--"Ä§Ñª"
-SetJiaoYiGoods(nil,nil,nil,nil,"Gravebind")--"ÓÄÄ¹Êø¿`"
-SetJiaoYiGoods(nil,nil,nil,nil,"Stasis Prison")--"ìoÖ¹ÀÎ»\"
-SetJiaoYiGoods(nil,nil,nil,nil,"Stranglegasp")--"¶óš¢Ö®Ï¢"
-SetJiaoYiGoods(nil,nil,nil,nil,"Uul-Netol's Vow")--"õ –Äá¶àÖ®ÊÄ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Dyadian Dawn")--"´÷†µÏ°²µÄ³¿êØ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Death Rush")--"ÍöÕßºô†¾"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Skirmish")--"Ğ¡•ş‘ğ"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Hrimnor's Resolve")--"À×Ä·ÖZµÄºÀÇé"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Alberon's Warpath")--"°¢ –ØÂ¡µÄÕ÷Í¾"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Quickening Covenant")--"Í®dÊÄ¼s"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Anatomical Knowledge")--"ÕæÖª×ÆÒŠ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Lioneye's Remorse")--"Ê¨ÑÛµÄÈÙÒ«Ö®¶Ü"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Snakebite")--"òóÎÇ"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Cherrubim's Maleficence")--"Ñ¦ô”ÙeµÄº×÷„¡"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Victario's Influence")--"¾S¶àÀïŠWÖ®½^í‘"
-SetJiaoYiGoods(nil,"ÆÆÁÑÊ¯ËéÆ¬","Metadata/Items/Currency/CurrencyFractureRareShard",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"ÆÆÁÑÊ¯","Metadata/Items/Currency/CurrencyFractureRare",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"ÉñÂ}Ö®ÃÀ","Metadata/Items/DivinationCards/DivinationCardDivineBeauty",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"¯‚Øˆ","Metadata/Items/DivinationCards/DivinationCardTheInsaneCat",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"½Y»é¶YÎï","Metadata/Items/DivinationCards/DivinationCardTheWeddingGift",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"‰m·âÓ›‘›","Metadata/Items/DivinationCards/DivinationCardADustyMemory",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,nil,nil,nil,"Nimis")--"ÄáÃ×Ë¹"
-SetJiaoYiGoods(nil,nil,nil,nil,"Dyadian Dawn")--"´÷†µÏ°²µÄ³¿êØ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Mark of Submission")--"³¼·şÖ®Ó›"
+SetJiaoYiGoods(nil,"ÊÎ²¼Ñü´ø","Metadata/Items/Belts/Belt5","ÆÕÀ¼µÂË¹Ö®Ó¡","Perandus Blazon","3",nil)
+--SetJiaoYiGoods(nil,nil,nil,nil,"Bisco's Leash")--"®…Ë¹¿ÜÀM§"
+SetJiaoYiGoods(nil,nil,nil,nil,"Thief's Torment")--"¸`×ï"
+-- SetJiaoYiGoods(nil,"¶ÍÌú½äÖ¸","Metadata/Items/Rings/Ring1","Ó¢Áé±¦»·","Le Heup of All","3",nil)
+SetJiaoYiGoods(nil,nil,nil,nil,"Bisco's Collar")--"®…Ë¹¿ÜµÄí—È¦"
+SetJiaoYiGoods(nil,"µÛ½ğ»¤Éí·û","Metadata/Items/Amulets/Amulet6","¶¬Ö®ĞÄ","Winterheart","3",nil)
+SetJiaoYiGoods(nil,"ÑòÃ«ÊÖÌ×","Metadata/Items/Armours/Gloves/GlovesInt1","ÁÔ±¦ÕßµÄ»¤ÊÖ","Sadima's Touch","3",nil)
+-- SetJiaoYiGoods(nil,"¸ÖÓ°»¤ÊÖ","Metadata/Items/Armours/Gloves/GlovesStrDex4","¸»¹óÖ®ÔË","Aurseize","3",nil)
+SetJiaoYiGoods(nil,"»·´ø³¤Ñ¥","Metadata/Items/Armours/Boots/BootsDexInt3","ÈÕÒ«","Sundance","3",nil)
+--SetJiaoYiGoods(nil,nil,nil,nil,"Goldwyrm")--"ıˆÑ××ãÛE"
+SetJiaoYiGoods(nil,nil,nil,nil,"Honourhome")--"Ë½‘jµÄ¹âİx"
+-- SetJiaoYiGoods(nil,"ÇåÊÓ»¤¿ø","Metadata/Items/Armours/Helmets/HelmetStrDex3","¼²·çµÄ³ÁË¼","The Peregrine","3",nil)
+SetJiaoYiGoods(nil,"¼áÒãËş¶Ü","Metadata/Items/Armours/Shields/ShieldStr17","Ê¨ÑÛµÄÈÙÒ«Ö®¶Ü","Lioneye's Remorse","3",nil)
+-- SetJiaoYiGoods(nil,"ºÏ°åğ°¶Ü","Metadata/Items/Armours/Shields/ShieldStrInt8","Î¬¶àÀï°ÂµÄ¹±Ï×","Victario's Charity","3",nil)
+SetJiaoYiGoods(nil,"Ä§ĞÔ·¨ÕÈ","Metadata/Items/Weapons/OneHandWeapons/Wands/Wand13","ÆüÔÂ","Moonsorrow","3",nil)
 
-
-SetJiaoYiGoods(nil,nil,nil,nil,"Ashes of the Stars")--"ĞÇ‰m"
-SetJiaoYiGoods(nil,nil,nil,nil,"Black Zenith")--"ÆáºÚ˜Oí”"
-SetJiaoYiGoods(nil,nil,nil,nil,"Ceaseless Feast")--"Ÿo±MÊ¢Ñç"
-SetJiaoYiGoods(nil,nil,nil,nil,"Crystallised Omniscience")--"¾§»¯È«Öª"
-SetJiaoYiGoods(nil,nil,nil,nil,"Dawnbreaker")--"ÆÆ•Ô"
-SetJiaoYiGoods(nil,nil,nil,nil,"Inextricable Fate")--"Ÿo·¨’êÃ“Ö®Ãü"
-SetJiaoYiGoods(nil,nil,nil,nil,"Polaric Devastation")--"˜OµØš§œç"
-SetJiaoYiGoods(nil,nil,nil,nil,"Sudden Dawn")--"ÀèÃ÷óEÆğ"
-SetJiaoYiGoods(nil,nil,nil,nil,"The Annihilating Light")--"š§œç°×¹â"
-SetJiaoYiGoods(nil,nil,nil,nil,"The Gluttonous Tide")--"÷Ò÷ÑÀË³±"
-SetJiaoYiGoods(nil,nil,nil,nil,"Dissolution of the Flesh")--"ÑªÈâÈÜ½â"
-SetJiaoYiGoods(nil,nil,nil,nil,"Melding of the Flesh")--"ÑªÈâÈÚºÏ"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Divine Inferno")--"ÉñÂ}Ÿ’ªz"
-SetJiaoYiGoods(nil,nil,nil,nil,"Forbidden Flame")--"½û¼ÉÁÒÑæ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Forbidden Flesh")--"½û¼ÉÑªÈâ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Redblade Banner")--"¼tÈĞÆìÃ"
-SetJiaoYiGoods(nil,nil,nil,nil,"Galesight")--"ïLÒ•"
--- SetJiaoYiGoods(nil,nil,nil,nil,"Soulwrest")--"èTÓ°"
-
-SetJiaoYiGoods(nil,"Ô­Ê¼½Y¾§Éúì`Ö®Á¦","Metadata/Items/Currency/HarvestSeedBlue",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"ÉñÂ}½Y¾§Éúì`Ö®Á¦","Metadata/Items/Currency/HarvestSeedBoss",nil,nil,nil,1)
-SetJiaoYiGoods(nil,"Ò°ĞÔ½Y¾§Éúì`Ö®Á¦","Metadata/Items/Currency/HarvestSeedRed",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"ì`¬F½Y¾§Éúì`Ö®Á¦","Metadata/Items/Currency/HarvestSeedGreen",nil,nil,nil,nil)
-
-SetJiaoYiGoods(nil,nil,"Metadata/Items/MapFragments/ClassicVaultKey")--¹Åµäßzè€
-SetJiaoYiGoods(nil,nil,"Metadata/Items/MapFragments/340VaultKey")--¹ÅĞàßzè€
-SetJiaoYiGoods(nil,nil,"Metadata/Items/MapFragments/VaalVaultKey")--Íß –ßzè€
-SetJiaoYiGoods(nil,nil,"Metadata/Items/MapFragments/RitualFragment")--½şÑª±®Æ÷
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/CurrencyRitualStone")--ÇıÁé·¨Æ÷
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/ScoutingReports/AtlasScoutingReportUnique")--×¿Ô½‚É²éˆó¸æ
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/ScoutingReports/AtlasScoutingReportBreachstone")--³¬·²‚É²éˆó¸æ
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/ScoutingReports/AtlasScoutingReportMoreHidden")--È«Ãæ‚É²éˆó¸æ
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/ScoutingReports/AtlasScoutingReportCorrupted")--Íß –‚É²éˆó¸æ
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/ScoutingReports/AtlasScoutingReportDelirium")--×dÍı‚É²éˆó¸æ
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/ScoutingReports/AtlasScoutingReportJuiced")--¼¼¹¤‚É²éˆó¸æ
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/ScoutingReports/AtlasScoutingReportBlighted")--µòÂä‚É²éˆó¸æ
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/ScoutingReports/AtlasScoutingReportGuardian")--„İÁ¦‚É²éˆó¸æ
--- SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/ScoutingReports/AtlasScoutingReportExplorers")--Ì½ëU¼Ò‚É²éˆó¸æ
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/CurrencyExtractOil")--¾«ÓÍ´ãå€
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/CurrencyEldritchRerollRare")--®ÄÜ»ìãçÊ¯
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/CurrencyEldritchAddModToRare")--®ÄÜ³ç¸ßÊ¯
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/CurrencyEldritchRemoveMod")--®ÄÜŸoĞ§Ê¯
-SetJiaoYiGoods(nil,nil,"Metadata/Items/MapFragments/CurrencySirusFragment1")--ŠWºÕÆÃ÷¿Ì¼y
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/CurrencySirusFragment2")--°Í‚¿Ì¼y
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/CurrencySirusFragment3")--ˆDÀ­¿ËË¹¿Ì¼y
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/CurrencySirusFragment4")--¾SÁ_ÌáÄá†¿Ì¼y
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/CurrencySirusFragmentsComplete")--×ğŸš¢ÊÖ¿Ì¼y
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/CurrencyEldritchEmber1")--µÍëA®ÄÜ»Ò a
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/CurrencyEldritchEmber2")--¸ßëA®ÄÜ»Ò a
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/CurrencyEldritchEmber3")--ºê‚¥®ÄÜ»Ò a
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/CurrencyEldritchEmber4")--×¿Ô½®ÄÜ»Ò a
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/CurrencyEldritchIchor1")--µÍëA®ÄÜì`Òº
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/CurrencyEldritchIchor2")--¸ßëA®ÄÜì`Òº
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/CurrencyEldritchIchor3")--ºê‚¥®ÄÜì`Òº
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/CurrencyEldritchIchor4")--×¿Ô½®ÄÜì`Òº
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/CurrencyConflictOrb")--ĞnÍ»ŒšÖé
--- SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/CurrencyItemiseSextantModifier")--Õ{²é†TµÄÁ_±P
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/CurrencyItemisedSextantModifier")--³äÄÜµÄÁ_±P
-
-
--- SetJiaoYiGoods("HeistBlueprint",nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,function(goodsData)return goodsData.useLv>=68 end)--ÉèÖÃÊ¹ÓÃµÈ¼¶´óÓÚµÈÓÚ68µÄË{ˆD½»Ò×
--- SetJiaoYiGoods(nil,nil,"Metadata/Items/Heist/HeistBlueprintDungeon",nil,nil,nil,nil,nil,nil,nil,nil,nil,function(goodsData)return goodsData.lv>=68 end)--Ë{ˆD£ºŒòÊÒ enName:
--- SetJiaoYiGoods(nil,nil,"Metadata/Items/Heist/HeistBlueprintReliquary",nil,nil,nil,nil,nil,nil,nil,nil,nil,function(goodsData)return goodsData.lv>=68 end)--Ë{ˆD£ºÕ¹Ó[ÊÒ enName:
--- SetJiaoYiGoods(nil,nil,"Metadata/Items/Heist/HeistBlueprintLibrary",nil,nil,nil,nil,nil,nil,nil,nil,nil,function(goodsData)return goodsData.lv>=68 end)--Ë{ˆD£º½û¼Éğ^²Ø enName:
--- SetJiaoYiGoods(nil,nil,"Metadata/Items/Heist/HeistBlueprintRobotTunnels",nil,nil,nil,nil,nil,nil,nil,nil,nil,function(goodsData)return goodsData.lv>=68 end)--Ë{ˆD£ºµØµÀ enName:
 
 -- SetJiaoYiGoods(nil,"°şÀëÊ¯ËéÆ¬","Metadata/Items/Currency/CurrencyRemoveModShard",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"¸ß½×µã½ğÊ¯ËéÆ¬","Metadata/Items/Currency/CurrencyUpgradeToRareAndSetSocketsShard",nil,nil,nil,nil)
@@ -2273,8 +1057,8 @@ SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/CurrencyItemisedSextantModifier"
 -- SetJiaoYiGoods(nil,"ÖÆÏäÑÒËéÆ¬","Metadata/Items/Currency/CurrencyStrongboxQualityShard",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"Ô¶¹ÅÊ¯ËéÆ¬","Metadata/Items/Currency/CurrencyRerollUniqueShard",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"»ìãçÊ¯ËéÆ¬","Metadata/Items/Currency/CurrencyRerollRareShard",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"¿¨À¼µÂµÄÄ§¾µËéÆ¬","Metadata/Items/Currency/CurrencyDuplicateShard",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"³ç¸ßÊ¯ËéÆ¬","Metadata/Items/Currency/CurrencyAddModToRareShard",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"¿¨À¼µÂµÄÄ§¾µËéÆ¬","Metadata/Items/Currency/CurrencyDuplicateShard",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"³ç¸ßÊ¯ËéÆ¬","Metadata/Items/Currency/CurrencyAddModToRareShard",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"¸»ºÀÊ¯ËéÆ¬","Metadata/Items/Currency/CurrencyUpgradeMagicToRareShard",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"Í³ÓùÄ§Æ¿","Metadata/Items/Currency/CurrencyIncursionVialTrap",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"ÕÙ»½Ä§Æ¿","Metadata/Items/Currency/CurrencyIncursionVialHealing",nil,nil,nil,nil)
@@ -2292,22 +1076,22 @@ SetJiaoYiGoods(nil,"³ç¸ßÊ¯ËéÆ¬","Metadata/Items/Currency/CurrencyAddModToRareSha
 -- SetJiaoYiGoods(nil,"»û±ä»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingChaos",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"Ô­Ê¼»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingLife",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"ÖÂÃÜ»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingDefences",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"¸¯Ê´»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingBleedPoison",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"¸¯Ê´»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingBleedPoison",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"Îå²Ê»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingElemental",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"ÒÔÌ«»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingCasterMods",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"ÀÇÑÀ»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingAttackMods",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"Í¸¹â»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingMana",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"Õğ²ü»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingSpeed",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"°ó¸¿»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingMinionsAuras",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"ÍêÃÀ»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingQuality",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"Ä§·¨»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingEnchant",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"°ó¸¿»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingMinionsAuras",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÍêÃÀ»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingQuality",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"Ä§·¨»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingEnchant",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"½á¿Ç»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingSockets",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"ÀâÃæ»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingGemLevel",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"½¦Ñª»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingVaal",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"ïÎ¿Õ»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingAbyss",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"·ÖÁÑ»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingMirror",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"µñ¿Ì»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingCorruptEssence",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"¾À²ø»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingRandom",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÀâÃæ»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingGemLevel",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"½¦Ñª»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingVaal",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ïÎ¿Õ»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingAbyss",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"·ÖÁÑ»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingMirror",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"µñ¿Ì»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingCorruptEssence",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"¾À²ø»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingRandom",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"Ê¥½à»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingLuckyModRolls",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"Ïâ½ğ»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingSellPrice",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"Ô­Ê¼Á¶½ğ¹²ÕñÆ÷","Metadata/Items/Delve/DelveSocketableCurrencyUpgrade1",nil,nil,nil,nil)
@@ -2326,343 +1110,12 @@ SetJiaoYiGoods(nil,"¾À²ø»¯Ê¯","Metadata/Items/Currency/CurrencyDelveCraftingRand
 -- SetJiaoYiGoods(nil,"Ç¿ÄÜ»ìÂÒ¹²ÕñÆ÷","Metadata/Items/Delve/DelveStackableSocketableCurrencyReroll2",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"¾ŞÄÜ»ìÂÒ¹²ÕñÆ÷","Metadata/Items/Delve/DelveStackableSocketableCurrencyReroll3",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"ÍşÄÜ»ìÂÒ¹²ÕñÆ÷","Metadata/Items/Delve/DelveStackableSocketableCurrencyReroll4",nil,nil,nil,nil)
-
-
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabLegion1")--Â}¼×Ïx£ºçnÎg‘ğy
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabLegion2")--Â}¼×Ïx£ºˆA»¬‘ğy
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabLegion3")--Â}¼×Ïx£ºåƒ½ğ‘ğy
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabLegion4")--Â}¼×Ïx£ºÕ¹³á‘ğy
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabHarbinger1")--Â}¼×Ïx£ºçnÎgÉñÖI
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabHarbinger2")--Â}¼×Ïx£ºˆA»¬ÉñÖI
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabHarbinger3")--Â}¼×Ïx£ºåƒ½ğÉñÖI
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabHarbinger4")--Â}¼×Ïx£ºÕ¹³áÉñÖI
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabBlight1")--Â}¼×Ïx£ºçnÎgµòÂä
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabBlight2")--Â}¼×Ïx£ºˆA»¬µòÂä
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabBlight3")--Â}¼×Ïx£ºåƒ½ğµòÂä
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabBlight4")--Â}¼×Ïx£ºÕ¹³áµòÂä
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabSulphite1")--Â}¼×Ïx£ºçnÎgÁòËá
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabSulphite2")--Â}¼×Ïx£ºˆA»¬ÁòËá
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabSulphite3")--Â}¼×Ïx£ºåƒ½ğÁòËá
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabSulphite4")--Â}¼×Ïx£ºÕ¹³áÁòËá
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabBreach1")--Â}¼×Ïx£ºçnÎgÁÑºÛ
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabBreach2")--Â}¼×Ïx£ºˆA»¬ÁÑºÛ
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabBreach3")--Â}¼×Ïx£ºåƒ½ğÁÑºÛ
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabBreach4")--Â}¼×Ïx£ºÕ¹³áÁÑºÛ
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabMaps1")--Â}¼×Ïx£ºçnÎgÑuˆD
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabMaps2")--Â}¼×Ïx£ºˆA»¬ÑuˆD
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabMaps3")--Â}¼×Ïx£ºåƒ½ğÑuˆD
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabMaps4")--Â}¼×Ïx£ºÕ¹³áÑuˆD
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabUniques1")--Â}¼×Ïx£ºçnÎgÂ}Îï
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabUniques2")--Â}¼×Ïx£ºˆA»¬Â}Îï
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabUniques3")--Â}¼×Ïx£ºåƒ½ğÂ}Îï
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabUniques4")--Â}¼×Ïx£ºÕ¹³áÂ}Îï
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabBeasts1")--Â}¼×Ïx£ºçnÎg«F«C
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabBeasts2")--Â}¼×Ïx£ºˆA»¬«F«C
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabBeasts3")--Â}¼×Ïx£ºåƒ½ğ«F«C
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabBeasts4")--Â}¼×Ïx£ºÕ¹³á«F«C
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabShaperRares1")--Â}¼×Ïx£ºçnÎgËÜÕß
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabShaperRares2")--Â}¼×Ïx£ºˆA»¬ËÜÕß
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabShaperRares3")--Â}¼×Ïx£ºåƒ½ğËÜÕß
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabShaperRares4")--Â}¼×Ïx£ºÕ¹³áËÜÕß
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabElderRares1")--Â}¼×Ïx£ºçnÎg×ğŸ
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabElderRares2")--Â}¼×Ïx£ºˆA»¬×ğŸ
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabElderRares3")--Â}¼×Ïx£ºåƒ½ğ×ğŸ
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabElderRares4")--Â}¼×Ïx£ºÕ¹³á×ğŸ
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabDivinationCards1")--Â}¼×Ïx£ºçnÎgÃüß\
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabDivinationCards2")--Â}¼×Ïx£ºˆA»¬Ãüß\
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabDivinationCards3")--Â}¼×Ïx£ºåƒ½ğÃüß\
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabDivinationCards4")--Â}¼×Ïx£ºÕ¹³áÃüß\
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabTorment1")--Â}¼×Ïx£ºçnÎg¿àÍ´
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabTorment2")--Â}¼×Ïx£ºˆA»¬¿àÍ´
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabTorment3")--Â}¼×Ïx£ºåƒ½ğ¿àÍ´
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabTorment4")--Â}¼×Ïx£ºÕ¹³á¿àÍ´
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabStrongbox1")--Â}¼×Ïx£ºçnÎg·ü“ô
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabStrongbox2")--Â}¼×Ïx£ºˆA»¬·ü“ô
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabStrongbox3")--Â}¼×Ïx£ºåƒ½ğ·ü“ô
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabStrongbox4")--Â}¼×Ïx£ºÕ¹³á·ü“ô
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabPerandus1")--Â}¼×Ïx£ºçnÎgÆÕÌmµÂË¹
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabPerandus2")--Â}¼×Ïx£ºˆA»¬ÆÕÌmµÂË¹
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabPerandus3")--Â}¼×Ïx£ºåƒ½ğÆÕÌmµÂË¹
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabPerandus4")--Â}¼×Ïx£ºÕ¹³áÆÕÌmµÂË¹
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabMetamorph1")--Â}¼×Ïx£ºçnÎgå€Ä§
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabMetamorph2")--Â}¼×Ïx£ºˆA»¬å€Ä§
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabMetamorph3")--Â}¼×Ïx£ºåƒ½ğå€Ä§
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabMetamorph4")--Â}¼×Ïx£ºÕ¹³áå€Ä§
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabAbyss1")--Â}¼×Ïx£ºçnÎgÉîœY
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabAbyss2")--Â}¼×Ïx£ºˆA»¬ÉîœY
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabAbyss3")--Â}¼×Ïx£ºåƒ½ğÉîœY
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabAbyss4")--Â}¼×Ïx£ºÕ¹³áÉîœY
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabPerandus1")--Â}¼×Ïx£ºåƒ½ğÌ½ëU
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabPerandus2")--Â}¼×Ïx£ºåƒ½ğÌ½ëU
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabPerandus3")--Â}¼×Ïx£ºåƒ½ğÌ½ëU
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Scarabs/ScarabPerandus4")--Â}¼×Ïx£ºåƒ½ğÌ½ëU
-
---SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/CurrencyDelveCraftingDefences")--³íÃÜ»¯Ê¯
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/CurrencyDelveCraftingBleedPoison")--°ßñg»¯Ê¯
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/CurrencyDelveCraftingElemental")--ÈıÏà»¯Ê¯
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/CurrencyDelveCraftingCasterMods")--Éñ»Ã»¯Ê¯
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/CurrencyDelveCraftingAttackMods")--ÀûıX»¯Ê¯
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/CurrencyDelveCraftingMana")--Ã÷Í¸»¯Ê¯
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/CurrencyDelveCraftingSpeed")--îü»¯Ê¯
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/CurrencyDelveCraftingMinionsAuras")--î³Óò»¯Ê¯
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/CurrencyDelveCraftingQuality")--Ÿoè¦»¯Ê¯
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/CurrencyDelveCraftingEnchant")--¸½Ä§»¯Ê¯
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/CurrencyDelveCraftingSockets")--è‚ï—»¯Ê¯
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/CurrencyDelveCraftingLuckyModRolls")--ÉñÂ}»¯Ê¯
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/CurrencyDelveCraftingSellPrice")--è‚½ğ»¯Ê¯
---SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/CurrencyDelveCraftingEnchant")--¸½Ä§»¯Ê¯
---SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/CurrencyDelveCraftingSockets")--è‚ï—»¯Ê¯	
-
-SetJiaoYiGoods(nil,nil,"Metadata/Items/Currency/MushruneCorrupt")--›@È¾ÓÍÆ¿
--- SetJiaoYiGoods(nil,"Çå³ºÊ¥ÓÍ","Metadata/Items/Currency/Mushrune1",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"Ä«É«Ê¥ÓÍ","Metadata/Items/Currency/Mushrune2",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"çúçêÊ¥ÓÍ","Metadata/Items/Currency/Mushrune3",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"´äÂÌÊ¥ÓÍ","Metadata/Items/Currency/Mushrune4",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"Ë®À¶Ê¥ÓÍ","Metadata/Items/Currency/Mushrune5",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"ÌìÀ¶Ê¥ÓÍ","Metadata/Items/Currency/Mushrune6",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"×ÏÉ«Ê¥ÓÍ","Metadata/Items/Currency/Mushrune7",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"ç³ºìÊ¥ÓÍ","Metadata/Items/Currency/Mushrune8",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"ÆáºÚÊ¥ÓÍ","Metadata/Items/Currency/Mushrune9",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"Èé°×Ê¥ÓÍ","Metadata/Items/Currency/Mushrune10",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"°×ÒøÊ¥ÓÍ","Metadata/Items/Currency/Mushrune11",nil,nil,nil,nil)
-SetJiaoYiGoods(nil,"½ğÉ«Ê¥ÓÍ","Metadata/Items/Currency/Mushrune12",nil,nil,nil,nil)
-
-
-SetJiaoYiGoods(nil,"´òÆÆĞİ‘ğ","Metadata/Items/DivinationCards/DivinationCardBrokenTruce",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"³Ö¶ÜÕß","Metadata/Items/DivinationCards/DivinationCardTheShieldbearer",nil,nil,nil,1)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ÄÁÑòÈËµÄ²İĞ¬","Metadata/Items/DivinationCards/DivinationCardTheShepherdsSandals",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ı‹È»´óÎï","Metadata/Items/DivinationCards/DivinationCardTheLeviathan",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"·î«IµÄ´úƒr","Metadata/Items/DivinationCards/DivinationCardThePriceOfDevotion",nil,nil,nil,1)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ŒšÊ¯½³µÄ‘z‘‘","Metadata/Items/DivinationCards/DivinationCardGemcuttersMercy",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"Œ¢ÜŠ","Metadata/Items/DivinationCards/DivinationCardCheckmate",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ºÚ°µÎïÙ|","Metadata/Items/DivinationCards/DivinationCardSomethingDark",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"½^¾³ÕT»ó","Metadata/Items/DivinationCards/DivinationCardLetheanTemptation",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,nil,"Metadata/Items/DivinationCards/DivinationCardTheOffspring")--ááÒá
-SetJiaoYiGoods(nil,nil,"Metadata/Items/DivinationCards/DivinationCardThePriceOfPrescience")--îAÖª´úƒr
-SetJiaoYiGoods(nil,nil,"Metadata/Items/DivinationCards/DivinationCardTheMindsEyes")--ĞÄì`Ö®ÑÛ
-SetJiaoYiGoods(nil,nil,"Metadata/Items/DivinationCards/DivinationCardTerribleSecretOfSpace")--ŸoÛó¿Ö‘ÖÖ®ÃÜ
-SetJiaoYiGoods(nil,nil,"Metadata/Items/DivinationCards/DivinationCardTheBlessingOfMoosh")--ÄÂÊ²µÄ×£¸£
-SetJiaoYiGoods(nil,nil,"Metadata/Items/DivinationCards/DivinationCardCostlyCurio")--°ºÙF¹ÅÍæ
-SetJiaoYiGoods(nil,nil,"Metadata/Items/DivinationCards/DivinationCardLachrymalNecrosis")--èF¹ÇĞÄÄc
-SetJiaoYiGoods(nil,nil,"Metadata/Items/DivinationCards/DivinationCardDementophobia")--°V´ôÖ¢
-SetJiaoYiGoods(nil,nil,"Metadata/Items/DivinationCards/DivinationCardAmbitiousObsession")--ÉÏßMˆÌÃÔ
-SetJiaoYiGoods(nil,nil,"Metadata/Items/DivinationCards/DivinationCardDesperateCrusade")--½^ÍûßhÕ÷
-SetJiaoYiGoods(nil,nil,"Metadata/Items/DivinationCards/DivinationCardAStonePerfected")--ÍêÊ¯
-SetJiaoYiGoods(nil,nil,"Metadata/Items/DivinationCards/DivinationCardTreasuresOfTheVaal")--Íß –Œš²Ø
-SetJiaoYiGoods(nil,nil,"Metadata/Items/DivinationCards/DivinationCardTheRabbitsFoot")--ÍÃÄ_
---SetJiaoYiGoods(nil,nil,"Metadata/Items/DivinationCards/DivinationCardChasingRisk")--Ã°ëU·¸ëy
-SetJiaoYiGoods(nil,nil,"Metadata/Items/DivinationCards/DivinationCardThePrinceOfDarkness")--ºÚ°µÍõ×Ó
---SetJiaoYiGoods(nil,nil,"Metadata/Items/DivinationCards/DivinationCardTheCatch")--½ªÌ«¹«áô~
-SetJiaoYiGoods(nil,nil,"Metadata/Items/DivinationCards/DivinationCardEternalBonds")--ÓÀaÖ®ÀM
-SetJiaoYiGoods(nil,nil,"Metadata/Items/DivinationCards/DivinationCardDisdain")--ÃïÒ•
-SetJiaoYiGoods(nil,nil,"Metadata/Items/DivinationCards/DivinationCardTheScout")--Í¯×ÓÜŠ
-SetJiaoYiGoods(nil,nil,"Metadata/Items/DivinationCards/DivinationCardGuardiansChallenge")--ÊØ×oÕßµÄÌô‘ğ
-SetJiaoYiGoods(nil,nil,"Metadata/Items/DivinationCards/DivinationCardTheForgottenTreasure")--±»ßzÍüµÄŒš²Ø
---SetJiaoYiGoods(nil,nil,"Metadata/Items/DivinationCards/DivinationCardTheFoxInTheBrambles")--ÇG¼¬ÖĞµÄºüÀê
-SetJiaoYiGoods(nil,nil,"Metadata/Items/DivinationCards/DivinationCardTheAspirant")--²¶‰ô¾W
-SetJiaoYiGoods(nil,nil,"Metadata/Items/DivinationCards/DivinationCardJudgingVoices")--ŒÅĞÖ®Â•
-SetJiaoYiGoods(nil,nil,"Metadata/Items/DivinationCards/DivinationCardBijoux")--ÖéŒš
-SetJiaoYiGoods(nil,nil,"Metadata/Items/DivinationCards/DivinationCardSilenceAndFrost")--³ÁÄ¬Åcº®Ëª
-SetJiaoYiGoods(nil,nil,"Metadata/Items/DivinationCards/DivinationCardMiseryInDarkness")--ºÚ°µÖĞµÄ¿àëy
-SetJiaoYiGoods(nil,nil,"Metadata/Items/DivinationCards/DivinationCardTheTirelessExtractor")--²¶‰ô¾W
-SetJiaoYiGoods(nil,nil,"Metadata/Items/DivinationCards/DivinationCardTheAspirant")--²»ĞİİÍÈ¡Æ÷
-SetJiaoYiGoods(nil,nil,"Metadata/Items/DivinationCards/DivinationCardJustifiedAmbition")--ÕıÁxÒ°ĞÄ
-SetJiaoYiGoods(nil,nil,"Metadata/Items/DivinationCards/DivinationCardParasiticPassengers")--¼ÄÉúÂÃÈË
---SetJiaoYiGoods(nil,nil,"Metadata/Items/DivinationCards/DivinationCardDuality")--ëpÖØĞÔ
-SetJiaoYiGoods(nil,nil,"Metadata/Items/DivinationCards/DivinationCardTheOneThatGotAway")--ÌÓÃ“
-SetJiaoYiGoods(nil,nil,"Metadata/Items/DivinationCards/DivinationCardTheTransformation")--×ƒĞÎ
-SetJiaoYiGoods(nil,nil,"Metadata/Items/DivinationCards/DivinationCardMagnumOpus")--¾ŞÖø
-SetJiaoYiGoods(nil,nil,"Metadata/Items/DivinationCards/DivinationCardImperfectMemories")--²»ÍêÃÀµÄ»Ø‘›
-SetJiaoYiGoods(nil,nil,"Metadata/Items/DivinationCards/DivinationCardTheEmptiness")--¿ÕÌ“
-SetJiaoYiGoods(nil,nil,"Metadata/Items/DivinationCards/DivinationCardTheEternalWar")--ÓÀa‘ğ 
-SetJiaoYiGoods(nil,nil,"Metadata/Items/DivinationCards/DivinationCardPrejudice")--Æ«ÒŠ
-SetJiaoYiGoods(nil,nil,"Metadata/Items/DivinationCards/DivinationCardBrushPaintAndPalette")--®‹¹P¡¢îÁÏºÍÕ{É«±P
-SetJiaoYiGoods(nil,nil,"Metadata/Items/DivinationCards/DivinationCardDeadlyJoy")--ÖÂÃüÏ²‚
-SetJiaoYiGoods(nil,nil,"Metadata/Items/DivinationCards/DivinationCardWintersEmbrace")--¶¬“í
-SetJiaoYiGoods(nil,nil,"Metadata/Items/DivinationCards/DivinationCardSambodhisWisdom")--ÆĞÌáµÄÖÇ»Û
-SetJiaoYiGoods(nil,nil,"Metadata/Items/DivinationCards/DivinationCardTheEnthusiasts")--ŸáĞÄÃñ±Š
-SetJiaoYiGoods(nil,"‘Ô»ÚÕß","Metadata/Items/DivinationCards/DivinationCardThePenitent",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"×R¹ÇŒ¤Û™","Metadata/Items/DivinationCards/DivinationCardTheBones name",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"Œìo","Metadata/Items/DivinationCards/DivinationCardTranquillity",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"¹´æi","Metadata/Items/DivinationCards/DivinationCardTheHook",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"Íõ×ù","Metadata/Items/DivinationCards/DivinationCardTheThrone",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"Ï¦ê–¼tî","Metadata/Items/DivinationCards/DivinationCardBeautyThroughDeath",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ÓÀaÖ®ÀM","Metadata/Items/DivinationCards/DivinationCardEternalBonds",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"½^ÍûßhÕ÷","Metadata/Items/DivinationCards/DivinationCardDesperateCrusade",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"Ã°ëU·¸ëy","Metadata/Items/DivinationCards/DivinationCardChasingRisk",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"Í¯×Ó¾ü","Metadata/Items/DivinationCards/DivinationCardTheScout",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ºÚ°µÍõ×Ó","Metadata/Items/DivinationCards/DivinationCardThePrinceOfDarkness",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"¾£¼¬ÖĞµÄºüÀê","Metadata/Items/DivinationCards/DivinationCardTheFoxInTheBrambles",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"±»ÒÅÍüµÄ±¦²Ø","Metadata/Items/DivinationCards/DivinationCardTheForgottenTreasure",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"½ªÌ«¹«µöÓã","Metadata/Items/DivinationCards/DivinationCardTheCatch",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"²¶ÃÎÍø","Metadata/Items/DivinationCards/DivinationCardTheAspirant",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"Íß¶û±¦²Ø","Metadata/Items/DivinationCards/DivinationCardTreasuresOfTheVaal",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ÍêÊ¯","Metadata/Items/DivinationCards/DivinationCardAStonePerfected",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ÃïÊÓ","Metadata/Items/DivinationCards/DivinationCardDisdain",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ÍêÈË","Metadata/Items/DivinationCards/DivinationCardTheOneWithAll",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ì`»ê","Metadata/Items/DivinationCards/DivinationCardTheSoul",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"¿Õì`","Metadata/Items/DivinationCards/DivinationCardTheEthereal",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ºÚ°µĞgÕß","Metadata/Items/DivinationCards/DivinationCardTheDarkMage",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"Öt±°ÕˆÇó","Metadata/Items/DivinationCards/DivinationCardAModestRequest",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ĞÄì`Ö®ÑÛ","Metadata/Items/DivinationCards/DivinationCardTheMindsEyes",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ÏÈ×æÖ®Îï","Metadata/Items/DivinationCards/DivinationCardThePrimordial",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ÔÂÉñááËÃ","Metadata/Items/DivinationCards/DivinationCardTheProgenyOfLunaris",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"Øˆßä×h•ş","Metadata/Items/DivinationCards/DivinationCardCouncilOfCats",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"·ä³²Öª×R","Metadata/Items/DivinationCards/DivinationCardTheHiveOfKnowledge",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"°²ÙÄÈ½zÙ›¶Y","Metadata/Items/DivinationCards/DivinationCardGiftOfAsenath",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ĞÛ‚¥„Ó™C","Metadata/Items/DivinationCards/DivinationCardTheGreatestIntentions",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"°×òTÊ¿","Metadata/Items/DivinationCards/DivinationCardTheWhiteKnight",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"Ù‡ÒÔéÉú","Metadata/Items/DivinationCards/DivinationCardTheSustenance",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"Æ½ìo•r¿Ì","Metadata/Items/DivinationCards/DivinationCardPeacefulMoments",nil,nil,nil,nil)--ÃüÔË¿¨	
-SetJiaoYiGoods(nil,"éLÆÚÔpò_","Metadata/Items/DivinationCards/DivinationCardTheLongCon",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ø™œÏ","Metadata/Items/DivinationCards/DivinationCardTheGulf",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"¿à­¾`·Å","Metadata/Items/DivinationCards/DivinationCardTheBitterBlossom",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"†ÎÏàË¼","Metadata/Items/DivinationCards/DivinationCardUnrequitedLove",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ŒWĞg½ç","Metadata/Items/DivinationCards/DivinationCardTheAcademic",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ÒC^µÄÃÀµÂ","Metadata/Items/DivinationCards/DivinationCardDesecratedVirtue",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"²®ÖÙØ”ì","Metadata/Items/DivinationCards/DivinationCardBrothersStash",nil,nil,nil,nil)--ÃüÔË
-SetJiaoYiGoods(nil,"¯‚át","Metadata/Items/DivinationCards/DivinationCardTheDoctor",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ËéÁÑ´óµÛ","Metadata/Items/DivinationCards/DivinationCardTheBrittleEmperor",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"Ä§¹í","Metadata/Items/DivinationCards/DivinationCardTheFiend",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"±¦Ïä","Metadata/Items/DivinationCards/DivinationCardTheHoarder",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"¸´³ğÕß","Metadata/Items/DivinationCards/DivinationCardTheAvenger",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"Ê§ÂäÒÅ¹Ç","Metadata/Items/DivinationCards/DivinationCardTimeLostRelic",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ÍõÕßÖ®ĞÄ","Metadata/Items/DivinationCards/DivinationCardTheKingsHeart",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"Æú²ÆÇóÉú","Metadata/Items/DivinationCards/DivinationCardAbandonedWealth",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"Ğ­Ô¼","Metadata/Items/DivinationCards/DivinationCardThePact",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"Êø¸¿Ö®Á¶","Metadata/Items/DivinationCards/DivinationCardTheChainsThatBind",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ÒÕÕß","Metadata/Items/DivinationCards/DivinationCardTheArtist",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"Èº¾ÛÖ®Ê×","Metadata/Items/DivinationCards/DivinationCardThePackLeader",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"Å®Íõ","Metadata/Items/DivinationCards/DivinationCardTheQueen",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"Ç«Ñ·","Metadata/Items/DivinationCards/DivinationCardHumility",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"±³ÅÑ","Metadata/Items/DivinationCards/DivinationCardTheBetrayal",nil,nil,nil,nil)--ÃüÔË¿¨
--- SetJiaoYiGoods(nil,"ÒÙÁ¢²»°ÜÖ®ÈË","Metadata/Items/DivinationCards/DivinationCardTheLastOneStanding",nil,nil,nil,nil)--ÃüÔË¿¨
--- SetJiaoYiGoods(nil,"Ô¶Õ÷","Metadata/Items/DivinationCards/DivinationCardTheTrial",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"Ã÷¾µ","Metadata/Items/DivinationCards/DivinationCardHouseOfMirrors",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"Ç®ÓëÈ¨","Metadata/Items/DivinationCards/DivinationCardWealthAndPower",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"Æ½ÈÀ","Metadata/Items/DivinationCards/DivinationCardTheVast",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ÁúÖ®ĞÄ","Metadata/Items/DivinationCards/DivinationCardTheDragonsHeart",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"½¾Õß±Ø°Ü","Metadata/Items/DivinationCards/DivinationCardPrideBeforeTheFall",nil,nil,nil,nil)--ÃüÔË¿¨
--- SetJiaoYiGoods(nil,"´óÆæÊõÊ¦","Metadata/Items/DivinationCards/DivinationCardTheThaumaturgist",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ÖÇ»ÛÆôÃÉ","Metadata/Items/DivinationCards/DivinationCardTheEnlightened",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ÁÔÈËµÄ½±ÉÍ","Metadata/Items/DivinationCards/DivinationCardHuntersReward",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"×îºóÏ£Íû","Metadata/Items/DivinationCards/DivinationCardLastHope",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"·îÏ×","Metadata/Items/DivinationCards/DivinationCardTheOffering",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"¼«ÖÂ²»·²","Metadata/Items/DivinationCards/DivinationCardTheDapperProdigy",nil,nil,nil,nil)--ÃüÔË¿¨
--- SetJiaoYiGoods(nil,"Áé»ê","Metadata/Items/DivinationCards/DivinationCardTheSoul",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ĞÛÊ¨","Metadata/Items/DivinationCards/DivinationCardTheLion",nil,nil,nil,nil)--ÃüÔË¿¨
--- SetJiaoYiGoods(nil,"Î£»ú","Metadata/Items/DivinationCards/DivinationCardTheRisk",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"´óµØÍÌÊ³Õß","Metadata/Items/DivinationCards/DivinationCardEarthDrinker",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ÉúÃüÖ®Ê÷","Metadata/Items/DivinationCards/DivinationCardTheSephirot",nil,nil,nil,1)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ÓÀºã²»Ğà","Metadata/Items/DivinationCards/DivinationCardTheImmortal",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"³öÀÏÇ§","Metadata/Items/DivinationCards/DivinationCardTheCheater",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ÁÑ½çÖ®éä","Metadata/Items/DivinationCards/DivinationCardTheEldritchDecay",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"±ø·¨¼Ò","Metadata/Items/DivinationCards/DivinationCardTheStrategist",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"õåõïÖ®Íõ","Metadata/Items/DivinationCards/DivinationCardTheDevastator",nil,nil,nil,nil)--ÃüÔË¿¨
--- SetJiaoYiGoods(nil,"ÒõÑôÑÛ","Metadata/Items/DivinationCards/DivinationCardHeterochromia",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"´¿¾»µÛÍõ","Metadata/Items/DivinationCards/DivinationCardEmperorOfPurity",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"Î´ÖªµÄÃüÔË¿¨","Metadata/Items/DivinationCards/DivinationCardDeck",nil,nil,nil,nil)--¿É¶ÑµşÍ¨»õ
--- SetJiaoYiGoods(nil,"ÃüÔË´¹Çà","Metadata/Items/DivinationCards/DivinationCardLuckyDeck",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"Íß¶ûµÄ¾ì¹Ë","Metadata/Items/DivinationCards/DivinationCardLuckOfTheVaal",nil,nil,nil,nil)--ÃüÔË¿¨
--- SetJiaoYiGoods(nil,"ÈºÀÇÖ®Íõ","Metadata/Items/DivinationCards/DivinationCardTheWolf",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"Å®Ö®ÎäÉñ","Metadata/Items/DivinationCards/DivinationCardTheValkyrie",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ÎŞ¼£Ö®º£","Metadata/Items/DivinationCards/DivinationCardTheFormlessSea",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"Éä³ÉÉ¸×Ó","Metadata/Items/DivinationCards/DivinationCardThePorcupine",nil,nil,nil,nil)--ÃüÔË¿¨
--- SetJiaoYiGoods(nil,"²©Ñ§Õß","Metadata/Items/DivinationCards/DivinationCardThePolymath",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ËÀÁéÒÅÎï","Metadata/Items/DivinationCards/DivinationCardTheWretched",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ÀÇÍõÖ®ÏÒ","Metadata/Items/DivinationCards/DivinationCardTheWolvenKingsBite",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ÉÁ¹âÓë»ğÑæ","Metadata/Items/DivinationCards/DivinationCardTheSparkAndTheFlame",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"Ê¥ÈËÖ®Àñ","Metadata/Items/DivinationCards/DivinationCardTheSaintsTreasure",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ËÆÔøÏà×R","Metadata/Items/DivinationCards/DivinationCardAFamiliarCall",nil,nil,nil,nil)--ÃüÔË¿¨
--- SetJiaoYiGoods(nil,"ÖØÉú","Metadata/Items/DivinationCards/DivinationCardRebirth",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"¼áÒãÊ«ÈË","Metadata/Items/DivinationCards/DivinationCardTheIronBard",nil,nil,nil,nil)--ÃüÔË¿¨
--- SetJiaoYiGoods(nil,"ÁÑÏ¶","Metadata/Items/DivinationCards/DivinationCardTheBreach",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"×·ÃÎÕß","Metadata/Items/DivinationCards/DivinationCardTheDreamer",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ÊÉ½çÕß","Metadata/Items/DivinationCards/DivinationCardTheWorldEater",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"²»Ğà¾öĞÄ","Metadata/Items/DivinationCards/DivinationCardImmortalResolve",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"Ö÷Ô×","Metadata/Items/DivinationCards/DivinationCardTheMaster",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ÎŞÎ·Õß","Metadata/Items/DivinationCards/DivinationCardTheUndaunted",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ÑöÄ½Õß","Metadata/Items/DivinationCards/DivinationCardTheAdmirer",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ÌìÌÃÖ®Ê¯","Metadata/Items/DivinationCards/DivinationCardTheCelestialStone",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ÖÁÕéÍêÃÀ","Metadata/Items/DivinationCards/DivinationCardPerfection",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"³öÀÏÇ§","Metadata/Items/DivinationCards/DivinationCardTheCheater",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ÁÑ½çÖ®éä","Metadata/Items/DivinationCards/DivinationCardTheEldritchDecay",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"±ø·¨¼Ò","Metadata/Items/DivinationCards/DivinationCardTheStrategist",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ÎäÊ¿Ö®ÑÛ","Metadata/Items/DivinationCards/DivinationCardTheSamuraisEye",nil,nil,nil,nil)--ÃüÔË¿¨
--- SetJiaoYiGoods(nil,"×³ĞÄ²»ÒÑ","Metadata/Items/DivinationCards/DivinationCardTheHaleHeart",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"×¯Ô°Ö÷","Metadata/Items/DivinationCards/DivinationCardTheMayor",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ÎŞ¹¼Õß","Metadata/Items/DivinationCards/DivinationCardTheInnocent",nil,nil,nil,nil)--ÃüÔË¿¨
--- SetJiaoYiGoods(nil,"¿İÎ®Ãµ¹å","Metadata/Items/DivinationCards/DivinationCardTheWiltedRose",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"À´ÉúÖ®ÃÀ","Metadata/Items/DivinationCards/DivinationCardBeautyThroughDeath",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ÏÈ×æ´Í¸£","Metadata/Items/DivinationCards/DivinationCardBoonOfTheFirstOnes",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"²»Ğ­Ö®Òô","Metadata/Items/DivinationCards/DivinationCardTheCacophony",nil,nil,nil,nil)--ÃüÔË¿¨
--- SetJiaoYiGoods(nil,"Ä«Ë®µãµÎ","Metadata/Items/DivinationCards/DivinationCardADabOfInk",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ÕÕÁÏÕß","Metadata/Items/DivinationCards/DivinationCardTheNurse",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ÉúÃüÇÔÔô","Metadata/Items/DivinationCards/DivinationCardTheLifeThief",nil,nil,nil,nil)--ÃüÔË¿¨
--- SetJiaoYiGoods(nil,"Ñ°ÃÙÕß","Metadata/Items/DivinationCards/DivinationCardTheSeeker",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ĞÅÊ¹","Metadata/Items/DivinationCards/DivinationCardTheMessenger",nil,nil,nil,nil)--ÃüÔË¿¨
--- SetJiaoYiGoods(nil,"ÂÃ³Ì","Metadata/Items/DivinationCards/DivinationCardTheJourney",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"½µÁÙ","Metadata/Items/DivinationCards/DivinationCardTheLanding",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ÆßÄê¶òÔË","Metadata/Items/DivinationCards/DivinationCardSevenYearsBadLuck",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"Èø²©ĞÁµÄÊÄÑÔ","Metadata/Items/DivinationCards/DivinationCardSambodhisVow",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ĞéÈÙ","Metadata/Items/DivinationCards/DivinationCardVanity",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"È¼ÉÕÖ®Ñª","Metadata/Items/DivinationCards/DivinationCardBurningBlood",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ÓÕÈËµÄ½±ÉÍ","Metadata/Items/DivinationCards/DivinationCardAlluringBounty",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ÏÈ×æµÄ´ú¼Û","Metadata/Items/DivinationCards/DivinationCardPrideOfTheFirstOnes",nil,nil,nil,nil)--ÃüÔË¿¨
--- SetJiaoYiGoods(nil,"ºÚ°µÖ®ÃÎ","Metadata/Items/DivinationCards/DivinationCardDarkDreams",nil,nil,nil,nil)--ÃüÔË¿¨
--- SetJiaoYiGoods(nil,"°ëÉñµÄ¶Ä¾Ö","Metadata/Items/DivinationCards/DivinationCardDemigodsWager",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ÀÏÈË","Metadata/Items/DivinationCards/DivinationCardTheOldMan",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"Åµ¿ËÖ®¹Ú","Metadata/Items/DivinationCards/DivinationCardNooksCrown",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ÖÒ³ÏµÄ´ú¼Û","Metadata/Items/DivinationCards/DivinationCardThePriceOfLoyalty",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"Ãú¼Ç","Metadata/Items/DivinationCards/DivinationCardRemembrance",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ÓÀ²»Öª×ã","Metadata/Items/DivinationCards/DivinationCardMoreIsNeverEnough",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"½»Ò×","Metadata/Items/DivinationCards/DivinationCardTheBargain",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"°¢×æÀ¼µÄ½±ÉÍ","Metadata/Items/DivinationCards/DivinationCardAzyransReward",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"¿Ö²ÀÖ®ÑÛ","Metadata/Items/DivinationCards/DivinationCardTheEyeOfTerror",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"¶ñÄ§","Metadata/Items/DivinationCards/DivinationCardTheDemon",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"Öä×çÖ®Áé","Metadata/Items/DivinationCards/DivinationCardTheDamned",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ÔªËØĞé¿Õ","Metadata/Items/DivinationCards/DivinationCardVoidOfTheElements",nil,nil,nil,nil)--ÃüÔË¿¨
--- SetJiaoYiGoods(nil,"ÕTğDÖ®ÆÚ´ı","Metadata/Items/DivinationCards/DivinationCardBaitedExpectations",nil,nil,nil,nil)--ÃüÔË¿¨
--- SetJiaoYiGoods(nil,"ÖÂËÀÓ›Ì–","Metadata/Items/DivinationCards/DivinationCardDeathlyDesigns",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"¸¯ €ì¶Ñª","Metadata/Items/DivinationCards/DivinationCardEtchedInBlood",nil,nil,nil,nil)--ÃüÔË¿¨
--- SetJiaoYiGoods(nil,"Ê§ÂäµÄ·±ÈA","Metadata/Items/DivinationCards/DivinationCardSquanderedProsperity",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"Ÿo×ï¾ÈÚH","Metadata/Items/DivinationCards/DivinationCardSuccorOfTheSinless",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"Á÷ÍöĞÖµÜ•ş","Metadata/Items/DivinationCards/DivinationCardBrotherhoodInExile",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"²¡»¼","Metadata/Items/DivinationCards/DivinationCardThePatient",nil,nil,nil,nil)--ÃüÔË¿¨
--- SetJiaoYiGoods(nil,"Åû‰ô","Metadata/Items/DivinationCards/DivinationCardDrapedInDreams",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"±ùÀäÛ‘Ù","Metadata/Items/DivinationCards/DivinationCardLoveThroughIce",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ô”Ã§µÄÒ°ĞÄ","Metadata/Items/DivinationCards/DivinationCardRecklessAmbition",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ÊØ×oÕßµÄ¸¯”¡","Metadata/Items/DivinationCards/DivinationCardKeepersCorruption",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ÌìÎÄÎ×Ÿ","Metadata/Items/DivinationCards/DivinationCardTheAstromancer",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"´¹ËÀÖ®¹â","Metadata/Items/DivinationCards/DivinationCardDyingLight",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ºÚÓ°ÀpÀ@","Metadata/Items/DivinationCards/DivinationCardHauntingShadows",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"°×»¯","Metadata/Items/DivinationCards/DivinationCardTheWhiteout",nil,nil,nil,nil)--ÃüÔË¿¨
--- SetJiaoYiGoods(nil,"¶Ú·e","Metadata/Items/DivinationCards/DivinationCardTheCache",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"¶¬“í","Metadata/Items/DivinationCards/DivinationCardWintersEmbrace",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ÓÀa‘ğ ","Metadata/Items/DivinationCards/DivinationCardTheEternalWar",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ŸáĞÄÃñ±Š","Metadata/Items/DivinationCards/DivinationCardTheEnthusiasts",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ÖÂÃüÏ²‚","Metadata/Items/DivinationCards/DivinationCardDeadlyJoy",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"Öt±°ÕˆÇó","Metadata/Items/DivinationCards/DivinationCardAModestRequest",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"²»ÊØĞÅ","Metadata/Items/DivinationCards/DivinationCardBrokenPromises",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"´ó»á","Metadata/Items/DivinationCards/DivinationCardFatefulMeeting",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"İx»ÍŒš²Ø","Metadata/Items/DivinationCards/DivinationCardLuminousTrove",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"Ÿo±M÷öºÚ","Metadata/Items/DivinationCards/DivinationCardTheEndlessDarkness",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ô~Øœ","Metadata/Items/DivinationCards/DivinationCardTheFishmonger",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ß…¾‰Ö®¹Ú","Metadata/Items/DivinationCards/DivinationCardNooksCrown",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ÊØ×oÕßµÄ¸¯”¡","Metadata/Items/DivinationCards/DivinationCardKeepersCorruption",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ÓXĞÑ","Metadata/Items/DivinationCards/DivinationCardTheAwakened",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ÏëÒª","Metadata/Items/DivinationCards/DivinationCardTheCraving",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ëSïLïhÓ›","Metadata/Items/DivinationCards/DivinationCardANoteInTheWind",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ĞÄì`Ö®ÑÛ","Metadata/Items/DivinationCards/DivinationCardTheMindsEyes",nil,nil,nil,nil)--ÃüÔË¿¨
-SetJiaoYiGoods(nil,"ááÒá","Metadata/Items/DivinationCards/DivinationCardTheOffspring",nil,nil,nil,nil)--ÃüÔË¿¨
-
-
 --SetJiaoYiGoods(nil,"ĞàÄ¾·¨ÕÈ","Metadata/Items/Weapons/OneHandWeapons/Wands/Wand1",nil,nil,nil,nil)
 --SetJiaoYiGoods(nil,"Ñò½Ç·¨ÕÈ","Metadata/Items/Weapons/OneHandWeapons/Wands/Wand2",nil,nil,nil,nil)
---SetJiaoYiGoods(nil,"´ÖÎÆ·¨ÕÈ","Metadata/Items/Weapons/OneHandWeapons/Wands/Wand3",nil,nil,nil,nil)
+--SetJiaoYiGoods(nil,"´ÖÎÆ·¨ÕÈ","Metadata/Items/Weapons/OneHandWeapons/Wands/Wand3","Ê«ÈËÖ®±Ê","The Poet's Pen","3",nil)
 --SetJiaoYiGoods(nil,"Ê¯Ó¢·¨ÕÈ","Metadata/Items/Weapons/OneHandWeapons/Wands/Wand4",nil,nil,nil,nil)
---SetJiaoYiGoods(nil,"ÂİÎÆ·¨ÕÈ","Metadata/Items/Weapons/OneHandWeapons/Wands/Wand5",nil,nil,nil,nil)
---SetJiaoYiGoods(nil,"ÏÍÕß·¨ÕÈ","Metadata/Items/Weapons/OneHandWeapons/Wands/Wand6",nil,nil,nil,nil)
+--SetJiaoYiGoods(nil,"ÂİÎÆ·¨ÕÈ","Metadata/Items/Weapons/OneHandWeapons/Wands/Wand5","Ôö·ùÕÈ","Amplification Rod","3",nil)
+--SetJiaoYiGoods(nil,"ÏÍÕß·¨ÕÈ","Metadata/Items/Weapons/OneHandWeapons/Wands/Wand6","ÈÕÒ«Ö®Ó°","Shade of Solaris","3",nil)
 --SetJiaoYiGoods(nil,"Òì½Ì·¨ÕÈ","Metadata/Items/Weapons/OneHandWeapons/Wands/WandM1",nil,nil,nil,nil)
 --SetJiaoYiGoods(nil,"ÊŞ½Ç·¨ÕÈ","Metadata/Items/Weapons/OneHandWeapons/Wands/Wand7",nil,nil,nil,nil)
 --SetJiaoYiGoods(nil,"·ûÎÄ·¨ÕÈ","Metadata/Items/Weapons/OneHandWeapons/Wands/Wand8",nil,nil,nil,nil)
@@ -2671,10 +1124,10 @@ SetJiaoYiGoods(nil,"ááÒá","Metadata/Items/DivinationCards/DivinationCardTheOffsp
 --SetJiaoYiGoods(nil,"ÁéÕ×·¨ÕÈ","Metadata/Items/Weapons/OneHandWeapons/Wands/Wand11",nil,nil,nil,nil)
 --SetJiaoYiGoods(nil,"ÒìÍ½·¨ÕÈ","Metadata/Items/Weapons/OneHandWeapons/Wands/WandM2",nil,nil,nil,nil)
 --SetJiaoYiGoods(nil,"Ä§½Ç·¨ÕÈ","Metadata/Items/Weapons/OneHandWeapons/Wands/Wand12",nil,nil,nil,nil)
---SetJiaoYiGoods(nil,"Ä§ĞÔ·¨ÕÈ","Metadata/Items/Weapons/OneHandWeapons/Wands/Wand13",nil,nil,nil,nil)
+--SetJiaoYiGoods(nil,"Ä§ĞÔ·¨ÕÈ","Metadata/Items/Weapons/OneHandWeapons/Wands/Wand13","ÆüÔÂ","Moonsorrow","3",nil)
 --SetJiaoYiGoods(nil,"ÁéÊ¯·¨ÕÈ","Metadata/Items/Weapons/OneHandWeapons/Wands/Wand14",nil,nil,nil,nil)
 --SetJiaoYiGoods(nil,"¿ñ·ç·¨ÕÈ","Metadata/Items/Weapons/OneHandWeapons/Wands/Wand15",nil,nil,nil,nil)
---SetJiaoYiGoods(nil,"óğÑÔ·¨ÕÈ","Metadata/Items/Weapons/OneHandWeapons/Wands/Wand16",nil,nil,nil,nil)
+--SetJiaoYiGoods(nil,"óğÑÔ·¨ÕÈ","Metadata/Items/Weapons/OneHandWeapons/Wands/Wand16","Ç±ÄÜÄ§°ô","Void Battery","3",nil)
 --SetJiaoYiGoods(nil,"ÙôäÂ·¨ÕÈ","Metadata/Items/Weapons/OneHandWeapons/Wands/WandM3",nil,nil,nil,nil)
 --SetJiaoYiGoods(nil,"ÕÙ¼¯·¨ÕÈ","Metadata/Items/Weapons/OneHandWeapons/Wands/WandAtlas1",nil,nil,nil,nil)
 --SetJiaoYiGoods(nil,"²£Á§ÀûÆ¬","Metadata/Items/Weapons/OneHandWeapons/Daggers/Dagger1",nil,nil,nil,nil)
@@ -2692,7 +1145,7 @@ SetJiaoYiGoods(nil,"ááÒá","Metadata/Items/DivinationCards/DivinationCardTheOffsp
 --SetJiaoYiGoods(nil,"ÇÔÕß¶ÌØ°","Metadata/Items/Weapons/OneHandWeapons/Daggers/Dagger12",nil,nil,nil,nil)
 --SetJiaoYiGoods(nil,"½ğ¹â²¨ÈĞ","Metadata/Items/Weapons/OneHandWeapons/Daggers/Dagger13",nil,nil,nil,nil)
 --SetJiaoYiGoods(nil,"»Ê¼Ò¶ÌØ°","Metadata/Items/Weapons/OneHandWeapons/Daggers/Dagger14",nil,nil,nil,nil)
---SetJiaoYiGoods(nil,"ÊŞÑª¶ÌØ°","Metadata/Items/Weapons/OneHandWeapons/Daggers/Dagger15",nil,nil,nil,nil)
+--SetJiaoYiGoods(nil,"ÊŞÑª¶ÌØ°","Metadata/Items/Weapons/OneHandWeapons/Daggers/Dagger15","°¢À­¿¨Á¦Ö®ÑÀ","Arakaali's Fang","3",nil)
 --SetJiaoYiGoods(nil,"Èı²æ¶ÌØ°","Metadata/Items/Weapons/OneHandWeapons/Daggers/DaggerM2",nil,nil,nil,nil)
 --SetJiaoYiGoods(nil,"ÖØÉË¶Ìµ¶","Metadata/Items/Weapons/OneHandWeapons/Daggers/Dagger16",nil,nil,nil,nil)
 --SetJiaoYiGoods(nil,"ÁÔÕßÖ®ÈĞ","Metadata/Items/Weapons/OneHandWeapons/Daggers/Dagger17",nil,nil,nil,nil)
@@ -2745,14 +1198,14 @@ SetJiaoYiGoods(nil,"ááÒá","Metadata/Items/DivinationCards/DivinationCardTheOffsp
 --SetJiaoYiGoods(nil,"Ğ×ÁéÖ®¸«","Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/OneHandAxe15",nil,nil,nil,nil)
 --SetJiaoYiGoods(nil,"µñÎÄÕ½¸«","Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/OneHandAxeM2",nil,nil,nil,nil)
 --SetJiaoYiGoods(nil,"¿¨Â³¹Å¸«","Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/OneHandAxe16",nil,nil,nil,nil)
---SetJiaoYiGoods(nil,"ÆÆ³Ç¸«","Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/OneHandAxe17",nil,nil,nil,nil)
+--SetJiaoYiGoods(nil,"ÆÆ³Ç¸«","Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/OneHandAxe17","¿ªÌÅ¸«","Soul Taker","3",nil)
 --SetJiaoYiGoods(nil,"²Ğ±©Ö®¸«","Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/OneHandAxe18",nil,nil,nil,nil)
 --SetJiaoYiGoods(nil,"ÍÀÂ¾Ö®¸«","Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/OneHandAxe19",nil,nil,nil,nil)
 --SetJiaoYiGoods(nil,"Íß¶ûÕ½¸«","Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/OneHandAxe20",nil,nil,nil,nil)
 --SetJiaoYiGoods(nil,"»Ê¼ÒÖ®¸«","Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/OneHandAxe21",nil,nil,nil,nil)
 --SetJiaoYiGoods(nil,"Óü»ğÖ®ÈĞ","Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/OneHandAxe22",nil,nil,nil,nil)
 --SetJiaoYiGoods(nil,"ÃÜÎÄÖ®¸«","Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/OneHandAxeM3",nil,nil,nil,nil)
---SetJiaoYiGoods(nil,"²éÀ¼Ö®½£","Metadata/items/Weapons/OneHandWeapons/OneHandSwords/OneHandSwordC",nil,nil,nil,nil)
+--SetJiaoYiGoods(nil,"²éÀ¼Ö®½£","Metadata/items/Weapons/OneHandWeapons/OneHandSwords/OneHandSwordC","¹íß±","Oni-Goroshi","3",nil)
 --SetJiaoYiGoods(nil,"Ğâ½£","Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/OneHandSword1",nil,nil,nil,nil)
 --SetJiaoYiGoods(nil,"ÇàÍ­¶Ì½£","Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/OneHandSword2",nil,nil,nil,nil)
 --SetJiaoYiGoods(nil,"¾É¾üµ¶","Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/OneHandSword3",nil,nil,nil,nil)
@@ -2799,8 +1252,8 @@ SetJiaoYiGoods(nil,"ááÒá","Metadata/Items/DivinationCards/DivinationCardTheOffsp
 --SetJiaoYiGoods(nil,"Ç¿»¯Ï¸½£","Metadata/Items/Weapons/OneHandWeapons/OneHandThrustingSwords/Rapier17",nil,nil,nil,nil)
 --SetJiaoYiGoods(nil,"º®¹â´Ì½£","Metadata/Items/Weapons/OneHandWeapons/OneHandThrustingSwords/Rapier18",nil,nil,nil,nil)
 --SetJiaoYiGoods(nil,"ÂİÎÆÏ¸½£","Metadata/Items/Weapons/OneHandWeapons/OneHandThrustingSwords/Rapier19",nil,nil,nil,nil)
---SetJiaoYiGoods(nil,"Íß¶ûÏ¸½£","Metadata/Items/Weapons/OneHandWeapons/OneHandThrustingSwords/Rapier20",nil,nil,nil,nil)
---SetJiaoYiGoods(nil,"±¦ÊÎÏ¸½£","Metadata/Items/Weapons/OneHandWeapons/OneHandThrustingSwords/Rapier21",nil,nil,nil,nil)
+--SetJiaoYiGoods(nil,"Íß¶ûÏ¸½£","Metadata/Items/Weapons/OneHandWeapons/OneHandThrustingSwords/Rapier20","ã£ÂÛ","Paradoxica","3",nil)
+--SetJiaoYiGoods(nil,"±¦ÊÎÏ¸½£","Metadata/Items/Weapons/OneHandWeapons/OneHandThrustingSwords/Rapier21","¿¨Ë¹ÆÕÀïÔ¹ºŞ","Cospri's Malice","3",nil)
 --SetJiaoYiGoods(nil,"Ä§à¹Ï¸½£","Metadata/Items/Weapons/OneHandWeapons/OneHandThrustingSwords/Rapier22",nil,nil,nil,nil)
 --SetJiaoYiGoods(nil,"Æï±ø¾üµ¶","Metadata/Items/Weapons/OneHandWeapons/OneHandThrustingSwords/RapierM3",nil,nil,nil,nil)
 --SetJiaoYiGoods(nil,"ĞàÄ¾Ö®°ô","Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/OneHandMace1",nil,nil,nil,nil)
@@ -2822,7 +1275,7 @@ SetJiaoYiGoods(nil,"ááÒá","Metadata/Items/DivinationCards/DivinationCardTheOffsp
 --SetJiaoYiGoods(nil,"ÁúÖ®´¸","Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/OneHandMaceM2",nil,nil,nil,nil)
 --SetJiaoYiGoods(nil,"×æÁéÖ®èÆ","Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/OneHandMace16",nil,nil,nil,nil)
 --SetJiaoYiGoods(nil,"ÁÑÈâÖ®´¸","Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/OneHandMace17",nil,nil,nil,nil)
---SetJiaoYiGoods(nil,"¼á´¸","Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/OneHandMace18",nil,nil,nil,nil)
+--SetJiaoYiGoods(nil,"¼á´¸","Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/OneHandMace18","³ÁÄ¬Ö®À×","Mj?lner","3",nil)
 --SetJiaoYiGoods(nil,"¾üÍÅÖ®´¸","Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/OneHandMace19",nil,nil,nil,nil)
 --SetJiaoYiGoods(nil,"·æÈĞÖØ´¸","Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/OneHandMace20",nil,nil,nil,nil)
 --SetJiaoYiGoods(nil,"Ê¥Ô¼Ö®´¸","Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/OneHandMace21",nil,nil,nil,nil)
@@ -2846,7 +1299,7 @@ SetJiaoYiGoods(nil,"ááÒá","Metadata/Items/DivinationCards/DivinationCardTheOffsp
 --SetJiaoYiGoods(nil,"ÉîÔ¨¶ÌÕÈ","Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/Sceptre15",nil,nil,nil,nil)
 --SetJiaoYiGoods(nil,"ÁéÂ¹¶ÌÕÈ","Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/SceptreM2",nil,nil,nil,nil)
 --SetJiaoYiGoods(nil,"¿¨Â³¶ÌÕÈ","Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/Sceptre16",nil,nil,nil,nil)
---SetJiaoYiGoods(nil,"±©¾ıÖ®Í³","Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/Sceptre17",nil,nil,nil,nil)
+--SetJiaoYiGoods(nil,"±©¾ıÖ®Í³","Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/Sceptre17","×ï¶ñÍÌÊÉÕßµÄÌ¾Ï¢","Sign of the Sin Eater","3",nil)
 --SetJiaoYiGoods(nil,"ÁéÊ¯¶ÌÕÈ","Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/Sceptre18",nil,nil,nil,nil)
 --SetJiaoYiGoods(nil,"°×½ğ¶ÌÕÈ","Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/Sceptre19",nil,nil,nil,nil)
 --SetJiaoYiGoods(nil,"Íß¶û¶ÌÕÈ","Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/Sceptre20",nil,nil,nil,nil)
@@ -2875,7 +1328,7 @@ SetJiaoYiGoods(nil,"ááÒá","Metadata/Items/DivinationCards/DivinationCardTheOffsp
 -- SetJiaoYiGoods(nil,"ÂşÓÎÖ®¹­","Metadata/Items/Weapons/TwoHandWeapons/Bows/Bow18",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"°µÓ°¹­","Metadata/Items/Weapons/TwoHandWeapons/Bows/Bow19",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"¼¹¹­","Metadata/Items/Weapons/TwoHandWeapons/Bows/Bow20",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"µÛ¹úÖ®¹­","Metadata/Items/Weapons/TwoHandWeapons/Bows/Bow21",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"µÛ¹úÖ®¹­","Metadata/Items/Weapons/TwoHandWeapons/Bows/Bow21","ÁÑ·ç","Windripper","3",nil)
 -- SetJiaoYiGoods(nil,"ÏÈÇıÕßÖ®¹­","Metadata/Items/Weapons/TwoHandWeapons/Bows/Bow22",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"ÂíÀ­¿ËË¹¹­","Metadata/Items/Weapons/TwoHandWeapons/Bows/BowM3",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"ĞàÄ¾Ö®¸É","Metadata/Items/Weapons/TwoHandWeapons/Staves/Staff1",nil,nil,nil,nil)
@@ -2898,7 +1351,7 @@ SetJiaoYiGoods(nil,"ááÒá","Metadata/Items/DivinationCards/DivinationCardTheOffsp
 -- SetJiaoYiGoods(nil,"°¬×ÈÂó³¤ÕÈ","Metadata/Items/Weapons/TwoHandWeapons/Staves/Staff16",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"·ç±©³¤ÕÈ","Metadata/Items/Weapons/TwoHandWeapons/Staves/Staff17",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"µÛ¹ú³¤ÕÈ","Metadata/Items/Weapons/TwoHandWeapons/Staves/Staff18",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"ÉóÅĞ³¤ÕÈ","Metadata/Items/Weapons/TwoHandWeapons/Staves/Staff19",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÉóÅĞ³¤ÕÈ","Metadata/Items/Weapons/TwoHandWeapons/Staves/Staff19","ÊÄÔ¼","Pledge of Hands","3",nil)
 -- SetJiaoYiGoods(nil,"ÔÂÊ´³¤ÕÈ","Metadata/Items/Weapons/TwoHandWeapons/Staves/StaffM3",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"Ê¯¸«","Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/TwoHandAxe1",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"ËéÓñ´ó¸«","Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/TwoHandAxe2",nil,nil,nil,nil)
@@ -2915,11 +1368,11 @@ SetJiaoYiGoods(nil,"ááÒá","Metadata/Items/DivinationCards/DivinationCardTheOffsp
 -- SetJiaoYiGoods(nil,"È¨¹ó¾Ş¸«","Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/TwoHandAxe12",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"ÉîÔ¨¾Ş¸«","Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/TwoHandAxe13",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"ÃÍÇİ×¦¸«","Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/TwoHandAxeM2",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"¿¨Â³¾Ş¸«","Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/TwoHandAxe14",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"¿¨Â³¾Ş¸«","Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/TwoHandAxe14","¸ÔÄ·µÄ°ÔÒµ","Kaom's Primacy","3",nil)
 -- SetJiaoYiGoods(nil,"ÁÑ¼×¾Ş¸«","Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/TwoHandAxe15",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"°¬×ÈÂó¾Ş¸«","Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/TwoHandAxe16",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"Íß¶û¾Ş¸«","Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/TwoHandAxe17",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"°ÔÖ÷¾Ş¸«","Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/TwoHandAxe18",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"°ÔÖ÷¾Ş¸«","Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/TwoHandAxe18","ÍõÕßÖ®ÈĞ","Kingmaker","3",nil)
 -- SetJiaoYiGoods(nil,"ĞéÓ°¾Ş¸«","Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/TwoHandAxe19",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"ÁÑÈâÕß","Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/TwoHandAxeM3",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"Ğâ°ß¾Ş½£","Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/TwoHandSword1",nil,nil,nil,nil)
@@ -2942,8 +1395,8 @@ SetJiaoYiGoods(nil,"ááÒá","Metadata/Items/DivinationCards/DivinationCardTheOffsp
 -- SetJiaoYiGoods(nil,"°¬×ÈÂó¾Ş½£","Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/TwoHandSword16",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"Íß¶û¾Ş½£","Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/TwoHandSword17",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"Ê¨×¦¾Ş½£","Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/TwoHandSword18",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"ÓüÑ×ÖØ½£","Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/TwoHandSword19",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"ÓüÑ×ÖØ½£","Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/TwoHandSword19",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÓüÑ×ÖØ½£","Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/TwoHandSword19","ËÜĞÇÕß","Starforge","3",nil)
+-- SetJiaoYiGoods(nil,"ÓüÑ×ÖØ½£","Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/TwoHandSword19","ÁÑ¿ÕÕß","Voidforge","3",nil)
 -- SetJiaoYiGoods(nil,"¾«ÖÂÖ®ÈĞ","Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/TwoHandSwordM3",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"ĞàÄ¾¾Ş´¸","Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/TwoHandMace1",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"¼ÀÒÇ¾Ş´¸","Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/TwoHandMace2",nil,nil,nil,nil)
@@ -2967,33 +1420,34 @@ SetJiaoYiGoods(nil,"ááÒá","Metadata/Items/DivinationCards/DivinationCardTheOffsp
 -- SetJiaoYiGoods(nil,"µÛ¹úÖØ´¸","Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/TwoHandMace18",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"¾åÁéÖØ´¸","Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/TwoHandMace19",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"»¨¹ÚÖØ´¸","Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/TwoHandMaceM3",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"¶ÍÌú½äÖ¸","Metadata/Items/Rings/Ring1",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"¶ÍÌú½äÖ¸","Metadata/Items/Rings/Ring1",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"¶ÍÌú½äÖ¸","Metadata/Items/Rings/Ring1","Ó¢Áé±¦»·","Le Heup of All","3",nil)
+-- SetJiaoYiGoods(nil,"¶ÍÌú½äÖ¸","Metadata/Items/Rings/Ring1","×ï¶ñÖ®»·","Circle of Guilt","3",nil)
 -- SetJiaoYiGoods(nil,"Éºº÷½äÖ¸","Metadata/Items/Rings/Ring2",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"º£Áé½äÖ¸","Metadata/Items/Rings/Ring3",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"½ğ¹â½äÖ¸","Metadata/Items/Rings/Ring4",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"»ÆÓñ½äÖ¸","Metadata/Items/Rings/Ring5",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"»ÆÓñ½äÖ¸","Metadata/Items/Rings/Ring5",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"»ÆÓñ½äÖ¸","Metadata/Items/Rings/Ring5",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"»ÆÓñ½äÖ¸","Metadata/Items/Rings/Ring5",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"»ÆÓñ½äÖ¸","Metadata/Items/Rings/Ring5",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"À¶Óñ½äÖ¸","Metadata/Items/Rings/Ring6",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"À¶Óñ½äÖ¸","Metadata/Items/Rings/Ring6",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"À¶Óñ½äÖ¸","Metadata/Items/Rings/Ring6",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"À¶Óñ½äÖ¸","Metadata/Items/Rings/Ring6",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"À¶Óñ½äÖ¸","Metadata/Items/Rings/Ring6",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"ºìÓñ½äÖ¸","Metadata/Items/Rings/Ring7",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"ºìÓñ½äÖ¸","Metadata/Items/Rings/Ring7",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"ºìÓñ½äÖ¸","Metadata/Items/Rings/Ring7",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"ºìÓñ½äÖ¸","Metadata/Items/Rings/Ring7",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"ÈıÏà½äÖ¸","Metadata/Items/Rings/Ring8",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"ÈıÏà½äÖ¸","Metadata/Items/Rings/Ring8",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"ÔÂ¹âÊ¯½äÖ¸","Metadata/Items/Rings/Ring9",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"×Ï¾§½äÖ¸","Metadata/Items/Rings/Ring10",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"½ğ¹â½äÖ¸","Metadata/Items/Rings/Ring4","Ì°ÓûÖ®¼Ç","Andvarius","3",nil)
+-- SetJiaoYiGoods(nil,"½ğ¹â½äÖ¸","Metadata/Items/Rings/Ring4","¶ÄÉñ·Ò¶à","Ventor's Gamble","3",nil)
+-- SetJiaoYiGoods(nil,"»ÆÓñ½äÖ¸","Metadata/Items/Rings/Ring5","»ÚºŞÖ®»·","Circle of Regret","3",nil)
+-- SetJiaoYiGoods(nil,"»ÆÓñ½äÖ¸","Metadata/Items/Rings/Ring5","ÍßÀ­¿âÖ®Ó¡","Valako's Sign","3",nil)
+-- SetJiaoYiGoods(nil,"»ÆÓñ½äÖ¸","Metadata/Items/Rings/Ring5","ÆÕÌÙ²©µÄÉ½¹È","Putembo's Valley","3",nil)
+-- SetJiaoYiGoods(nil,"»ÆÓñ½äÖ¸","Metadata/Items/Rings/Ring5","ÆÕÌÙ²©µÄ²İÔ­","Putembo's Meadow","3",nil)
+-- SetJiaoYiGoods(nil,"»ÆÓñ½äÖ¸","Metadata/Items/Rings/Ring5","ÆÕÌÙ²©µÄ¸ßÉ½","Putembo's Mountain","3",nil)
+-- SetJiaoYiGoods(nil,"À¶Óñ½äÖ¸","Metadata/Items/Rings/Ring6","¿Ö¾åÖ®»·","Circle of Fear","3",nil)
+-- SetJiaoYiGoods(nil,"À¶Óñ½äÖ¸","Metadata/Items/Rings/Ring6","ĞÇ¿ÕÖ®Ó°","Astral Projector","3",nil)
+-- SetJiaoYiGoods(nil,"À¶Óñ½äÖ¸","Metadata/Items/Rings/Ring6","ÎÚÔúÈøµÄ¸ßÉ½","Uzaza's Mountain","3",nil)
+-- SetJiaoYiGoods(nil,"À¶Óñ½äÖ¸","Metadata/Items/Rings/Ring6","ÎÚÔúÈøµÄ²İÔ­","Uzaza's Meadow","3",nil)
+-- SetJiaoYiGoods(nil,"À¶Óñ½äÖ¸","Metadata/Items/Rings/Ring6","ÎÚÔúÈøµÄÉ½¹È","Uzaza's Valley","3",nil)
+-- SetJiaoYiGoods(nil,"ºìÓñ½äÖ¸","Metadata/Items/Rings/Ring7","°¢¿ËÀ³µÄ¸ßÉ½","Ahkeli's Mountain","3",nil)
+-- SetJiaoYiGoods(nil,"ºìÓñ½äÖ¸","Metadata/Items/Rings/Ring7","°¢¿ËÀ³µÄ²İÔ­","Ahkeli's Meadow","3",nil)
+-- SetJiaoYiGoods(nil,"ºìÓñ½äÖ¸","Metadata/Items/Rings/Ring7","°¢¿ËÀ³µÄÉ½¹È","Ahkeli's Valley","3",nil)
+-- SetJiaoYiGoods(nil,"ºìÓñ½äÖ¸","Metadata/Items/Rings/Ring7","¿àÍ´Ö®»·","Circle of Anguish","3",nil)
+-- SetJiaoYiGoods(nil,"ÈıÏà½äÖ¸","Metadata/Items/Rings/Ring8","ÔªËØÖ®ÕÂ","The Taming","3",nil)
+-- SetJiaoYiGoods(nil,"ÈıÏà½äÖ¸","Metadata/Items/Rings/Ring8","ÇÔ×ï","Thief's Torment","3",nil)
+-- SetJiaoYiGoods(nil,"ÔÂ¹âÊ¯½äÖ¸","Metadata/Items/Rings/Ring9","Ñ¦ÀÊµÄÆôÊ¾Ö®»·","Shavronne's Revelation","3",nil)
+-- SetJiaoYiGoods(nil,"×Ï¾§½äÖ¸","Metadata/Items/Rings/Ring10","Ïç³îÖ®»·","Circle of Nostalgia","3",nil)
 -- SetJiaoYiGoods(nil,"±¦×ê½äÖ¸","Metadata/Items/Rings/Ring11",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"Ë«Óñ½äÖ¸","Metadata/Items/Rings/Ring12",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"Ë«Óñ½äÖ¸","Metadata/Items/Rings/Ring13",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"Ë«Óñ½äÖ¸","Metadata/Items/Rings/Ring14",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"Ë«Óñ½äÖ¸","Metadata/Items/Rings/Ring12","±´À×¿ËµÄ»ğÓëÀ×Ö®ÀÖ","Berek's Respite","3",nil)
+-- SetJiaoYiGoods(nil,"Ë«Óñ½äÖ¸","Metadata/Items/Rings/Ring13","ÒâÖ¾ºô»½","Call of the Brotherhood","3",nil)
+-- SetJiaoYiGoods(nil,"Ë«Óñ½äÖ¸","Metadata/Items/Rings/Ring14","Èğ·ğÖ®¹Ú","Rigwald's Crest","3",nil)
 -- SetJiaoYiGoods(nil,"Ç±ÄÜÖ®½ä","Metadata/Items/Rings/Ring15",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"½ÜÌØ½äÖ¸","Metadata/Items/Rings/RingVictor1",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"ºÏ½ğ½äÖ¸","Metadata/Items/Rings/RingAtlas1",nil,nil,nil,nil)
@@ -3001,23 +1455,23 @@ SetJiaoYiGoods(nil,"ááÒá","Metadata/Items/DivinationCards/DivinationCardTheOffsp
 -- SetJiaoYiGoods(nil,"ÖìÉ°Ö®½ä","Metadata/Items/Rings/RingAtlas3",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"ÌìÀ¶Ö®½ä","Metadata/Items/Rings/RingAtlas4",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"ÁÑÏ¶½äÖ¸","Metadata/Items/Rings/BreachRing",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"º£Áé»¤Éí·û","Metadata/Items/Amulets/Amulet1",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"Éºº÷»¤Éí·û","Metadata/Items/Amulets/Amulet2",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"Éºº÷»¤Éí·û","Metadata/Items/Amulets/Amulet2",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"çúçê»¤Éí·û","Metadata/Items/Amulets/Amulet3",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"´äÓñ»¤Éí·û","Metadata/Items/Amulets/Amulet4",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"´äÓñ»¤Éí·û","Metadata/Items/Amulets/Amulet4",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"º£Óñ»¤Éí·û","Metadata/Items/Amulets/Amulet5",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"µÛ½ğ»¤Éí·û","Metadata/Items/Amulets/Amulet6",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"µÛ½ğ»¤Éí·û","Metadata/Items/Amulets/Amulet6",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"µÛ½ğ»¤Éí·û","Metadata/Items/Amulets/Amulet6",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"ºÚê×»¤Éí·û","Metadata/Items/Amulets/Amulet7",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"ºÚê×»¤Éí·û","Metadata/Items/Amulets/Amulet7",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"ºÚê×»¤Éí·û","Metadata/Items/Amulets/Amulet7",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"ºÚê×»¤Éí·û","Metadata/Items/Amulets/Amulet7",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"ºÚê×»¤Éí·û","Metadata/Items/Amulets/Amulet7",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"ÇàÓñ»¤Éí·û","Metadata/Items/Amulets/Amulet8",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"Âêè§»¤Éí·û","Metadata/Items/Amulets/Amulet9",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"º£Áé»¤Éí·û","Metadata/Items/Amulets/Amulet1","Ôó·ğÒÁÖ®ĞÄ","Zerphi's Heart","3",nil)
+-- SetJiaoYiGoods(nil,"Éºº÷»¤Éí·û","Metadata/Items/Amulets/Amulet2","Ô­Ê¼ËøÁ´","The Primordial Chain","3",nil)
+-- SetJiaoYiGoods(nil,"Éºº÷»¤Éí·û","Metadata/Items/Amulets/Amulet2","Ê¥Áî","Tavukai","3",nil)
+-- SetJiaoYiGoods(nil,"çúçê»¤Éí·û","Metadata/Items/Amulets/Amulet3","Ë÷·üÖ®ĞÄ","Xoph's Heart","3",nil)
+-- SetJiaoYiGoods(nil,"´äÓñ»¤Éí·û","Metadata/Items/Amulets/Amulet4","Ì«Æ½","The Halcyon","3",nil)
+-- SetJiaoYiGoods(nil,"´äÓñ»¤Éí·û","Metadata/Items/Amulets/Amulet4","Î÷ÀïµÄÕæÏà","Hyrri's Truth","3",nil)
+-- SetJiaoYiGoods(nil,"º£Óñ»¤Éí·û","Metadata/Items/Amulets/Amulet5","±©·çÖ®ÑÔ","Voice of the Storm","3",nil)
+SetJiaoYiGoods(nil,"µÛ½ğ»¤Éí·û","Metadata/Items/Amulets/Amulet6","¶¬Ö®ĞÄ","Winterheart","3",nil)
+-- SetJiaoYiGoods(nil,"µÛ½ğ»¤Éí·û","Metadata/Items/Amulets/Amulet6","¿àĞĞ","The Ascetic","3",nil)
+-- SetJiaoYiGoods(nil,"µÛ½ğ»¤Éí·û","Metadata/Items/Amulets/Amulet6","±ÈË¹¿ËµÄÏîÈ¦","Bisco's Collar","3",nil)
+-- SetJiaoYiGoods(nil,"ºÚê×»¤Éí·û","Metadata/Items/Amulets/Amulet7","¾ùºâÖ®·û","Astramentis","3",nil)
+-- SetJiaoYiGoods(nil,"ºÚê×»¤Éí·û","Metadata/Items/Amulets/Amulet7","ÖÁÈÕ²»Ãß","Solstice Vigil","3",nil)
+-- SetJiaoYiGoods(nil,"ºÚê×»¤Éí·û","Metadata/Items/Amulets/Amulet7","°Â¶ûÖ®ĞË","Aul's Uprising","3",nil)
+-- SetJiaoYiGoods(nil,"ºÚê×»¤Éí·û","Metadata/Items/Amulets/Amulet7","ÒşÊÅ","Impresence","3",nil)
+-- SetJiaoYiGoods(nil,"ºÚê×»¤Éí·û","Metadata/Items/Amulets/Amulet7","¿àÄÑî¿°í","Yoke of Suffering","3",nil)
+-- SetJiaoYiGoods(nil,"ÇàÓñ»¤Éí·û","Metadata/Items/Amulets/Amulet8","ĞÖµÜ»á»ÕÕÂ","Badge of the Brotherhood","3",nil)
+-- SetJiaoYiGoods(nil,"Âêè§»¤Éí·û","Metadata/Items/Amulets/Amulet9","¸£¶ûµÄÖÒ³ÏÖ®·û","Voll's Devotion","3",nil)
 -- SetJiaoYiGoods(nil,"»Æ¾§»¤Éí·û","Metadata/Items/Amulets/Amulet10",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"ÑªÉ«»¤Éí·û","Metadata/Items/Amulets/Amulet11",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"½ÜÌØ»¤Éí·û","Metadata/Items/Amulet/AmuletVictor1",nil,nil,nil,nil)
@@ -3037,7 +1491,7 @@ SetJiaoYiGoods(nil,"ááÒá","Metadata/Items/DivinationCards/DivinationCardTheOffsp
 -- SetJiaoYiGoods(nil,"¿ññ²Ä§·û","Metadata/Items/Amulets/Talismans/Talisman1_12",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"»Ã×¦Ä§·û","Metadata/Items/Amulets/Talismans/Talisman2_1",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"»Ê¹ÇÄ§·û","Metadata/Items/Amulets/Talismans/Talisman2_2",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"Íö×¦Ä§·û","Metadata/Items/Amulets/Talismans/Talisman2_3",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"Íö×¦Ä§·û","Metadata/Items/Amulets/Talismans/Talisman2_3","Èğ·ğ×çÖä","Rigwald's Curse","3",nil)
 -- SetJiaoYiGoods(nil,"¶Ïó¢Ä§·û","Metadata/Items/Amulets/Talismans/Talisman2_4",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"Öä¹¿Ä§·û","Metadata/Items/Amulets/Talismans/Talisman2_5",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"Ë«×ÓÄ§·û","Metadata/Items/Amulets/Talismans/Talisman2_6_1",nil,nil,nil,nil)
@@ -3057,12 +1511,12 @@ SetJiaoYiGoods(nil,"ááÒá","Metadata/Items/DivinationCards/DivinationCardTheOffsp
 -- SetJiaoYiGoods(nil,"ºïÕÆÄ§·û","Metadata/Items/Amulets/Talismans/Talisman3_6_2",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"ºïÕÆÄ§·û","Metadata/Items/Amulets/Talismans/Talisman3_6_3",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"ÈıÊÖÄ§·û","Metadata/Items/Amulets/Talismans/Talisman3_7",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"ÀÇÍõÄ§·û","Metadata/Items/Amulets/Talismans/Talisman4",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÀÇÍõÄ§·û","Metadata/Items/Amulets/Talismans/Talisman4","¾ŞÀÇÖ®ÑÛ","Eyes of the Greatwolf","3",nil)
 -- SetJiaoYiGoods(nil,"ËØ²¼Ñü´ø","Metadata/Items/Belts/Belt1",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"¿ÛÁ´Ñü´ø","Metadata/Items/Belts/Belt2",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"Æ¤¸ïÑü´ø","Metadata/Items/Belts/Belt3",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"ÖØ¸ïÑü´ø","Metadata/Items/Belts/Belt4",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"ÊÎ²¼Ñü´ø","Metadata/Items/Belts/Belt5",nil,nil,nil,nil)
+SetJiaoYiGoods(nil,"Æ¤¸ïÑü´ø","Metadata/Items/Belts/Belt3","ÁÔÊ×","Headhunter","3",nil)
+-- SetJiaoYiGoods(nil,"ÖØ¸ïÑü´ø","Metadata/Items/Belts/Belt4","±ÈË¹¿ËµÄçÖÉş","Bisco's Leash","3",nil)
+SetJiaoYiGoods(nil,"ÊÎ²¼Ñü´ø","Metadata/Items/Belts/Belt5","ÆÕÀ¼µÂË¹Ö®Ó¡","Perandus Blazon","3",nil)
 -- SetJiaoYiGoods(nil,"¿Û¶¤Ñü´ø","Metadata/Items/Belts/Belt6",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"ÏÈ·æÑü´ø","Metadata/Items/Belts/BeltAtlas1",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"Ë®¾§Ñü´ø","Metadata/Items/Belts/BeltAtlas2",nil,nil,nil,nil)
@@ -3082,9 +1536,9 @@ SetJiaoYiGoods(nil,"ááÒá","Metadata/Items/DivinationCards/DivinationCardTheOffsp
 -- SetJiaoYiGoods(nil,"ÈÙ¹ÚËş¶Ü","Metadata/Items/Armours/Shields/ShieldStr12",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"´Ö¸ïËş¶Ü","Metadata/Items/Armours/Shields/ShieldStr13",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"ÎÚÄ¾Ëş¶Ü","Metadata/Items/Armours/Shields/ShieldStr14",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"°¬×ÈÂóËş¶Ü","Metadata/Items/Armours/Shields/ShieldStr15",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"°¬×ÈÂóËş¶Ü","Metadata/Items/Armours/Shields/ShieldStr15","½µ·ü","The Surrender","3",nil)
 -- SetJiaoYiGoods(nil,"¾ŞĞÍËş¶Ü","Metadata/Items/Armours/Shields/ShieldStr16",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"¼áÒãËş¶Ü","Metadata/Items/Armours/Shields/ShieldStr17",nil,nil,nil,nil)
+SetJiaoYiGoods(nil,"¼áÒãËş¶Ü","Metadata/Items/Armours/Shields/ShieldStr17","Ê¨ÑÛµÄÈÙÒ«Ö®¶Ü","Lioneye's Remorse","3",nil)
 -- SetJiaoYiGoods(nil,"ÑòÆ¤Çá¶Ü","Metadata/Items/Armours/Shields/ShieldDex1",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"ËÉÄ¾Çá¶Ü","Metadata/Items/Armours/Shields/ShieldDex2",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"²Ê»æÇá¶Ü","Metadata/Items/Armours/Shields/ShieldDex3",nil,nil,nil,nil)
@@ -3106,7 +1560,7 @@ SetJiaoYiGoods(nil,"ááÒá","Metadata/Items/DivinationCards/DivinationCardTheOffsp
 -- SetJiaoYiGoods(nil,"¹ÇÖÆÄ§¶Ü","Metadata/Items/Armours/Shields/ShieldInt3",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"»·ĞÎÄ§¶Ü","Metadata/Items/Armours/Shields/ShieldInt4",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"ÁéÏàÄ§¶Ü","Metadata/Items/Armours/Shields/ShieldInt5",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"Í­¶ÍÄ§¶Ü","Metadata/Items/Armours/Shields/ShieldInt6",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"Í­¶ÍÄ§¶Ü","Metadata/Items/Armours/Shields/ShieldInt6","É½ÌØÁ¢µÄ»ØÓ¦","Sentari's Answer","3",nil)
 -- SetJiaoYiGoods(nil,"ÌÒÄ¾Ä§¶Ü","Metadata/Items/Armours/Shields/ShieldInt7",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"ÏóÑÀÄ§¶Ü","Metadata/Items/Armours/Shields/ShieldInt8",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"Ô¶¹ÅÄ§¶Ü","Metadata/Items/Armours/Shields/ShieldInt9",nil,nil,nil,nil)
@@ -3117,7 +1571,7 @@ SetJiaoYiGoods(nil,"ááÒá","Metadata/Items/DivinationCards/DivinationCardTheOffsp
 -- SetJiaoYiGoods(nil,"Íß¶ûÄ§¶Ü","Metadata/Items/Armours/Shields/ShieldInt14",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"ºÍĞ³Ä§¶Ü","Metadata/Items/Armours/Shields/ShieldInt15",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"¾ŞÈËÄ§¶Ü","Metadata/Items/Armours/Shields/ShieldInt16",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"ĞàÄ¾Ô²¶Ü","Metadata/Items/Armours/Shields/ShieldStrDex1",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ĞàÄ¾Ô²¶Ü","Metadata/Items/Armours/Shields/ShieldStrDex1","±©ÓêÖ®¶æ","Wheel of the Stormsail","3",nil)
 -- SetJiaoYiGoods(nil,"É¼Ä¾Ô²¶Ü","Metadata/Items/Armours/Shields/ShieldStrDex2",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"Ã­¶¤Ô²¶Ü","Metadata/Items/Armours/Shields/ShieldStrDex3",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"³ãºìÔ²¶Ü","Metadata/Items/Armours/Shields/ShieldStrDex4",nil,nil,nil,nil)
@@ -3137,13 +1591,13 @@ SetJiaoYiGoods(nil,"ááÒá","Metadata/Items/DivinationCards/DivinationCardTheOffsp
 -- SetJiaoYiGoods(nil,"¼ÀÒÇğ°¶Ü","Metadata/Items/Armours/Shields/ShieldStrInt5",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"¿ÌÎÄğ°¶Ü","Metadata/Items/Armours/Shields/ShieldStrInt6",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"Àä¸Öğ°¶Ü","Metadata/Items/Armours/Shields/ShieldStrInt7",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"ºÏ°åğ°¶Ü","Metadata/Items/Armours/Shields/ShieldStrInt8",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ºÏ°åğ°¶Ü","Metadata/Items/Armours/Shields/ShieldStrInt8","Î¬¶àÀï°ÂµÄ¹±Ï×","Victario's Charity","3",nil)
 -- SetJiaoYiGoods(nil,"ÌìÊ¹ğ°¶Ü","Metadata/Items/Armours/Shields/ShieldStrInt9",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"Ê¥¼Çğ°¶Ü","Metadata/Items/Armours/Shields/ShieldStrInt10",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"¶·Ê¿ğ°¶Ü","Metadata/Items/Armours/Shields/ShieldStrInt11",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"ºñ×°ğ°¶Ü","Metadata/Items/Armours/Shields/ShieldStrInt12",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"ÍşÄÜğ°¶Ü","Metadata/Items/Armours/Shields/ShieldStrInt13",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"ÍşÄÜğ°¶Ü","Metadata/Items/Armours/Shields/ShieldStrInt13",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÍşÄÜğ°¶Ü","Metadata/Items/Armours/Shields/ShieldStrInt13","²»ÇüÖ®Ö¾","The Unshattered Will","3",nil)
+-- SetJiaoYiGoods(nil,"ÍşÄÜğ°¶Ü","Metadata/Items/Armours/Shields/ShieldStrInt13","²»ÇüÁÒÑæ","Unyielding Flame","3",nil)
 -- SetJiaoYiGoods(nil,"¼âÄ¾´Ì¶Ü","Metadata/Items/Armours/Shields/ShieldDexInt1",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"ĞàÄ¾´Ì¶Ü","Metadata/Items/Armours/Shields/ShieldDexInt2",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"ºÏ½ğ´Ì¶Ü","Metadata/Items/Armours/Shields/ShieldDexInt3",nil,nil,nil,nil)
@@ -3192,9 +1646,9 @@ SetJiaoYiGoods(nil,"ááÒá","Metadata/Items/DivinationCards/DivinationCardTheOffsp
 -- SetJiaoYiGoods(nil,"ÁéÖ÷Ö®»·","Metadata/Items/Armours/Helmets/HelmetInt11",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"²ĞÆÆÖ®¿ø","Metadata/Items/Armours/Helmets/HelmetStrDex1",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"ÇáÌú»¤¿ø","Metadata/Items/Armours/Helmets/HelmetStrDex2",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"ÇåÊÓ»¤¿ø","Metadata/Items/Armours/Helmets/HelmetStrDex3",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÇåÊÓ»¤¿ø","Metadata/Items/Armours/Helmets/HelmetStrDex3","¼²·çµÄ³ÁË¼","The Peregrine","3",nil)
 -- SetJiaoYiGoods(nil,"½ğÃæ»¤¿ø","Metadata/Items/Armours/Helmets/HelmetStrDex4",nil,nil,nil,nil)
---SetJiaoYiGoods(nil,"¾«±øÖ®¿ø","Metadata/Items/Armours/Helmets/HelmetStrDex5",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"¾«±øÖ®¿ø","Metadata/Items/Armours/Helmets/HelmetStrDex5",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"»÷½£Ê¿Ö®¿ø","Metadata/Items/Armours/Helmets/HelmetStrDex6",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"Æá²ÊÖ®¿ø","Metadata/Items/Armours/Helmets/HelmetStrDex7",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"È«ÕÖÕ½¿ø","Metadata/Items/Armours/Helmets/HelmetStrDex8",nil,nil,nil,nil)
@@ -3216,11 +1670,11 @@ SetJiaoYiGoods(nil,"ááÒá","Metadata/Items/DivinationCards/DivinationCardTheOffsp
 -- SetJiaoYiGoods(nil,"½ÚÇìÖ®Ãæ","Metadata/Items/Armours/Helmets/HelmetDexInt4",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"»Æ½ğÖ®Ãæ","Metadata/Items/Armours/Helmets/HelmetDexInt5",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"»öÑ»Ö®Ãæ","Metadata/Items/Armours/Helmets/HelmetDexInt6",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"ÎŞÇéÖ®Ãæ","Metadata/Items/Armours/Helmets/HelmetDexInt7",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÎŞÇéÖ®Ãæ","Metadata/Items/Armours/Helmets/HelmetDexInt7","·ç±©¾ĞÊø","The Tempest's Binding","3",nil)
 -- SetJiaoYiGoods(nil,"ß±¾ıÖ®Ãæ","Metadata/Items/Armours/Helmets/HelmetDexInt8",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"Ó¥à¹Ö®Ãæ","Metadata/Items/Armours/Helmets/HelmetDexInt9",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"óğÑÔ‘ğ¹Ú","Metadata/Items/Armours/Helmets/HelmetDexInt9",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"ŸoÇéÖ®Ãæ","Metadata/Items/Armours/Helmets/HelmetDexInt9",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"Ó¥à¹Ö®Ãæ","Metadata/Items/Armours/Helmets/HelmetDexInt9","´óµØÖ®ÑÀ","Farrul's Bite","3",nil)
+-- SetJiaoYiGoods(nil,"óğÑÔ‘ğ¹Ú","Metadata/Items/Armours/Helmets/HelmetDexInt9","°µÑÛÖ®¹Ú","Crown of the Inward Eye","3",nil)
+-- SetJiaoYiGoods(nil,"ŸoÇéÖ®Ãæ","Metadata/Items/Armours/Helmets/HelmetDexInt9","Ğ°ÑÛ","Eye of Malice","3",nil)
 -- SetJiaoYiGoods(nil,"Íß¶ûÖ®Ãæ","Metadata/Items/Armours/Helmets/HelmetDexInt10",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"ß±ÉñÖ®Ãæ","Metadata/Items/Armours/Helmets/HelmetDexInt11",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"½ğ»Æ»¨»·","Metadata/Items/Armours/Helmets/HelmetWreath1",nil,nil,nil,nil)
@@ -3243,7 +1697,7 @@ SetJiaoYiGoods(nil,"ááÒá","Metadata/Items/DivinationCards/DivinationCardTheOffsp
 -- SetJiaoYiGoods(nil,"ĞÇÃ¢Õ½îø","Metadata/Items/Armours/BodyArmours/BodyStr15",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"½Ç¶·ÖØîø","Metadata/Items/Armours/BodyArmours/BodyStr16",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"ÈÙÒ«Õ½îø","Metadata/Items/Armours/BodyArmours/BodyStr17",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"¸ÔÄ·µÄÖØîø","Metadata/Items/Armours/BodyArmours/BodyStrTemp",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"¸ÔÄ·µÄÖØîø","Metadata/Items/Armours/BodyArmours/BodyStrTemp","¸ÔÄ·µÄ×³Ö¾","Kaom's Heart","3",nil)
 -- SetJiaoYiGoods(nil,"ÆÆ¾ÉÍâÌ×","Metadata/Items/Armours/BodyArmours/BodyDex1",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"¿Û»·Æ¤¼×","Metadata/Items/Armours/BodyArmours/BodyDex2",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"Â¹Æ¤ÍâÌ×","Metadata/Items/Armours/BodyArmours/BodyDex3",nil,nil,nil,nil)
@@ -3259,9 +1713,9 @@ SetJiaoYiGoods(nil,"ááÒá","Metadata/Items/DivinationCards/DivinationCardTheOffsp
 -- SetJiaoYiGoods(nil,"öèÆ¤Ö®ÒÂ","Metadata/Items/Armours/BodyArmours/BodyDex13",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"ÃüÔËÆ¤¼×","Metadata/Items/Armours/BodyArmours/BodyDex14",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"¾«ÖÆÆ¤¼×","Metadata/Items/Armours/BodyArmours/BodyDex15",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"ĞÇ³½Æ¤¼×","Metadata/Items/Armours/BodyArmours/BodyDex16",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ĞÇ³½Æ¤¼×","Metadata/Items/Armours/BodyArmours/BodyDex16","Î÷ÀïµÄÕ½ÒÂ","Hyrri's Ire","3",nil)
 -- SetJiaoYiGoods(nil,"°µÓ°Ö®×°","Metadata/Items/Armours/BodyArmours/BodyDex17",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"¼òÒ×Ö®ÅÛ","Metadata/Items/Armours/BodyArmours/BodyInt1",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"¼òÒ×Ö®ÅÛ","Metadata/Items/Armours/BodyArmours/BodyInt1","ÎŞ¾¡Ö®ÒÂ","Tabula Rasa","3",nil)
 -- SetJiaoYiGoods(nil,"³ñ¶Ğ±³ĞÄ","Metadata/Items/Armours/BodyArmours/BodyInt2",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"Ñ§ÕßÖ®ÅÛ","Metadata/Items/Armours/BodyArmours/BodyInt3",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"Ë¿³ñÖ®ÒÂ","Metadata/Items/Armours/BodyArmours/BodyInt4",nil,nil,nil,nil)
@@ -3273,9 +1727,9 @@ SetJiaoYiGoods(nil,"ááÒá","Metadata/Items/DivinationCards/DivinationCardTheOffsp
 -- SetJiaoYiGoods(nil,"ÖäÕß³¤ÒÂ","Metadata/Items/Armours/BodyArmours/BodyInt10",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"ÖëË¿Ö®ÅÛ","Metadata/Items/Armours/BodyArmours/BodyInt11",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"ÃğÊÀ·¨ÒÂ","Metadata/Items/Armours/BodyArmours/BodyInt12",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"ÖÇÕßÖ®ÅÛ","Metadata/Items/Armours/BodyArmours/BodyInt13",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÖÇÕßÖ®ÅÛ","Metadata/Items/Armours/BodyArmours/BodyInt13","ÎŞ³£·¨ÅÛ","Garb of the Ephemeral","3",nil)
 -- SetJiaoYiGoods(nil,"²ÙÁéÕß±³ĞÄ","Metadata/Items/Armours/BodyArmours/BodyInt14",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"ÃØÊõ³¤ÒÂ","Metadata/Items/Armours/BodyArmours/BodyInt15",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÃØÊõ³¤ÒÂ","Metadata/Items/Armours/BodyArmours/BodyInt15","Ñ¦ÀÊµÄ»¤Éí³¤ÅÛ","Shavronne's Wrappings","3",nil)
 -- SetJiaoYiGoods(nil,"¶¾ÖëË¿Ö®ÅÛ","Metadata/Items/Armours/BodyArmours/BodyInt16",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"Íß¶û·¨ÒÂ","Metadata/Items/Armours/BodyArmours/BodyInt17",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"Ï¸ÁÛ±³ĞÄ","Metadata/Items/Armours/BodyArmours/BodyStrDex1",nil,nil,nil,nil)
@@ -3285,7 +1739,7 @@ SetJiaoYiGoods(nil,"ááÒá","Metadata/Items/DivinationCards/DivinationCardTheOffsp
 -- SetJiaoYiGoods(nil,"Á¬ÉíÁÛ¼×","Metadata/Items/Armours/BodyArmours/BodyStrDex5",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"Õ½Ê¿Ëø¼×","Metadata/Items/Armours/BodyArmours/BodyStrDex6",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"Ò°Õ½±¡¼×","Metadata/Items/Armours/BodyArmours/BodyStrDex7",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"ÁúÁÛÕ½¼×","Metadata/Items/Armours/BodyArmours/BodyStrDex8",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÁúÁÛÕ½¼×","Metadata/Items/Armours/BodyArmours/BodyStrDex8","ÆÛÕ©â²ÑÀ","Gruthkul's Pelt","3",nil)
 -- SetJiaoYiGoods(nil,"ÇáÆïËø¼×","Metadata/Items/Armours/BodyArmours/BodyStrDex9",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"Á¬ÉíÁúÁÛÕ½¼×","Metadata/Items/Armours/BodyArmours/BodyStrDex10",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"Ö¸»ÓÕßËø¼×","Metadata/Items/Armours/BodyArmours/BodyStrDex11",nil,nil,nil,nil)
@@ -3294,7 +1748,7 @@ SetJiaoYiGoods(nil,"ááÒá","Metadata/Items/DivinationCards/DivinationCardTheOffsp
 -- SetJiaoYiGoods(nil,"»ÄÒ°Ëøîø","Metadata/Items/Armours/BodyArmours/BodyStrDex14",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"Á¬ÉíÁúÁÛîø","Metadata/Items/Armours/BodyArmours/BodyStrDex15",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"½«¾üîø¼×","Metadata/Items/Armours/BodyArmours/BodyStrDex16",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"Ê¤Àû¿ø¼×","Metadata/Items/Armours/BodyArmours/BodyStrDex17",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"Ê¤Àû¿ø¼×","Metadata/Items/Armours/BodyArmours/BodyStrDex17","´óµØÖ®»¤","Farrul's Fur","3",nil)
 -- SetJiaoYiGoods(nil,"ËøÁ´±³ĞÄ","Metadata/Items/Armours/BodyArmours/BodyStrInt1",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"Á´¼×ÍâÒÂ","Metadata/Items/Armours/BodyArmours/BodyStrInt2",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"»·¼×ÍâÌ×","Metadata/Items/Armours/BodyArmours/BodyStrInt3",nil,nil,nil,nil)
@@ -3310,7 +1764,7 @@ SetJiaoYiGoods(nil,"ááÒá","Metadata/Items/DivinationCards/DivinationCardTheOffsp
 -- SetJiaoYiGoods(nil,"¸²Ìå»·¼×","Metadata/Items/Armours/BodyArmours/BodyStrInt13",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"Õ÷Õ½Ëø¼×","Metadata/Items/Armours/BodyArmours/BodyStrInt14",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"È¨¹ó»·¼×","Metadata/Items/Armours/BodyArmours/BodyStrInt15",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"Ê¥ÕßÁ´¼×","Metadata/Items/Armours/BodyArmours/BodyStrInt16",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"Ê¥ÕßÁ´¼×","Metadata/Items/Armours/BodyArmours/BodyStrInt16","æßÄÒÊØÎÀ","Sporeguard","3",nil)
 -- SetJiaoYiGoods(nil,"Ê¥½àËø¼×","Metadata/Items/Armours/BodyArmours/BodyStrInt17",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"±¡³ÄÒÂ","Metadata/Items/Armours/BodyArmours/BodyDexInt1",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"·ÀË®±³ĞÄ","Metadata/Items/Armours/BodyArmours/BodyDexInt2",nil,nil,nil,nil)
@@ -3326,10 +1780,10 @@ SetJiaoYiGoods(nil,"ááÒá","Metadata/Items/DivinationCards/DivinationCardTheOffsp
 -- SetJiaoYiGoods(nil,"µØÑ¨Õ½¼×","Metadata/Items/Armours/BodyArmours/BodyDexInt12",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"ÉÚ±øÖ®ÒÂ","Metadata/Items/Armours/BodyArmours/BodyDexInt13",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"Ó³²ÊÍâÌ×","Metadata/Items/Armours/BodyArmours/BodyDexInt14",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"ÑªÉ«Ö®ÒÂ","Metadata/Items/Armours/BodyArmours/BodyDexInt15",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"¿ñÅ°ÕßÊøÒÂ","Metadata/Items/Armours/BodyArmours/BodyDexInt16",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"½ûÀñÖ®¼×","Metadata/Items/Armours/BodyArmours/BodyDexInt17",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"¼ÀÀñÊøÒÂ","Metadata/Items/Armours/BodyArmours/BodyStrDexInt1",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÑªÉ«Ö®ÒÂ","Metadata/Items/Armours/BodyArmours/BodyDexInt15","ÓÀºãÓÄÓ°","The Eternity Shroud","3",nil)
+-- SetJiaoYiGoods(nil,"¿ñÅ°ÕßÊøÒÂ","Metadata/Items/Armours/BodyArmours/BodyDexInt16","ËÙ¶ÈÖ®Á¦","Inpulsa's Broken Heart","3",nil)
+-- SetJiaoYiGoods(nil,"½ûÀñÖ®¼×","Metadata/Items/Armours/BodyArmours/BodyDexInt17","ãı¹âÊÙÒÂ","Shroud of the Lightless","3",nil)
+-- SetJiaoYiGoods(nil,"¼ÀÀñÊøÒÂ","Metadata/Items/Armours/BodyArmours/BodyStrDexInt1","°µÓ°·ìºÏ","Shadowstitch","3",nil)
 -- SetJiaoYiGoods(nil,"»Æ½ğÕ½¼×","Metadata/Items/Armours/BodyArmours/BodyDemigods1",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"Ìú¶ÍëÖ¼×","Metadata/Items/Armours/Boots/BootsStr1",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"Àä¸ÖëÖ¼×","Metadata/Items/Armours/Boots/BootsStr2",nil,nil,nil,nil)
@@ -3341,14 +1795,14 @@ SetJiaoYiGoods(nil,"ááÒá","Metadata/Items/DivinationCards/DivinationCardTheOffsp
 -- SetJiaoYiGoods(nil,"Íß¶ûëÖ¼×","Metadata/Items/Armours/Boots/BootsStr8",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"¾ŞÈËëÖ¼×","Metadata/Items/Armours/Boots/BootsStr9",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"¸ÔÄ·ëÖ¼×","Metadata/Items/Armours/Boots/BootsStrTemp",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"ÉúÆ¤¶ÌÑ¥","Metadata/Items/Armours/Boots/BootsDex1",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÉúÆ¤¶ÌÑ¥","Metadata/Items/Armours/Boots/BootsDex1","ÃËÊÄÖ®¼£","Seven-League Step","3",nil)
 -- SetJiaoYiGoods(nil,"ÑòÆ¤¶ÌÑ¥","Metadata/Items/Armours/Boots/BootsDex2",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"Â¹Æ¤¶ÌÑ¥","Metadata/Items/Armours/Boots/BootsDex3",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"É°Ó°¶ÌÑ¥","Metadata/Items/Armours/Boots/BootsDex4",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"É°Ó°¶ÌÑ¥","Metadata/Items/Armours/Boots/BootsDex4","ÁúÑ××ã¼£","Goldwyrm","3",nil)
 -- SetJiaoYiGoods(nil,"÷©Æ¤¶ÌÑ¥","Metadata/Items/Armours/Boots/BootsDex5",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"öèÆ¤¶ÌÑ¥","Metadata/Items/Armours/Boots/BootsDex6",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"´Ö¸ï¶ÌÑ¥","Metadata/Items/Armours/Boots/BootsDex7",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"Ää×Ù¶ÌÑ¥","Metadata/Items/Armours/Boots/BootsDex8",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"Ää×Ù¶ÌÑ¥","Metadata/Items/Armours/Boots/BootsDex8","¸ÇÂ¬¿²µÄ·ÉÉı","Garukhan's Flight","3",nil)
 -- SetJiaoYiGoods(nil,"ÃÔ×Ù¶ÌÑ¥","Metadata/Items/Armours/Boots/BootsDex9",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"ÑòÃ«Ö®Ğ¬","Metadata/Items/Armours/Boots/BootsInt1",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"Ë¿ÈŞ±ãĞ¬","Metadata/Items/Armours/Boots/BootsInt2",nil,nil,nil,nil)
@@ -3358,7 +1812,7 @@ SetJiaoYiGoods(nil,"ááÒá","Metadata/Items/DivinationCards/DivinationCardTheOffsp
 -- SetJiaoYiGoods(nil,"Ğå²¼±ãĞ¬","Metadata/Items/Armours/Boots/BootsInt6",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"ÖäÕß³¤Ñ¥","Metadata/Items/Armours/Boots/BootsInt7",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"ÃØÊõ±ãĞ¬","Metadata/Items/Armours/Boots/BootsInt8",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"ÊõÊ¿³¤Ñ¥","Metadata/Items/Armours/Boots/BootsInt9",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÊõÊ¿³¤Ñ¥","Metadata/Items/Armours/Boots/BootsInt9","¿ÕÏò","Skyforth","3",nil)
 -- SetJiaoYiGoods(nil,"´ÖÁÛÆ¤Ñ¥","Metadata/Items/Armours/Boots/BootsStrDex1",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"ÌúÓ°³¤Ñ¥","Metadata/Items/Armours/Boots/BootsStrDex2",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"Í­Ó°³¤Ñ¥","Metadata/Items/Armours/Boots/BootsStrDex3",nil,nil,nil,nil)
@@ -3377,7 +1831,7 @@ SetJiaoYiGoods(nil,"ááÒá","Metadata/Items/DivinationCards/DivinationCardTheOffsp
 -- SetJiaoYiGoods(nil,"Ê¥Õ½³¤Ñ¥","Metadata/Items/Armours/Boots/BootsStrInt8",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"¹üÖºÁ¹Ğ¬","Metadata/Items/Armours/Boots/BootsDexInt1",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"¿Û»·¶ÌÑ¥","Metadata/Items/Armours/Boots/BootsDexInt2",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"»·´ø³¤Ñ¥","Metadata/Items/Armours/Boots/BootsDexInt3",nil,nil,nil,nil)
+SetJiaoYiGoods(nil,"»·´ø³¤Ñ¥","Metadata/Items/Armours/Boots/BootsDexInt3","ÈÕÒ«","Sundance","3",nil)
 -- SetJiaoYiGoods(nil,"¸¿×ã³¤Ñ¥","Metadata/Items/Armours/Boots/BootsDexInt4",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"ÁÔÈËÖ®Ñ¥","Metadata/Items/Armours/Boots/BootsDexInt5",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"·ü»÷Ö®Ñ¥","Metadata/Items/Armours/Boots/BootsDexInt6",nil,nil,nil,nil)
@@ -3396,20 +1850,20 @@ SetJiaoYiGoods(nil,"ááÒá","Metadata/Items/DivinationCards/DivinationCardTheOffsp
 -- SetJiaoYiGoods(nil,"¹Å¸Ö»¤ÊÖ","Metadata/Items/Armours/Gloves/GlovesStr5",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"Ô¶¹Å»¤ÊÖ","Metadata/Items/Armours/Gloves/GlovesStr6",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"¾ŞÁé»¤ÊÖ","Metadata/Items/Armours/Gloves/GlovesStr7",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"Íß¶û»¤ÊÖ","Metadata/Items/Armours/Gloves/GlovesStr8",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"Íß¶û»¤ÊÖ","Metadata/Items/Armours/Gloves/GlovesStr8","°¢×ÈÀïµÄ½İË¼","Atziri's Acuity","3",nil)
 -- SetJiaoYiGoods(nil,"¾ŞÈË»¤ÊÖ","Metadata/Items/Armours/Gloves/GlovesStr9",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"ÉúÆ¤ÊÖÌ×","Metadata/Items/Armours/Gloves/GlovesDex1",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"ÑòÆ¤ÊÖÌ×","Metadata/Items/Armours/Gloves/GlovesDex2",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"Â¹Æ¤ÊÖÌ×","Metadata/Items/Armours/Gloves/GlovesDex3",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"Â¹Æ¤ÊÖÌ×","Metadata/Items/Armours/Gloves/GlovesDex3","ÂíÀ×¸ñÂŞµÄÃµºìÊÖÌ×","Maligaro's Virtuosity","3",nil)
 -- SetJiaoYiGoods(nil,"É°Ó°ÊÖÌ×","Metadata/Items/Armours/Gloves/GlovesDex4",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"÷©Æ¤ÊÖÌ×","Metadata/Items/Armours/Gloves/GlovesDex5",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"öèÆ¤ÊÖÌ×","Metadata/Items/Armours/Gloves/GlovesDex6",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"´Ö¸ïÊÖÌ×","Metadata/Items/Armours/Gloves/GlovesDex7",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"Ää×ÙÊÖÌ×","Metadata/Items/Armours/Gloves/GlovesDex8",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"ÃÔ×ÙÊÖÌ×","Metadata/Items/Armours/Gloves/GlovesDex9",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"ÑòÃ«ÊÖÌ×","Metadata/Items/Armours/Gloves/GlovesInt1",nil,nil,nil,nil)
+SetJiaoYiGoods(nil,"ÑòÃ«ÊÖÌ×","Metadata/Items/Armours/Gloves/GlovesInt1","ÁÔ±¦ÕßµÄ»¤ÊÖ","Sadima's Touch","3",nil)
 -- SetJiaoYiGoods(nil,"Ë¿ÈŞÊÖÌ×","Metadata/Items/Armours/Gloves/GlovesInt2",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"Ë¿³ñÊÖÌ×","Metadata/Items/Armours/Gloves/GlovesInt3",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"Ë¿³ñÊÖÌ×","Metadata/Items/Armours/Gloves/GlovesInt3","°²ÈüÄÈË¿µÄ°²¸§Ö®Óï","Asenath's Gentle Touch","3",nil)
 -- SetJiaoYiGoods(nil,"´ÌĞåÊÖÌ×","Metadata/Items/Armours/Gloves/GlovesInt4",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"¶Ğ²¼ÊÖÌ×","Metadata/Items/Armours/Gloves/GlovesInt5",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"Ğå²¼ÊÖÌ×","Metadata/Items/Armours/Gloves/GlovesInt6",nil,nil,nil,nil)
@@ -3419,7 +1873,7 @@ SetJiaoYiGoods(nil,"ááÒá","Metadata/Items/DivinationCards/DivinationCardTheOffsp
 -- SetJiaoYiGoods(nil,"ÓãÁÛÊÖÌ×","Metadata/Items/Armours/Gloves/GlovesStrDex1",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"ÌúÓ°ÊÖÌ×","Metadata/Items/Armours/Gloves/GlovesStrDex2",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"Í­Ó°ÊÖÌ×","Metadata/Items/Armours/Gloves/GlovesStrDex3",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"¸ÖÓ°»¤ÊÖ","Metadata/Items/Armours/Gloves/GlovesStrDex4",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"¸ÖÓ°»¤ÊÖ","Metadata/Items/Armours/Gloves/GlovesStrDex4","¸»¹óÖ®ÔË","Aurseize","3",nil)
 -- SetJiaoYiGoods(nil,"ÉßÁÛÊÖÌ×","Metadata/Items/Armours/Gloves/GlovesStrDex5",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"òóÁÛÊÖÌ×","Metadata/Items/Armours/Gloves/GlovesStrDex6",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"»ğòóÁÛÊÖÌ×","Metadata/Items/Armours/Gloves/GlovesStrDex7",nil,nil,nil,nil)
@@ -3469,7 +1923,7 @@ SetJiaoYiGoods(nil,"ááÒá","Metadata/Items/DivinationCards/DivinationCardTheOffsp
 -- SetJiaoYiGoods(nil,"ÓÀºãÄ§Á¦Ò©¼Á","Metadata/Items/Flasks/FlaskMana12",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"Ğ¡ĞÍ¸´ºÏÒ©¼Á","Metadata/Items/Flasks/FlaskHybrid1",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"ÖĞĞÍ¸´ºÏÒ©¼Á","Metadata/Items/Flasks/FlaskHybrid2",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"´óĞÍ¸´ºÏÒ©¼Á","Metadata/Items/Flasks/FlaskHybrid3",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"´óĞÍ¸´ºÏÒ©¼Á","Metadata/Items/Flasks/FlaskHybrid3","±¦ÊÓ¾«»ª","Divination Distillate","3",nil)
 -- SetJiaoYiGoods(nil,"¸ß½×¸´ºÏÒ©¼Á","Metadata/Items/Flasks/FlaskHybrid4",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"Ê¥Óï¸´ºÏÒ©¼Á","Metadata/Items/Flasks/FlaskHybrid5",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"×£¸£¸´ºÏÒ©¼Á","Metadata/Items/Flasks/FlaskHybrid6",nil,nil,nil,nil)
@@ -3494,208 +1948,400 @@ SetJiaoYiGoods(nil,"ááÒá","Metadata/Items/DivinationCards/DivinationCardTheOffsp
 -- SetJiaoYiGoods(nil,"ÖØÊ¸¼ı´ü","Metadata/Items/Quivers/Quiver4",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"ÇáÇÉ¼ı´ü","Metadata/Items/Quivers/Quiver5",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"¾â³İ¼ı´ü","Metadata/Items/Quivers/Quiver6",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"Ë«·æ¼ı´ü","Metadata/Items/Quivers/Quiver7",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"Ë«·æ¼ı´ü","Metadata/Items/Quivers/Quiver7","Èğ·ğÖ®Óğ","Rigwald's Quills","3",nil)
 -- SetJiaoYiGoods(nil,"öè³İ¼ı´ü","Metadata/Items/Quivers/Quiver8",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"¶ÛÊ¸¼ı´ü","Metadata/Items/Quivers/Quiver9",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"»ğÁé¼ı´ü","Metadata/Items/Quivers/Quiver10",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"¿íÊ¸¼ı´ü","Metadata/Items/Quivers/Quiver11",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"´©Éä¼ı´ü","Metadata/Items/Quivers/Quiver12",nil,nil,nil,nil)
 -- SetJiaoYiGoods(nil,"´Ì·æ¼ı´ü","Metadata/Items/Quivers/Quiver13",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"»ªÃÀ¼ı´ü","Metadata/Items/Quivers/Quiver14",nil,nil,nil,nil)
--- SetJiaoYiGoods(nil,"¾â³İ¼ı´ü","Metadata/Items/Quivers/QuiverDescent",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"»ªÃÀ¼ı´ü","Metadata/Items/Quivers/Quiver14","ÂíÂåÄáµÄ¼¼ÇÉ","Maloney's Mechanism","3",nil)
+--SetJiaoYiGoods(nil,"¾â³İ¼ı´ü","Metadata/Items/Quivers/QuiverDescent",nil,nil,nil,nil)
+SetJiaoYiGoods(nil,nil,nil,nil,"Fury Valve")--"‘Å­é]æi"
+SetJiaoYiGoods(nil,nil,nil,nil,"Hands of the High Templar")--"Â}×ÚÉñÊÖ"
+SetJiaoYiGoods(nil,nil,nil,nil,"Leash of Oblation")--"¼ÀÆ·Ö®ÀM"
+SetJiaoYiGoods(nil,nil,nil,nil,"Manastorm")--"Ä§ÄÜ±©ïL"
+SetJiaoYiGoods(nil,nil,nil,nil,"Mistwall")--"ÃÔìFÖ®èµ"
+SetJiaoYiGoods(nil,nil,nil,nil,"Mother's Embrace")--"Ä¸ÓHµÄ“í±§"
+SetJiaoYiGoods(nil,nil,nil,nil,"Painseeker")--"Œ¤¿à"
+SetJiaoYiGoods(nil,nil,nil,nil,"The Black Cane")--"ºÚÌÙ"
+SetJiaoYiGoods(nil,nil,nil,nil,"The Ivory Tower")--"ÏóÑÀËş"
+SetJiaoYiGoods(nil,nil,nil,nil,"The Saviour")--"¾ÈÊÀÖ÷"
+SetJiaoYiGoods(nil,nil,nil,nil,"Thread of Hope")--"Ï£ÍûÖ®½L"
+SetJiaoYiGoods(nil,nil,nil,nil,"Warrior's Legacy")--"‘ğÊ¿ßzÎï"
+SetJiaoYiGoods(nil,nil,nil,nil,"Willowgift")--"ÁøÄ¾Ö®¶Y"
 
-SetQuLingData(nil,80,true,true)--Âú70¼¶¾Í¿ªÒì½çµÄÇıÁé¼ÀÌ³
---Ìí¼ÓÓÅÏÈ¹ºÂòµÄÇıÁé½±Àø£¬Ë³ĞòÎª´ÓÉÏµ½ÏÂ °Ñ¹óÖØµÄ¶«Î÷ÅÅÇ°Ãæ
---AddYouXianGongPingBuyGoods(name,className,wordName,wordClassName,needYanShi)--Ìí¼ÓÓÅÏÈÊ¹ÓÃ¹±Æ·¹ºÂòµÄ¶«Î÷ ÓÅÏÈ¶ÈÎª´ÓÉÏµ½ÏÂÌí¼Ó
---name ×Ö·û´®ĞÍ ÓÅÏÈ¹ºÂòµÄÎïÆ·Ãû ¿ÉÌînilºöÂÔ£¬µ«Ò»¶¨ÒªÌîÏÂÃæµÄÀàÃû
---className ×Ö·û´®ĞÍ ÓÅÏÈ¹ºÂòµÄÎïÆ·ÀàÃû ¿ÉÒÔÌînilºöÂÔ£¬µ«Ò»¶¨ÒªÌîÉÏÃæµÄÃû×Ö
---wordName ×Ö·û´®ĞÍ ´Ê×ºÃû ºöÂÔÌînil
---wordClassName ×Ö·û´®ĞÍ ´Ê×ºÀàÃû ºöÂÔÌînil
---needYanShi Âß¼­ĞÍ Âò²»ÆğÊ±ÊÇ·ñÑÓÊ± trueÎªÑÓÊ± false»ònilÎª²»ÑÓÊ±
-AddYouXianGongPingBuyGoods("¿¨À¼µÂµÄÄ§¾µ","Metadata/Items/Currency/CurrencyDuplicate",nil,nil,true)
-AddYouXianGongPingBuyGoods(nil,nil,nil,"Headhunter",true)--"«CÊ×"
-AddYouXianGongPingBuyGoods(nil,nil,nil,"Badge of the Brotherhood",true)--"¼¤ÇéÖ®ÕÂ"
-AddYouXianGongPingBuyGoods(nil,nil,nil,"Bottled Faith",true)--"Æ¿ÖĞĞÅÑö"
-AddYouXianGongPingBuyGoods(nil,nil,nil,"Unnatural Instinct",true)--"Éñ¸Ğ"
-AddYouXianGongPingBuyGoods(nil,nil,nil,"Void Battery",true)--"“ÄÜÄ§°ô"
-AddYouXianGongPingBuyGoods(nil,nil,nil,"Maloney's Mechanism",true)--"ñRÂåÄáµÄ™CêP"
-AddYouXianGongPingBuyGoods(nil,nil,nil,"Asenath's Gentle Touch",true)--"°²ÙÄÈ½zµÄ°²“áÖ®ÕZ"
-AddYouXianGongPingBuyGoods(nil,nil,nil,"Machina Mitts",true)--"ÔÓ‹Ä§ÊÖ"
-AddYouXianGongPingBuyGoods(nil,nil,nil,"Farrul's Fur",true)--"ÙM –Á_ÓğÒÂ"
-AddYouXianGongPingBuyGoods(nil,nil,nil,"Shroud of the Lightless",true)--"»Ş°µµÄŒÆ²¼"
-AddYouXianGongPingBuyGoods(nil,nil,nil,"The Halcyon",true)--"Ì«Æ½"
-AddYouXianGongPingBuyGoods(nil,nil,nil,"Unending Hunger",true)--"Ÿo±M¿ÊÍû"
-AddYouXianGongPingBuyGoods(nil,nil,nil,"Inspired Learning",true)--"ÇóÖªµÄŸáÇé"
--- AddYouXianGongPingBuyGoods(nil,nil,nil,"Primordial Might",true)--"ÏÈ×æÁ¦Á¿"
-AddYouXianGongPingBuyGoods(nil,nil,nil,"AtzirisMirrorFated",true)--"Å®Íõ«I¼À"
-AddYouXianGongPingBuyGoods(nil,nil,nil,"ItemAbleToBecomesUniqueWhenChanceOrbApplied",true)--"ÂéÈ¸×ƒøP»Ë"
-AddYouXianGongPingBuyGoods(nil,nil,nil,"RollingSixSocketBodyArmourLinksAllSockets",true)--"Ãüß\ßB½Y"
-AddYouXianGongPingBuyGoods(nil,nil,nil,"RareSuturedAberrationDropsMaligarosVirtuosity",true)--"ÆæÃîÖ®ÊÖ"
-AddYouXianGongPingBuyGoods("³ç¸ßÊ¯","Metadata/Items/Currency/CurrencyAddModToRare",nil,nil,true)
-AddYouXianGongPingBuyGoods("¿¨À¼µÂµÄÄ§¾µËéÆ¬","Metadata/Items/Currency/CurrencyDuplicateShard",nil,nil,true)
-AddYouXianGongPingBuyGoods("Ô¶¹ÅÊ¯","Metadata/Items/Currency/CurrencyRerollUnique",nil,nil,true)
-AddYouXianGongPingBuyGoods("ÉñÊ¥Ê¯","Metadata/Items/Currency/CurrencyModValues",nil,nil,true)
-AddYouXianGongPingBuyGoods("ØSÔ£ÅÆ½M","Metadata/Items/DivinationCards/DivinationCardDeck",nil,nil,true)
-AddYouXianGongPingBuyGoods("»ìãçÊ¯","Metadata/Items/Currency/CurrencyRerollRare",nil,nil,true)
-AddYouXianGongPingBuyGoods("µã½ğÊ¯","Metadata/Items/Currency/CurrencyUpgradeToRare",nil,nil,true)
-AddYouXianGongPingBuyGoods("¸»ºÀÊ¯","Metadata/Items/Currency/CurrencyUpgradeMagicToRare",nil,nil,true)
-AddYouXianGongPingBuyGoods("ÖÆÍ¼¶¤","Metadata/Items/Currency/CurrencyMapQuality",nil,nil,true)
-AddYouXianGongPingBuyGoods("ºó»ÚÊ¯","Metadata/Items/Currency/CurrencyPassiveRefund",nil,nil,true)
-AddYouXianGongPingBuyGoods("ÖØÖıÊ¯","Metadata/Items/Currency/CurrencyConvertToNormal",nil,nil,true)
-AddYouXianGongPingBuyGoods("±¦Ê¯½³µÄÀâ¾µ","Metadata/Items/Currency/CurrencyGemQuality",nil,nil,true)
-AddYouXianGongPingBuyGoods("Á´½áÊ¯","Metadata/Items/Currency/CurrencyRerollSocketLinks",nil,nil,true)
-AddYouXianGongPingBuyGoods("¸ÄÔìÊ¯","Metadata/Items/Currency/CurrencyRerollMagic",nil,nil,true)
-AddYouXianGongPingBuyGoods("¯‚át","Metadata/Items/DivinationCards/DivinationCardTheDoctor",nil,nil,true)
-AddYouXianGongPingBuyGoods("Ä§¹í","Metadata/Items/DivinationCards/DivinationCardTheFiend",nil,nil,true)
-AddYouXianGongPingBuyGoods("†ÎÏàË¼","Metadata/Items/DivinationCards/DivinationCardUnrequitedLove",nil,nil,true)
-AddYouXianGongPingBuyGoods("Ã÷¾µ","Metadata/Items/DivinationCards/DivinationCardHouseOfMirrors",nil,nil,true)
-AddYouXianGongPingBuyGoods("¶ñÄ§","Metadata/Items/DivinationCards/DivinationCardTheDemon",nil,nil,true)
-AddYouXianGongPingBuyGoods("Ÿo×ï¾ÈÚH","Metadata/Items/DivinationCards/DivinationCardSuccorOfTheSinless",nil,nil,true)
-AddYouXianGongPingBuyGoods("·ä³²Öª×R","Metadata/Items/DivinationCards/DivinationCardTheHiveOfKnowledge",nil,nil,true)
-AddYouXianGongPingBuyGoods("°²ÙÄÈ½zÙ›¶Y","Metadata/Items/DivinationCards/DivinationCardGiftOfAsenath",nil,nil,true)
-AddYouXianGongPingBuyGoods("ĞÛ‚¥„Ó™C","Metadata/Items/DivinationCards/DivinationCardTheGreatestIntentions",nil,nil,true)
-AddYouXianGongPingBuyGoods("éLÆÚÔpò_","Metadata/Items/DivinationCards/DivinationCardTheLongCon",nil,nil,true)
-AddYouXianGongPingBuyGoods("²®ÖÙØ”ì","Metadata/Items/DivinationCards/DivinationCardBrothersStash",nil,nil,true)
-AddYouXianGongPingBuyGoods("ÃüÖĞ×¢¶¨","Metadata/Items/DivinationCards/DivinationCardFatefulMeeting",nil,nil,true)
-AddYouXianGongPingBuyGoods("ĞÇÏóÑ§¼Ò","Metadata/Items/DivinationCards/DivinationCardTheAstromancer",nil,nil,true)
-AddYouXianGongPingBuyGoods("¿ç±ùÖ®Áµ","Metadata/Items/DivinationCards/DivinationCardLoveThroughIce",nil,nil,true)
-AddYouXianGongPingBuyGoods("²¡»¼","Metadata/Items/DivinationCards/DivinationCardThePatient",nil,nil,true)
-AddYouXianGongPingBuyGoods("ÕÕÁÏÕß","Metadata/Items/DivinationCards/DivinationCardTheNurse",nil,nil,true)
-AddYouXianGongPingBuyGoods("±¦Ïä","Metadata/Items/DivinationCards/DivinationCardTheHoarder",nil,nil,true)
-AddYouXianGongPingBuyGoods("Æú²ÆÇóÉú","Metadata/Items/DivinationCards/DivinationCardAbandonedWealth",nil,nil,true)
-AddYouXianGongPingBuyGoods("Ê¥ÈËÖ®Àñ","Metadata/Items/DivinationCards/DivinationCardTheSaintsTreasure",nil,nil,true)
-AddYouXianGongPingBuyGoods("¼áÒãÊ«ÈË","Metadata/Items/DivinationCards/DivinationCardTheIronBard",nil,nil,true)
-AddYouXianGongPingBuyGoods("ÎäÊ¿Ö®ÑÛ","Metadata/Items/DivinationCards/DivinationCardTheSamuraisEye",nil,nil,true)
-AddYouXianGongPingBuyGoods("À´ÉúÖ®ÃÀ","Metadata/Items/DivinationCards/DivinationCardBeautyThroughDeath",nil,nil,true)
-AddYouXianGongPingBuyGoods("ÆßÄê¶òÔË","Metadata/Items/DivinationCards/DivinationCardSevenYearsBadLuck",nil,nil,true)
-AddYouXianGongPingBuyGoods("ÓÕÈËµÄ½±ÉÍ","Metadata/Items/DivinationCards/DivinationCardAlluringBounty",nil,nil,true)
-AddYouXianGongPingBuyGoods("ÏÈ×æµÄ´ú¼Û","Metadata/Items/DivinationCards/DivinationCardPrideOfTheFirstOnes",nil,nil,true)
-AddYouXianGongPingBuyGoods("ÉúÃüÖ®Ê÷","Metadata/Items/DivinationCards/DivinationCardTheSephirot",nil,nil,true)
-AddYouXianGongPingBuyGoods("ËÀÁéÒÅÎï","Metadata/Items/DivinationCards/DivinationCardTheWretched",nil,nil,true)
-AddYouXianGongPingBuyGoods("ºÚ°µÈıÃæ","Metadata/Items/DivinationCards/DivinationCardThreeFacesInTheDark",nil,nil,true)
-AddYouXianGongPingBuyGoods("»ëãçĞÔÇé","Metadata/Items/DivinationCards/DivinationCardChaoticDisposition",nil,nil,true)
-AddYouXianGongPingBuyGoods("Ô¹·Ş","Metadata/Items/DivinationCards/DivinationCardTheWrath",nil,nil,true)
+-- SetJiaoYiGoods(nil,"ĞâÊ´µÄÁÑÏ¶Ê¥¼×³æ","Metadata/Items/Scarabs/ScarabBreach1",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÉÁÒ«µÄÁÑÏ¶Ê¥¼×³æ","Metadata/Items/Scarabs/ScarabBreach2",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"¶Æ½ğµÄÁÑÏ¶Ê¥¼×³æ","Metadata/Items/Scarabs/ScarabBreach3",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ĞâÊ´µÄÖÆÍ¼ÕßÊ¥¼×³æ","Metadata/Items/Scarabs/ScarabMaps1",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÉÁÒ«µÄµÄÖÆÍ¼ÕßÊ¥¼×³æ","Metadata/Items/Scarabs/ScarabMaps2",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"¶Æ½ğµÄÖÆÍ¼ÕßÊ¥¼×³æ","Metadata/Items/Scarabs/ScarabMaps3",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ĞâÊ´µÄÒÅÎïÌüÊ¥¼×³æ","Metadata/Items/Scarabs/ScarabUniques1",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÉÁÒ«µÄÒÅÎïÌüÊ¥¼×³æ","Metadata/Items/Scarabs/ScarabUniques2",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"¶Æ½ğµÄÒÅÎïÌüÊ¥¼×³æ","Metadata/Items/Scarabs/ScarabUniques3",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ĞâÊ´µÄÁÔÄ§Ê¥¼×³æ","Metadata/Items/Scarabs/ScarabBeasts1",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÉÁÒ«µÄÁÔÄ§Ê¥¼×³æ","Metadata/Items/Scarabs/ScarabBeasts2",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"¶Æ½ğµÄÁÔÄ§Ê¥¼×³æ","Metadata/Items/Scarabs/ScarabBeasts3",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ĞâÊ´µÄËÜ½çÕßÊ¥¼×³æ","Metadata/Items/Scarabs/ScarabShaperRares1",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÉÁÒ«µÄËÜ½çÕßÊ¥¼×³æ","Metadata/Items/Scarabs/ScarabShaperRares2",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"¶Æ½ğµÄËÜ½çÕßÊ¥¼×³æ","Metadata/Items/Scarabs/ScarabShaperRares3",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ĞâÊ´µÄÁÑ½çÕßÊ¥¼×³æ","Metadata/Items/Scarabs/ScarabElderRares1",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÉÁÒ«µÄÁÑ½çÕßÊ¥¼×³æ","Metadata/Items/Scarabs/ScarabElderRares2",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"¶Æ½ğµÄÁÑ½çÕßÊ¥¼×³æ","Metadata/Items/Scarabs/ScarabElderRares3",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ĞâÊ´µÄÑÇÁòËáÊ¥¼×³æ","Metadata/Items/Scarabs/ScarabSulphite1",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÉÁÒ«µÄÑÇÁòËáÊ¥¼×³æ","Metadata/Items/Scarabs/ScarabSulphite2",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"¶Æ½ğµÄÁòËáÑÎÊ¥¼×³æ","Metadata/Items/Scarabs/ScarabSulphite3",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ĞâÊ´µÄÉñ¶÷Ê¥¼×³æ","Metadata/Items/Scarabs/ScarabDivinationCards1",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÉÁÒ«µÄÉñ¶÷Ê¥¼×³æ","Metadata/Items/Scarabs/ScarabDivinationCards2",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"¶Æ½ğµÄÉñ¶÷Ê¥¼×³æ","Metadata/Items/Scarabs/ScarabDivinationCards3",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ĞâÊ´µÄ¿àÍ´Ê¥¼×³æ","Metadata/Items/Scarabs/ScarabTorment1",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÉÁÒ«µÄ¿àÍ´Ê¥¼×³æ","Metadata/Items/Scarabs/ScarabTorment2",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"¶Æ½ğµÄ¿àÍ´Ê¥¼×³æ","Metadata/Items/Scarabs/ScarabTorment3",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ĞâÊ´µÄÇ¿Ï®Ê¥¼×³æ","Metadata/Items/Scarabs/ScarabStrongbox1",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÉÁÒ«µÄÇ¿Ï®Ê¥¼×³æ","Metadata/Items/Scarabs/ScarabStrongbox2",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"¶Æ½ğµÄÇ¿Ï®Ê¥¼×³æ","Metadata/Items/Scarabs/ScarabStrongbox3",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ĞâÊ´µÄÏÈÇıÊ¥¼×³æ","Metadata/Items/Scarabs/ScarabHarbinger1",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÉÁÒ«µÄÏÈÇıÊ¥¼×³æ","Metadata/Items/Scarabs/ScarabHarbinger2",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"¶Æ½ğµÄÏÈÇıÊ¥¼×³æ","Metadata/Items/Scarabs/ScarabHarbinger3",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ĞâÊ´µÄÆÕÀ¼µÂË¹Ê¥¼×³æ","Metadata/Items/Scarabs/ScarabPerandus1",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÉÁÒ«µÄÆÕÀ¼µÂË¹Ê¥¼×³æ","Metadata/Items/Scarabs/ScarabPerandus2",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"¶Æ½ğµÄÆÕÀ¼µÂË¹Ê¥¼×³æ","Metadata/Items/Scarabs/ScarabPerandus3",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ĞâÊ´µÄ¾üÍÅÊ¥¼×³æ","Metadata/Items/Scarabs/ScarabLegion1",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÉÁÒ«µÄ¾üÍÅÊ¥¼×³æ","Metadata/Items/Scarabs/ScarabLegion2",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"¶Æ½ğµÄ¾üÍÅÊ¥¼×³æ","Metadata/Items/Scarabs/ScarabLegion3",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"Çå³ºÊ¥ÓÍ","Metadata/Items/Currency/Mushrune1",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"Ä«É«Ê¥ÓÍ","Metadata/Items/Currency/Mushrune2",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"çúçêÊ¥ÓÍ","Metadata/Items/Currency/Mushrune3",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"´äÂÌÊ¥ÓÍ","Metadata/Items/Currency/Mushrune4",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"Ë®À¶Ê¥ÓÍ","Metadata/Items/Currency/Mushrune5",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"ÌìÀ¶Ê¥ÓÍ","Metadata/Items/Currency/Mushrune6",nil,nil,nil,nil)
+-- SetJiaoYiGoods(nil,"×ÏÉ«Ê¥ÓÍ","Metadata/Items/Currency/Mushrune7",nil,nil,nil,nil)
+SetJiaoYiGoods(nil,"ç³ºìÊ¥ÓÍ","Metadata/Items/Currency/Mushrune8",nil,nil,nil,nil)
+SetJiaoYiGoods(nil,"ÆáºÚÊ¥ÓÍ","Metadata/Items/Currency/Mushrune9",nil,nil,nil,nil)
+SetJiaoYiGoods(nil,"Èé°×Ê¥ÓÍ","Metadata/Items/Currency/Mushrune10",nil,nil,nil,nil)
+SetJiaoYiGoods(nil,"°×ÒøÊ¥ÓÍ","Metadata/Items/Currency/Mushrune11",nil,nil,nil,nil)
+SetJiaoYiGoods(nil,"½ğÉ«Ê¥ÓÍ","Metadata/Items/Currency/Mushrune12",nil,nil,nil,nil)
 
-g_needShiLianDaShiLv=80--Âú75¼¶´òÊÔÁ¶´óÊ¦
-SetNeedShiLianReward("¿¨À¼µÂµÄÄ§¾µ","Metadata/Items/Currency/CurrencyDuplicate")
-SetNeedShiLianReward(nil,nil,nil,"The Squire")--"´óµØÖ÷"
-SetNeedShiLianReward(nil,nil,nil,"Mageblood")--"Ä§Ñª"
-SetNeedShiLianReward(nil,nil,nil,"Headhunter")--"«CÊ×"
-SetNeedShiLianReward(nil,nil,nil,"Badge of the Brotherhood")--"¼¤ÇéÖ®ÕÂ"
-SetNeedShiLianReward(nil,nil,nil,"Bottled Faith")--"Æ¿ÖĞĞÅÑö"
-SetNeedShiLianReward(nil,nil,nil,"Unnatural Instinct")--"Éñ¸Ğ"
-SetNeedShiLianReward(nil,nil,nil,"Void Battery")--"“ÄÜÄ§°ô"
-SetNeedShiLianReward(nil,nil,nil,"Maloney's Mechanism")--"ñRÂåÄáµÄ™CêP"
-SetNeedShiLianReward(nil,nil,nil,"Asenath's Gentle Touch")--"°²ÙÄÈ½zµÄ°²“áÖ®ÕZ"
-SetNeedShiLianReward(nil,nil,nil,"Machina Mitts")--"ÔÓ‹Ä§ÊÖ"
-SetNeedShiLianReward(nil,nil,nil,"Farrul's Fur")--"ÙM –Á_ÓğÒÂ"
-SetNeedShiLianReward(nil,nil,nil,"Shroud of the Lightless")--"»Ş°µµÄŒÆ²¼"
-SetNeedShiLianReward(nil,nil,nil,"The Halcyon")--"Ì«Æ½"
-SetNeedShiLianReward(nil,nil,nil,"Arakaali's Fang")--"°¬ –¿¨ÀòÖ®ÑÀ"
-SetNeedShiLianReward(nil,nil,nil,"Unending Hunger")--"Ÿo±M¿ÊÍû"
-SetNeedShiLianReward(nil,nil,nil,"Inspired Learning")--"ÇóÖªµÄŸáÇé"
-SetNeedShiLianReward(nil,nil,nil,"Berek's Respite")--"ØÀ×¿ËµÄ»ğÅcÀ×Ö®˜·"
-SetNeedShiLianReward(nil,nil,nil,"AtzirisMirrorFated")--"Å®Íõ«I¼À"
-SetNeedShiLianReward(nil,nil,nil,"ItemAbleToBecomesUniqueWhenChanceOrbApplied")--"ÂéÈ¸×ƒøP»Ë"
-SetNeedShiLianReward(nil,nil,nil,"RollingSixSocketBodyArmourLinksAllSockets")--"Ãüß\ßB½Y"
-SetNeedShiLianReward(nil,nil,nil,"RareSuturedAberrationDropsMaligarosVirtuosity")--"ÆæÃîÖ®ÊÖ"
-SetNeedShiLianReward("¿¨À¼µÂµÄÄ§¾µËéÆ¬","Metadata/Items/Currency/CurrencyDuplicateShard")
-SetNeedShiLianReward("¯‚át","Metadata/Items/DivinationCards/DivinationCardTheDoctor")
-SetNeedShiLianReward("Ä§¹í","Metadata/Items/DivinationCards/DivinationCardTheFiend")
-SetNeedShiLianReward("†ÎÏàË¼","Metadata/Items/DivinationCards/DivinationCardUnrequitedLove")
-SetNeedShiLianReward("Ã÷¾µ","Metadata/Items/DivinationCards/DivinationCardHouseOfMirrors")
-SetNeedShiLianReward("¶ñÄ§","Metadata/Items/DivinationCards/DivinationCardTheDemon")
-SetNeedShiLianReward("Ÿo×ï¾ÈÚH","Metadata/Items/DivinationCards/DivinationCardSuccorOfTheSinless")
-SetNeedShiLianReward("·ä³²Öª×R","Metadata/Items/DivinationCards/DivinationCardTheHiveOfKnowledge")
-SetNeedShiLianReward("°²ÙÄÈ½zÙ›¶Y","Metadata/Items/DivinationCards/DivinationCardGiftOfAsenath")
-SetNeedShiLianReward("ĞÛ‚¥„Ó™C","Metadata/Items/DivinationCards/DivinationCardTheGreatestIntentions")
-SetNeedShiLianReward("éLÆÚÔpò_","Metadata/Items/DivinationCards/DivinationCardTheLongCon")
-SetNeedShiLianReward("²®ÖÙØ”ì","Metadata/Items/DivinationCards/DivinationCardBrothersStash")
-SetNeedShiLianReward("ÃüÖĞ×¢¶¨","Metadata/Items/DivinationCards/DivinationCardFatefulMeeting")
-SetNeedShiLianReward("ĞÇÏóÑ§¼Ò","Metadata/Items/DivinationCards/DivinationCardTheAstromancer")
-SetNeedShiLianReward("¿ç±ùÖ®Áµ","Metadata/Items/DivinationCards/DivinationCardLoveThroughIce")
-SetNeedShiLianReward("²¡»¼","Metadata/Items/DivinationCards/DivinationCardThePatient")
-SetNeedShiLianReward("ÕÕÁÏÕß","Metadata/Items/DivinationCards/DivinationCardTheNurse")
-SetNeedShiLianReward("Í¯×ÓÜŠ","Metadata/Items/DivinationCards/DivinationCardTheScout")
-SetNeedShiLianReward("±¦Ïä","Metadata/Items/DivinationCards/DivinationCardTheHoarder")
-SetNeedShiLianReward("Æú²ÆÇóÉú","Metadata/Items/DivinationCards/DivinationCardAbandonedWealth")
-SetNeedShiLianReward("Ê¥ÈËÖ®Àñ","Metadata/Items/DivinationCards/DivinationCardTheSaintsTreasure")
-SetNeedShiLianReward("¼áÒãÊ«ÈË","Metadata/Items/DivinationCards/DivinationCardTheIronBard")
-SetNeedShiLianReward("ÎäÊ¿Ö®ÑÛ","Metadata/Items/DivinationCards/DivinationCardTheSamuraisEye")
-SetNeedShiLianReward("À´ÉúÖ®ÃÀ","Metadata/Items/DivinationCards/DivinationCardBeautyThroughDeath")
-SetNeedShiLianReward("ÆßÄê¶òÔË","Metadata/Items/DivinationCards/DivinationCardSevenYearsBadLuck")
-SetNeedShiLianReward("³ç¸ßÊ¯","Metadata/Items/Currency/CurrencyAddModToRare")
-SetNeedShiLianReward("Ô¶¹ÅÊ¯","Metadata/Items/Currency/CurrencyRerollUnique")
-SetNeedShiLianReward("ÉñÊ¥Ê¯","Metadata/Items/Currency/CurrencyModValues")
-SetNeedShiLianReward("ÓÕÈËµÄ½±ÉÍ","Metadata/Items/DivinationCards/DivinationCardAlluringBounty")
-SetNeedShiLianReward("ÏÈ×æµÄ´ú¼Û","Metadata/Items/DivinationCards/DivinationCardPrideOfTheFirstOnes")
-SetNeedShiLianReward("ÉúÃüÖ®Ê÷","Metadata/Items/DivinationCards/DivinationCardTheSephirot")
-SetNeedShiLianReward("ËÀÁéÒÅÎï","Metadata/Items/DivinationCards/DivinationCardTheWretched")
-SetNeedShiLianReward("ºÚ°µÈıÃæ","Metadata/Items/DivinationCards/DivinationCardThreeFacesInTheDark")
-SetNeedShiLianReward("»ëãçĞÔÇé","Metadata/Items/DivinationCards/DivinationCardChaoticDisposition")
-SetNeedShiLianReward("Ô¹·Ş","Metadata/Items/DivinationCards/DivinationCardTheWrath")
-SetNeedShiLianReward("ØSÔ£ÅÆ½M","Metadata/Items/DivinationCards/DivinationCardDeck")
-SetNeedShiLianReward("»ìãçÊ¯","Metadata/Items/Currency/CurrencyRerollRare")
-SetNeedShiLianReward("µã½ğÊ¯","Metadata/Items/Currency/CurrencyUpgradeToRare")
-SetNeedShiLianReward("¸»ºÀÊ¯","Metadata/Items/Currency/CurrencyUpgradeMagicToRare")
-SetNeedShiLianReward("ÖÆÍ¼¶¤","Metadata/Items/Currency/CurrencyMapQuality")
-SetNeedShiLianReward("ºó»ÚÊ¯","Metadata/Items/Currency/CurrencyPassiveRefund")
-SetNeedShiLianReward("ÖØÖıÊ¯","Metadata/Items/Currency/CurrencyConvertToNormal")
-SetNeedShiLianReward("±¦Ê¯½³µÄÀâ¾µ","Metadata/Items/Currency/CurrencyGemQuality")
-SetNeedShiLianReward("Á´½áÊ¯","Metadata/Items/Currency/CurrencyRerollSocketLinks")
-SetNeedShiLianReward("¸ÄÔìÊ¯","Metadata/Items/Currency/CurrencyRerollMagic")
+SetJiaoYiGoods(nil,"ºÚ°µÈıÃæ","Metadata/Items/DivinationCards/DivinationCardThreeFacesInTheDark",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"¯‚át","Metadata/Items/DivinationCards/DivinationCardTheDoctor",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"ë[Ê¿","Metadata/Items/DivinationCards/DivinationCardTheHermit",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"ÌmËş¶äÃÔã¯Ö®Û","Metadata/Items/DivinationCards/DivinationCardLantadorsLostLove",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"èF½³µÄÙ›¶Y","Metadata/Items/DivinationCards/DivinationCardTheMetalsmithsGift",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"‘ğ»ğå‘Ôì","Metadata/Items/DivinationCards/DivinationCardTheBattleBorn",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ôYÊ¿","Metadata/Items/DivinationCards/DivinationCardTheGladiator",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"ŒWÕß","Metadata/Items/DivinationCards/DivinationCardTheScholar",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ËéÁÑ´óµÛ","Metadata/Items/DivinationCards/DivinationCardTheBrittleEmperor",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÔŠÈË","Metadata/Items/DivinationCards/DivinationCardThePoet",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"Ê³¸¯ÂÓÑ»","Metadata/Items/DivinationCards/DivinationCardTheCarrionCrow",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"Ï£Íû","Metadata/Items/DivinationCards/DivinationCardHope",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"Ä§¹í","Metadata/Items/DivinationCards/DivinationCardTheFiend",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"ÈıÕßÖ®µ®","Metadata/Items/DivinationCards/DivinationCardBirthOfTheThree",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"Ş±ÄİÑÅµÄĞÅÎï","Metadata/Items/DivinationCards/DivinationCardViniasToken",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"ÕÙ»½Ê¦","Metadata/Items/DivinationCards/DivinationCardTheSummoner",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"¾Ş±ä","Metadata/Items/DivinationCards/DivinationCardTheCataclysm",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"¼¢¶ö","Metadata/Items/DivinationCards/DivinationCardTheHunger",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"±¦Ïä","Metadata/Items/DivinationCards/DivinationCardTheHoarder",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"¾Æ×í¹ó×å","Metadata/Items/DivinationCards/DivinationCardTheDrunkenAristocrat",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"ÁÒÈÕ","Metadata/Items/DivinationCards/DivinationCardTheSun",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"µäÓü³¤","Metadata/Items/DivinationCards/DivinationCardTheWarden",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"´´ºÛÖ®Ô­","Metadata/Items/DivinationCards/DivinationCardTheScarredMeadow",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ºÚ°µÊõÕß","Metadata/Items/DivinationCards/DivinationCardTheDarkMage",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"Öé±¦½³","Metadata/Items/DivinationCards/DivinationCardTheGemcutter",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"¶ÄÍ½","Metadata/Items/DivinationCards/DivinationCardTheGambler",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"ÇéÈË","Metadata/Items/DivinationCards/DivinationCardTheLover",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"»ëãçĞÔÇé","Metadata/Items/DivinationCards/DivinationCardChaoticDisposition",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"Á¦Á¿Ö®µÀ","Metadata/Items/DivinationCards/DivinationCardTheRoadToPower",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"¸´³ğÕß","Metadata/Items/DivinationCards/DivinationCardTheAvenger",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"µÛÔË","Metadata/Items/DivinationCards/DivinationCardEmperorsLuck",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"Ê§ÂäÒÅ¹Ç","Metadata/Items/DivinationCards/DivinationCardTimeLostRelic",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ºÃÔËÁ¬Á¬","Metadata/Items/DivinationCards/DivinationCardLuckyConnections",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"Ê¢Ñç","Metadata/Items/DivinationCards/DivinationCardTheFeast",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"»ìãçÖ®Óê","Metadata/Items/DivinationCards/DivinationCardRainOfChaos",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"ÄıÊÓÕß","Metadata/Items/DivinationCards/DivinationCardTheWatcher",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"ÖäÓï","Metadata/Items/DivinationCards/DivinationCardTheIncantation",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"¼¢¿ÊÖ®Õ¼","Metadata/Items/DivinationCards/DivinationCardCovetedPossession",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÍõÕßÖ®ĞÄ","Metadata/Items/DivinationCards/DivinationCardTheKingsHeart",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"Æú²ÆÇóÉú","Metadata/Items/DivinationCards/DivinationCardAbandonedWealth",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"·ç","Metadata/Items/DivinationCards/DivinationCardTheWind",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"Ğ­Ô¼","Metadata/Items/DivinationCards/DivinationCardThePact",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"±¦Ê¯½³µÄÔÊÅµ","Metadata/Items/DivinationCards/DivinationCardGemcuttersPromise",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÌìÌÃÖ´·¨¹Ù","Metadata/Items/DivinationCards/DivinationCardTheCelestialJusticar",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"Êø¸¿Ö®Á¶","Metadata/Items/DivinationCards/DivinationCardTheChainsThatBind",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÒÕÕß","Metadata/Items/DivinationCards/DivinationCardTheArtist",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"·¢Ã÷¼Ò","Metadata/Items/DivinationCards/DivinationCardTheInventor",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"Èº¾ÛÖ®Ê×","Metadata/Items/DivinationCards/DivinationCardThePackLeader",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"¾ªÏ²ºĞ","Metadata/Items/DivinationCards/DivinationCardJackInTheBox",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÁªÒö","Metadata/Items/DivinationCards/DivinationCardTheUnion",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"Å®Íõ","Metadata/Items/DivinationCards/DivinationCardTheQueen",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"Ç«Ñ·","Metadata/Items/DivinationCards/DivinationCardHumility",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"Ì½ÏÕ¼Ò","Metadata/Items/DivinationCards/DivinationCardTheExplorer",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"½¾×İ»Ê×Ó","Metadata/Items/DivinationCards/DivinationCardTheSpoiledPrince",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"±³ÅÑ","Metadata/Items/DivinationCards/DivinationCardTheBetrayal",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"Ü½ÀÍÀ­µÄÔùÀñ","Metadata/Items/DivinationCards/DivinationCardTheFlorasGift",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"º£Ñı","Metadata/Items/DivinationCards/DivinationCardTheSiren",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÍêÈË","Metadata/Items/DivinationCards/DivinationCardTheOneWithAll",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÒÙÁ¢²»°ÜÖ®ÈË","Metadata/Items/DivinationCards/DivinationCardTheLastOneStanding",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"µÂÈğ¾ºÖ®¿ñ","Metadata/Items/DivinationCards/DivinationCardDoedresMadness",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ºÚ°µÀ´·¸","Metadata/Items/DivinationCards/DivinationCardTheEncroachingDarkness",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"Ô¹·Ş","Metadata/Items/DivinationCards/DivinationCardTheWrath",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"ÍõÕßÖ®ÈĞ","Metadata/Items/DivinationCards/DivinationCardTheKingsBlade",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"Ô¶Õ÷","Metadata/Items/DivinationCards/DivinationCardTheTrial",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"ÉğÊ¿Ö®·ç","Metadata/Items/DivinationCards/DivinationCardTheGentleman",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"Ã÷¾µ","Metadata/Items/DivinationCards/DivinationCardHouseOfMirrors",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"Ç®ÓëÈ¨","Metadata/Items/DivinationCards/DivinationCardWealthAndPower",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÔÖ±ä","Metadata/Items/DivinationCards/DivinationCardTheCatalyst",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"Æ½ÈÀ","Metadata/Items/DivinationCards/DivinationCardTheVast",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"±¦Ê¯»ÊºóµÄÔùÀñ","Metadata/Items/DivinationCards/DivinationCardGiftOfTheGemlingQueen",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÁúÖ®ĞÄ","Metadata/Items/DivinationCards/DivinationCardTheDragonsHeart",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"½Æºü","Metadata/Items/DivinationCards/DivinationCardTheFox",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"¿şÀÜ","Metadata/Items/DivinationCards/DivinationCardTheDoppelganger",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÇóÉú×¨¼Ò","Metadata/Items/DivinationCards/DivinationCardTheSurvivalist",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"ËÀÍö","Metadata/Items/DivinationCards/DivinationCardDeath",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"ÍöÁéÖÇ»Û","Metadata/Items/DivinationCards/DivinationCardGraveKnowledge",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"Ğ¡³ó","Metadata/Items/DivinationCards/DivinationCardTheJester",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"Ó¶±ø","Metadata/Items/DivinationCards/DivinationCardTheMercenary",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"ÒÆ»¨½ÓÄ¾","Metadata/Items/DivinationCards/DivinationCardTheInoculated",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÖÒ³Ï","Metadata/Items/DivinationCards/DivinationCardLoyalty",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"½¾Õß±Ø°Ü","Metadata/Items/DivinationCards/DivinationCardPrideBeforeTheFall",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"µ¨Ê¶","Metadata/Items/DivinationCards/DivinationCardAudacity",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"°µÓ°¶÷»İ","Metadata/Items/DivinationCards/DivinationCardAssassinsFavour",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÁÔÕßÖ®Ô¸","Metadata/Items/DivinationCards/DivinationCardHuntersResolve",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"º£ÑóÑ§Õß","Metadata/Items/DivinationCards/DivinationCardScholarOfTheSeas",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"À×Õë","Metadata/Items/DivinationCards/DivinationCardTheConduit",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"Ëş·å","Metadata/Items/DivinationCards/DivinationCardTheTower",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"ÂÏÉú","Metadata/Items/DivinationCards/DivinationCardTheTwins",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"»ìÂÒ´ú¼Û","Metadata/Items/DivinationCards/DivinationCardAnarchysPrice",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"Î×Ñı","Metadata/Items/DivinationCards/DivinationCardTheLich",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"´óÆæÊõÊ¦","Metadata/Items/DivinationCards/DivinationCardTheThaumaturgist",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"´óÒÕÊõ¼Ò","Metadata/Items/DivinationCards/DivinationCardTheAesthete",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÖÇ»ÛÆôÃÉ","Metadata/Items/DivinationCards/DivinationCardTheEnlightened",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÁÔÈËµÄ½±ÉÍ","Metadata/Items/DivinationCards/DivinationCardHuntersReward",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"ÖÆ¼ıÕß","Metadata/Items/DivinationCards/DivinationCardTheFletcher",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"¿±²éÔ±","Metadata/Items/DivinationCards/DivinationCardTheSurveyor",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"¹­½³µÄÃÎÏë","Metadata/Items/DivinationCards/DivinationCardBowyersDream",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"Íâ¿ÆÒ½Ê¦","Metadata/Items/DivinationCards/DivinationCardTheSurgeon",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"²»ÎÈ¶¨µÄÁ¦Á¿","Metadata/Items/DivinationCards/DivinationCardVolatilePower",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"×îºóÏ£Íû","Metadata/Items/DivinationCards/DivinationCardLastHope",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"¿ñÍı","Metadata/Items/DivinationCards/DivinationCardHubris",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"Ã¤Í¾","Metadata/Items/DivinationCards/DivinationCardBlindVenture",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"ÎŞÇé¾üĞµ","Metadata/Items/DivinationCards/DivinationCardMercilessArmament",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÖÆÍ¼Ê¦","Metadata/Items/DivinationCards/DivinationCardTheCartographer",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"´ó¾ü·§","Metadata/Items/DivinationCards/DivinationCardTheWarlord",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"÷ÈÄ§","Metadata/Items/DivinationCards/DivinationCardTheDemoness",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"±³ÅÑÕß","Metadata/Items/DivinationCards/DivinationCardTheTraitor",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"·îÏ×","Metadata/Items/DivinationCards/DivinationCardTheOffering",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"Ê§ÂäµÛ¹ú","Metadata/Items/DivinationCards/DivinationCardLostWorlds",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"°µºÚÖ®Íõ","Metadata/Items/DivinationCards/DivinationCardTheLordInBlack",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"Ä¸Ç×µÄÀñÎï","Metadata/Items/DivinationCards/DivinationCardAMothersPartingGift",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"ÑªÈâÖ®Çû","Metadata/Items/DivinationCards/DivinationCardTheBody",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"ÈÌÈè","Metadata/Items/DivinationCards/DivinationCardTurnTheOtherCheek",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"Ï£ÍûÎ¢¹â","Metadata/Items/DivinationCards/DivinationCardGlimmerOfHope",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"¿ÕÁé","Metadata/Items/DivinationCards/DivinationCardTheEthereal",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"ĞËÊ¢","Metadata/Items/DivinationCards/DivinationCardProsperity",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"Ä§·û","Metadata/Items/DivinationCards/DivinationCardTheSigil",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"¼«ÖÂ²»·²","Metadata/Items/DivinationCards/DivinationCardTheDapperProdigy",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"·è¿ñ¿Öà¹Äñ","Metadata/Items/DivinationCards/DivinationCardTheRabidRhoa",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"Áé»ê","Metadata/Items/DivinationCards/DivinationCardTheSoul",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ĞÛÊ¨","Metadata/Items/DivinationCards/DivinationCardTheLion",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"¾ŞÁú","Metadata/Items/DivinationCards/DivinationCardTheDragon",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"Êó±²","Metadata/Items/DivinationCards/DivinationCardRats",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"Î£»ú","Metadata/Items/DivinationCards/DivinationCardTheRisk",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"Äş¾²","Metadata/Items/DivinationCards/DivinationCardTranquillity",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"ËıµÄÃæ¾ß","Metadata/Items/DivinationCards/DivinationCardHerMask",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÉÍ½ğÁÔÊÖ","Metadata/Items/DivinationCards/DivinationCardTreasureHunter",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"´óµØÍÌÊ³Õß","Metadata/Items/DivinationCards/DivinationCardEarthDrinker",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"ÀÇµÄÓ°×Ó","Metadata/Items/DivinationCards/DivinationCardTheWolfsShadow",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"¾º¼¼³¡¹Ú¾ü","Metadata/Items/DivinationCards/DivinationCardTheArenaChampion",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÉúÃüÖ®Ê÷","Metadata/Items/DivinationCards/DivinationCardTheSephirot",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"ÃÎÏë¼Ò","Metadata/Items/DivinationCards/DivinationCardTheVisionary",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"Å­À×Ö®¿Õ","Metadata/Items/DivinationCards/DivinationCardThunderousSkies",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"ÏûÊÅÖ®Å­","Metadata/Items/DivinationCards/DivinationCardDyingAnguish",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÓÀºã²»Ğà","Metadata/Items/DivinationCards/DivinationCardTheImmortal",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"Íõ×ù","Metadata/Items/DivinationCards/DivinationCardTheThrone",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"ÎŞ¾¡Ö®Óò","Metadata/Items/DivinationCards/DivinationCardBoundlessRealms",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"õåõïÖ®Íõ","Metadata/Items/DivinationCards/DivinationCardTheDevastator",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"éæÂäµÄÃüÔË","Metadata/Items/DivinationCards/DivinationCardDestinedToCrumble",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"ÃüÔËÖ®¾§","Metadata/Items/DivinationCards/DivinationCardShardOfFate",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÒõÑôÑÛ","Metadata/Items/DivinationCards/DivinationCardHeterochromia",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"ÓÕ»óÖ®Óê","Metadata/Items/DivinationCards/DivinationCardRainTempter",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"Ğé¿Õ","Metadata/Items/DivinationCards/DivinationCardTheVoid",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil," ±©Å°Ö®Áé","Metadata/Items/DivinationCards/DivinationCardTheTyrant",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"ÃüÔËÖ®Íø","Metadata/Items/DivinationCards/DivinationCardTheWeb",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"ÊÕ¸îÕß","Metadata/Items/DivinationCards/DivinationCardTheHarvester",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"ÔÂÓ°Å®¼ÀË¾","Metadata/Items/DivinationCards/DivinationCardTheLunarisPriestess",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"´¿¾»µÛÍõ","Metadata/Items/DivinationCards/DivinationCardEmperorOfPurity",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"×çÖäÖ®Íõ","Metadata/Items/DivinationCards/DivinationCardTheCursedKing",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"·ç±©Ê¹Õß","Metadata/Items/DivinationCards/DivinationCardTheStormcaller",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÀòÉ¯Ö®Ï¢","Metadata/Items/DivinationCards/DivinationCardLysahsRespite",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"ÖÆÍ¼ÕßµÄÇàíù","Metadata/Items/DivinationCards/DivinationCardCartographersDelight",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"Î´ÖªµÄÃüÔË¿¨","Metadata/Items/DivinationCards/DivinationCardDeck",nil,nil,nil,nil)--¿É¶ÑµşÍ¨»õ
+SetJiaoYiGoods(nil,"ÃüÔË´¹Çà","Metadata/Items/DivinationCards/DivinationCardLuckyDeck",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"¹âÓëÕæÊµ","Metadata/Items/DivinationCards/DivinationCardLightAndTruth",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"Íß¶ûµÄ¾ì¹Ë","Metadata/Items/DivinationCards/DivinationCardLuckOfTheVaal",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"ÄÍ¾ÃÕß","Metadata/Items/DivinationCards/DivinationCardTheEndurance",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"âã»ÚÕß","Metadata/Items/DivinationCards/DivinationCardThePenitent",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÈºÀÇÖ®Íõ","Metadata/Items/DivinationCards/DivinationCardTheWolf",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"´ïÀ­·òÈËµÄ±¦Ê¯","Metadata/Items/DivinationCards/DivinationCardDiallasSubjugation",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"Ô½½çµÄºô»½","Metadata/Items/DivinationCards/DivinationCardTheCalling",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"Å®Ö®ÎäÉñ","Metadata/Items/DivinationCards/DivinationCardTheValkyrie",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÎŞ¼£Ö®º£","Metadata/Items/DivinationCards/DivinationCardTheFormlessSea",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"Á¦Ö®ÊÄÑÔ","Metadata/Items/DivinationCards/DivinationCardTheOath",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"Ê°»ÄÕß","Metadata/Items/DivinationCards/DivinationCardTheScavenger",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÀÇÖ®ĞÅÎï","Metadata/Items/DivinationCards/DivinationCardMawrBlaidd",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"Éä³ÉÉ¸×Ó","Metadata/Items/DivinationCards/DivinationCardThePorcupine",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"·ç±©À´Ï®","Metadata/Items/DivinationCards/DivinationCardTheComingStorm",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"²©Ñ§Õß","Metadata/Items/DivinationCards/DivinationCardThePolymath",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"½ğ¸ÕÀÇ","Metadata/Items/DivinationCards/DivinationCardTheWolverine",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"Â¶Ö¸ÊÖÌ×","Metadata/Items/DivinationCards/DivinationCardMitts",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ËÀÁéÒÅÎï","Metadata/Items/DivinationCards/DivinationCardTheWretched",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÀÇÍõÖ®ÏÒ","Metadata/Items/DivinationCards/DivinationCardTheWolvenKingsBite",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"Àäµ­","Metadata/Items/DivinationCards/DivinationCardTheStandoff",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÒÅÆúÖ®Îï","Metadata/Items/DivinationCards/DivinationCardTheForsaken",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"ìÅÒ«Ö®Á¦","Metadata/Items/DivinationCards/DivinationCardTheGarishPower",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"ÉÔ×İ¼´ÊÅ","Metadata/Items/DivinationCards/DivinationCardLingeringRemnants",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÉÁ¹âÓë»ğÑæ","Metadata/Items/DivinationCards/DivinationCardTheSparkAndTheFlame",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"Ê¥ÈËÖ®Àñ","Metadata/Items/DivinationCards/DivinationCardTheSaintsTreasure",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"Ô¶¹ÅÕÙ»½","Metadata/Items/DivinationCards/DivinationCardCallToTheFirstOnes",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"½ğÊôºĞ×Ó","Metadata/Items/DivinationCards/DivinationCardTheValleyOfSteelBoxes",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÕıÆø","Metadata/Items/DivinationCards/DivinationCardMightIsRight",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"¾»°×","Metadata/Items/DivinationCards/DivinationCardTheOpulecent",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"À×Åü","Metadata/Items/DivinationCards/DivinationCardStruckByLightning",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"°¢×ÈÀïµÄÎäÆ÷¿â","Metadata/Items/DivinationCards/DivinationCardAtzirisArsenal",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"²Ğ¿áÖ®»·","Metadata/Items/DivinationCards/DivinationCardTheRuthlessCeinture",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÎŞ¼£¿ÉÑ°","Metadata/Items/DivinationCards/DivinationCardNoTraces",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"¼ÒµÄ½İ¾¶","Metadata/Items/DivinationCards/DivinationCardTheRealm",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"ÁúÖ®ÑÛ","Metadata/Items/DivinationCards/DivinationCardTheEyeOfTheDragon",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"×ÆÈÈÖ®»ğ","Metadata/Items/DivinationCards/DivinationCardTheBlazingFire",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"ÌıÌìÓÉÃü","Metadata/Items/DivinationCards/DivinationCardLeftToFate",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÖØÉú","Metadata/Items/DivinationCards/DivinationCardRebirth",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"ÓÀ²»Âú×ã","Metadata/Items/DivinationCards/DivinationCardTheInsatiable",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ºÚ°µçÔÈÆ","Metadata/Items/DivinationCards/DivinationCardTheObscured",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"¼áÒãÊ«ÈË","Metadata/Items/DivinationCards/DivinationCardTheIronBard",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"½û¼ÉÖ®Á¦","Metadata/Items/DivinationCards/DivinationCardForbiddenPower",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÁÑÏ¶","Metadata/Items/DivinationCards/DivinationCardTheBreach",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"×·ÃÎÕß","Metadata/Items/DivinationCards/DivinationCardTheDreamer",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÊÉ½çÕß","Metadata/Items/DivinationCards/DivinationCardTheWorldEater",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"½ÆÍ½","Metadata/Items/DivinationCards/DivinationCardTheDeceiver",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"ÉñÓÓ","Metadata/Items/DivinationCards/DivinationCardBlessingOfGod",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÃÕÍÅ","Metadata/Items/DivinationCards/DivinationCardThePuzzle",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"Î×ÆÅ","Metadata/Items/DivinationCards/DivinationCardTheWitch",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"²»Ğà¾öĞÄ","Metadata/Items/DivinationCards/DivinationCardImmortalResolve",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"Öé±¦½³µÄ¸£ìí","Metadata/Items/DivinationCards/DivinationCardTheJewellersBoon",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"ÉîÉîºÚÃÎ","Metadata/Items/DivinationCards/DivinationCardTheDarkestDream",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"Ö÷Ô×","Metadata/Items/DivinationCards/DivinationCardTheMaster",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"ÎŞ¾¡ÉîÔ¨","Metadata/Items/DivinationCards/DivinationCardTheFathomlessDepths",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÎŞÎ·Õß","Metadata/Items/DivinationCards/DivinationCardTheUndaunted",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÑöÄ½Õß","Metadata/Items/DivinationCards/DivinationCardTheAdmirer",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"½£Ê¥µÄÖÂ¾´","Metadata/Items/DivinationCards/DivinationCardTheSwordKingsSalute",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"ÏÊÑª´ó¾ü","Metadata/Items/DivinationCards/DivinationCardTheArmyOfBlood",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÌìÌÃÖ®Ê¯","Metadata/Items/DivinationCards/DivinationCardTheCelestialStone",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÖÁÕéÍêÃÀ","Metadata/Items/DivinationCards/DivinationCardPerfection",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÃÎ¾³","Metadata/Items/DivinationCards/DivinationCardTheDreamland",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"»êÖ®ºÍĞ³","Metadata/Items/DivinationCards/DivinationCardHarmonyOfSouls",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÎäÊ¿Ö®ÑÛ","Metadata/Items/DivinationCards/DivinationCardTheSamuraisEye",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"×³ĞÄ²»ÒÑ","Metadata/Items/DivinationCards/DivinationCardTheHaleHeart",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"×¯Ô°Ö÷","Metadata/Items/DivinationCards/DivinationCardTheMayor",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"ÎŞ¿ÉÕùÒéÕß","Metadata/Items/DivinationCards/DivinationCardTheUndisputed",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÔªËØ¼Àìë","Metadata/Items/DivinationCards/DivinationCardTheRiteOfElements",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"ÈıÄ§Òô","Metadata/Items/DivinationCards/DivinationCardThreeVoices",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"½ÌÊÚ","Metadata/Items/DivinationCards/DivinationCardTheProfessor",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"¿ñÊŞ","Metadata/Items/DivinationCards/DivinationCardTheBeast",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÎŞ¹¼Õß","Metadata/Items/DivinationCards/DivinationCardTheInnocent",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"¿İÎ®Ãµ¹å","Metadata/Items/DivinationCards/DivinationCardTheWiltedRose",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÎŞ¾¡ºÚ°µ","Metadata/Items/DivinationCards/DivinationCardTheEndlessDarkness",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"À´ÉúÖ®ÃÀ","Metadata/Items/DivinationCards/DivinationCardBeautyThroughDeath",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"±£»¤µÄ´ú¼Û","Metadata/Items/DivinationCards/DivinationCardThePriceOfProtection",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÏÈ×æ´Í¸£","Metadata/Items/DivinationCards/DivinationCardBoonOfTheFirstOnes",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"Äº¹âÖ®ÔÂ","Metadata/Items/DivinationCards/DivinationCardTheTwilightMoon",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"²»Ğ­Ö®Òô","Metadata/Items/DivinationCards/DivinationCardTheCacophony",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÎşÉü","Metadata/Items/DivinationCards/DivinationCardTheSacrifice",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"Ä«Ë®µãµÎ","Metadata/Items/DivinationCards/DivinationCardADabOfInk",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÕÕÁÏÕß","Metadata/Items/DivinationCards/DivinationCardTheNurse",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"¹¤½³´óÊ¦","Metadata/Items/DivinationCards/DivinationCardTheMasterArtisan",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÉúÃüÇÔÔô","Metadata/Items/DivinationCards/DivinationCardTheLifeThief",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"Ñ°ÃÙÕß","Metadata/Items/DivinationCards/DivinationCardTheSeeker",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ĞÅÊ¹","Metadata/Items/DivinationCards/DivinationCardTheMessenger",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"¿ñÍõ","Metadata/Items/DivinationCards/DivinationCardTheMadKing",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"Ë¾·¨µÄ¶÷´Í","Metadata/Items/DivinationCards/DivinationCardBoonOfJustice",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÂÃ³Ì","Metadata/Items/DivinationCards/DivinationCardTheJourney",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"Íß¶ûµÄ°ÁÂı","Metadata/Items/DivinationCards/DivinationCardArroganceOfTheVaal",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"½µÁÙ","Metadata/Items/DivinationCards/DivinationCardTheLanding",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"É½Âö","Metadata/Items/DivinationCards/DivinationCardTheMountain",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÆßÄê¶òÔË","Metadata/Items/DivinationCards/DivinationCardSevenYearsBadLuck",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"»Æ½ğ¼ÍÔª","Metadata/Items/DivinationCards/DivinationCardTheGoldenEra",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ºÚ°×ÊÀ½ç","Metadata/Items/DivinationCards/DivinationCardMonochrome",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"ºÚ°µµÄÒıÓÕ","Metadata/Items/DivinationCards/DivinationCardDarkTemptation",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ºÚ°µÖĞ¶ÀĞĞ","Metadata/Items/DivinationCards/DivinationCardAloneInTheDarkness",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"Èø²©ĞÁµÄÊÄÑÔ","Metadata/Items/DivinationCards/DivinationCardSambodhisVow",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"»¶ÇìÁìÖ÷","Metadata/Items/DivinationCards/DivinationCardTheLordOfCelebration",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ĞéÈÙ","Metadata/Items/DivinationCards/DivinationCardVanity",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"µÛ¹úµÄÒÅ²ú","Metadata/Items/DivinationCards/DivinationCardImperialLegacy",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"È¼ÉÕÖ®Ñª","Metadata/Items/DivinationCards/DivinationCardBurningBlood",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÆğÔ´","Metadata/Items/DivinationCards/DivinationCardThePrimordial",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"°®µÄ»ØÒô","Metadata/Items/DivinationCards/DivinationCardEchoesOfLove",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"ÇóÖªÈô¿Ê","Metadata/Items/DivinationCards/DivinationCardThirstForKnowledge",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÓÕÈËµÄ½±ÉÍ","Metadata/Items/DivinationCards/DivinationCardAlluringBounty",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÓŞÈË","Metadata/Items/DivinationCards/DivinationCardTheFool",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÏÈ×æµÄ´ú¼Û","Metadata/Items/DivinationCards/DivinationCardPrideOfTheFirstOnes",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"ÉîÔ¨Ö®×Ó","Metadata/Items/DivinationCards/DivinationCardTheDeepOnes",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"´ó·¨Ê¦µÄÓÒÊÖ","Metadata/Items/DivinationCards/DivinationCardTheArchmagesRightHand",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ºÚ°µÖ®ÃÎ","Metadata/Items/DivinationCards/DivinationCardDarkDreams",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÂñÔáµÄ±¦²Ø","Metadata/Items/DivinationCards/DivinationCardBuriedTreasure",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"°ëÉñµÄ¶Ä¾Ö","Metadata/Items/DivinationCards/DivinationCardDemigodsWager",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÀÏÈË","Metadata/Items/DivinationCards/DivinationCardTheOldMan",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"Åµ¿ËÖ®¹Ú","Metadata/Items/DivinationCards/DivinationCardNooksCrown",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"Ö§ÏßÈÎÎñ","Metadata/Items/DivinationCards/DivinationCardTheSideQuest",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÖÒ³ÏµÄ´ú¼Û","Metadata/Items/DivinationCards/DivinationCardThePriceOfLoyalty",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"Ó¢ÓÂ´ò»÷","Metadata/Items/DivinationCards/DivinationCardTheHeroicShot",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"Ãú¼Ç","Metadata/Items/DivinationCards/DivinationCardRemembrance",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÓÀ²»Öª×ã","Metadata/Items/DivinationCards/DivinationCardMoreIsNeverEnough",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"¶ñ¶¾µÄÈ¨Á¦","Metadata/Items/DivinationCards/DivinationCardVilePower",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"½»Ò×","Metadata/Items/DivinationCards/DivinationCardTheBargain",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"°¢×æÀ¼µÄ½±ÉÍ","Metadata/Items/DivinationCards/DivinationCardAzyransReward",nil,nil,nil,nil)--ÃüÔË¿¨
+-- SetJiaoYiGoods(nil,"Ä§ÊÌ","Metadata/Items/DivinationCards/DivinationCardTheSkeleton",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"¿Ö²ÀÖ®ÑÛ","Metadata/Items/DivinationCards/DivinationCardTheEyeOfTerror",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"¶ñÄ§","Metadata/Items/DivinationCards/DivinationCardTheDemon",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"°¢¿­µÄÔ¤ÑÔ","Metadata/Items/DivinationCards/DivinationCardAkilsProphecy",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"Öä×çÖ®Áé","Metadata/Items/DivinationCards/DivinationCardTheDamned",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÔªËØĞé¿Õ","Metadata/Items/DivinationCards/DivinationCardVoidOfTheElements",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÂòÂô","Metadata/Items/DivinationCards/DivinationCardTheDeal",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÀÇÍõµÄÒÅ²ú","Metadata/Items/DivinationCards/DivinationCardTheWolfsLegacy",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÕTğDÖ®ÆÚ´ı","Metadata/Items/DivinationCards/DivinationCardBaitedExpectations",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"¿¨ûœšv†Ö®¸î","Metadata/Items/DivinationCards/DivinationCardCameriasCut",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÖÂËÀÓ›Ì–","Metadata/Items/DivinationCards/DivinationCardDeathlyDesigns",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÉñÅĞ","Metadata/Items/DivinationCards/DivinationCardDivineJustice",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"¸¯ €ì¶Ñª","Metadata/Items/DivinationCards/DivinationCardEtchedInBlood",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÓÑÕxĞ¡´¬","Metadata/Items/DivinationCards/DivinationCardFriendship",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"Ê§ÂäµÄ·±ÈA","Metadata/Items/DivinationCards/DivinationCardSquanderedProsperity",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"Ÿo×ï¾ÈÚH","Metadata/Items/DivinationCards/DivinationCardSuccorOfTheSinless",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"×R¹ÇŒ¤Û™","Metadata/Items/DivinationCards/DivinationCardTheBones",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÌìßxÖ®ÈË","Metadata/Items/DivinationCards/DivinationCardTheChosen",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÏëÒª","Metadata/Items/DivinationCards/DivinationCardTheCraving",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ÌÓÃ“´óŸ","Metadata/Items/DivinationCards/DivinationCardTheEscape",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"ô~Øœ","Metadata/Items/DivinationCards/DivinationCardTheFishmonger",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"µØµ×…²ÁÖ","Metadata/Items/DivinationCards/DivinationCardUndergroundForest",nil,nil,nil,nil)--ÃüÔË¿¨
+SetJiaoYiGoods(nil,"³àºìÖé±¦","Metadata/Items/Jewels/JewelStr","ÇóÖªµÄÈÈÇé","Inspired Learning","3",nil)--Öé±¦
+--SetJiaoYiGoods(nil,"³àºìÖé±¦","Metadata/Items/Jewels/JewelStr","ÆğÔ´Á¦Á¿","Primordial Might","3",nil)--Öé±¦
+SetJiaoYiGoods(nil,"³àºìÖé±¦","Metadata/Items/Jewels/JewelStr","³àÓ°ÃÎ¾³","The Red Dream","3",nil)--Öé±¦
+SetJiaoYiGoods(nil,"³àºìÖé±¦","Metadata/Items/Jewels/JewelStr","ÎÂÈáÖ®Á¦","Might of the Meek","3",nil)--Öé±¦
+SetJiaoYiGoods(nil,"´äÂÌÖé±¦","Metadata/Items/Jewels/JewelDex","Ö±¾õÖ®Ô¾","Intuitive Leap","3",nil)--Öé±¦
+SetJiaoYiGoods(nil,"´äÂÌÖé±¦","Metadata/Items/Jewels/JewelDex","Ê¨ÑÛµÄÔÉÂä","Lioneye's Fall","3",nil)--Öé±¦
+SetJiaoYiGoods(nil,"´äÂÌÖé±¦","Metadata/Items/Jewels/JewelDex","ÇàÓ°ÃÎ¾³","The Green Dream","3",nil)--Öé±¦
+SetJiaoYiGoods(nil,"´äÂÌÖé±¦","Metadata/Items/Jewels/JewelDex","³¬×ÔÈ»±¾ÄÜ","Unnatural Instinct","3",nil)--Öé±¦
+SetJiaoYiGoods(nil,"îÜÀ¶Öé±¦","Metadata/Items/Jewels/JewelInt","ÁéÌå×ª»»","Healthy Mind","3",nil)--Öé±¦
+SetJiaoYiGoods(nil,"îÜÀ¶Öé±¦","Metadata/Items/Jewels/JewelInt","¾Û¹âÖ®Ê¯","Grand Spectrum","3",nil)--Öé±¦
+SetJiaoYiGoods(nil,"îÜÀ¶Öé±¦","Metadata/Items/Jewels/JewelInt","ÎŞ¾¡¿ÊÍû","Unending Hunger","3",nil)--Öé±¦
+--SetJiaoYiGoods(nil,"îÜÀ¶Öé±¦","Metadata/Items/Jewels/JewelInt","ÆğÔ´ºÍĞ³","Primordial Harmony","3",nil)--Öé±¦
+SetJiaoYiGoods(nil,"îÜÀ¶Öé±¦","Metadata/Items/Jewels/JewelInt","±ÌÓ°ÃÎ¾³","The Blue Dream","3",nil)--Öé±¦
+SetJiaoYiGoods(nil,"îÜÀ¶Öé±¦","Metadata/Items/Jewels/JewelInt","ÒªÈûÊÄÔ¼","Fortress Covenant","3",nil)--Öé±¦
+SetJiaoYiGoods(nil,"ÈıÏàÖé±¦","Metadata/Items/Jewels/JewelPrismatic","ÊØÍûÖ®ÑÛ","Watcher's Eye","3",nil)--Öé±¦
+SetJiaoYiGoods(nil,"†¢ÃÉİoÖú","Metadata/Items/Gems/SupportGemAdditionalXP",nil,nil,nil,nil)--¼¼ÄÜŒšÊ¯
+SetJiaoYiGoods(nil,"ÙxÓèİoÖú","Metadata/Items/Gems/SupportGemAdditionalLevel",nil,nil,nil,nil)--¼¼ÄÜŒšÊ¯
+-- SetJiaoYiGoods(nil,"å€Ä§ÑÛ¾¦","Metadata/Items/Metamorphosis/MetamorphosisEye",nil,nil,"3",nil)--Öé±¦
+-- SetJiaoYiGoods(nil,"Ğ×²ĞÖ®ÄıÖé±¦","Metadata/Items/Jewels/JewelAbyssMelee",nil,nil,nil,nil)--ÉîÔ¨Öé±¦
+-- SetJiaoYiGoods(nil,"ÈñÀûÖ®ÄıÖé±¦","Metadata/Items/Jewels/JewelAbyssRanged",nil,nil,nil,nil)--ÉîÔ¨Öé±¦
+-- SetJiaoYiGoods(nil,"°²Ë¯Ö®ÄıÖé±¦","Metadata/Items/Jewels/JewelAbyssCaster",nil,nil,nil,nil)--ÉîÔ¨Öé±¦
+-- SetJiaoYiGoods(nil,"²Ô°×Ö®ÄıÖé±¦","Metadata/Items/Jewels/JewelAbyssSummoner",nil,nil,nil,nil)--ÉîÔ¨Öé±¦
 
-
-SetCheckHeistData(3*60,100,68,68,true,65,65,65,65,true,8) --ÉèÖÃÈ¥¶á±¦ 
-SetHeistData("RewardChestCurrency|RewardCurrency|RewardChestTrinkets|RewardChestLegion|RewardChestDivination|RewardChestProphecy|RewardChestBreach|RewardChestBlight|RewardChestFossil","³ç¸ßÊ¯,Metadata/Items/Currency/CurrencyAddModToRare,1|¿¨À¼µÂµÄÄ§¾µ,Metadata/Items/Currency/CurrencyDuplicate,1|ØSÔ£ÅÆ½M,Metadata/Items/DivinationCards/DivinationCardDeck,3|²®ÖÙØ”ì,Metadata/Items/DivinationCards/DivinationCardBrothersStash,1|Æú²ÆÇóÉú,Metadata/Items/DivinationCards/DivinationCardAbandonedWealth,1|ÓÕÈËµÄ½±ÉÍ,Metadata/Items/DivinationCards/DivinationCardAlluringBounty,1|»ìãçÊ¯,Metadata/Items/Currency/CurrencyRerollRare,4|³ç¸ßÊ¯ËéÆ¬,Metadata/Items/Currency/CurrencyExaltedShard,2|¯‚át,Metadata/Items/DivinationCards/DivinationCardTheDoctor,1|¶ñÄ§,Metadata/Items/DivinationCards/DivinationCardTheDemon,1|ÉñÊ¥Ê¯,Metadata/Items/Currency/CurrencyModValues,1")
-
-g_ChangeHunDunNeedData={	
-	{--ÎäÆ÷	 2	
-		-- {--ËùÓĞµ¥ÊÖÎäÆ÷Óë¶ÜµÄ×éºÏ
-			-- {1,{"Claw","Dagger","Wand","One Hand Sword","Thrusting One Hand Sword","One Hand Axe","One Hand Mace","Rune Dagger","Sceptre"}},
-			-- {1,{"Shield"}}--¶Ü
-		-- },
-		{--2¼şµ¥ÊÖÎäÆ÷µÄ×éºÏ
-			{2,{"Claw","Dagger","Wand","One Hand Sword","Thrusting One Hand Sword","One Hand Axe","One Hand Mace","Rune Dagger","Sceptre"}},
-		},
-		-- {--Ò»¼şË«ÊÖÎäÆ÷
-			-- {1,{"Bow","Staff","Two Hand Sword","Two Hand Axe","Two Hand Mace","Warstaff"}},
-		-- }
-	},	
-	{--ÒÂ·ş 2
-		{
-			{1,{"Body Armour"}}
-		}
-	},
-	{--Í·¿ø 3
-		{
-			{1,{"Helmet"}}
-		}
-	},
-	{--ÊÖÌ× 4
-		{
-			{1,{"Gloves"}}
-		}
-	},
-	{--Ğ¬×Ó 5
-		{
-			{1,{"Boots"}}
-		}
-	},
-	{--ÏîÁ´	6
-		{
-			{1,{"Amulet"}}
-		}
-	},
-	{--½äÖ¸ 7
-		{
-			{2,{"Ring"}}
-		}
-	},
-	{--Ñü´ø 8
-		{
-			{1,{"Belt"}}
-		}
-	},
-}
-
+AddUseGoodsData("ÌìÙxÖ®•ø")--Ìí¼ÓÌì¸³Ö®Êé
