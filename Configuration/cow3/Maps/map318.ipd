@@ -23,6 +23,7 @@
 [Type] == "Arcade Map" # [RunMap] == "true"
 [Type]=="Cemetery Map" # [RunMap] == "true"
 [Type]=="Leyline Map" # [RunMap] == "true"
+[Type]=="Bazaar Map" # [RunMap] == "true"
 
 
 
@@ -34,6 +35,7 @@
 [Type] == "Arcade Map" # [ExitAfterBossKill] == "true"
 [Type]=="Cemetery Map" # [ExitAfterBossKill] == "true"
 [Type]=="Leyline Map" # [ExitAfterBossKill] == "true"
+[Type]=="Bazaar Map" # [ExitAfterBossKill] == "true"
 
 																		
 																									
