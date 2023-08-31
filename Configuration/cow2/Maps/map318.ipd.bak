@@ -15,6 +15,9 @@
 	
 [MapTier]>= "1" && [MapTier] <= "16" && [Rarity] == "Rare" # [IgnoreMap]== "true" // 金圖全部不打
 
+
+
+
 [Type] == "City Square Map" #[RunMap] == "true"
 [Type] == "Toxic Sewer Map" #[RunMap] == "true"
 [Type]=="Crimson Temple Map" # [RunMap]=="true"
@@ -22,8 +25,6 @@
 [Type] == "Canyon Map" # [RunMap] == "true"
 [Type] == "Arcade Map" # [RunMap] == "true"
 [Type]=="Cemetery Map" # [RunMap] == "true"
-[Type]=="Leyline Map" # [RunMap] == "true"
-
 
 
 [Type] == "City Square Map" # [ExitAfterBossKill] == "true"
@@ -33,8 +34,6 @@
 [Type] == "Canyon Map" # [ExitAfterBossKill] == "true"
 [Type] == "Arcade Map" # [ExitAfterBossKill] == "true"
 [Type]=="Cemetery Map" # [ExitAfterBossKill] == "true"
-[Type]=="Leyline Map" # [ExitAfterBossKill] == "true"
-
 																		
 																									
 	//3.17 忽略圖與忽略傳奇圖																								
