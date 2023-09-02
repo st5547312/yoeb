@@ -180,19 +180,19 @@
 
 //©uªì¶}±Ò////©uªì¶}±Ò////©uªì¶}±Ò////©uªì¶}±Ò////©uªì¶}±Ò////©uªì¶}±Ò////©uªì¶}±Ò////©uªì¶}±Ò////©uªì¶}±Ò////©uªì¶}±Ò////©uªì¶}±Ò////©uªì¶}±Ò//
 
-[Type] == "Orb of Alteration" # [StashItem] == "true"////§ï³y¥Û¬B¨ú¥B¦s­Ü
+//[Type] == "Orb of Alteration" # [StashItem] == "true"////§ï³y¥Û¬B¨ú¥B¦s­Ü
 [Type] == "Orb of Regret"# [StashItem] == "true"////«á®¬¥Û¬B¨ú¥B¦s­Ü//
 [Type] == "Orb of Unmaking"# [StashItem] == "true"////ºM¾P¥Û¬B¨ú¥B¦s­Ü
-[Type] == "Enkindling Orb"# [StashItem] == "true"////ÂI¿U¥Û¬B¨ú¥B¦s­Ü
-[Type] == "Instilling Orb" # [StashItem] == "true" //	//ºwª`¥Û
+//[Type] == "Enkindling Orb"# [StashItem] == "true"////ÂI¿U¥Û¬B¨ú¥B¦s­Ü
+//[Type] == "Instilling Orb" # [StashItem] == "true" //	//ºwª`¥Û
 [Type] == "Orb of Scouring"# [StashItem] == "true"////­«Å± ¬B¨ú¥B¦s­Ü
-[Type] == "Regal Orb" # [StashItem] == "true"////´I»¨
-[Type] == "Orb of Horizons"# [StashItem] == "true"////¦a¥­¥Û¬B¨ú¥B¦s­Ü
+//[Type] == "Regal Orb" # [StashItem] == "true"////´I»¨
+//[Type] == "Orb of Horizons"# [StashItem] == "true"////¦a¥­¥Û¬B¨ú¥B¦s­Ü
 [Type] == "Enhance Support" #[StashItem] == "true"////¼W´T»²§U
-[Type] == "Blacksmith's Whetstone" # [StashItem] == "true" //	//¿i¤M¥Û
-[Type] == "Armourer's Scrap" # [StashItem] == "true" //	//Å@¥Ò¤ù
-[Type] == "Glassblower's Bauble" # [StashItem] == "true" //	//¬Á¼þ¼u¯]
-[Type] == "Blessed Orb" # [StashItem] == "true" //	//¯¬ºÖ¥Û
+//[Type] == "Blacksmith's Whetstone" # [StashItem] == "true" //	//¿i¤M¥Û
+//[Type] == "Armourer's Scrap" # [StashItem] == "true" //	//Å@¥Ò¤ù
+//[Type] == "Glassblower's Bauble" # [StashItem] == "true" //	//¬Á¼þ¼u¯]
+//[Type] == "Blessed Orb" # [StashItem] == "true" //	//¯¬ºÖ¥Û
 
 [Type] == "Forbidden Tome" #[StashItem] == "true" // ¸T§Ò¤§®Ñ 
 
@@ -206,7 +206,7 @@
 
 //©uªì¶}±Ò////©uªì¶}±Ò////©uªì¶}±Ò////©uªì¶}±Ò////©uªì¶}±Ò////©uªì¶}±Ò////©uªì¶}±Ò////©uªì¶}±Ò////©uªì¶}±Ò////©uªì¶}±Ò////©uªì¶}±Ò////©uªì¶}±Ò//
 
-[Type] == "Vaal Orb" # [StashItem] == "true" //	//¥Ëº¸Ä_¯]
+//[Type] == "Vaal Orb" # [StashItem] == "true" //	//¥Ëº¸Ä_¯]
 [Type] == "Chaos Orb" # [StashItem] == "true"////²V¨P¥Û¬B¨ú¥B¦s­Ü
 [Type] == "Divine Orb" # [StashItem] == "true"////¯«¸t¥Û¬B¨ú¥B¦s­Ü
 [Type] == "Exalted Orb" # [StashItem] == "true"////±R°ª¥Û¬B¨ú¥B¦s­Ü
