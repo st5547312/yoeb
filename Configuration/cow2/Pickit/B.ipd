@@ -180,10 +180,10 @@
 
 //[Type] == "Orb of Alteration" # [StashItem] == "true"////改造石拾取且存倉
 //[Type] == "Orb of Regret"# [StashItem] == "true"////後悔石拾取且存倉//
-//[Type] == "Orb of Unmaking"# [StashItem] == "true"////撤銷石拾取且存倉
+[Type] == "Orb of Unmaking"# [StashItem] == "true"////撤銷石拾取且存倉
 //[Type] == "Enkindling Orb"# [StashItem] == "true"////點燃石拾取且存倉
 //[Type] == "Instilling Orb" # [StashItem] == "true" //	//滴注石
-//[Type] == "Orb of Scouring"# [StashItem] == "true"////重鑄 拾取且存倉
+[Type] == "Orb of Scouring"# [StashItem] == "true"////重鑄 拾取且存倉
 //[Type] == "Regal Orb" # [StashItem] == "true"////富豪
 //[Type] == "Orb of Horizons"# [StashItem] == "true"////地平石拾取且存倉
 [Type] == "Enhance Support" #[StashItem] == "true"////增幅輔助
@@ -194,9 +194,9 @@
 
 [Type] == "Forbidden Tome" #[StashItem] == "true" // 禁忌之書 
 
-[Type] == "Singular Scouting Report" # [StashItem] == "true" //	//卓越偵查報告
-[Type] == "Otherworldly Scouting Report" # [StashItem] == "true" //	//超凡偵查報告
-[Type] == "Influenced Scouting Report" # [StashItem] == "true" //	//勢力偵查報告
+//[Type] == "Singular Scouting Report" # [StashItem] == "true" //	//卓越偵查報告
+//[Type] == "Otherworldly Scouting Report" # [StashItem] == "true" //	//超凡偵查報告
+//[Type] == "Influenced Scouting Report" # [StashItem] == "true" //	//勢力偵查報告
 
 //[Type] =="Polaric Invitation" #[StashItem] == "true" ////極地之邀不撿不存倉
 //[Type] =="Writhing Invitation" #[StashItem] == "true" ////纏繞之邀不撿不存倉
