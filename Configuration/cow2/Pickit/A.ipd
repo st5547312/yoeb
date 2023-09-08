@@ -341,4 +341,4 @@
 [Type] == "Siege Axe" && [Rarity] == "Unique" # [UniqueName] == "Soul Taker" && [StashItem] == "true"	//¶}½£©ò ¯}«°©ò
 [Type] == "Elegant Round Shield" && [Rarity] == "Unique" # [UniqueName] == "The Squire" && [StashItem] == "true"	//¤j¦a¥DÅv¶Q¶ê¬Þ
 [Type] == "Carnal Armour" && [Rarity] == "Unique" # [UniqueName] == "Stasis Prison" && [StashItem] == "true"	//ÀR¤î¨cÅ¢¸TÂ§¤§¥Ò
-																	
+[Type] == "Lapis Amulet" && [Rarity] == "Unique" # [UniqueName] == "Marylene's Fallacy" && [StashItem] == "true"//º¿²úµYªºÅ@Åé¤§²Å
