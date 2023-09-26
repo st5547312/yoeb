@@ -1,7 +1,7 @@
 //3.22©uªì¯]Ä_
-[Type] == "Viridian Jewel" && [Rarity] == "Unique" #   [UniqueName] == "Stormshroud" && [StashItem] == "true"    //­·¼ÉÅ¢¸n ºñ
-[Type] == "Viridian Jewel" && [Rarity] == "Unique" #   [UniqueName] == "Quickening Covenant" && [StashItem] == "true"  //´_µd»}¬ù ºñ
-[Type] == "Crimson Jewel" && [Rarity] == "Unique" #   [UniqueName] == "Primordial Might" && [StashItem] == "true"   //¥ý¯ª¤O¶q ¬õ
+//[Type] == "Viridian Jewel" && [Rarity] == "Unique" #   [UniqueName] == "Stormshroud" && [StashItem] == "true"    //­·¼ÉÅ¢¸n ºñ
+//[Type] == "Viridian Jewel" && [Rarity] == "Unique" #   [UniqueName] == "Quickening Covenant" && [StashItem] == "true"  //´_µd»}¬ù ºñ
+//[Type] == "Crimson Jewel" && [Rarity] == "Unique" #   [UniqueName] == "Primordial Might" && [StashItem] == "true"   //¥ý¯ª¤O¶q ¬õ
 
 //3.22©uªìªZ¾¹
 //[Type] == "Short Bow" && [Rarity] == "Unique" #    [UniqueName] == "Quill Rain" && [StashItem] == "true"    //¤p«B
@@ -194,7 +194,7 @@
 //[Type] == "Glassblower's Bauble" # [StashItem] == "true" //	//¬Á¼þ¼u¯]
 //[Type] == "Blessed Orb" # [StashItem] == "true" //	//¯¬ºÖ¥Û
 
-[Type] == "Forbidden Tome" #[StashItem] == "true" // ¸T§Ò¤§®Ñ 
+//[Type] == "Forbidden Tome" #[StashItem] == "true" // ¸T§Ò¤§®Ñ 
 
 //[Type] == "Singular Scouting Report" # [StashItem] == "true" //	//¨ô¶V°»¬d³ø§i
 //[Type] == "Otherworldly Scouting Report" # [StashItem] == "true" //	//¶W¤Z°»¬d³ø§i
