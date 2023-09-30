@@ -1,6 +1,6 @@
 [Type] == "Cemetery Map" 		# [ExitAfterBossKill] == "true"  //±áÄf¹Ó¦a
 [Type] == "Leyline Map" 		# [ExitAfterBossKill] == "true"  //¯î²Dªª³¥
-[Type] == "Crimson Temple Map" 		# [ExitAfterBossKill] == "true" //«D¬õ¯«·µ
+//[Type] == "Crimson Temple Map" 		# [ExitAfterBossKill] == "true" //«D¬õ¯«·µ
 //[Type] == "City Square Map" 		# [ExitAfterBossKill] == "true"
 [Type] == "Cemetery Map" 		# [ExitAfterBossKill] == "true"
 [Type] == "Leyline Map" 		# [ExitAfterBossKill] == "true"
