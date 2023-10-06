@@ -21,11 +21,11 @@
 
 //¤}½b¤â®M¸Ë//
 //[Type] == "Praetor Crown" && [Rarity] == "Unique" # [UniqueName] == "Voll's Vision" && [StashItem] == "true"	//ºÖº¸ªº»·¨£
-[Type] == "Zodiac Leather" && [Rarity] == "Unique" # [UniqueName] == "Hyrri's Ire" && [StashItem] == "true"	//¦è¨½ªº¾Ô¦ç¬P¨°¥Ö¥Ò
+//[Type] == "Zodiac Leather" && [Rarity] == "Unique" # [UniqueName] == "Hyrri's Ire" && [StashItem] == "true"	//¦è¨½ªº¾Ô¦ç¬P¨°¥Ö¥Ò
 //[Type] == "Titan Gauntlets" && [Rarity] == "Unique" # [UniqueName] == "Kaom's Spirit" && [StashItem] == "true"	//©£©i¤§»î
 //[Type] == "Rawhide Boots" && [Rarity] == "Unique" # [UniqueName] == "Seven-League Step" && [StashItem] == "true"	//·ù»}¤§¸ñ
 //[Type] == "Rustic Sash" && [Rarity] == "Unique" # [UniqueName] == "Prismweave" && [StashItem] == "true"	//¤Û±mµÙÂ´ ¸y±a
-[Type] == "Two-Stone Ring" && [Rarity] == "Unique" # [UniqueName] == "Berek's Respite" && [StashItem] == "true"	//¨©¹p§Jªº¤õ»P¹p¤§¼Ö
+//[Type] == "Two-Stone Ring" && [Rarity] == "Unique" # [UniqueName] == "Berek's Respite" && [StashItem] == "true"	//¨©¹p§Jªº¤õ»P¹p¤§¼Ö
 //[Type] == "Two-Stone Ring" && [Rarity] == "Unique" # [UniqueName] == "Berek's Grip" && [StashItem] == "true"	//¨©¹p§Jªº¦B»P¹p¤§¦±
 //[Type] == "Two-Stone Ring" && [Rarity] == "Unique" # [UniqueName] == "Berek's Pass" && [StashItem] == "true"	//¨©¹p§Jªº¦B»P¤õ¤§ºq
 //[Type] == "Amethyst Ring" && [Rarity] == "Unique" # [UniqueName] == "Death Rush" && [StashItem] == "true"	//¤`ªÌ©I³ê µµ´¹§Ù«ü
@@ -314,19 +314,19 @@
 [Type] == "Ring" && [Rarity] == "Unique" # [UniqueName] == "Kalandra's Touch" && [StashItem] == "true"	//¥dÄõ¼w¤§Ä² §Ù«ü
 //[Type] == "Amber Amulet" && [Rarity] == "Unique" # [UniqueName] == "Xoph's Heart" && [StashItem] == "true"	//¯Á¥ñ¤§¤ß µ[¬ÄÅ@¨­²Å
 //[Type] == "Jade Amulet" && [Rarity] == "Unique" # [UniqueName] == "The Halcyon" && [StashItem] == "true"	//¤Ó¥­ »A¥ÉÅ@¨­²Å
-[Type] == "Turquoise Amulet" && [Rarity] == "Unique" # [UniqueName] == "Badge of the Brotherhood" && [StashItem] == "true"	//¿E±¡¤§³¹ «C¥ÉÅ@¨­²Å
+//[Type] == "Turquoise Amulet" && [Rarity] == "Unique" # [UniqueName] == "Badge of the Brotherhood" && [StashItem] == "true"	//¿E±¡¤§³¹ «C¥ÉÅ@¨­²Å
 //[Type] == "Unset Amulet" && [Rarity] == "Unique" # [UniqueName] == "Uul-Netol's Vow" && [StashItem] == "true"	//¯Qº¸¥§¦h¤§»} ¤i¼ÇÅ@¨­²Å
 [Type] == "Leather Belt" && [Rarity] == "Unique" # [UniqueName] == "Headhunter" && [StashItem] == "true"	//Ây­º ¥Ö­²¸y±a
 [Type] == "Heavy Belt" && [Rarity] == "Unique" # [UniqueName] == "Mageblood" && [StashItem] == "true"	//Å]¦å ­«­²¸y±a
-[Type] == "Crimson Jewel" && [Rarity] == "Unique" # [UniqueName] == "Inspired Learning" && [StashItem] == "true"	//¨Dª¾ªº¼ö±¡ ¨ª¬õ¯]Ä_
-[Type] == "Crimson Jewel" && [Rarity] == "Unique" # [UniqueName] == "Rain of Splinters" && [StashItem] == "true"	//¸HÃë«B ¨ª¬õ¯]Ä_
-[Type] == "Crimson Jewel" && [Rarity] == "Unique" # [UniqueName] == "Thread of Hope" && [StashItem] == "true"	//§Æ±æ¤§²Í ¨ª¬õ¯]Ä_
-[Type] == "Crimson Jewel" && [Rarity] == "Unique" # [UniqueName] == "Immutable Force" && [StashItem] == "true"	//¤£ÅÜ¤§¤O ¨ª¬õ¯]Ä_
-[Type] == "Crimson Jewel" && [Rarity] == "Unique" # [UniqueName] == "Bloodnotch" && [StashItem] == "true"	//¯Ê¦å¯g ¨ª¬õ¯]Ä_
-[Type] == "Viridian Jewel" && [Rarity] == "Unique" # [UniqueName] == "Intuitive Leap" && [StashItem] == "true"	//ª½Ä±¤§ÅD »Aºñ¯]Ä_
-[Type] == "Viridian Jewel" && [Rarity] == "Unique" # [UniqueName] == "Lioneye's Fall" && [StashItem] == "true"	//·à²´ªº¹k¸¨ »Aºñ¯]Ä_
+//[Type] == "Crimson Jewel" && [Rarity] == "Unique" # [UniqueName] == "Inspired Learning" && [StashItem] == "true"	//¨Dª¾ªº¼ö±¡ ¨ª¬õ¯]Ä_
+//[Type] == "Crimson Jewel" && [Rarity] == "Unique" # [UniqueName] == "Rain of Splinters" && [StashItem] == "true"	//¸HÃë«B ¨ª¬õ¯]Ä_
+//[Type] == "Crimson Jewel" && [Rarity] == "Unique" # [UniqueName] == "Thread of Hope" && [StashItem] == "true"	//§Æ±æ¤§²Í ¨ª¬õ¯]Ä_
+//[Type] == "Crimson Jewel" && [Rarity] == "Unique" # [UniqueName] == "Immutable Force" && [StashItem] == "true"	//¤£ÅÜ¤§¤O ¨ª¬õ¯]Ä_
+//[Type] == "Crimson Jewel" && [Rarity] == "Unique" # [UniqueName] == "Bloodnotch" && [StashItem] == "true"	//¯Ê¦å¯g ¨ª¬õ¯]Ä_
+//[Type] == "Viridian Jewel" && [Rarity] == "Unique" # [UniqueName] == "Intuitive Leap" && [StashItem] == "true"	//ª½Ä±¤§ÅD »Aºñ¯]Ä_
+//[Type] == "Viridian Jewel" && [Rarity] == "Unique" # [UniqueName] == "Lioneye's Fall" && [StashItem] == "true"	//·à²´ªº¹k¸¨ »Aºñ¯]Ä_
 //[Type] == "Viridian Jewel" && [Rarity] == "Unique" # [UniqueName] == "Impossible Escape" && [StashItem] == "true"	//°k²æ¤£¯à »Aºñ¯]Ä_
-[Type] == "Viridian Jewel" && [Rarity] == "Unique" # [UniqueName] == "Ancestral Vision" && [StashItem] == "true"	//¥ý¯ª¹wµø »Aºñ¯]Ä_
+//[Type] == "Viridian Jewel" && [Rarity] == "Unique" # [UniqueName] == "Ancestral Vision" && [StashItem] == "true"	//¥ý¯ª¹wµø »Aºñ¯]Ä_
 //[Type] == "Cobalt Jewel" && [Rarity] == "Unique" # [UniqueName] == "Energy From Within" && [StashItem] == "true"	//¼ç¯à¨¾Å@ ¹WÂÅ¯]Ä_
 [Type] == "Synthesised Map" && [Rarity] == "Unique" # [UniqueName] == "Cortex" && [StashItem] == "true"	//²`¨I°O¾Ð ´M¹Ú°l¾Ð
 [Type] == "Synthesised Map" && [Rarity] == "Unique" # [UniqueName] == "Altered Distant Memory" && [StashItem] == "true"	//»»»·°O¾Ð¡G½s³y ´M¹Ú°l¾Ð
@@ -341,5 +341,5 @@
 [Type] == "Siege Axe" && [Rarity] == "Unique" # [UniqueName] == "Soul Taker" && [StashItem] == "true"	//¶}½£©ò ¯}«°©ò
 [Type] == "Elegant Round Shield" && [Rarity] == "Unique" # [UniqueName] == "The Squire" && [StashItem] == "true"	//¤j¦a¥DÅv¶Q¶ê¬Þ
 //[Type] == "Carnal Armour" && [Rarity] == "Unique" # [UniqueName] == "Stasis Prison" && [StashItem] == "true"	//ÀR¤î¨cÅ¢¸TÂ§¤§¥Ò
-[Type] == "Leather Hood" && [Rarity] == "Unique" # [UniqueName] == "Heatshiver" && [StashItem] == "true"//´HµK	
+//[Type] == "Leather Hood" && [Rarity] == "Unique" # [UniqueName] == "Heatshiver" && [StashItem] == "true"//´HµK	
 																	
