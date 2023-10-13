@@ -161,15 +161,15 @@
 
 
 //½s¿è®É¶¡¡G2022/9/7
-[Type]=="Tainted Chromatic Orb" # [StashItem]  == "true"
-[Type]=="Tainted Orb of Fusing" # [StashItem]  == "true"
-[Type]=="Tainted Jeweller's Orb" # [StashItem]  == "true"
-[Type]=="Tainted Chaos Orb" # [StashItem]  == "true"
-[Type]=="Tainted Exalted Orb" # [StashItem]  == "true"
-[Type]=="Tainted Mythic Orb" # [StashItem]  == "true"
-[Type]=="Tainted Armourer's Scrap" # [StashItem]  == "true"
-[Type]=="Tainted Blacksmith's Whetstone" # [StashItem]  == "true"
-[Type]=="Tainted Divine Teardrop" # [StashItem]  == "true"
+//[Type]=="Tainted Chromatic Orb" # [StashItem]  == "true"
+//[Type]=="Tainted Orb of Fusing" # [StashItem]  == "true"
+//[Type]=="Tainted Jeweller's Orb" # [StashItem]  == "true"
+//[Type]=="Tainted Chaos Orb" # [StashItem]  == "true"
+//[Type]=="Tainted Exalted Orb" # [StashItem]  == "true"
+//[Type]=="Tainted Mythic Orb" # [StashItem]  == "true"
+//[Type]=="Tainted Armourer's Scrap" # [StashItem]  == "true"
+//[Type]=="Tainted Blacksmith's Whetstone" # [StashItem]  == "true"
+//[Type]=="Tainted Divine Teardrop" # [StashItem]  == "true"
  
  //[Type] == "Rogue's Marker" # [StashItem]  == "true"
  
