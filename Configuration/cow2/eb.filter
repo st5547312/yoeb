@@ -55,7 +55,7 @@ Hide
     SetBorderColor 255 0 0
     SetFontSize 44
 
-Hide # 特殊語法 - 六連裝備
+Show # 特殊語法 - 六連裝備
     LinkedSockets = 6
     SetTextColor 175 96 37
     SetBackgroundColor 255 255 255
@@ -67,7 +67,7 @@ Hide # 特殊語法 - 六連裝備
 
 # 【特殊語法-六洞裝備】0002
 
-Hide # 特殊語法 - 六洞裝備
+Show # 特殊語法 - 六洞裝備
     Sockets = 6
     SetTextColor 0 0 0
     SetBackgroundColor 224 224 224
@@ -367,7 +367,7 @@ Show # 通貨 - 普通 - 混沌石
     MinimapIcon 2 Green Diamond
     PlayEffect Green
 
-Hide # 通貨 - 普通 - 富豪石
+Show # 通貨 - 普通 - 富豪石
     Class "Currency"
     BaseType "Regal Orb"
     SetTextColor 0 0 0
@@ -378,7 +378,7 @@ Hide # 通貨 - 普通 - 富豪石
     PlayEffect Green
     PlayAlertSound ShChaos 200
 
-Hide # 通貨 - 普通 - 寶石匠的稜鏡
+Show # 通貨 - 普通 - 寶石匠的稜鏡
     Class "Currency"
     BaseType "Gemcutter's Prism"
     SetTextColor 0 0 0
@@ -389,7 +389,7 @@ Hide # 通貨 - 普通 - 寶石匠的稜鏡
     PlayEffect Green
     PlayAlertSound ShChaos 200
 
-Hide # 通貨 - 普通 - 後悔石
+Show # 通貨 - 普通 - 後悔石
     Class "Currency"
     BaseType "Orb of Regret"
     SetTextColor 0 0 0
@@ -400,7 +400,7 @@ Hide # 通貨 - 普通 - 後悔石
     PlayEffect Green
     PlayAlertSound ShChaos 200
 
-Hide # 通貨 - 普通 - 鏈結石
+Show # 通貨 - 普通 - 鏈結石
     Class "Currency"
     BaseType "Orb of Fusing"
     SetTextColor 0 0 0
@@ -411,7 +411,7 @@ Hide # 通貨 - 普通 - 鏈結石
     PlayEffect Green
     PlayAlertSound ShChaos 200
 
-Hide # 通貨 - 普通 - 祝福石
+Show # 通貨 - 普通 - 祝福石
     Class "Currency"
     BaseType "Blessed Orb"
     SetTextColor 0 0 0
@@ -422,7 +422,7 @@ Hide # 通貨 - 普通 - 祝福石
     PlayEffect Green
     PlayAlertSound ShChaos 200
 
-Hide # 通貨 - 普通 - 重鑄石
+Show # 通貨 - 普通 - 重鑄石
     Class "Currency"
     BaseType "Orb of Scouring"
     SetTextColor 0 0 0
@@ -433,7 +433,7 @@ Hide # 通貨 - 普通 - 重鑄石
     PlayEffect Green
     PlayAlertSound ShChaos 200
 
-Hide # 通貨 - 普通 - 瓦爾石
+Show # 通貨 - 普通 - 瓦爾石
     Class "Currency"
     BaseType "Vaal Orb"
     SetTextColor 0 0 0
@@ -444,7 +444,7 @@ Hide # 通貨 - 普通 - 瓦爾石
     MinimapIcon 2 Green Diamond
     PlayEffect Green
 
-Hide # 通貨 - 普通 - 製圖丁
+Show # 通貨 - 普通 - 製圖丁
     Class "Currency"
     BaseType "Cartographer's Chisel"
     SetTextColor 0 0 0
@@ -455,7 +455,7 @@ Hide # 通貨 - 普通 - 製圖丁
     MinimapIcon 2 Green Diamond
     PlayEffect Green
 
-Hide # 通貨 - 普通 - 地平石
+Show # 通貨 - 普通 - 地平石
     Class "Currency"
     BaseType "Orb of Horizons"
     SetTextColor 0 0 0
@@ -477,7 +477,7 @@ Show # 通貨 - 普通 - 豐裕牌組
     MinimapIcon 2 Green Diamond
     PlayEffect Green
 
-Hide # 通貨 - 普通 - 工程石
+Show # 通貨 - 普通 - 工程石
     Class "Currency"
     BaseType "Engineer's Orb"
     SetTextColor 0 0 0
@@ -488,7 +488,7 @@ Hide # 通貨 - 普通 - 工程石
     MinimapIcon 2 Green Diamond
     PlayEffect Green
 
-Hide # 通貨 - 普通 - 束縛石
+Show # 通貨 - 普通 - 束縛石
     Class "Currency"
     BaseType "Orb of Binding"
     SetTextColor 0 0 0
@@ -510,7 +510,7 @@ Show # 通貨 - 普通 - 還原玉
     MinimapIcon 2 Green Diamond
     PlayEffect Green
 
-Hide # 通貨 - 普通 - 點金石
+Show # 通貨 - 普通 - 點金石
     Class "Currency"
     BaseType "Orb of Alchemy"
     SetTextColor 0 0 0
@@ -532,7 +532,7 @@ Show # 通貨 - 普通 - 無效石碎片
     MinimapIcon 2 Green Diamond
     PlayEffect Red
 
-Hide # 通貨 - 普通 - 神諭石碎片
+Show # 通貨 - 普通 - 神諭石碎片
     Class "Currency"
     BaseType "Harbinger's Shard"
     SetTextColor 0 0 0
@@ -583,7 +583,7 @@ Show # 通貨 - 初始 - 混沌石碎片
     SetFontSize 40
     PlayAlertSound 9 300
 
-Hide # 通貨 - 初始 - 富豪石碎片
+Show # 通貨 - 初始 - 富豪石碎片
     Class "Currency"
     BaseType "Regal Shard"
     SetTextColor 0 0 0
@@ -592,7 +592,7 @@ Hide # 通貨 - 初始 - 富豪石碎片
     SetFontSize 40
     PlayAlertSound 9 300
 
-Hide # 通貨 - 初始 - 改造石
+Show # 通貨 - 初始 - 改造石
     Class "Currency"
     BaseType "Orb of Alteration"
     SetTextColor 0 0 0
@@ -601,7 +601,7 @@ Hide # 通貨 - 初始 - 改造石
     SetFontSize 45
     PlayAlertSound 9 300
 
-Hide # 通貨 - 初始 - 機會石
+Show # 通貨 - 初始 - 機會石
     Class "Currency"
     BaseType "Orb of Chance"
     SetTextColor 0 0 0
@@ -610,7 +610,7 @@ Hide # 通貨 - 初始 - 機會石
     SetFontSize 40
     PlayAlertSound 9 300
 
-Hide # 通貨 - 初始 - 工匠石
+Show # 通貨 - 初始 - 工匠石
     Class "Currency"
     BaseType "Jeweller's Orb"
     SetTextColor 0 0 0
@@ -619,7 +619,7 @@ Hide # 通貨 - 初始 - 工匠石
     SetFontSize 45
     PlayAlertSound 9 300
 
-Hide # 通貨 - 初始 - 幻色石
+Show # 通貨 - 初始 - 幻色石
     Class "Currency"
     BaseType "Chromatic Orb"
     SetTextColor 0 0 0
@@ -628,7 +628,7 @@ Hide # 通貨 - 初始 - 幻色石
     SetFontSize 45
     PlayAlertSound 9 300
 
-Hide # 通貨 - 初始 - 玻璃彈珠
+Show # 通貨 - 初始 - 玻璃彈珠
     Class "Currency"
     BaseType "Glassblower's Bauble"
     SetTextColor 0 0 0
@@ -636,7 +636,7 @@ Hide # 通貨 - 初始 - 玻璃彈珠
     SetBorderColor 250 250 250
     SetFontSize 40
 
-Hide # 通貨 - 初始 - 點燃石
+Show # 通貨 - 初始 - 點燃石
     Class "Currency"
     BaseType "Enkindling Orb"
     SetTextColor 0 0 0
@@ -645,7 +645,7 @@ Hide # 通貨 - 初始 - 點燃石
     SetFontSize 40
     PlayEffect Brown
 
-Hide # 通貨 - 初始 - 滴注石
+Show # 通貨 - 初始 - 滴注石
     Class "Currency"
     BaseType "Instilling Orb"
     SetTextColor 0 0 0
@@ -656,31 +656,31 @@ Hide # 通貨 - 初始 - 滴注石
 
 #【通貨-垃圾】1005
 
-Hide # 通貨 - 垃圾 - 磨刀石
+Show # 通貨 - 垃圾 - 磨刀石
     Class "Currency"
     BaseType "Blacksmith's Whetstone"
     SetTextColor 210 150 255
     SetFontSize 45
 
-Hide # 通貨 - 垃圾 - 護甲片
+Show # 通貨 - 垃圾 - 護甲片
     Class "Currency"
     BaseType "Armourer's Scrap"
     SetTextColor 210 150 255
     SetFontSize 45
 
-Hide # 通貨 - 垃圾 - 蛻變石
+Show # 通貨 - 垃圾 - 蛻變石
     Class "Currency"
     BaseType "Orb of Transmutation"
     SetTextColor 210 150 255
     SetFontSize 45
 
-Hide # 通貨 - 垃圾 - 增幅石
+Show # 通貨 - 垃圾 - 增幅石
     Class "Currency"
     BaseType "Orb of Augmentation"
     SetTextColor 210 150 255
     SetFontSize 45
 
-Hide # 通貨 - 垃圾 - 普蘭德斯金幣
+Show # 通貨 - 垃圾 - 普蘭德斯金幣
     Class "Currency"
     BaseType "Perandus Coin"
     SetTextColor 255 255 0 152
@@ -688,7 +688,7 @@ Hide # 通貨 - 垃圾 - 普蘭德斯金幣
     SetFontSize 40
     MinimapIcon 2 Yellow Circle
 
-Hide # 通貨 - 垃圾 - 地平石碎片
+Show # 通貨 - 垃圾 - 地平石碎片
     Class "Currency"
     BaseType "Horizon Shard"
     SetTextColor 0 0 0
@@ -696,7 +696,7 @@ Hide # 通貨 - 垃圾 - 地平石碎片
     SetBorderColor 0 0 0
     SetFontSize 45
 
-Hide # 通貨 - 垃圾 - 工程石碎片
+Show # 通貨 - 垃圾 - 工程石碎片
     Class "Currency"
     BaseType "Engineer's Shard"
     SetTextColor 0 0 0
@@ -720,12 +720,12 @@ Hide # 通貨 - 垃圾 - 改造石碎片
     BaseType "Alteration Shard"
     SetTextColor 215 190 160
 
-Hide # 通貨 - 垃圾 - 點金石碎片
+Show # 通貨 - 垃圾 - 點金石碎片
     Class "Currency"
     BaseType "Alchemy Shard"
     SetTextColor 215 190 160
 
-Hide # 通貨 - 垃圾 - 束縛石碎片
+Show # 通貨 - 垃圾 - 束縛石碎片
     Class "Currency"
     BaseType "Binding Shard"
     SetTextColor 0 0 0
@@ -756,7 +756,7 @@ Show # 通貨 - 特殊 - 六分儀．高尚
     MinimapIcon 1 Blue Triangle
     PlayAlertSound 16 250
 
-Show # 通貨 - 特殊 - 測量員的羅盤
+Hide # 通貨 - 特殊 - 測量員的羅盤
     Class "Currency"
     BaseType "Surveyor's Compass"
     SetTextColor 100 50 0
@@ -776,6 +776,16 @@ Hide # 通貨 - 特殊 - 充能的羅盤
     MinimapIcon 2 Red Diamond
     PlayEffect Red
 
+Show # 通貨 - 特殊 - 超凡偵查報告
+    Class "Currency"
+    BaseType "Otherworldly Scouting Report"
+    SetTextColor 100 50 0
+    SetBackgroundColor 255 178 102
+    SetBorderColor 204 102 0
+    SetFontSize 40
+    MinimapIcon 2 Red Diamond
+    PlayEffect Red
+
 Hide # 通貨 - 特殊 - 偵查報告
     Class "Currency"
     BaseType "Scouting Report"
@@ -783,8 +793,9 @@ Hide # 通貨 - 特殊 - 偵查報告
     SetBackgroundColor 255 178 102
     SetBorderColor 204 102 0
     SetFontSize 40
-    MinimapIcon 2 Red Diamond
-    PlayEffect Red
+#    MinimapIcon 2 Red Diamond
+#    PlayEffect Red
+
 
 Show # 通貨 - 特殊 - 挖油機
     Class "Currency"
@@ -859,12 +870,14 @@ Show # 通貨 - 異能 - 異能混沌石
     MinimapIcon 0 Red Diamond
     PlayEffect Red
 
-Hide # 通货 - 低价通货 - 銀幣<2（S23赛季）
-    Class "Stackable Currency"
+
+Hide # 通貨 -銀幣
+    Class "Currency"
     BaseType "Silver Coin"
     SetTextColor 219 48 14
     SetBackgroundColor 255 192 203
     SetBorderColor 0 255 255
+    SetFontSize 45
     MinimapIcon 0 Red Diamond
     PlayEffect Red
 
@@ -1793,7 +1806,7 @@ Show # 聯盟 - 3.10譫妄 - 譫妄玉
     MinimapIcon 1 Grey Diamond
     PlayEffect Grey
 
-Show # 聯盟 - 3.10譫妄 - 幻像斷片
+Hide # 聯盟 - 3.10譫妄 - 幻像斷片
     Class "Currency"
     BaseType "Simulacrum Splinter"
     SetTextColor 0 0 0
@@ -1880,7 +1893,7 @@ Show # 聯盟 - 3.9鍊魔 - 器官
 
 # 【聯盟-3.8凋落】3016
 
-Show # 聯盟 - 3.8凋落 - 清透/深褐/琥珀/翠綠/清綠/碧藍/奼紫/緋紅/靛青油瓶
+Hide # 聯盟 - 3.8凋落 - 清透/深褐/琥珀/翠綠/清綠/碧藍/奼紫/緋紅/靛青油瓶
     Class "Currency"
     BaseType "Clear Oil" "Sepia Oil" "Amber Oil" "Verdant Oil" "Teal Oil" "Azure Oil" "Violet Oil" "Crimson Oil" "Indigo Oil"
     SetTextColor 0 0 0
@@ -1911,7 +1924,7 @@ Hide # 聯盟 - 3.7戰亂 - 培育器 - 低階培育器(先祖/附魔/尊師/探
 
 Hide # 聯盟 - 3.7戰亂 - 培育器 - 中階培育器(飛掠/卓越/超凡/朦朧/神秘/注能/寶石匠/化石/諭示/製圖/命運/眾星/凋落/鍊魔/譫妄)
     Class "Incubator"
-    BaseType "Skittering Incubator" "Singular Incubator" "Otherworldly Incubator" "Obscured Incubator" "Mysterious Incubator" "Infused Incubator" "Gemcutter's Incubator" "Fragmented Incubator" "Fossilised Incubator" "Foreboding Incubator" "Cartographer's Incubator" "Celestial Armoursmith's Incubator" "Celestial Blacksmith's Incubator" "Diviner's Incubator" "Celestial Jeweller's Incubator" "Blighted Incubator" "Morphing Incubator" "Maddening Incubator"
+    BaseType "Skittering Incubator" "Singular Incubator" "Otherworldly Incubator" "Obscured Incubator" "Mysterious Incubator" "Infused Incubator" "Gemcutter's Incubator" "Fragmented Incubator" "Fossilised Incubator" "Foreboding Incubator" "Cartographer's Incubator" "Celestial Armoursmith's Incubator" "Celestial Blacksmith's Incubator" "Diviner's Incubator" "Celestial Jeweller's Incubator" "Blighted Incubator" "Maddening Incubator"
     SetTextColor 0 0 0
     SetBackgroundColor 255 200 0
     SetBorderColor 0 0 0
@@ -1928,7 +1941,7 @@ Hide # 聯盟 - 3.7戰亂 - 培育器 - 高階培育器(時間遺忘/幻術師/�
     SetFontSize 45
     MinimapIcon 0 Yellow Star
 
-Hide # 聯盟 - 3.7戰亂 - 軍團裂片 - 不朽/卡魯/瓦爾
+Show # 聯盟 - 3.7戰亂 - 軍團裂片 - 不朽/卡魯/瓦爾
     Class "Currency"
     BaseType "Timeless Eternal Empire Splinter" "Timeless Karui Splinter" "Timeless Vaal Splinter"
     SetTextColor 255 215 222 
@@ -1936,7 +1949,7 @@ Hide # 聯盟 - 3.7戰亂 - 軍團裂片 - 不朽/卡魯/瓦爾
     SetFontSize 45
     MinimapIcon 0 Purple Star
 
-Hide # 聯盟 - 3.7戰亂 - 軍團裂片 - 馬拉克斯/聖宗
+Show # 聯盟 - 3.7戰亂 - 軍團裂片 - 馬拉克斯/聖宗
     Class "Currency"
     BaseType "Timeless Maraketh Splinter" "Timeless Templar Splinter"
     SetTextColor 255 255 119
@@ -1945,7 +1958,7 @@ Hide # 聯盟 - 3.7戰亂 - 軍團裂片 - 馬拉克斯/聖宗
     SetFontSize 45
     MinimapIcon 0 Purple Star
 
-Hide # 聯盟 - 3.7戰亂 - 軍團印記
+Show # 聯盟 - 3.7戰亂 - 軍團印記
     Class "Map Fragments"
     BaseType "Timeless Eternal Emblem" "Timeless Karui Emblem" "Timeless Maraketh Emblem" "Timeless Templar Emblem" "Timeless Vaal Emblem"
     SetTextColor 255 255 255
@@ -2072,7 +2085,7 @@ Show # 聯盟 - 3.4掘獄 - 1S/2S/3S混沌鑄新儀(黃色)
     MinimapIcon 2 White Triangle
     PlayEffect White
 
-Show # 聯盟 - 3.4掘獄 - 化石 -高階化石(血漬/破裂/雕琢/鑲金/鏤空/雕紋/暴擊/能力/無瑕化石)
+Hide # 聯盟 - 3.4掘獄 - 化石 -高階化石(血漬/破裂/雕琢/鑲金/鏤空/雕紋/暴擊/能力/無瑕化石)
     Class "Currency"
     BaseType "Bloodstained Fossil" "Fractured Fossil" "Faceted Fossil" "Gilded Fossil" "Hollow Fossil" "Glyphic Fossil" "Sanctified Fossil" "Deft Fossil" "Fundamental Fossil" "Perfect Fossil"
     SetTextColor 0 0 0
@@ -2083,7 +2096,7 @@ Show # 聯盟 - 3.4掘獄 - 化石 -高階化石(血漬/破裂/雕琢/鑲金/鏤
     MinimapIcon 0 Yellow Star
     PlayEffect Yellow
 
-Show # 聯盟 - 3.4掘獄 - 化石 -一般化石
+Hide # 聯盟 - 3.4掘獄 - 化石 -一般化石
     Class "Currency"
     BaseType "Fossil"
     SetTextColor 0 0 0
@@ -2384,7 +2397,7 @@ Show # 聯盟 - 2.5裂痕 - 裂痕祝福
 
 # 【聯盟-2.4精髓】3005
 
-Show # 聯盟 - 2.4精髓 - 精髓 -污染精華&污染器皿
+Hide # 聯盟 - 2.4精髓 - 精髓 -污染精華&污染器皿
     Class "Currency"
     BaseType "Essence of Hysteria" "Essence of Insanity" "Essence of Horror" "Essence of Delirium" "Remnant of Corruption"
     SetTextColor 0 0 0
@@ -2394,28 +2407,28 @@ Show # 聯盟 - 2.4精髓 - 精髓 -污染精華&污染器皿
     PlayAlertSound 9 300
     PlayEffect Red
 
-Show # 聯盟 - 2.4精髓 - 精髓 -T1
+Hide # 聯盟 - 2.4精髓 - 精髓 -T1
     Class "Currency"
     BaseType "Deafening Essence of"
     SetTextColor 150 255 255
     SetFontSize 40
     PlayAlertSound 9 300
 
-Show # 聯盟 - 2.4精髓 - 精髓 -T2
+Hide # 聯盟 - 2.4精髓 - 精髓 -T2
     Class "Currency"
     BaseType "Shrieking Essence of"
     SetTextColor 65 255 255
     SetFontSize 40
     PlayAlertSound 9 200
 
-Show # 聯盟 - 2.4精髓 - 精髓 -T3
+Hide # 聯盟 - 2.4精髓 - 精髓 -T3
     Class "Currency"
     BaseType "Screaming Essence of"
     SetTextColor 0 255 255
     SetFontSize 39
     PlayAlertSound 9 150
 
-Show # 聯盟 - 2.4精髓 - 精髓 -T4
+Hide # 聯盟 - 2.4精髓 - 精髓 -T4
     Class "Currency"
     BaseType "Wailing Essence of" "Weeping Essence of" "Muttering Essence of" "Whispering Essence of"
     SetTextColor 0 210 255
@@ -4008,16 +4021,9 @@ Hide # 藥劑 - 生命藥劑 - 中階(高階/聖語/祝福)
     SetBorderColor 153 0 0
     SetFontSize 40
 
-Hide # 藥劑 - 生命藥劑 - 高階(不朽)
-    Class "Life Flasks"
-    BaseType "Sanctified Life Flask" "Divine Life Flask" "Eternal Life Flask"
-    SetTextColor 153 0 0
-    SetBackgroundColor 163 141 109
-    SetBorderColor 153 0 0
-    SetFontSize 40
 Hide # 藥劑 - 生命藥劑 - 高階(聖化/不朽/永恆)
     Class "Life Flasks"
-    BaseType "Sanctified Life Flask" "Eternal Life Flask"
+    BaseType "Sanctified Life Flask" "Divine Life Flask" "Eternal Life Flask"
     SetTextColor 153 0 0
     SetBackgroundColor 163 141 109
     SetBorderColor 153 0 0
