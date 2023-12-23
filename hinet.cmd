@@ -1,1 +1,6 @@
-rasdial ¿í´øÁ¬½Ó 85118356@hinet.net 2aoijoxi
+[vpn]
+set NIC_name=VPN
+set user=
+set passwd=
+set serverip=
+rasdial %NIC_name% %user% %passwd% /phone:%serverip%
