@@ -91,10 +91,10 @@
 
 //藥水//
 [Type] == "Divine Life Flask"&& [ItemLevel] >= "80" && [ItemLevel] <="100" # [StashItem] == "true" // 不朽生命藥劑
-[Type] == "Silver Flask"&& 		[ItemLevel] >= "84" && [ItemLevel] <="100" # [StashItem] == "true" //猛攻
-[Type] == "Diamond Flask"&& 		[ItemLevel] >= "80" && [ItemLevel] <="100" # [StashItem] == "true" //寶鑽
+//[Type] == "Silver Flask"&& 		[ItemLevel] >= "84" && [ItemLevel] <="100" # [StashItem] == "true" //猛攻
+//[Type] == "Diamond Flask"&& 		[ItemLevel] >= "80" && [ItemLevel] <="100" # [StashItem] == "true" //寶鑽
 //[Type] == "Jade Flask"&& 		[ItemLevel] >= "84" && [ItemLevel] <="100" # [StashItem] == "true" //+1500閃避
-[Type] == "Quicksilver Flask"&& 	[ItemLevel] >= "80" && [ItemLevel] <="100" # [StashItem] == "true" //跑水
+//[Type] == "Quicksilver Flask"&& 	[ItemLevel] >= "80" && [ItemLevel] <="100" # [StashItem] == "true" //跑水
 
 
 [Type] == "Amethyst Flask"&& 		[ItemLevel] >= "85" && [ItemLevel] <="100" # [StashItem] == "true" //紫晶
