@@ -123,25 +123,26 @@
 
 
 
-[Type] == "Wharf Map" # [StashItem] == "true" //
-[Type] == "Mud Geyser Map" # [StashItem] == "true" //
+//[Type] == "Wharf Map" # [StashItem] == "true" //
+//[Type] == "Mud Geyser Map" # [StashItem] == "true" //
 [Type] == "Crimson Temple Map" # [StashItem] == "true" //
 [Type] == "Temple Map" # [StashItem] == "true" //奪魂之殿
 //[Type] == "Bog Map" # [StashItem] == "true" //瘴氣泥沼
-[Type] == "City Square Map" # [StashItem] == "true" //危城廣場
+//[Type] == "City Square Map" # [StashItem] == "true" //危城廣場
 
-[Type] == "Cemetery Map" # StashItem] == "true" ///
-[Type] == "Bazaar Map" # [StashItem] == "true" //
-[Type] == "Leyline Map" # [StashItem] == "true" //
+//[Type] == "Cemetery Map" # StashItem] == "true" ///
+//[Type] == "Bazaar Map" # [StashItem] == "true" //
+//[Type] == "Leyline Map" # [StashItem] == "true" //
 
 
-[Type]=="Wharf Map" && [MapTier] <= "13" # [ForceSellItem] == "true"
+//[Type]=="Wharf Map" && [MapTier] <= "13" # [ForceSellItem] == "true"
 [Type]=="Crimson Temple Map"&& [MapTier] <= "13" # [ForceSellItem] == "true"
-[Type] == "Mud Geyser Map" && [MapTier] <= "13" # [ForceSellItem] == "true"
-[Type] == "City Square Map" && [MapTier] <= "13" # [ForceSellItem] == "true"
-[Type] == "Cemetery Map"  && [MapTier] <= "13" # [ForceSellItem] == "true"
-[Type] == "Bazaar Map"  && [MapTier] <= "13"  # [ForceSellItem] == "true"
-[Type]=="Leyline Map"  && [MapTier] <= "13 "# [ForceSellItem] == "true"
+//[Type] == "Mud Geyser Map" && [MapTier] <= "13" # [ForceSellItem] == "true"
+//[Type] == "City Square Map" && [MapTier] <= "13" # [ForceSellItem] == "true"
+//[Type] == "Cemetery Map"  && [MapTier] <= "13" # [ForceSellItem] == "true"
+//[Type] == "Bazaar Map"  && [MapTier] <= "13"  # [ForceSellItem] == "true"
+//[Type]=="Leyline Map"  && [MapTier] <= "13 "# [ForceSellItem] == "true"
+[Type]=="Temple Map"  && [MapTier] <= "13 "# [ForceSellItem] == "true"
 
 [Category] == "Map" && [Rarity] == "Rare" && [map_contains_citadel] >= "1" # [StashItem] == "true" // 13855 Citadel Maps 征服
 [Category] == "Map" && [Rarity] == "Rare" && [map_elder_boss_variation] >= "1" # [StashItem] == "true" // 6551 Elder Maps 尊師

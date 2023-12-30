@@ -23,7 +23,6 @@
 [Type] == "Omen of the Jeweller" # [StashItem] == "true" //工匠之預兆
 [Type] == "Omen of the Soul Devourer" # [StashItem] == "true" //嗜魂者之預兆
 
-
 //3.22季初珠寶
 [Type] == "Viridian Jewel" && [Rarity] == "Unique" #   [UniqueName] == "Stormshroud" && [StashItem] == "true"    //風暴籠罩 綠
 [Type] == "Viridian Jewel" && [Rarity] == "Unique" #   [UniqueName] == "Quickening Covenant" && [StashItem] == "true"  //復甦誓約 綠
@@ -58,7 +57,7 @@
 [Type] == "Omen of Fortune" # [StashItem] == "true" //	財富之預兆
 
 //3.22季初傳送門
-//[Type] == "Portal" #  [StashItem] == "true"//傳送門
+[Type] == "Portal" #  [StashItem] == "true"//傳送門
 
 //3.23套裝//
 //[Type] == "Heavy Belt" && [Rarity] == "Unique" # [faster_burn_from_attacks_%] >= "1" && [StashItem] == "true" // 迪安
@@ -79,7 +78,7 @@
 //[Type] == "Amethyst Ring" && [Rarity] == "Unique" # [UniqueName] == "Death Rush" && [StashItem] == "true"	//亡者呼喚 紫晶戒指
 //[Type] == "Jade Amulet" && [Rarity] == "Unique" # [UniqueName] == "Hyrri's Truth" && [StashItem] == "true"	//西里的真理
 //[Type] == "Primal Arrow Quiver" && [Rarity] == "Unique" # [UniqueName] == "The Poised Prism" && [StashItem] == "true"	//優雅迷鏡
-[Type] == "Stealth Boots" && [Rarity] == "Unique" # [cannot_have_life_leeched_from] >= "1" && [StashItem] == "true" // 敏銳思維 匿蹤短靴
+//[Type] == "Stealth Boots" && [Rarity] == "Unique" # [cannot_have_life_leeched_from] >= "1" && [StashItem] == "true" // 敏銳思維 匿蹤短靴
 
 //迷宮裝//
 //[Type] == "Plank Kite Shield" && [Rarity] == "Unique" # [UniqueName] == "Springleaf" && [StashItem] == "true"	//新生之徽
@@ -106,7 +105,7 @@
 
 [Type] == "Crimson Temple Map" && [MapTier] >= "14"  && [Rarity] == "Normal"  #[StashItem] == "true" // //普通地圖普通地圖撿取，普通地圖存倉
 [Type] == "Crimson Temple Map" && [MapTier] >= "14"  && [Rarity] == "Magic"  #[StashItem] == "true" // //藍地圖藍地圖撿取，藍地圖存倉
-[Type] == "Crimson Temple Map" && [MapTier] >= "14"  && [Rarity] == "Rare"  #[StashItem] == "true" // //黃地圖黃地圖不撿，黃地圖售出
+//[Type] == "Crimson Temple Map" && [MapTier] >= "14"  && [Rarity] == "Rare"  #[StashItem] == "true" // //黃地圖黃地圖不撿，黃地圖售出
 
 [Type] == "Temple Map" && [MapTier] >= "14"  && [Rarity] == "Normal"  #[StashItem] == "true" // //普通地圖普通地圖撿取，普通地圖存倉
 [Type] == "Temple Map" && [MapTier] >= "14"  && [Rarity] == "Magic"  #[StashItem] == "true" // //藍地圖藍地圖撿取，藍地圖存倉
@@ -124,25 +123,26 @@
 
 
 
-[Type] == "Wharf Map" # [StashItem] == "true" //
-[Type] == "Mud Geyser Map" # [StashItem] == "true" //
+//[Type] == "Wharf Map" # [StashItem] == "true" //
+//[Type] == "Mud Geyser Map" # [StashItem] == "true" //
 [Type] == "Crimson Temple Map" # [StashItem] == "true" //
 [Type] == "Temple Map" # [StashItem] == "true" //奪魂之殿
 //[Type] == "Bog Map" # [StashItem] == "true" //瘴氣泥沼
-[Type] == "City Square Map" # [StashItem] == "true" //危城廣場
+//[Type] == "City Square Map" # [StashItem] == "true" //危城廣場
 
-[Type] == "Cemetery Map" # StashItem] == "true" ///
-[Type] == "Bazaar Map" # [StashItem] == "true" //
-[Type] == "Leyline Map" # [StashItem] == "true" //
+//[Type] == "Cemetery Map" # StashItem] == "true" ///
+//[Type] == "Bazaar Map" # [StashItem] == "true" //
+//[Type] == "Leyline Map" # [StashItem] == "true" //
 
 
-[Type]=="Wharf Map" && [MapTier] <= "13" # [ForceSellItem] == "true"
+//[Type]=="Wharf Map" && [MapTier] <= "13" # [ForceSellItem] == "true"
 [Type]=="Crimson Temple Map"&& [MapTier] <= "13" # [ForceSellItem] == "true"
-[Type] == "Mud Geyser Map" && [MapTier] <= "13" # [ForceSellItem] == "true"
-[Type] == "City Square Map" && [MapTier] <= "13" # [ForceSellItem] == "true"
-[Type] == "Cemetery Map"  && [MapTier] <= "13" # [ForceSellItem] == "true"
-[Type] == "Bazaar Map"  && [MapTier] <= "13"  # [ForceSellItem] == "true"
-[Type]=="Leyline Map"  && [MapTier] <= "13 "# [ForceSellItem] == "true"
+//[Type] == "Mud Geyser Map" && [MapTier] <= "13" # [ForceSellItem] == "true"
+//[Type] == "City Square Map" && [MapTier] <= "13" # [ForceSellItem] == "true"
+//[Type] == "Cemetery Map"  && [MapTier] <= "13" # [ForceSellItem] == "true"
+//[Type] == "Bazaar Map"  && [MapTier] <= "13"  # [ForceSellItem] == "true"
+//[Type]=="Leyline Map"  && [MapTier] <= "13 "# [ForceSellItem] == "true"
+[Type]=="Temple Map"  && [MapTier] <= "13 "# [ForceSellItem] == "true"
 
 [Category] == "Map" && [Rarity] == "Rare" && [map_contains_citadel] >= "1" # [StashItem] == "true" // 13855 Citadel Maps 征服
 [Category] == "Map" && [Rarity] == "Rare" && [map_elder_boss_variation] >= "1" # [StashItem] == "true" // 6551 Elder Maps 尊師
@@ -399,3 +399,4 @@
 	[Type] == "Siege Axe" && [Rarity] == "Unique" # [UniqueName] == "Soul Taker" && [StashItem] == "true"	//開膛斧 破城斧
 	[Type] == "Elegant Round Shield" && [Rarity] == "Unique" # [UniqueName] == "The Squire" && [StashItem] == "true"	//大地主權貴圓盾
 	[Type] == "Carnal Armour" && [Rarity] == "Unique" # [UniqueName] == "Stasis Prison" && [StashItem] == "true"	//靜止牢籠禁禮之甲
+																	
