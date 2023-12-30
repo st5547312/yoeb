@@ -58,26 +58,26 @@
 [Type] == "Omen of Fortune" # [StashItem] == "true" //	財富之預兆
 
 //3.22季初傳送門
-[Type] == "Portal" #  [StashItem] == "true"//傳送門
+//[Type] == "Portal" #  [StashItem] == "true"//傳送門
 
 //3.23套裝//
-[Type] == "Heavy Belt" && [Rarity] == "Unique" # [faster_burn_from_attacks_%] >= "1" && [StashItem] == "true" // 迪安
+//[Type] == "Heavy Belt" && [Rarity] == "Unique" # [faster_burn_from_attacks_%] >= "1" && [StashItem] == "true" // 迪安
 //[Type] == "Goathide Gloves" && [Rarity] == "Unique" # [base_physical_damage_%_to_convert_to_cold] >= "1" && [StashItem] == "true" // 冰冷之眼
 //[Type]== "Iron Ring" && [Rarity] == "Unique" # [StashItem] == "true" // 寶靈
 //[Type]== "Topaz Ring" && [Rarity] == "Unique" # [StashItem] == "true" // 風暴之密
-[Type]=="Primal Arrow Quiver" &&  [Rarity] == "Unique" # [StashItem] == "true" ////優雅迷鏡
+//[Type]=="Primal Arrow Quiver" &&  [Rarity] == "Unique" # [StashItem] == "true" ////優雅迷鏡
 
 //弓箭手套裝//
-[Type] == "Praetor Crown" && [Rarity] == "Unique" # [UniqueName] == "Voll's Vision" && [StashItem] == "true"	//福爾的遠見
-[Type] == "Zodiac Leather" && [Rarity] == "Unique" # [UniqueName] == "Hyrri's Ire" && [StashItem] == "true"	//西里的戰衣星辰皮甲
-[Type] == "Titan Gauntlets" && [Rarity] == "Unique" # [UniqueName] == "Kaom's Spirit" && [StashItem] == "true"	//岡姆之魂
-[Type] == "Rawhide Boots" && [Rarity] == "Unique" # [UniqueName] == "Seven-League Step" && [StashItem] == "true"	//盟誓之跡
+//[Type] == "Praetor Crown" && [Rarity] == "Unique" # [UniqueName] == "Voll's Vision" && [StashItem] == "true"	//福爾的遠見
+//[Type] == "Zodiac Leather" && [Rarity] == "Unique" # [UniqueName] == "Hyrri's Ire" && [StashItem] == "true"	//西里的戰衣星辰皮甲
+//[Type] == "Titan Gauntlets" && [Rarity] == "Unique" # [UniqueName] == "Kaom's Spirit" && [StashItem] == "true"	//岡姆之魂
+//[Type] == "Rawhide Boots" && [Rarity] == "Unique" # [UniqueName] == "Seven-League Step" && [StashItem] == "true"	//盟誓之跡
 //[Type] == "Rustic Sash" && [Rarity] == "Unique" # [UniqueName] == "Prismweave" && [StashItem] == "true"	//幻彩菱織 腰帶
-[Type] == "Two-Stone Ring" && [Rarity] == "Unique" # [UniqueName] == "Berek's Respite" && [StashItem] == "true"	//貝雷克的火與雷之樂
-[Type] == "Two-Stone Ring" && [Rarity] == "Unique" # [UniqueName] == "Berek's Grip" && [StashItem] == "true"	//貝雷克的冰與雷之曲
-[Type] == "Two-Stone Ring" && [Rarity] == "Unique" # [UniqueName] == "Berek's Pass" && [StashItem] == "true"	//貝雷克的冰與火之歌
-[Type] == "Amethyst Ring" && [Rarity] == "Unique" # [UniqueName] == "Death Rush" && [StashItem] == "true"	//亡者呼喚 紫晶戒指
-[Type] == "Jade Amulet" && [Rarity] == "Unique" # [UniqueName] == "Hyrri's Truth" && [StashItem] == "true"	//西里的真理
+//[Type] == "Two-Stone Ring" && [Rarity] == "Unique" # [UniqueName] == "Berek's Respite" && [StashItem] == "true"	//貝雷克的火與雷之樂
+//[Type] == "Two-Stone Ring" && [Rarity] == "Unique" # [UniqueName] == "Berek's Grip" && [StashItem] == "true"	//貝雷克的冰與雷之曲
+//[Type] == "Two-Stone Ring" && [Rarity] == "Unique" # [UniqueName] == "Berek's Pass" && [StashItem] == "true"	//貝雷克的冰與火之歌
+//[Type] == "Amethyst Ring" && [Rarity] == "Unique" # [UniqueName] == "Death Rush" && [StashItem] == "true"	//亡者呼喚 紫晶戒指
+//[Type] == "Jade Amulet" && [Rarity] == "Unique" # [UniqueName] == "Hyrri's Truth" && [StashItem] == "true"	//西里的真理
 //[Type] == "Primal Arrow Quiver" && [Rarity] == "Unique" # [UniqueName] == "The Poised Prism" && [StashItem] == "true"	//優雅迷鏡
 [Type] == "Stealth Boots" && [Rarity] == "Unique" # [cannot_have_life_leeched_from] >= "1" && [StashItem] == "true" // 敏銳思維 匿蹤短靴
 
@@ -85,7 +85,7 @@
 //[Type] == "Plank Kite Shield" && [Rarity] == "Unique" # [UniqueName] == "Springleaf" && [StashItem] == "true"	//新生之徽
 //[Type] == "Topaz Ring" && [Rarity] == "Unique" # [UniqueName] == "Kikazaru" && [StashItem] == "true"	//基加薩魯
 //[Type] == "Agate Amulet" && [Rarity] == "Unique" # [UniqueName] == "Shaper's Seed" && [StashItem] == "true"	//塑界者之籽
-[Type] == "Leather Belt" && [Rarity] == "Unique" # [UniqueName] == "Immortal Flesh" && [StashItem] == "true"	//永生
+//[Type] == "Leather Belt" && [Rarity] == "Unique" # [UniqueName] == "Immortal Flesh" && [StashItem] == "true"	//永生
 //[Type] == "Basket Rapier" && [Rarity] == "Unique" # [UniqueName] == "Aurumvorax" && [StashItem] == "true"	//靈護 練武者細劍
 //[Type] == "Glorious Plate" && [Rarity] == "Unique" # [UniqueName] == "Kaom's Heart" && [StashItem] == "true"	//岡姆的壯志
 
@@ -128,7 +128,7 @@
 [Type] == "Mud Geyser Map" # [StashItem] == "true" //
 [Type] == "Crimson Temple Map" # [StashItem] == "true" //
 [Type] == "Temple Map" # [StashItem] == "true" //奪魂之殿
-[Type] == "Bog Map" # [StashItem] == "true" //瘴氣泥沼
+//[Type] == "Bog Map" # [StashItem] == "true" //瘴氣泥沼
 [Type] == "City Square Map" # [StashItem] == "true" //危城廣場
 
 [Type] == "Cemetery Map" # StashItem] == "true" ///
