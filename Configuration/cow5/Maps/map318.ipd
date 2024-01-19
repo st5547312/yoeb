@@ -4,7 +4,8 @@
 //[Type] == "Temple Map" 		# [ExitAfterBossKill] == "true"
 [Type] == "Cemetery Map" 		# [ExitAfterBossKill] == "true"
 [Type] == "Leyline Map" 		# [ExitAfterBossKill] == "true"
-[Type] == "Maze Map" 		# [ExitAfterBossKill] == "true"
+[Type] == "Shore Map" 		# [ExitAfterBossKill] == "true"
+[Type] == "Dry Sea Map" 		# [ExitAfterBossKill] == "true"
 
 // Shaper / Elder
 [6831] >= "1" # [IgnoreMap] == "true" // Shaper/Elder maps
