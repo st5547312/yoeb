@@ -116,9 +116,17 @@
 [Type] == "Cemetery Map" && [MapTier] >= "14"  && [Rarity] == "Magic"  #[StashItem] == "true" // //藍地圖藍地圖撿取，藍地圖存倉
 //[Type] == "Cemetery Map" && [MapTier] >= "14"  && [Rarity] == "Rare"  #[StashItem] == "true" // //黃地圖黃地圖不撿，黃地圖售出
 
-[Type] == "Leyline Map" && [MapTier] >= "14"  && [Rarity] == "Normal"  #[StashItem] == "true" // //普通地圖普通地圖撿取，普通地圖存倉
-[Type] == "Leyline Map" && [MapTier] >= "14"  && [Rarity] == "Magic"  #[StashItem] == "true" // //藍地圖藍地圖撿取，藍地圖存倉
-//[Type] == "Leyline Map" && [MapTier] >= "14"  && [Rarity] == "Rare"  #[StashItem] == "true" // //黃地圖黃地圖不撿，黃地圖售出
+[Type] == "Maze Map" && [MapTier] >= "14"  && [Rarity] == "Normal"  #[StashItem] == "true" // //普通地圖普通地圖撿取，普通地圖存倉
+[Type] == "Maze Map" && [MapTier] >= "14"  && [Rarity] == "Magic"  #[StashItem] == "true" // //藍地圖藍地圖撿取，藍地圖存倉
+//[Type] == "Maze Map" && [MapTier] >= "14"  && [Rarity] == "Rare"  #[StashItem] == "true" // //黃地圖黃地圖不撿，黃地圖售出
+
+[Type] == "Shore Map" && [MapTier] >= "14"  && [Rarity] == "Normal"  #[StashItem] == "true" // //普通地圖普通地圖撿取，普通地圖存倉
+[Type] == "Shore Map" && [MapTier] >= "14"  && [Rarity] == "Magic"  #[StashItem] == "true" // //藍地圖藍地圖撿取，藍地圖存倉
+[Type] == "Shore Map" && [MapTier] >= "14"  && [Rarity] == "Rare"  #[StashItem] == "true" // //黃地圖黃地圖不撿，黃地圖售出
+
+[Type] == "Dry Sea Map" && [MapTier] >= "14"  && [Rarity] == "Normal"  #[StashItem] == "true" // //普通地圖普通地圖撿取，普通地圖存倉
+[Type] == "Dry Sea Map" && [MapTier] >= "14"  && [Rarity] == "Magic"  #[StashItem] == "true" // //藍地圖藍地圖撿取，藍地圖存倉
+[Type] == "Dry Sea Map" && [MapTier] >= "14"  && [Rarity] == "Rare"  #[StashItem] == "true" // //黃地圖黃地圖不撿，黃地圖售出
 
 
 
