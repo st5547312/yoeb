@@ -58,6 +58,29 @@
 [Type] == "Corvine Charm" # [StashItem] == "true" //	烏鴉咒語
 [Type] == "Ursine Charm" # [StashItem] == "true" //	熊族咒語
 [Type] == "Lupine Charm" # [StashItem] == "true" //	狼族咒語
+//展翅甲蟲
+[Type] == "Winged Ambush Scarab" # [StashItem] == "true" ////聖甲蟲：展翅伏擊
+[Type] == "Winged Bestiary Scarab" # [StashItem] == "true" ////聖甲蟲：展翅獸獵
+[Type] == "Winged Breach Scarab" # [StashItem] == "true" ////聖甲蟲：展翅裂痕
+[Type] == "Winged Cartography Scarab" # [StashItem] == "true" ////聖甲蟲：展翅製圖
+[Type] == "Winged Divination Scarab" # [StashItem] == "true" ////聖甲蟲：展翅命運
+[Type] == "Winged Elder Scarab" # [StashItem] == "true" ////聖甲蟲：展翅尊師
+[Type] == "Winged Harbinger Scarab" # [StashItem] == "true" ////聖甲蟲：展翅神諭
+[Type] == "Winged Legion Scarab" # [StashItem] == "true" ////聖甲蟲：展翅戰亂
+[Type] == "Winged Reliquary Scarab" # [StashItem] == "true" ////聖甲蟲：展翅聖物
+[Type] == "Winged Shaper Scarab" # [StashItem] == "true" ////聖甲蟲：展翅塑者
+[Type] == "Winged Sulphite Scarab" # [StashItem] == "true" ////聖甲蟲：展翅硫酸
+[Type] == "Winged Torment Scarab" # [StashItem] == "true" ////聖甲蟲：展翅苦痛
+[Type] == "Winged Abyss Scarab" # [StashItem] == "true" ////聖甲蟲：展翅深淵
+[Type] == "Winged Blight Scarab" # [StashItem] == "true" ////聖甲蟲：展翅凋落
+[Type] == "Winged Expedition Scarab" # [StashItem] == "true" //聖甲蟲：展翅探險
+[Type] == "Winged Ultimatum Scarab" # [StashItem] == "true" ////聖甲蟲：展翅通牒
+//藍圖
+[Type] == "Blueprint: Smuggler's Den" # [StashItem] == "true" ////藍圖：走私者巢穴
+[Type] == "Blueprint: Laboratory" # [StashItem] == "true" ////藍圖：實驗室
+[Type] == "Blueprint: Prohibited Library" # [StashItem] == "true" ////藍圖：禁忌館藏
+[Type] == "Blueprint: Tunnels" # [StashItem] == "true" ////藍圖：地道
+
 
 
 //3.22季初傳送門
