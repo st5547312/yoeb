@@ -2010,7 +2010,7 @@ Show # 聯盟 - 3.5密教 - 密教詞綴物品
     PlayAlertSound 16 200
     MinimapIcon 2 White Hexagon
 
-Show # 聯盟 - 3.5密教 - 鍍金聖甲蟲
+Hide # 聯盟 - 3.5密教 - 鍍金聖甲蟲
     Class "Map Fragments"
     BaseType "Gilded"
     SetTextColor 0 0 0
@@ -2021,7 +2021,7 @@ Show # 聯盟 - 3.5密教 - 鍍金聖甲蟲
     MinimapIcon 0 Yellow Hexagon
     PlayEffect Yellow
 
-Show # 聯盟 - 3.5密教 - 圓滑聖甲蟲
+Hide # 聯盟 - 3.5密教 - 圓滑聖甲蟲
     Class "Map Fragments"
     BaseType "Polished"
     SetTextColor 0 0 0
@@ -2032,7 +2032,7 @@ Show # 聯盟 - 3.5密教 - 圓滑聖甲蟲
     MinimapIcon 1 Yellow Hexagon
     PlayEffect Yellow
 
-Show # 聯盟 - 3.5密教 - 鏽蝕聖甲蟲
+Hide # 聯盟 - 3.5密教 - 鏽蝕聖甲蟲
     Class "Map Fragments"
     BaseType "Rusted"
     SetTextColor 0 0 0
