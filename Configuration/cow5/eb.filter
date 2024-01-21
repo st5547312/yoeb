@@ -1509,7 +1509,7 @@ Hide # 聯盟 - 3.12劫盜 - 合同
     MinimapIcon 0 Green Triangle
     PlayEffect Green
 
-Hide # 聯盟 - 3.12劫盜 - 藍圖
+Show # 聯盟 - 3.12劫盜 - 藍圖
     BaseType "Blueprint"
     SetTextColor 0 0 204
     SetBackgroundColor 255 178 102
