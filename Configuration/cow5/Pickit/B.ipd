@@ -76,10 +76,10 @@
 [Type] == "Winged Expedition Scarab" # [StashItem] == "true" //聖甲蟲：展翅探險
 [Type] == "Winged Ultimatum Scarab" # [StashItem] == "true" ////聖甲蟲：展翅通牒
 //藍圖
-[Type] == "Blueprint: Smuggler's Den" # [StashItem] == "true" ////藍圖：走私者巢穴
-[Type] == "Blueprint: Laboratory" # [StashItem] == "true" ////藍圖：實驗室
-[Type] == "Blueprint: Prohibited Library" # [StashItem] == "true" ////藍圖：禁忌館藏
-[Type] == "Blueprint: Tunnels" # [StashItem] == "true" ////藍圖：地道
+//[Type] == "Blueprint: Smuggler's Den" # [StashItem] == "true" ////藍圖：走私者巢穴
+//[Type] == "Blueprint: Laboratory" # [StashItem] == "true" ////藍圖：實驗室
+//[Type] == "Blueprint: Prohibited Library" # [StashItem] == "true" ////藍圖：禁忌館藏
+//[Type] == "Blueprint: Tunnels" # [StashItem] == "true" ////藍圖：地道
 
 
 //3.22季初傳送門
