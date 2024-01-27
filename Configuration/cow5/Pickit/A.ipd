@@ -58,6 +58,7 @@
 [Type] == "Corvine Charm" # [StashItem] == "true" //	烏鴉咒語
 [Type] == "Ursine Charm" # [StashItem] == "true" //	熊族咒語
 [Type] == "Lupine Charm" # [StashItem] == "true" //	狼族咒語
+[Type] == "Poisonberry Tincture" # [StashItem] == "true" //	毒莓果萃取物
 //展翅甲蟲
 [Type] == "Winged Ambush Scarab" # [StashItem] == "true" ////聖甲蟲：展翅伏擊
 [Type] == "Winged Bestiary Scarab" # [StashItem] == "true" ////聖甲蟲：展翅獸獵
